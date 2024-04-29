@@ -2,7 +2,7 @@
 
 This repository contains examples of prompts for Microsoft Copilot.
 
-> We welcome community contributions to the `samples` folder in this repository for demonstrating different use cases with Microsoft Graph connectors. If you've built a connector to ingest data from a specific type of data or you've got an interesting concept that you'd like to show, please share your work and help others!
+> We welcome community contributions to the `samples` folder in this repository for demonstrating different prompts for Microsoft Copilot. If you have a great sample prompt for Microsoft Copilot, GitHub Copilot or Microsoft Copilot for Microsoft 365, please share your work and help others!
 
 ## Have issues or questions?
 
