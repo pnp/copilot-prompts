@@ -1,0 +1,42 @@
+[
+    {
+      "name": "copilotprompts-m36-my-name-mentioned-prompt",
+      "source": "pnp",
+      "title": "Locate my name mentioned in meetings",
+      "shortDescription": "Ask copilot to find my name mentioned in meetings",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m36-my-name-mentioned-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m36-my-name-mentioned-prompt",
+      "longDescription": [
+        "This prompt will help you to locate your name mentioned in meetings."
+      ],
+      "creationDateTime": "2024-04-29",
+      "updateDateTime": "2024-04-29",
+      "products": [
+        "Copilot for Microsoft 365"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m36-my-name-mentioned-prompt/assets/demo.png",
+          "alt": "Prompt for Copilot for Microsoft 365 showing how to locate your name mentioned in meetings"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "rabwill",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/20379311?v=4",
+          "name": "Rabia Williams"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
