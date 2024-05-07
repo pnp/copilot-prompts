@@ -10,6 +10,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Validate
-        uses: pnp/pnp-sample-validation@main
+        uses: pnp/pnp-sample-validation@dev
         with:
           gh-token: ${{ secrets.GITHUB_TOKEN }}
