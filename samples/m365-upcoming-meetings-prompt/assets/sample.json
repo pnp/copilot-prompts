@@ -2,7 +2,7 @@
     {
       "name": "copilotprompts-m365-upcoming-meetings-prompt",
       "source": "pnp",
-      "title": "reate a Timeline of My Upcoming Meetings",
+      "title": "Create a Timeline of My Upcoming Meetings",
       "shortDescription": "Ask copilot to create a timeline of your upcoming meetings.",
       "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-upcoming-meetings-prompt",
       "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-upcoming-meetings-prompt",
