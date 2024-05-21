@@ -61,6 +61,12 @@ Modify the sample.json file in your assets folder to match the details of your p
 
 And that’s it! You’re now ready to contribute your creative prompts to the repository.
 
+## Resources
+- [https://aka.ms/Copilot-For-M365](https://aka.ms/Copilot-For-M365
+)
+- [Copilot Lab](https://copilot.cloud.microsoft/prompts)
+
+
 
 ## Code of Conduct
 
