@@ -14,6 +14,12 @@ If you've got an idea or questions or experience an issue with any of the sample
 
 This repository's contributors are all community members who volunteered their time to share code samples.
 
+## How to use this repo
+
+Simply go to the [samples](https://github.com/pnp/copilot-prompts/tree/main/samples) folder and select one sample (see steps 1-3) in the figure below. Then find the instructions in the readme.md file to run the prompt yourself. Be sure to checkout the prerequisites before you get started.
+
+![how to use this repo image](./images/how-to.png)
+
 ## Contributions
 
 Samples in this repository are submitted by Microsoft's product groups, and the [Microsoft 365 and Power Platform community](http://aka.ms/m365pnp). We welcome your feedback and suggestions for new samples. We also welcome community contributions. If you have any questions, just let us know.
