@@ -1,10 +1,10 @@
-# 🚀 Find meeting time with another user - a prerequisites prompt example 📅
+# 🚀 Find meeting time with another user - a prerequisite prompt example 📅
 
 ![Demo of finding meeting time with another user](./assets/demo.png)
 
 ## Summary
 
-This is a revision of the 'Find meeting time with another user' prompt. It demonstrates the concept of the 'conditional' or 'prerequisite' prompt. These prompts require input from the user before performing any actions. In this case, it asks the user for the person they want to schedule a meeting with and the day for the meeting. 
+This is a revision of the 'Find meeting time with another user' prompt. It demonstrates the concept of a 'prerequisite' prompt. A prerequisite prompt requires input from the user before performing any actions. In this case, it asks the user for the person they want to schedule a meeting with and the day for the meeting. 
 
 ## Original Prompt 💡
 
