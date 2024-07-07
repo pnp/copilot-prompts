@@ -1,0 +1,41 @@
+[
+    {
+      "name": "YOUR-SAMPLE-NAME",
+      "source": "pnp",
+      "title": "YOUR-SAMPLE-TITLE",
+      "shortDescription": "YOUR-SHORT-DESCRIPTION",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/YOUR-SAMPLE-NAME",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/YOUR-SAMPLE-NAME",
+      "longDescription": [
+        "YOUR-LONG-DESCRIPTION"
+      ],
+      "creationDateTime": "2023-09-29",
+      "updateDateTime": "2023-09-29",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/YOUR-SAMPLE-NAME/assets/YOUR-IMAGE-NAME",
+          "alt": "Image for YOUR-SAMPLE-NAME"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "YOUR-GITHUB-ACCOUNT",
+          "name": "YOUR-NAME"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
