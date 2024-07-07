@@ -27,6 +27,7 @@
       "authors": [
         {
           "gitHubAccount": "YOUR-GITHUB-ACCOUNT",
+          "pictureUrl": "https://github.com/YOUR-GITHUB-ACCOUNT.png",
           "name": "YOUR-NAME"
         }
       ],
