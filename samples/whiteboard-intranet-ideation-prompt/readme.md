@@ -1,7 +1,7 @@
 # 🚀 Generate features for a new intranet project in Microsoft Whiteboard
 
-![Prompt query](./assets/Microsoft Whiteboard intranet ideation prompt query.png)
-![Demo answer](./assets/Microsoft Whiteboard intranet ideation prompt response.png)
+![Prompt query](./assets/microsoft-whiteboard-intranet-ideation-prompt-query.png)
+![Demo answer](./assets/microsoft-whiteboard-intranet-ideation-prompt-response.png)
 
 ## Summary
 
