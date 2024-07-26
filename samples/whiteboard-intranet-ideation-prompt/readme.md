@@ -1,7 +1,7 @@
 # 🚀 Generate features for a new intranet project in Microsoft Whiteboard
 
-![Microsoft word draft with Copilot sales proposal prompt](./assets/prompt.png)
-![Demo of create a sales proposal for a sales lead with content refering from a document in SharePoint in Microsoft Word](./assets/generatedproposal.png)
+![Prompt query](./assets/Microsoft Whiteboard intranet ideation prompt query.png)
+![Demo answer](./assets/Microsoft Whiteboard intranet ideation prompt response.png)
 
 ## Summary
 
