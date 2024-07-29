@@ -1,0 +1,42 @@
+[
+    {
+      "name": "microsoft-365-copilot-to-fetch-technical-interviews-from-outlook-emails",
+      "source": "pnp",
+      "title": "Microsoft 365 Copilot with prompt to get the list of candidates which you interviewed, date of interview and job role in tabular format in the past 6 months.",
+      "shortDescription": "Ask microsoft 365 Copilot with prompt to get the list of candidates which you interviewed, date of interview and job role in tabular format in the past 6 months.",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-get-technical-interviews-for-past-months",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-get-technical-interviews-for-past-months",
+      "longDescription": [
+        "This prompt helps technical panel to list all the candidates for which they took the interview in a given period of time, in this case the technical panel is asking copilot to get the list of candidates panel interviewed for the past 6 months and asking copilot to get the reference from Outlook mailbox."
+      ],
+      "creationDateTime": "2024-07-19",
+      "updateDateTime": "2024-07-19",
+      "products": [
+        "Copilot for Microsoft 365",
+        "Copilot chat in Microsoft Teams"
+      ],
+      "metadata": [],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-get-technical-interviews-for-past-months/assets/prompt.png",
+          "alt": "Microsoft 365 Copilot with prompt to get the list of candidates which you interviewed, date of interview and job role in tabular format in the past 6 months."
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "Shrusti13",
+          "pictureUrl": "https://github.com/Shrusti13",
+          "name": "Shrushti Shah"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
