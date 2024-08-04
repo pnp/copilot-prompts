@@ -1,0 +1,41 @@
+[
+    {
+      "name": "m365-information-format-pppp-prompt",
+      "source": "pnp",
+      "title": "Transform data into a structure that aligns with the user's preferred information framework.",
+      "shortDescription": "This prompt will ask Copilot to transform data into a structure that aligns with the user's preferred information framework.",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-information-format-pppp-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-information-format-pppp-prompt",
+      "longDescription": [
+        "This prompt will ask Copilot to convert text to data into a structure that aligns with the user's preferred information framework."
+      ],
+      "creationDateTime": "2024-08-5",
+      "updateDateTime": "2024-08-5",
+      "products": [
+        "Microsoft Copilot"
+      ],
+      "metadata": [],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-information-format-pppp-prompt/assets/demo.gif",
+          "alt": "Prompt for Microsoft Copilot to transform data into a structure that aligns with the user's preferred information framework."
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "AndrewJolly",
+          "pictureUrl": "https://media.licdn.com/dms/image/C5103AQEQ_lIYPW-Ckw/profile-displayphoto-shrink_800_800/0/1525740480246?e=1724284800&v=beta&t=CMhyEyOzzf0gcqzo6Ay648i7H5O5WIYRoyi2x95vb2Y",
+          "name": "Andrew Jolly"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
