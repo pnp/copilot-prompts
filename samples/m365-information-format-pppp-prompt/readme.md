@@ -1,4 +1,4 @@
-# 🚀 Transform data using user's custom information format.📆
+# 🚀 Transform data using user's custom information format
 
 ![Demo](./assets/demo.gif)
 
