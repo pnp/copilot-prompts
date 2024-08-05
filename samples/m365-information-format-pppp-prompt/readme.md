@@ -36,7 +36,7 @@ Version|Date|Comments
 
 
 1. Go to Microsoft Copilot
-2. Copy paste the  prompt and repaced [*your context*] with your actual context/text.
+2. Copy paste the  prompt and replace [*your context*] with your actual context/text.
 
 
 ### Improvise Usage 🚀
