@@ -2,7 +2,7 @@
     {
       "name": "m365-information-format-pppp-prompt",
       "source": "pnp",
-      "title": "Transform data into a structure that aligns with the user's preferred information framework.",
+      "title": "Using the 4Ps framework to organise information with Microsoft Copilot.",
       "shortDescription": "This prompt will ask Copilot to transform data into a structure that aligns with the user's preferred information framework.",
       "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-information-format-pppp-prompt",
       "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-information-format-pppp-prompt",
