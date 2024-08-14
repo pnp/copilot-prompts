@@ -10,13 +10,13 @@ This prompt helps technical panel to list all the candidates for which they took
 
 ## Prompt 💡
 
-List all the candidates for which I took the interview in a tabular format with date of interview, candidate name and position. kindly refer to the last 6 months emails from {third-party-tool} to get the candidate's name.
+List all the candidates for which I took the interview in a tabular format with date of interview, candidate name and position. kindly refer to the last 6 months emails from Outlook to get the candidate's name.
 
 
 ## Description ℹ️
 
-List all the candidates for which I took the interview in a tabular format with date of interview, candidate name and position. kindly refer to the last 6 months emails from {third-party-tool} to get the candidate's name.
-.
+List all the candidates for which I took the interview in a tabular format with date of interview, candidate name and position. kindly refer to the last 6 months emails from Outlook to get the candidate's name.
+
 
 ## Contributors 👨‍💻
 
@@ -31,11 +31,12 @@ Version|Date|Comments
 
 ## Instructions 📝
 
-1. Make sure you have copilot for Microsoft 365 in your tenant
-2. Go to Microsoft 365 Copilot in Office.com or use Copilot chat in Teams
-3. Copy paste the above prompt
-4. Copilot will ftech all the candidates which you interviewed.
-5. Assumption : In the given prompt I receive interview invites in my outlook hence referring to fetch the details from outlook emails. 
+1. Set up your environment with past dummy meetings, including metadata such as the interview date, candidate name, and position.
+2. Make sure you have copilot for Microsoft 365 in your tenant
+3. Go to Microsoft 365 Copilot in Office.com or use Copilot chat in Teams
+4. Copy paste the above prompt
+5. Copilot will ftech all the candidates which you interviewed.
+
 
 ### Improvise Usage 🚀
 You can ask Copilot to get the information for any time frame and not necessarily 6 months. If you are billing hours for interviews on monthly basis then this prompt comes handy as you can ask Copilot to list the interviewed candidates in the tabular format along with interview dates and then you can accordingly bill hours.
