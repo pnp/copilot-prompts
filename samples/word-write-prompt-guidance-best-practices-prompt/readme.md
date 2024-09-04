@@ -2,6 +2,8 @@
 
 ## Summary
 
+It provides a template prompt that users can customize by replacing variables in brackets with specific tool names, business roles, and department names. This helps tailor the guidance to specific use cases.
+
 ## Prompt💡
 
 Write guidance about {Gen AI tool of choice} prompt best practices oriented to {business role} in the {XYZ} department. Include at least two practical examples (prompts) with each prompting best practice.
