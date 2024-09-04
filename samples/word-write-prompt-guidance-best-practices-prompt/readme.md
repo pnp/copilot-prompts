@@ -1,5 +1,7 @@
 # Create guidance with best practices and comprehensive examples on prompting Gen AI tools like Microsoft Copilot for your users in Microsoft Word
 
+![Write guidance about Microsoft Copilot prompt best practices oriented to Accountants in the Finance department. Include at least two practical examples (prompts) with each prompting best practice.](./assets/prompt.png)
+
 ## Summary
 
 It provides a template prompt that users can customize by replacing variables in brackets with specific tool names, business roles, and department names. This helps tailor the guidance to specific use cases.
