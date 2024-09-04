@@ -4,6 +4,7 @@
 
 ## Summary
 
+Rolling out Microsoft Copilot and other Generative AI tools might be challenging. This prompt helps people in charge of implementations or leading departments adoption to create easily some guidance for a smoother adoption process and roll out of this technolgy.
 It provides a template prompt that users can customize by replacing variables in brackets with specific tool names, business roles, and department names. This helps tailor the guidance to specific use cases.
 
 ## Prompt💡
