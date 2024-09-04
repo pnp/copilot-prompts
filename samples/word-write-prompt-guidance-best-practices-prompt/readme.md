@@ -8,7 +8,7 @@ Write guidance about {Gen AI tool of choice} prompt best practices oriented to {
 
 ### Descriptionℹ️
 
-[English](./en-us/prompt.md)
+Create a baseline guideline for prompting in specific business context that can be easily understood by users from different businesses and departments using comprehensive context and examples.
 
 ## Contributors 👨‍💻
 
@@ -41,7 +41,7 @@ Prompt again for more practical samples to be included in the guidance
 
 We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for  community members to volunteer their time and help resolve issues.
 
-You can try looking at [issues related to this sample](https://github.com/pnp/copilot-prompts/issues?q=label%3A%22sample%3A%20YOUR-SAMPLE-NAME%22) to see if anybody else is having the same issues.
+You can try looking at [issues related to this sample](https://github.com/pnp/copilot-prompts/issues?q=label%3A%22sample%3A%20word-write-prompt-guidance-best-practices-prompt%22) to see if anybody else is having the same issues.
 
 If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/copilot-prompts/issues/new).
 
