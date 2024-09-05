@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-company-party-planner",
+    "source": "pnp",
+    "title": "Generate an decoration, meal idea for company party",
+    "shortDescription": "Generate an decoration, meal idea for company party",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/company-party-planner",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/company-party-planner",
+    "longDescription": [
+      "The prompt is designed to initiate the brainstorming process for planning a party in a small company. It provides clear guidelines for decorations, 3 course meal, meal recepies and its related ingrediants. By focusing on user needs and company culture, the prompt aims to stimulate innovative thinking and identify potential solutions for planning an amazing company events."
+    ],
+    "creationDateTime": "2024-09-05",
+    "updateDateTime": "2024-09-05",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/company-party-planner/assets/company-party-planner-prompt-query.png",
+        "alt": "Generate an decoration, meal idea for company party"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "jitenparmar",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/7124132?v=4",
+        "name": "Jiten Parmar"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
