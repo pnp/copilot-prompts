@@ -5,7 +5,7 @@
 
 ## Summary
 
-The prompt is designed to generate a company party planning ideas like decoration, 3 course vegeterian meal, meal recepies and its related ingediants.
+The prompt is designed to generate company party planning ideas like decoration, a 3-course vegetarian meal, meal recipes, and its related ingredients.
 
 ## Prompt 💡
 
@@ -13,7 +13,7 @@ I want to plan a party for my company. we have low budget so we are planning to 
 
 ## Description ℹ️
 
-The prompt is designed to initiate the brainstorming process for planning a party in a small company. It provides clear guidelines for decorations, 3 course meal, meal recepies and its related ingrediants. By focusing on user needs and company culture, the prompt aims to stimulate innovative thinking and identify potential solutions for planning an amazing company events.
+The prompt is designed to initiate the brainstorming process for planning a party in a small company. It provides clear guidelines for decorations, 3-course meals, meal recipes, and related ingredients. By focusing on user needs and company culture, the prompt aims to stimulate innovative thinking and identify potential solutions for planning amazing company events.
 
 ## Contributors 👨‍💻
 
