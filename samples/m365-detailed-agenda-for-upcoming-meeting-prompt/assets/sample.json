@@ -1,0 +1,42 @@
+[
+    {
+      "name": "copilotprompts-m365-detailed-agenda-for-upcoming-meeting-prompt",
+      "source": "pnp",
+      "title": "Create a detailed agenda of My Upcoming Meeting",
+      "shortDescription": "Ask copilot to create a detailed agenda of your upcoming meeting.",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-detailed-agenda-for-upcoming-meeting-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-detailed-agenda-for-upcoming-meeting-prompt",
+      "longDescription": [
+        "The purpose is to create a detailed agenda, specifying the topics to be covered in the meeting."
+      ],
+      "creationDateTime": "2024-09-09",
+      "updateDateTime": "2024-09-09",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-detailed-agenda-for-upcoming-meeting-prompt/assets/demo.png",
+          "alt": "Prompt for Copilot for Microsoft 365 which helps generate structured agendas for meetings, specifying time slots and topics."
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "ezekielibe",
+          "pictureUrl": "https://github.com/ezekielibe",
+          "name": "Ezekiel Ibegbunam"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
