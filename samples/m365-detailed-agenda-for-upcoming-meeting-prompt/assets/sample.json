@@ -1,11 +1,11 @@
 [
     {
-      "name": "copilotprompts-m365-upcoming-meetings-prompt",
+      "name": "copilotprompts-m365-detailed-agenda-for-upcoming-meeting-prompt",
       "source": "pnp",
-      "title": "Create a detailed agenda of My Upcoming Meetings",
-      "shortDescription": "Ask copilot to create a timeline of your upcoming meetings.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-upcoming-meetings-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-upcoming-meetings-prompt",
+      "title": "Create a detailed agenda of My Upcoming Meeting",
+      "shortDescription": "Ask copilot to create a detailed agenda of your upcoming meeting.",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-detailed-agenda-for-upcoming-meeting-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-detailed-agenda-for-upcoming-meeting-prompt",
       "longDescription": [
         "The purpose is to create a detailed agenda, specifying the topics to be covered in the meeting."
       ],
