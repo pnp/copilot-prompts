@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-upcoming-meetings-prompt/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-detailed-agenda-for-upcoming-meeting-prompt/assets/demo.png",
           "alt": "Prompt for Copilot for Microsoft 365 which helps generate structured agendas for meetings, specifying time slots and topics."
         }
       ],
