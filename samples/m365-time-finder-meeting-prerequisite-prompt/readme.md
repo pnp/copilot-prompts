@@ -11,7 +11,8 @@ This is a revision of the 'Find meeting time with another user' prompt. It demon
  Identify an available time for a meeting with [User] tomorrow that aligns with their working hours in their timezone and does not conflict with either my or their existing meetings. 
 
 > [!WARNING] 
-> Copilot will not get another user's calendar information and will hallucinate pls read this [post](https://www.linkedin.com/posts/mahmoudhamedhassan_microsoftcopilottips-modernworkplaceai-copilotformicrosoft365-activity-7154581557679210496-6jLG?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B6rXTR9lRSGiLpSCjT4RgNQ%3D%3D) but you can still try the prerequisite prompt below for further querying other detais to make sure you have insights into the user timezone etc
+> Copilot will not get another user's calendar information (as of now) and will hallucinate pls read this [post](https://www.linkedin.com/posts/mahmoudhamedhassan_microsoftcopilottips-modernworkplaceai-copilotformicrosoft365-activity-7154581557679210496-6jLG?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B6rXTR9lRSGiLpSCjT4RgNQ%3D%3D).
+When you encounter these issues please give feedback using the dissatified button in Copilot (the thumbs down).
 
  ## Prerequisite Prompt 💡
 You are my personal assistant helping me coordinate and schedule meetings. Ask the user to input the person they wish to meet with. Then ask on which day they want to meet. Do not provide a response until the user has responded to you. Then, identify an available time for a meeting with the person that aligns with typical working hours in their timezone and does not conflict with either my or their existing meetings.

@@ -6,6 +6,10 @@
 
 This is a prompt to list the upcoming meeting details along with invitees list, meeting initiator, and RSVP status. It will show the list of all the upcoming meetings in a tabular format with the Date, Time, Meeting Details, Initiator, List of invitees and RSVP Status. If there is any conflict in the schedule, it will show the meeting in bold.
 
+> [!WARNING] 
+> Copilot will not get another user's calendar information (as of now) and will hallucinate pls read this [post](https://www.linkedin.com/posts/mahmoudhamedhassan_microsoftcopilottips-modernworkplaceai-copilotformicrosoft365-activity-7154581557679210496-6jLG?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B6rXTR9lRSGiLpSCjT4RgNQ%3D%3D).
+When you encounter these issues please give feedback using the dissatified button in Copilot (the thumbs down).
+
 ## Prompt 💡
 
 Show me my meetings for this week in table. Table should contain following details. Date, Time, Meeting Details, Initiated by, List of invitees, RSVP Status.
