@@ -28,11 +28,12 @@ Version|Date|Comments
 
 ## Instructions 📝
 
-1. Make sure you have copilot for Microsoft 365 in your tenant so you can use Copilot for Word
-2. Go to Word and Click on draft with Copilot
-3. Copy paste the prompt above and replace the variables in brackets with the specific Tool name, business role and department name. Feel free to remove department if not relevant or too generic
-4. (Optional) Add more business context after the prompt to tailor the output towards specific use cases
-5. (Optional) Prompt again for more practical samples to be included in the guidance
+1. Make sure you have copilot for Microsoft 365 in your tenant
+2. Go to Microsoft 365 Copilot in Office.com or use Copilot chat in Teams
+3. Copy paste the above prompt
+4. Copilot will a plan
+
+
 ### Improvise Usage 🚀
 You can add more information to the prompt if needed to create more accurate response. You can also add number of people, meal type Veg, Non-veg or vegan.
 

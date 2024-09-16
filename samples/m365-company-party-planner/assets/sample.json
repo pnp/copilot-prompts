@@ -1,11 +1,11 @@
 [
   {
-    "name": "copilotprompts-company-party-planner",
+    "name": "copilotprompts-m365-company-party-planner",
     "source": "pnp",
     "title": "Generate an decoration, meal idea for company party",
     "shortDescription": "Generate an decoration, meal idea for company party",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/company-party-planner",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/company-party-planner",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-company-party-planner",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-company-party-planner",
     "longDescription": [
       "The prompt is designed to initiate the brainstorming process for planning a party in a small company. It provides clear guidelines for decorations, 3-course meals, meal recipes, and related ingredients. By focusing on user needs and company culture, the prompt aims to stimulate innovative thinking and identify potential solutions for planning amazing company events."
     ],
@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/company-party-planner/assets/company-party-planner-prompt-query.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-company-party-planner/assets/company-party-planner-prompt-query.png",
         "alt": "Generate an decoration, meal idea for company party"
       }
     ],
