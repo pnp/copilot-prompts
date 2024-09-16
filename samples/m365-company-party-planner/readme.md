@@ -31,7 +31,7 @@ Version|Date|Comments
 1. Make sure you have copilot for Microsoft 365 in your tenant
 2. Go to Microsoft 365 Copilot in Office.com or use Copilot chat in Teams
 3. Copy paste the above prompt
-4. Copilot will a plan
+4. Copilot will respond with a plan that includes ideas and a meal plan. 
 
 
 ### Improvise Usage 🚀
