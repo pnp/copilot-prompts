@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-yearly-performance-review-prompt/assets/yearlyreview.png",
+          "url": "https://github.com/UnsuckM365/copilot-prompts/blob/main/samples/m365-yearly-performance-review-prompt/assets/yearlyreview.png",
           "alt": "Prompt for creating a list of accomplishments and areas of development for yearly performance review."
         }
       ],
