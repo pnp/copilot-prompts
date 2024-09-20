@@ -4,7 +4,7 @@
 
 ## Summary
 
-### Prompt 💡
+## Prompt 💡
  Create adaptive card to show two input fields one for text and next a drop down and two buttons save and cancel 
 
 ### Description ℹ️
