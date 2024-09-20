@@ -4,7 +4,7 @@
 
 ## Summary
 
-### Prompt 💡
+## Prompt 💡
 
 Find conversations where my name was mentioned yesterday where I have not since replied 
 
