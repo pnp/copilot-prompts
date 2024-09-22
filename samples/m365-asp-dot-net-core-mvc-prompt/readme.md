@@ -53,7 +53,7 @@ Expand the field description and ask copilot to also make it visibly appealing w
 
 ## Prerequisites
 
-* [GitHub copilot](https://copilot.github.com/)
+* [Copilot for Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program)
 
 ## Help
 
