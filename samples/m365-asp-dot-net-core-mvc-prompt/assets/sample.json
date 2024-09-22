@@ -1,11 +1,11 @@
 [
     {
-      "name": "m365-asp.net-core-mvc-prompt",
+      "name": "m365-asp-dot-net-core-mvc-prompt",
       "source": "pnp",
       "title": "ASP.Net Core MVC Programming",
       "shortDescription": "Prompt to generate the desired HTML and apply CSS classes conditionally",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-asp.net-core-mvc-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-asp.net-core-mvc-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-asp-dot-net-core-mvc-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-asp-dot-net-core-mvc-prompt",
       "longDescription": [
         "This prompt illustrates how to get programming help from CoPilot by giving precise instructions for the desired HTML needed and CSS classes which needs to be applied in ASP.Net Core MVC."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-asp.net-core-mvc-prompt/assets/prompt-query.jpg",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-asp-dot-net-core-mvc-prompt/assets/prompt-query.jpg",
           "alt": "ASP.Net Core MVC Programming"
         }
       ],
