@@ -23,15 +23,7 @@ Neither Agree nor Disagree
 Disagree
 Strongly Disagree
 
-
-<div class="col-md-2">
-	<div class="well well-sm">
-		<div class="form-check form-check-inline mb-2">
-			<input class="form-check-input" type="radio" name="AllocationOfWork" id="AllocationOfWorkSA" value="Strongly Agree" />
-			<label class="form-check-label radio-button-size" for="AllocationOfWorkSA">Strongly Agree</label>
-		</div>
-	</div>
-</div>
+![Prompt query html](./assets/prompt-query-html.jpg)
 
 ### Description ℹ️
 
