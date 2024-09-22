@@ -6,7 +6,7 @@
 
 ## Summary
 
-This a ASP.NET MVC Programming Prompt. The purpose is to illustrate the power of precise instructions to get the desired help in programming. 
+This is an ASP.NET MVC Programming Prompt. The purpose is to illustrate the power of precise instructions to get the desired help in programming. 
 
 ## Prompt 💡
 
@@ -27,7 +27,7 @@ Strongly Disagree
 
 ### Description ℹ️
 
-Create a desired HTML with CSS classes in ASP.Net Core MVC
+Create a desired HTML with CSS classes in ASP.Net Core MVC using Copilot.
 
 ## Contributors 👨‍💻
 
