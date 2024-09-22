@@ -1,4 +1,4 @@
-# 🚀 Generate desired HTML in ASP.NET MVC using GitHub copilot  📅
+# 💻 Generate desired HTML in ASP.NET MVC using GitHub copilot 🧑‍💻
 
 ![Prompt query](./assets/prompt-query.jpg)
 ![Demo answer](./assets/prompt-output.jpg)
