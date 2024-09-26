@@ -1,12 +1,12 @@
 # 🚀 Fetch the top 10 bullet points of a Document
 
-![CoPilot with prompt to fetch the top 10 bullet points of document](./assets/prompt.png)
+![Copilot with prompt to fetch the top 10 bulletpoints of document](./assets/prompt.png)
 
 
 
 ## Summary
 
-This prompt helps to summarize the lengthy/huge documents which can save a lot of time when you only want to know the summary of the document. You can further ask Co-pilot to elaborate on any particular point among the top10
+This prompt helps technical panel to list all the candidates for which they took the interview in a given period of time, in this case the technical panel is asking copilot to get the list of candidates panel interviewed for the past 6 months and asking copilot to get the reference from Outlook mailbox.
 
 ## Prompt 💡
 
