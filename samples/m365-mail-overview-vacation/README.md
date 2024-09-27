@@ -5,7 +5,7 @@
 
 ## Summary
 
-This prompt is designed to help you get organized by asking Copilot to sort emails into different priority levels and categorize them by required action. It will group your emails based on importance and urgency, making it easier to manage your inbox after vacation.
+These prompts are designed to help you get organized by asking Copilot to sort emails into different priority levels and categorize them by required action. It will group your emails based on importance and urgency, making it easier to manage your inbox after vacation.
 
 ## Prompt💡
 
