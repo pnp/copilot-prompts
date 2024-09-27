@@ -4,7 +4,8 @@
 ![Categorize emails by action](./assets/demo1.png)
 
 ## Summary
-This prompt is designed to analyse your calendar events for the current week and categorise them based on how you are spending your time. It will provide a brief description for each category and estimate the percentage of time allocated to each one. This helps you understand your time management and identify areas where you might want to make adjustments.
+
+This prompt is designed to help you get organized by asking Copilot to sort emails into different priority levels and categorize them by required action. It will group your emails based on importance and urgency, making it easier to manage your inbox after vacation.
 
 ## Prompt💡
 
