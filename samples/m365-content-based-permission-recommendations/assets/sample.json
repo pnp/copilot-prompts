@@ -1,0 +1,42 @@
+[
+  {
+    "name": "m365-content-based-permission-recommendations",
+    "source": "pnp",
+    "title": "This prompt ensures that permissions are dynamically adjusted based on the content's nature",
+    "shortDescription": "Ask copilot to recommend permissions based on the content's nature",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-content-based-permission-recommendations",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-content-based-permission-recommendations",
+    "longDescription": [
+      "This prompt will help you to ensure that permissions are dynamically adjusted based on the content's nature. This will help you to ensure that the right people have access to the right content at the right time.",
+    ],
+    "creationDateTime": "2024-09-30",
+    "updateDateTime": "2024-09-30",
+    "products": [
+      "Copilot for Microsoft 365",
+      "Microsoft Teams"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-content-based-permission-recommendations/assets/demo.png",
+        "alt": "Prompt for Copilot to recommend permissions based on the content's nature"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ValerasNarbutas",
+        "pictureUrl": "https://avatars.githubusercontent.com/ValerasNarbutas",
+        "name": "Valeras Narbutas"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
