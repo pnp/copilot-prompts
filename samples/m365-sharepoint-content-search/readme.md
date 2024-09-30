@@ -1,6 +1,6 @@
 # Search for documents in SharePoint Online for specific topic and summarize the content    
 
-![Demo of generating meeting minutes](./assets/demo.png)
+![Search for documents in SharePoint Online](./assets/demo.png)
 
 ## Summary 📜
 
@@ -56,3 +56,9 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
 ![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-sharepoint-content-search)
+
+
+user.name=ValerasNarbutas
+user.email=ValerasN@gmail.com
+git config --global user.name "Valeras Narbutas"
+git config --global ser.email "ValerasN@gmail.com"
