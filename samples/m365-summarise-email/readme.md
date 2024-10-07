@@ -10,7 +10,7 @@ Please summarize the following email, capturing the key points, important detail
 
 ## Description ℹ️
 
-Summarize the following email, capturing the key points, important details, and any actions required. Ensure the tone remains professional and neutral
+Summarize the following email, capturing the key points, important details, and any actions required. Ensure the tone remains professional and neutral.
 
 ## Contributors 👨‍💻
 
