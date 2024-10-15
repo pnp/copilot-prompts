@@ -4,7 +4,7 @@
 
 ## Summary
 
-This prompt asks GitHub Copilot to generate PowerFx code that creates a new record in a PowerApps data source called EmployeeData. The record will include fields for Name, Position, and HireDate, with values provided by user input through text input controls and a date picker. The formula should be triggered by a button click, with validation to ensure all fields are filled. If validation fails, an error notification will be displayed; otherwise, a success message will confirm the record creation.
+This prompt asks GitHub Copilot to generate PowerFx code that creates a new record in a PowerApps data source. The record will include fields for Name, Position, and HireDate, with values provided by user input through text input controls and a date picker. The formula should be triggered by a button click, with validation to ensure all fields are filled. If validation fails, an error notification will be displayed; otherwise, a success message will confirm the record creation.
 
 ## Prompt💡
 
