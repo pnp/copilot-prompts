@@ -1,10 +1,10 @@
-# Create a Patch Function to Update a record in Powerapps using Github Copilot
+# Create a Patch Function to Create a new record in Powerapps using Github Copilot
 
 ![GitHub Copilot interface in Visual Studio Code showing an extended prompt. The prompt asks: 'Can you write PowerFx code to create a new record in PowerApps? I need to add a new record to a data source named EmployeeData. The new record should include fields for Name, Position, and HireDate, and these values will be entered through text input controls (TextInput_Name, TextInput_Position) and a date picker (DatePicker_HireDate).' Options for interacting with the Copilot suggestion, like accept, discard, and further actions, are visible on the right.](/samples/github-powerplatform-patchfunction/assets/Copilot%20Patch%20Function.png)
 
 ## Summary
 
-The Patch function in Power Fx is used to update or modify records in a data source. It works by specifying three main components: the data source you want to update, the specific record you wish to modify, and the new values for the fields you want to change. To identify the record, you typically use a function like "LookUp" based on a unique identifier or condition. Once the target record is found, the Patch function allows you to update specific fields without affecting the rest of the data. This is a powerful method for making updates to individual records within a data source while keeping the other data intact.
+This prompt asks GitHub Copilot to generate PowerFx code that creates a new record in a PowerApps data source called EmployeeData. The record will include fields for Name, Position, and HireDate, with values provided by user input through text input controls and a date picker. The formula should be triggered by a button click, with validation to ensure all fields are filled. If validation fails, an error notification will be displayed; otherwise, a success message will confirm the record creation.
 
 ## Prompt💡
 
