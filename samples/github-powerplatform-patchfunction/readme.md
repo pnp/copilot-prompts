@@ -10,9 +10,9 @@ The Patch function in Power Fx is used to update or modify records in a data sou
 
 Can you write PowerFx code to create a new record in PowerApps? I need to add a new record to a data source named `EmployeeData`. The new record should include fields for `Name`, `Position`, and `HireDate`, and these values will be entered through text input controls (`TextInput_Name`, `TextInput_Position`) and a date picker (`DatePicker_HireDate`). The formula should trigger when a button is clicked, and it should validate that all fields are filled before creating the record. If any field is empty, display an error notification. If all fields are valid, display a success notification after the new record is added.
 
-### Descriptionℹ️
+### Description ℹ️
 
-The Patch function in Power Fx allows you to update specific fields in a record from a data source without affecting the rest of the data. 
+The Patch function in Power Fx allows you to add new data to a data source without affecting the rest of the data. 
 
 ## Contributors 👨‍💻
 
