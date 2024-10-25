@@ -1,1 +1,41 @@
-
+[
+    {
+      "name": "m365-generate-known-issue-article-from-support-ticket",
+      "source": "pnp",
+      "title": "Generate a known issues article from a closed support ticket",
+      "shortDescription": "Generate a known issues article from a closed support ticket attached in PDF.",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-known-issue-article-from-support-ticket",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-known-issue-article-from-support-ticket",
+      "longDescription": [
+        "Consolidating knowledge from the experience of support teams could be daunting. With this Copilot prompt you can ease the transofrmation of tacit knoweldge into enterprise knowledge available to all your colleagues for future reference, generating an article to document the issue and the solution provided."
+      ],
+      "creationDateTime": "2024-10-25",
+      "updateDateTime": "2024-10-25",
+      "products": [
+        "Copilot for Microsoft 365"
+      ],
+      "metadata": [],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-generate-known-issue-article-from-support-ticket/assets/prompt.png",
+          "alt": "Generate a known issues article from a closed support ticket"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "GuillermoBas",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/8668582?v=4",
+          "name": "Guillermo Bas"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
