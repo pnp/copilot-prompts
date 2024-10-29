@@ -1,6 +1,6 @@
 # Generate a Patch Function to Create a new record in Powerapps using Github Copilot
 
-![GitHub Copilot interface in Visual Studio Code showing an extended prompt. The prompt asks: 'Can you write PowerFx code to create a new record in PowerApps? I need to add a new record to a data source named EmployeeData. The new record should include fields for Name, Position, and HireDate, and these values will be entered through text input controls (TextInput_Name, TextInput_Position) and a date picker (DatePicker_HireDate).' Options for interacting with the Copilot suggestion, like accept, discard, and further actions, are visible on the right.](GavinWarner05/copilot-prompts/samples/github-powerplatform-patchfunction/assets/Patch.gif)
+![GitHub Copilot interface in Visual Studio Code showing an extended prompt. The prompt asks: 'Can you write PowerFx code to create a new record in PowerApps? I need to add a new record to a data source named EmployeeData. The new record should include fields for Name, Position, and HireDate, and these values will be entered through text input controls (TextInput_Name, TextInput_Position) and a date picker (DatePicker_HireDate).' Options for interacting with the Copilot suggestion, like accept, discard, and further actions, are visible on the right.](assets/Patch.gif)
 
 ## Summary
 
