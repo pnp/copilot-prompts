@@ -1,14 +1,14 @@
-# Generate a Patch Function to Create a new record in Powerapps using Github Copilot
+# Generate a Patch Function to Create a new record in Power Apps using Github Copilot
 
-![GitHub Copilot interface in Visual Studio Code showing an extended prompt. The prompt asks: 'Can you write PowerFx code to create a new record in PowerApps? I need to add a new record to a data source named EmployeeData. The new record should include fields for Name, Position, and HireDate, and these values will be entered through text input controls (TextInput_Name, TextInput_Position) and a date picker (DatePicker_HireDate).' Options for interacting with the Copilot suggestion, like accept, discard, and further actions, are visible on the right.](assets/Patch.gif)
+![GitHub Copilot interface in Visual Studio Code showing an extended prompt. The prompt asks: 'Can you write PowerFx code to create a new record in Power Apps? I need to add a new record to a data source named EmployeeData. The new record should include fields for Name, Position, and HireDate, and these values will be entered through text input controls (TextInput_Name, TextInput_Position) and a date picker (DatePicker_HireDate).' Options for interacting with the Copilot suggestion, like accept, discard, and further actions, are visible on the right.](assets/Patch.gif)
 
 ## Summary
 
-This prompt asks GitHub Copilot to generate PowerFx code that creates a new record in a PowerApps data source. The record will include fields for Name, Position, and HireDate, with values provided by user input through text input controls and a date picker. The formula should be triggered by a button click, with validation to ensure all fields are filled. If validation fails, an error notification will be displayed; otherwise, a success message will confirm the record creation.
+This prompt asks GitHub Copilot to generate PowerFx code that creates a new record in a Power Apps data source. The record will include fields for Name, Position, and HireDate, with values provided by user input through text input controls and a date picker. The formula should be triggered by a button click, with validation to ensure all fields are filled. If validation fails, an error notification will be displayed; otherwise, a success message will confirm the record creation.
 
 ## Prompt💡
 
-Can you write PowerFx code to create a new record in PowerApps? I need to add a new record to a data source named `EmployeeData`. The new record should include fields for `Name`, `Position`, and `HireDate`, and these values will be entered through text input controls (`TextInput_Name`, `TextInput_Position`) and a date picker (`DatePicker_HireDate`). The formula should trigger when a button is clicked, and it should validate that all fields are filled before creating the record. If any field is empty, display an error notification. If all fields are valid, display a success notification after the new record is added.
+Can you write PowerFx code to create a new record in Power Apps? I need to add a new record to a data source named `EmployeeData`. The new record should include fields for `Name`, `Position`, and `HireDate`, and these values will be entered through text input controls (`TextInput_Name`, `TextInput_Position`) and a date picker (`DatePicker_HireDate`). The formula should trigger when a button is clicked, and it should validate that all fields are filled before creating the record. If any field is empty, display an error notification. If all fields are valid, display a success notification after the new record is added.
 
 ### Description ℹ️
 
@@ -22,7 +22,7 @@ The Patch function in Power Fx allows you to add new data to a data source witho
 
 Version|Date|Comments
 -------|----|--------
-1.0|October 03, 2024|Initial release
+1.0|October 29, 2024|Initial release
 
 ## Instructions 📝
 
