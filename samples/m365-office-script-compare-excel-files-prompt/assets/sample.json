@@ -1,0 +1,42 @@
+[
+    {
+      "name": "m365-office-script-compare-excel-files-prompt",
+      "source": "pnp",
+      "title": "Office Script to Compare Excel Files",
+      "shortDescription": "Prompt to generate an Office Script Prompt to compare two Excel files and generate a comparison report.",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-office-script-compare-excel-files-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-office-script-compare-excel-files-prompt",
+      "longDescription": [
+        "This prompt illustrates how to compare two excel files with large data and generate a comparison report using Office Scripts."
+      ],
+      "creationDateTime": "2024-10-31",
+      "updateDateTime": "2024-10-31",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-office-script-compare-excel-files-prompt/assets/prompt-query.jpg",
+          "alt": "Office Script to Compare Excel Files"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "arceegomes",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/26863017?v=4",
+          "name": "Arcee Gomes"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
