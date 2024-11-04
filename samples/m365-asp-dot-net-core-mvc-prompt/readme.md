@@ -41,15 +41,13 @@ Version|Date|Comments
 
 ## Instructions 📝
 
-1. Make sure you have Github copilot extension installed in VSCode and enable it
-2. Create a .json file
-3. Launch GitHub copilot chat "command"+ i or "ctrl" +i
-4. Copy the above prompt and paste and select `Enter`
-5. If the generated card looks good, select `Accept`
+1. Make sure you have Copilot for Microsoft 365 in your tenant
+2. Open CoPilot App 
+3. Copy and paste the about prompt and click Submit
 
 ### Improvise Usage 🚀
 
-Expand the field description and ask copilot to also make it visibly appealing with formatting and emojis
+You can add more information to the prompt if needed to create more accurate response
 
 ## Prerequisites
 
