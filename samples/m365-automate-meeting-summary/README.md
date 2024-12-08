@@ -3,6 +3,9 @@
 
 ![automate meeting summary](./assets/demo.png)
 
+> ** 🛑 Warning:**
+> This is under review with changes to prompt to draft instead of automate. Send mail/create planner task wont work yet. 
+
 ## Summary
 This prompt is designed to automate the generation of meeting summaries by analyzing the latest email related to a meeting and extracting key points. It also creates actionable tasks in Planner based on the content of the email, schedules reminders, and sends a summary email to attendees. This helps streamline follow-ups and task management post-meetings.
 
