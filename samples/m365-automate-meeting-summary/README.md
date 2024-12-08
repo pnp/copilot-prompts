@@ -15,7 +15,7 @@ This prompt will help automate post-meeting actions, saving time and ensuring fo
 
 ## Contributors 👨‍💻
 
-[Your Name](https://github.com/YourGitHubProfile)
+[Cristian Rodriguez](https://github.com/script32)
 
 ## Version history
 
