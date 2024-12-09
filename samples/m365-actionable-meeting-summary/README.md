@@ -4,11 +4,11 @@
 ![automate meeting summary](./assets/demo.png)
 
 ## Summary
-Analyze the most recent email with the subject "Meeting Planning" and summarize the key points. Create a draft to create a task in Planner for each action item mentioned and to schedule their reminders for the next meeting on [date]. Create a draft also to send an email with the summary and the drafted tasks.
+This prompt is designed to help draft meeting summaries by analyzing the latest email related to a meeting and extracting key points. It also creates drafts for actionable tasks in Planner based on the content of the email, schedules reminders, and creates a draft summary email to be sent to attendees. This helps streamline follow-ups and task management post-meetings.
 
 ## Prompt 💡
 
-Analyze the most recent email with the subject "Meeting Planning" and summarize the key points. Create a draft to create a task in Planner for each action item mentioned and also to schedule reminders for the next meeting on [date]. Create a draft also to send an email with the summary and the drafted tasks.
+Analyze the most recent email with the subject "Meeting Planning" and summarize the key points. Create a draft to create a task in Planner for each action item mentioned and also to schedule thier reminders for the next meeting on [date]. Create a draft also to send an email with the summary and the drafted tasks.
 
 ### Description ℹ️
 This prompt will help draft post-meeting actions, saving time and ensuring follow-ups are tracked effectively.
