@@ -8,7 +8,7 @@ This prompt is designed to help draft meeting summaries by analyzing the latest 
 
 ## Prompt 💡
 
-Analyze the most recent email with the subject "Meeting Planning" and summarize the key points. Create a draft to create a task in Planner for each action item mentioned and also to schedule reminders for the next meeting on [date]. Create a draft also to send an email with the summary and the drafted tasks.
+Analyze the most recent email with the subject "Meeting Planning" and summarize the key points. Create a draft to create a task in Planner for each action item mentioned and also to schedule their reminders for the next meeting on [date]. Create a draft also to send an email with the summary and the drafted tasks.
 
 ### Description ℹ️
 This prompt will help draft post-meeting actions, saving time and ensuring follow-ups are tracked effectively.
