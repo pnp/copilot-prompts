@@ -1,20 +1,17 @@
 
-# 🚀 Automate Meeting Summary 📄
+# 🚀 Draft Actionable Tasks from Meeting Summary 📄
 
 ![automate meeting summary](./assets/demo.png)
 
-> ** 🛑 Warning:**
-> This is under review with changes to prompt to draft instead of automate. Send mail/create planner task wont work yet. 
-
 ## Summary
-This prompt is designed to automate the generation of meeting summaries by analyzing the latest email related to a meeting and extracting key points. It also creates actionable tasks in Planner based on the content of the email, schedules reminders, and sends a summary email to attendees. This helps streamline follow-ups and task management post-meetings.
+This prompt is designed to help draft meeting summaries by analyzing the latest email related to a meeting and extracting key points. It also creates drafts for actionable tasks in Planner based on the content of the email, schedules reminders, and creates a draft summary email to be sent to attendees. This helps streamline follow-ups and task management post-meetings.
 
 ## Prompt 💡
 
-Analyze the most recent email with the subject "Meeting Planning" and summarize the key points. Create a task in Planner for each action item mentioned and schedule reminders for the next meeting on [date]. Send me an email with the summary and assigned tasks.
+Analyze the most recent email with the subject "Meeting Planning" and summarize the key points. Create a draft to create a task in Planner for each action item mentioned and also to schedule reminders for the next meeting on [date]. Create a draft also to send an email with the summary and the drafted tasks.
 
 ### Description ℹ️
-This prompt will help automate post-meeting actions, saving time and ensuring follow-ups are tracked effectively.
+This prompt will help draft post-meeting actions, saving time and ensuring follow-ups are tracked effectively.
 
 ## Contributors 👨‍💻
 
@@ -49,4 +46,4 @@ We do not provide direct support for these samples, but the community is always 
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-automate-meeting-summary)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-actionable-meeting-summary)
