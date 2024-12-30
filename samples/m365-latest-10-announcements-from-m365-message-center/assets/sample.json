@@ -20,13 +20,13 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/latest-10-announcements-from-m365-message-center/assets/demo01.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-latest-10-announcements-from-m365-message-center/assets/latest-10-announcements-from-m365-message-center/assets/demo01.png",
           "alt": "Latest 10 announcements from m365 message center"
         },
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/latest-10-announcements-from-m365-message-center/assets/demo02.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-latest-10-announcements-from-m365-message-center/assets/latest-10-announcements-from-m365-message-center/assets/demo02.png",
           "alt": "Latest 10 announcements from m365 message center"
         }
       ],
