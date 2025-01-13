@@ -1,0 +1,42 @@
+[
+    {
+      "name": "copilotprompts-m365-extract-unresolved-issues",
+      "source": "pnp",
+      "title": "Extract unresolved issues from chat discussions",
+      "shortDescription": "Ask copilot to extract unresolved issues from chat discussions",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-extract-unresolved-issues",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-extract-unresolved-issues",
+      "longDescription": [
+        "This prompt will ask Copilot to extract unresolved issues from chat discussions. It will help you to identify and track the unresolved issues in the chat discussions."
+      ],
+      "creationDateTime": "2025-01-13",
+      "updateDateTime": "2025-01-13",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-extract-unresolved-issues/assets/demo.png",
+          "alt": "Prompt for extracting unresolved issues from chat discussions"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "rabwill",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/20379311?v=4",
+          "name": "Rabia Williams"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
