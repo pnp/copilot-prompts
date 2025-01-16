@@ -44,7 +44,7 @@ Version|Date|Comments
 ## Prerequisites
 
 * [Copilot for Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program)
-* [Microsoft Word](https://www.office.com/)
+
 
 ## Help
 
