@@ -22,7 +22,7 @@ The Patch function in Power Fx allows you to add new data to a data source witho
 
 Version|Date|Comments
 -------|----|--------
-1.0|October 29, 2024|Initial release
+1.0|January 16, 2025|Initial release
 
 ## Instructions 📝
 
