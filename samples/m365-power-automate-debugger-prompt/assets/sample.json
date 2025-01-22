@@ -2,12 +2,12 @@
     {
       "name": "copilotprompts-m365-Power-Automate-Debugger",
       "source": "pnp",
-      "title": "Help me prepare for my next meeting",
-      "shortDescription": "A prompt to help you prepare for your next meeting",
+      "title": "Analyze Power Automate Flow Run Error(s)",
+      "shortDescription": "Streamline error handling with CoPilot.",
       "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilotprompts-m365-Power-Automate-Debugger",
       "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilotprompts-m365-Power-Automate-Debugger",
       "longDescription": [
-        "Streamline error handling with CoPilot"
+        "A prompt to help interpret your Power Automate flow run error, and provide potential solutions."
       ],
       "creationDateTime": "2025-01-20",
       "updateDateTime": "2025-01-20",
