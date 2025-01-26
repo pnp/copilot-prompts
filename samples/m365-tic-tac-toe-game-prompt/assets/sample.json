@@ -1,0 +1,41 @@
+[
+    {
+      "name": "m365-tic-tac-toe-game-prompt",
+      "source": "pnp",
+      "title": "Play Tic-Tac-Toe game",
+      "shortDescription": "This Tic-Tac-Toe Game prompt is designed to let you play the classic game interactively with Copilot.",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-tic-tac-toe-game-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-tic-tac-toe-game-prompt",
+      "longDescription": [
+        "This Tic-Tac-Toe Game prompt is designed to let you play the classic game interactively with Copilot. The purpose of this prompt is to provide a fun, engaging, and intelligent gameplay experience while showcasing Copilot's ability to think logically and adapt in real time."
+      ],
+      "creationDateTime": "2025-01-26",
+      "updateDateTime": "2025-01-26",
+      "products": [
+        "Copilot for Microsoft 365","Microsoft Copilot"
+      ],
+      "metadata": [],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-tic-tac-toe-game-prompt/assets/tic-tac-toe-game.gif",
+          "alt": "This Tic-Tac-Toe Game prompt is designed to let you play the classic game interactively with Copilot."
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "https://github.com/shrutika-patil20",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/195265942?v=4",
+          "name": "Shrutika Patil"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
