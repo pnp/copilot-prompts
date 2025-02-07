@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-strategic-mind-agent",
+    "source": "pnp",
+    "title": "Strategic Mind Agent",
+    "shortDescription": "This prompt generates an agent to guide the user through five iterative rounds to develop a strategic mindset.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/strategic-mind-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/strategic-mind-agent",
+    "longDescription": [
+      "This prompt generates an agent to guide the user through five iterative rounds to develop a strategic mindset. The agent will ask the user to reflect on their current strategic mindset, identify areas for improvement, and set goals for the future. The agent will then provide the user with resources and exercises to help them develop their strategic mindset. After each round, the agent will ask the user to reflect on their progress and set new goals for the next round. The agent will also provide feedback and encouragement to help the user stay motivated and on track. By the end of the five rounds, the user will have developed a deeper understanding of their strategic mindset and a plan for how to improve it in the future."
+    ],
+    "creationDateTime": "2025-02-07",
+    "updateDateTime": "2025-02-07",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/strategic-mind-agent/assets/demo.png",
+        "alt": "copilotprompts-strategic-mind-agent"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "jonathan-cousins",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/64093934?v=4",
+        "name": "jonathan cousins"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
