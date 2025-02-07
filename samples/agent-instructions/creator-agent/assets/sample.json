@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-creator-agent",
+    "source": "pnp",
+    "title": "Generate structured Copilot agents",
+    "shortDescription": "Generate structured Copilot agents",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/creator-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/creator-agent",
+    "longDescription": [
+      "This prompt generates structured Copilot agents."
+    ],
+    "creationDateTime": "2025-02-07",
+    "updateDateTime": "2025-02-07",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/creator-agent/assets/demo.png",
+        "alt": "copilotprompts-creator-agent"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "cypri1",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/10461877?v=4",
+        "name": "Cyprien Maloeuvre"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
