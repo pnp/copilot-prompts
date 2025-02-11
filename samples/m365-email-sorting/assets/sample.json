@@ -1,0 +1,43 @@
+[
+    {
+      "name": "copilotprompts-m365-email-sorting",
+      "source": "pnp",
+      "title": "Email Sorting",
+      "shortDescription": "Create a structured list of Monday meetings with a "Monday" heading",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m354-email-sorting",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-email-sorting",
+      "longDescription": [
+        "YOUR-Create a structured list of Monday meetings with a "Monday" heading. List each meeting title as a main bullet and include up to 10 attendees as sub-bullets. Exclude meeting times and keep the format clear and organized."
+      ],
+      "creationDateTime": "2025-02-10",
+      "updateDateTime": "2023-02-10",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/YOUR-SAMPLE-NAME/assets/demo.png",
+          "alt": "Email sorting"
+        }
+        
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "Mmbr1606",
+          
+          "name": "Markus Franz"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
