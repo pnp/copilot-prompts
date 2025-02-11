@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/YOUR-SAMPLE-NAME/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-email-sorting/assets/demo.png",
           "alt": "Email sorting"
         }
         
