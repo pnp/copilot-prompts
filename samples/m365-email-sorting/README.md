@@ -1,46 +1,19 @@
-# Title of the sample
-
-<!--
-This is how you want the sample to appear in the samples browser.
-When naming your sample, try to give it a friendly name that describes what it does. Explain in which copilot experience (Microsoft 365, GitHub Copilot, Copilot for Word, etc.) to use the prompt.
-
-GOOD 👍:
-  Prompt for Copilot for Microsoft 365 showing how to catch up with recent team activities.
-BAD 👎:
-  prompt-summary
--->
+# Email sorting
+Organize my Monday meetings in a structured list format. At the top, include a heading labeled "Monday." Under this heading, list each meeting title as the primary bullet point. Indent and list the names of up to 10 attendees as sub-bullets beneath their respective meetings. Do not include meeting times. Keep the layout clean and easy to read.
 
 ## Summary
 
-Short summary on the contents of the sample. What does the prompt help the user achieve? In which copilot experience is it meant to be used?
-
-<!--
-Please provide a high-quality screenshot of the prompt in action. Include a screenshot of the prompt and its outcome.
-
-Upload the image in a subfolder named `assets`. Use a resolution of 1920x1080.
-
-You can add multiple screenshots to help users understand your samples without having to download  and install it.
--->
+Create a structured list of Monday meetings with a "Monday" heading. List each meeting title as a main bullet and include up to 10 attendees as sub-bullets. Exclude meeting times and keep the format clear and organized.
 
 ## Contributors
-<!--
-We use this section to recognize and promote your contributions. Please provide one author per line -- even if you worked together on it.
-
-We'll only use the info you provided here. Make sure to include your full name, not just your GitHub username.
-
-Provide a link to your GitHub profile to help others find more cool things you have done. The only link we'll accept is a link to your GitHub profile.
-
-If you want to provide links to your social media, blog, and employer name, make sure to update your GitHub profile.
--->
-
-* [Author Name](LinkToYourGitHubProfile)
+* [Markus Franz](https://github.com/Mmbr1606)
 
 ## Version history
 
 Version|Date|Comments
 -------|----|--------
-1.1|November 1, 2022|Update comment
-1.0|October 29, 2022|Initial release
+
+1.0|February 10, 2025|Initial release
 
 ## Prerequisites
 
