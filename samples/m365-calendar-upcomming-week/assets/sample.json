@@ -3,7 +3,7 @@
       "name": "copilotprompts-m365-calendar-upcomming-week",
       "source": "pnp",
       "title": "n",
-      "shortDescription": "Get calendar tasks for your upcomming week",
+      "shortDescription": "Upcoming Week: Meeting Organization and Task Prep",
       "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-calendar-upcomming-week",
       "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-calendar-upcomming-week",
       "longDescription": [

@@ -1,4 +1,4 @@
-# 🚀 Mail overview by sorting and categorizing after vacation
+# Upcoming Week: Meeting Organization and Task Prep
 
 ![Sort emails by priority](./assets/demo.png)
 
@@ -10,15 +10,10 @@ This prompt requests a structured overview of meetings for the upcoming week, pr
 ## Prompt💡
 
 Please prepare an overview of my meetings for the upcoming week with the following details:
-
 List all meetings where I am the organizer, but exclude those that already have an agenda. Sort these by date.
-
 List meetings where I am mentioned in the agenda and have specific tasks or action items to prepare. Sort these after the first category.
-
 List any remaining relevant meetings that do not fall into the above categories but may still require my attention.
-
 Do not include recurring meetings such as status meetings or routine check-ins unless I have a specific task to prepare.
-
 Format the output in a structured way, grouping by category and sorting by date within each category.
 
 
@@ -26,9 +21,8 @@ Format the output in a structured way, grouping by category and sorting by date 
 
 Every Friday, I use this prompt to prepare for the upcoming week by organizing my meetings and tasks efficiently. The prompt generates a structured overview of my meetings, prioritizing:
 
-Meetings I organize without an agenda (to ensure I set one).
-
-Meetings where I have assigned tasks (so I can prepare in advance).
+* Meetings I organize without an agenda (to ensure I set one).
+* Meetings where I have assigned tasks (so I can prepare in advance).
 
 This process helps me stay on top of my responsibilities, ensuring that I have clarity on what needs to be done before the week starts.
 
