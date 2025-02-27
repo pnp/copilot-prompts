@@ -1,6 +1,6 @@
 # 🤖 Summarize Copilot chat as page 📃
 
-![Summarize Copilot conversation as page](./assets/conversaion-summary-as-page-prompt.jpg)
+![Summarize Copilot conversation as page](./assets/conversaion-summary-as-page-prompt.png)
 
 ## Summary
 This prompt is designed to generate a concise summary of the responses Copilot gave in a long conversation and save it as a Copilot Page.
@@ -48,4 +48,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-latest-10-announcements-from-m365-message-center)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-summarize-responses-as-page)
