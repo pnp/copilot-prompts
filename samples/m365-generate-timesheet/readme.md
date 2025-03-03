@@ -1,4 +1,4 @@
-# 🚀 Prompt for generating meeting descriptions 📅
+# 🚀 Generate Rough Consolidated Timesheet Overview for [Day] 📅
 
 ## Summary
 
@@ -8,7 +8,7 @@ Can you compile my timesheet for [day]? Focus on emails, meetings and chat messa
 
 ### Descriptionℹ️
 
-[English](./en-us/prompt.md)
+Give a consolidated timesheet for a specific day based on activities. This will be based on meeting times and a rough idea on time spent for mails, chat etc which user can then readjust.  
 
 ## Contributors 👨‍💻
 
