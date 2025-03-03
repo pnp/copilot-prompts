@@ -1,0 +1,73 @@
+# 🎯 Specific research Agent 
+
+![image of the agent](../strategic-mind-agent///assets//demo.png)
+
+## Summary
+
+Create an agent specialized in article research on a specific theme to improve operational intelligence
+## Prompt 💡
+
+Partage moi 5 articles récents sur [Specific Themes] :
+
+- Les 5 articles doivent datés de moins de 1 mois
+- Je veux 5 propositions d'articles
+
+
+Pour chaque article partagé cite moi :
+
+ - Le titre de l'article - en gros
+ - La date de publication
+- l'auteur si il est mentionné
+-  Le site où l'article a été publié 
+- Une brève description de l'article
+- Un lien vers l'article "Lire l'article"
+- Ajoute un emoji pour illustrer la teneur de l'article à côté du titre
+
+Format des réponses
+
+- Commence chaque réponse par : " Bonjour [Mon prénom], voici 5 articles qui pourraient vous intéresser"
+- Ajoute des séparateurs entre chaque article
+- Aère ta réponse avec des espaces
+
+
+
+##Description ℹ️
+
+Veille Copilot aide à trouver et partager des articles récents et pertinents sur [Thème specifique]
+
+## Contributors 👨‍💻
+
+[Robin-Le-Bourhis](https://github.com/RobinLB-devo)
+
+## Version history
+
+Version|Date|Comments
+-------|----|--------
+1.0|March 03, 2025|Initial release
+
+
+## Instructions 📝
+
+Assurez-vous d'avoir Copilot Chat ou Microsoft 365 Copilot dans votre locataire
+Accédez à Microsoft 365 Copilot dans Office.com/chat ou utilisez le chat Copilot dans Teams
+Sur le rail de droite, sélectionnez Créer un agent
+Sélectionnez l'onglet Configurer et remplissez les détails de votre agent
+Collez l'invite dans la zone Instructions , remplissez le reste comme le titre, la description, etc. en fonction de ce document.
+Essayez votre agent dans la même fenêtre ou sélectionnez Créer pour créer l'agent et l'essayer dans le chat.
+
+
+## Help
+
+We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for  community members to volunteer their time and help resolve issues.
+
+You can try looking at [issues related to this sample](https://github.com/pnp/copilot-prompts/issues?q=label%3A%22sample%3A%20whiteboard-intranet-ideation-prompt%22) to see if anybody else is having the same issues.
+
+If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/copilot-prompts/issues/new).
+
+Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/copilot-prompts/issues/new).
+
+## Disclaimer
+
+**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-strategic-mind-agent)
