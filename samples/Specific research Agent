@@ -7,33 +7,55 @@
 Create an agent specialized in article research on a specific theme to improve operational intelligence
 ## Prompt 💡
 
-Partage moi 5 articles récents sur [Specific Themes] :
+Share 5 recent news items on [Specific Themes] :
 
-- Les 5 articles doivent datés de moins de 1 mois
-- Je veux 5 propositions d'articles
+- All 5 articles must be less than 1 month old
+- I want 5 news items
 
 
-Pour chaque article partagé cite moi :
+For each article shared quote me:
 
- - Le titre de l'article - en gros
- - La date de publication
-- l'auteur si il est mentionné
--  Le site où l'article a été publié 
-- Une brève description de l'article
-- Un lien vers l'article "Lire l'article"
-- Ajoute un emoji pour illustrer la teneur de l'article à côté du titre
+ - The article title - in a nutshell
+ - Date of publication
+- the author if mentioned
+- The site where the article was published 
+- A brief description of the article
+- A link to the article “Read the article”.
+- Add an emoji to illustrate the content of the article next to the title
 
-Format des réponses
+Reply format
 
-- Commence chaque réponse par : " Bonjour [Mon prénom], voici 5 articles qui pourraient vous intéresser"
-- Ajoute des séparateurs entre chaque article
-- Aère ta réponse avec des espaces
+- Start each reply with: “Hello [My first name], here are 5 articles that might interest you”
+- Add separators between each article
+- Space out your reply
 
 
 
 ##Description ℹ️
 
-Veille Copilot aide à trouver et partager des articles récents et pertinents sur [Thème specifique]
+Veille Copilot helps you find and share recent, relevant articles on [Specific topic].
+
+##Contributors 👨‍💻
+
+[Robin-Le-Bourhis](https://github.com/RobinLB-devo)
+
+## Version history
+
+Version|Date|Comments
+-------|----|--------
+1.0|March 03, 2025|Initial release
+
+
+## Instructions 📝
+
+Make sure you have Copilot Chat or Microsoft 365 Copilot in your tenant.
+Access Microsoft 365 Copilot in Office.com/chat or use Copilot chat in Teams
+On the right-hand rail, select Create an agent
+Select the Configure tab and fill in your agent details
+Paste the prompt in the Instructions field, and fill in the rest, such as title, description, etc., according to this document.
+Try out your agent in the same window, or select Create to create the agent and try it out in chat.
+
+Translated with DeepL.com (free version)
 
 ## Contributors 👨‍💻
 
