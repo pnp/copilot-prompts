@@ -1,7 +1,10 @@
-# Email sorting
+# Organize Monday Meetings
+
+## Prompt
+
 Organize my Monday meetings in a structured list format. At the top, include a heading labeled "Monday." Under this heading, list each meeting title as the primary bullet point. Indent and list the names of up to 10 attendees as sub-bullets beneath their respective meetings. Do not include meeting times. Keep the layout clean and easy to read.
 
-## Summary
+## Description
 
 Create a structured list of Monday meetings with a "Monday" heading. List each meeting title as a main bullet and include up to 10 attendees as sub-bullets. Exclude meeting times and keep the format clear and organized.
 
@@ -12,7 +15,6 @@ Create a structured list of Monday meetings with a "Monday" heading. List each m
 
 Version|Date|Comments
 -------|----|--------
-
 1.0|February 10, 2025|Initial release
 
 ## Prerequisites
@@ -53,4 +55,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/YOUR-SAMPLE-NAME)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-email-sorting)
