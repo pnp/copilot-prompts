@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-specific-news-research-agent",
+    "source": "pnp",
+    "title": "Specific News research Agent",
+    "shortDescription": "This prompt help users get latest news articles on a topic.",
+     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/specific-research-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/specific-research-agent",
+    "longDescription": [
+      "This prompt help users get latest news articles on a topic. The agent will ask the user to provide a specific topic and then search for the latest news articles related to that topic. The agent will also provide the user with a summary of the articles and any relevant links."
+    ],
+    "creationDateTime": "2025-03-03",
+    "updateDateTime": "2025-03-03",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/specific-research-agentt/assets/demo.png",
+        "alt": "copilotprompts-specific-news-research-agent"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "RobinLB-devo",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/201558093?v=4",
+        "name": "Robin-Le-Bourhis"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

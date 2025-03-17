@@ -1,10 +1,10 @@
-# 🎯 Specific research Agent 
+# 🎯 Specific News research Agent 
 
-![image of the agent](../strategic-mind-agent///assets//demo.png)
+![image of the agent](./assets/demo.png)
 
 ## Summary
-
 Create an agent specialized in article research on a specific theme to improve operational intelligence
+
 ## Prompt 💡
 
 Share 5 recent news items on [Specific Themes] :
@@ -35,7 +35,7 @@ Reply format
 
 Veille Copilot helps you find and share recent, relevant articles on [Specific topic].
 
-##Contributors 👨‍💻
+## Contributors 👨‍💻
 
 [Robin-Le-Bourhis](https://github.com/RobinLB-devo)
 
@@ -92,4 +92,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-strategic-mind-agent)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-specific-news-research-agent)
