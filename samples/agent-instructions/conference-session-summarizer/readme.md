@@ -93,6 +93,10 @@ Add description to refine agents behavior. Make sure to use short, precise and s
 Paste the prompt in the Instructions field, and alter it according to your needs.
 Try out your agent in the same window.
 
+## Prerequisites
+
+* [Copilot Studio](https://copilotstudio.microsoft.com/)
+
 ## Help
 
 We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for  community members to volunteer their time and help resolve issues.
