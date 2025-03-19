@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/conference-session-summarizer/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/conference-session-summarizer/assets/demo.png",
         "alt": "copilotprompts-conference-session-summarizer"
       }
     ],
