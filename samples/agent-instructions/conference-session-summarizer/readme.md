@@ -7,7 +7,7 @@
 
 ## Summary
 
-Create an agent which will summarize a speaker session at a Conference. This example summarises the Speaker sessions from ESPC 2024
+Create an agent in Copilot studio, which will summarize a speaker session at a Conference.
 
 ## Prompt 💡
 
