@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-m365-summarize-responses-as-page",
+    "source": "pnp",
+    "title": "Summarize Copilot chat as page",   
+    "shortDescription": "This prompt helps you summarise responses to create a Microsoft 365 Copilot page.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-summarize-responses-as-page",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-summarize-responses-as-page",
+    "longDescription": [
+      "This prompt helps you summarise chat responses to create a Microsoft 365 Copilot page."
+    ],
+    "creationDateTime": "2025-03-25",
+    "updateDateTime": "2025-03-25",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-summarize-responses-as-page/assets/conversaion-summary-as-page-prompt.png",
+        "alt": "Prompt to summarise reponse as page"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sparkitect",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/9206808?v=4",
+        "name": "Jim Duncan"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
