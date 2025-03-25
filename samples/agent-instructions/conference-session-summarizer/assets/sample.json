@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-conference-session-summarizer",
+    "source": "pnp",
+    "title": "Conference session summarizer",
+    "shortDescription": "This prompt help users to summarize a speaker session from a Conference.",
+     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/conference-session-summarizer",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/conference-session-summarizer",
+    "longDescription": [
+      "This prompt help users to summarize a speaker session from a Conference. The agent will parse session notes, speaker presentations, recordings, and any relevant documentation uploaded as knowledge, and summarizes the output of key take aways, speaker insights, along with the reference links."
+    ],
+    "creationDateTime": "2025-03-19",
+    "updateDateTime": "2025-03-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/conference-session-summarizer/assets/demo.png",
+        "alt": "copilotprompts-conference-session-summarizer"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "NishkalankBezawada",
+        "pictureUrl": "https://avatars.githubusercontent.com/NishkalankBezawada",
+        "name": "Nishkalank Bezawada"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
