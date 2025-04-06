@@ -2,7 +2,7 @@
     {
       "name": "copilotprompts-m365-generate-timesheet",
       "source": "pnp",
-      "title": "Generate your timesheet for a certain day",
+      "title": "Generate Rough Consolidated Timesheet Overview for [Day]",
       "shortDescription": "This prompt list the time you spend during your day based on e-mail, meetings and chats.",
       "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-timesheet",
       "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-timesheet",
