@@ -7,7 +7,7 @@
       "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m354-email-sorting",
       "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-email-sorting",
       "longDescription": [
-        "YOUR-Create a structured list of Monday meetings with a Monday heading. List each meeting title as a main bullet and include up to 10 attendees as sub-bullets. Exclude meeting times and keep the format clear and organized."
+        "Create a structured list of Monday meetings with a Monday heading. List each meeting title as a main bullet and include up to 10 attendees as sub-bullets. Exclude meeting times and keep the format clear and organized."
       ],
       "creationDateTime": "2025-02-10",
       "updateDateTime": "2023-02-10",
