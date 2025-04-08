@@ -1,0 +1,43 @@
+[
+    {
+      "name": "copilotprompts-m365-email-ranking",
+      "source": "pnp",
+      "title": "Email Ranking",
+      "shortDescription": "",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-email-ranking",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-email-ranking",
+      "longDescription": [
+        ""
+      ],
+      "creationDateTime": "2025-04-09",
+      "updateDateTime": "2025-04-09",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "",
+          "alt": "Email ranking"
+        }
+        
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "stevecorey365",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/81244934?v=4",
+          "name": "Steve Corey"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
