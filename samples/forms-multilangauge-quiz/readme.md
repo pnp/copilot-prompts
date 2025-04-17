@@ -16,7 +16,7 @@ Create a multilingual quiz in Microsoft Forms based on the parameters below:
 - **Answers**: Provide each answer option in all selected languages, separated by [separator]. If an answer is universal (e.g., numbers, mathematical or scientific formulas, units of measurement, symbols and special characters, proper nouns, chemical elements or symbols, common acronyms or initialisms, dates or years), include it only once without translation.  
 - **Explanations**: For each correct answer, include a short explanation in all languages, separated by [separator].
 
-### Parameters:
+**Parameters:**
 
 - **Topic**:  
 - **Languages**: English, Polish  
