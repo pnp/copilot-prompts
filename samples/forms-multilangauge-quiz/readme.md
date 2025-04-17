@@ -4,7 +4,7 @@
 
 ## Summary
 
-This guide helps you create a multilingual quiz in Microsoft Forms. Since Microsoft Forms does not natively support multiple languages in a single form, questions and answers must be manually written in each language. This can be daunting and time-consuming, but this guide offers a clear prompt and structured approach to make the process easier.
+This guide provides a structured approach to creating multilingual quizzes in Microsoft Forms. Since Microsoft Forms does not natively support multiple languages within a single quiz, each question and answer must be manually entered in all required languages. To simplify this process, the guide offers a ready-to-use prompt and clear instructions to help you build consistent, professional, and accessible multilingual quizzes with minimal effort.
 
 ## Prompt 💡
 
