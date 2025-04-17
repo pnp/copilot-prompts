@@ -1,6 +1,6 @@
 # 🌐 Multilanguage Quiz in Microsoft Forms 📝
 
-![Demo](./assets/demo.png)
+![Demo](./assets/Demo_Copilot_Forms_Quiz_Multilingual.gif)
 
 ## Summary
 
