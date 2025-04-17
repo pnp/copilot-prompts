@@ -53,18 +53,20 @@ Create a multilingual quiz in Microsoft Forms based on the parameters below:
 ## Prerequisites
 
 - [A Microsoft 365 license with access to Microsoft Forms](https://learn.microsoft.com/en-us/office365/servicedescriptions/microsoft-forms-service-description)  
-- Microsoft Copilot license  
+- [Copilot for Microsoft 365](https://learn.microsoft.com/en-us/copilot/microsoft-365/microsoft-365-copilot-licensing)
 
 ## Help
 
-We do not officially support samples, but the community is always willing to help and improve them. We use GitHub Issues for tracking:
+We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for  community members to volunteer their time and help resolve issues.
 
-- Check if your issue has already been reported: [Open Issues](https://github.com/pnp/copilot-prompts/issues?q=label%3A%22sample%3A%20YOUR-SAMPLE-NAME%22)  
-- Report a new issue or bug: [New Issue](https://github.com/pnp/copilot-prompts/issues/new)  
-- Suggest an improvement or enhancement: [Submit an Idea](https://github.com/pnp/copilot-prompts/issues/new)
+You can try looking at [issues related to this sample](https://github.com/pnp/copilot-prompts/issues?q=label%3A%22sample%3A%20YOUR-SAMPLE-NAME%22) to see if anybody else is having the same issues.
+
+If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/copilot-prompts/issues/new).
+
+Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/copilot-prompts/issues/new).
 
 ## Disclaimer
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-[Visitor Stats](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-multilanguage-quiz)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-mail-overview-vacation)
