@@ -20,7 +20,7 @@
     {
       "type": "image",
       "order": 100,
-      "url": "https://github.com/pnp/copilot-prompts/raw/forms-prompt/samples/m365-multilanguage-quiz/assets/demo.png",
+      "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-multilanguage-quiz/assets/demo.png",
       "alt": "Multilanguage Quiz in Microsoft Forms"
     }
   ],
