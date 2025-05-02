@@ -1,28 +1,28 @@
 
 
-# 🚀 Draft Actionable Tasks from Meeting Summary 📄
+# 🚀 Define today's course of actions for me 📄
 
-![automate meeting summary](./assets/demo.png)
+![Define Course of actions](./assets/demo.png)
 
 ## Summary
-This prompt is designed to help draft meeting summaries by analyzing the latest email related to a meeting and extracting key points. It also creates drafts for actionable tasks in Planner based on the content of the email, schedules reminders, and creates a draft summary email to be sent to attendees. This helps streamline follow-ups and task management post-meetings.
+This prompt is crafted to assist users returning from a long break in catching up on missed activities and identifying the actions they need to take. It is also useful for anyone who requires a daily list of tasks or actions by referencing unread emails and Teams conversations. The prompt provides a bulleted list that includes the title of the discussion, a brief context, and the specific request or action needed from you.
 
 ## Prompt 💡
 
-Analyze the most recent email with the subject "Meeting Planning" and summarize the key points. Create a draft to create a task in Planner for each action item mentioned and also to schedule their reminders for the next meeting on [date]. Create a draft also to send an email with the summary and the drafted tasks.
+You are a skilled personal assistant tasked to optimize my work. Your tasks include summarizing unread Teams messages and Outlook emails into a bulleted list with brief description which consists of Title of discussion, little context and ask from me , sorted by priority from high to low. You determine the priority by analyzing my work patterns and collaborations over the past [number of days] days. Use your expertise to outline the most effective course of actions for my day.
 
 ### Description ℹ️
-This prompt will help draft post-meeting actions, saving time and ensuring follow-ups are tracked effectively.
+This prompt helps users catch up on missed activities and identify necessary actions after a break or for daily task management by referencing unread emails and Teams conversations. It provides a bulleted list with the title of the discussion, brief context, and specific requests or actions needed.
 
 ## Contributors 👨‍💻
 
-[Cristian Rodriguez](https://github.com/script32)
+[Gourav Bagora](https://github.com/GouravBagora)
 
 ## Version history
 
 Version|Date|Comments
 -------|----|--------
-1.0|Dec 4, 2024|Initial release
+1.0|May 2, 2025|Initial release
 
 ## Instructions 📝
 
@@ -47,4 +47,4 @@ We do not provide direct support for these samples, but the community is always 
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-actionable-meeting-summary)
+![]([https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-actionable-meeting-summary](https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-Define-todays-course-of-actions-for-me))
