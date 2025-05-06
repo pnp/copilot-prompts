@@ -1,0 +1,44 @@
+
+[
+    {
+      "name": "copilotprompts-m365-Define-todays-course-of-actions-for-me",
+      "source": "pnp",
+      "title": "Define course of actions",
+      "shortDescription": "",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-Define-todays-course-of-actions-for-me",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-Define-todays-course-of-actions-for-me",
+      "longDescription": [
+        "This prompt helps users catch up on missed activities and identify necessary actions after a break or for daily task management by referencing unread emails and Teams conversations. It provides a bulleted list with the title of the discussion, brief context, and specific requests or actions needed."
+      ],
+      "creationDateTime": "2025-05-02",
+      "updateDateTime": "2025-05-02",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-Define-todays-course-of-actions-for-me/assets/Thumbnail.png",
+          "alt": "Course of Actions"
+        }
+        
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "GouravBagora",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/60379353",
+          "name": "Gourav Bagora"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
