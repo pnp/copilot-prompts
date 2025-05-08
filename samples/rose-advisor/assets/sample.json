@@ -1,0 +1,42 @@
+[
+    {
+      "name": "rose-advisor",
+      "source": "pnp",
+      "title": "Rose Advisor",
+      "shortDescription": "Recommends optimal rose varieties based on USDA Hardiness Zone and growing conditions.",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-sharepoint-SPFx-version-update-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-sharepoint-SPFx-version-update-prompt",
+      "longDescription": [
+        "The agent designed to recommend optimal rose varieties tailored to the user's USDA Hardiness Zone, growing conditions, and common rose health challenges. It also provides suggestions for reputable rose breeders and disease-resistant varieties, helping users make informed decisions for successful rose cultivation."
+      ],
+      "creationDateTime": "2025-05-08",
+      "updateDateTime": "2025-05-08",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/rose-advisor/assets/demo.png",
+          "alt": "Prompt for selecting the best rose varieties"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "https://github.com/gretchunkim",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/8564035?v=4",
+          "name": "Azores gretchunkim"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
