@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/roseadvisor/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/rose-advisor/assets/demo.png",
           "alt": "Prompt for selecting the best rose varieties"
         }
       ],
