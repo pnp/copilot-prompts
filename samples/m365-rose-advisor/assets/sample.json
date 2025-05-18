@@ -1,11 +1,11 @@
 [
     {
-      "name": "rose-advisor",
+      "name": "copilotprompts-m365-rose-advisor",
       "source": "pnp",
       "title": "Rose Advisor",
       "shortDescription": "Recommends optimal rose varieties based on USDA Hardiness Zone and growing conditions.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-sharepoint-SPFx-version-update-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-sharepoint-SPFx-version-update-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-rose-advisor",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-rose-advisor",
       "longDescription": [
         "The agent designed to recommend optimal rose varieties tailored to the user's USDA Hardiness Zone, growing conditions, and common rose health challenges. It also provides suggestions for reputable rose breeders and disease-resistant varieties, helping users make informed decisions for successful rose cultivation."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/rose-advisor/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-rose-advisor/assets/demo.png",
           "alt": "Prompt for selecting the best rose varieties"
         }
       ],
