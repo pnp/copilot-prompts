@@ -1,7 +1,6 @@
 
 
 # 🚀 Define today's course of actions for me 📄
-
 ![Define Course of actions](./assets/demo.png)
 
 ## Summary
@@ -47,4 +46,4 @@ We do not provide direct support for these samples, but the community is always 
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![]([https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-actionable-meeting-summary](https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-Define-todays-course-of-actions-for-me))
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-define-todays-actions)

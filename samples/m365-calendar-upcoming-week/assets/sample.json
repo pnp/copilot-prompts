@@ -1,11 +1,11 @@
 [
     {
-      "name": "copilotprompts-m365-calendar-upcomming-week",
+      "name": "copilotprompts-m365-calendar-upcoming-week",
       "source": "pnp",
       "title": "Upcoming Week: Meeting Organization and Task Prep",
       "shortDescription": "This prompt helps organize meetings agendas and tasks for the upcoming week",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-calendar-upcomming-week",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-calendar-upcomming-week",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-calendar-upcoming-week",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-calendar-upcoming-week",
       "longDescription": [
         "This prompt helps organize meetings and tasks for the upcoming week, ensuring preparation and preventing anything from being overlooked."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-calendar-upcomming-week/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-calendar-upcoming-week/assets/demo.png",
           "alt": "prompt result in structure"
         }
       ],
