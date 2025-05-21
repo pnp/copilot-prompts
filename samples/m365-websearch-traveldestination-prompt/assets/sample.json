@@ -4,7 +4,7 @@
       "source": "pnp",
       "title": "Email Sorting",
       "shortDescription": "Create a table of closest travel destinations",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-websearch-traveldestination",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-websearch-traveldestination-prompt",
       "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-websearch-traveldestination-prompt",
       "longDescription": [
         "Generate a table using web search that lists the top 5 closest travel destinations from the United Kingdom where the temperature is expected to exceed 15°C over the next 10 days, and which are reachable by air in under 2 hours."
@@ -21,7 +21,7 @@
           "type": "image",
           "order": 100,
           "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-websearch-traveldestination-prompt/assets/demo-prompt-travel-plan.png",
-          "alt": "Email sorting"
+          "alt": "travel prompt"
         }
         
       ],
