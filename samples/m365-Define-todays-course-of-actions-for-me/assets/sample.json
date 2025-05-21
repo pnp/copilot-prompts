@@ -21,7 +21,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-define-todays-course-of-actions-for-me/assets/Thumbnail.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-define-todays-course-of-actions-for-me/assets/demo.png",
           "alt": "Course of Actions"
         }
         
