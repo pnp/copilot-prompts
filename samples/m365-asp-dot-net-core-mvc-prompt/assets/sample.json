@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-asp-dot-net-core-mvc-prompt",
+      "name": "copilotprompts-m365-asp-dot-net-core-mvc-prompt",
       "source": "pnp",
       "title": "ASP.Net Core MVC Programming",
       "shortDescription": "Prompt to generate the desired HTML and apply CSS classes conditionally",

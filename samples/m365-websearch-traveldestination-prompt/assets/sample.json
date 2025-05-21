@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-websearch-traveldestination",
+      "name": "copilotprompts-m365-websearch-traveldestination",
       "source": "pnp",
       "title": "Email Sorting",
       "shortDescription": "Create a table of closest travel destinations",

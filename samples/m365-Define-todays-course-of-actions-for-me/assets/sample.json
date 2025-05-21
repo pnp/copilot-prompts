@@ -1,12 +1,12 @@
 
 [
     {
-      "name": "copilotprompts-m365-Define-todays-course-of-actions-for-me",
+      "name": "copilotprompts-m365-define-todays-course-of-actions-for-me",
       "source": "pnp",
       "title": "Define course of actions",
       "shortDescription": "",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-Define-todays-course-of-actions-for-me",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-Define-todays-course-of-actions-for-me",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-define-todays-course-of-actions-for-me",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-define-todays-course-of-actions-for-me",
       "longDescription": [
         "This prompt helps users catch up on missed activities and identify necessary actions after a break or for daily task management by referencing unread emails and Teams conversations. It provides a bulleted list with the title of the discussion, brief context, and specific requests or actions needed."
       ],
@@ -21,7 +21,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-Define-todays-course-of-actions-for-me/assets/Thumbnail.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-define-todays-course-of-actions-for-me/assets/Thumbnail.png",
           "alt": "Course of Actions"
         }
         

@@ -1,11 +1,11 @@
 [
     {
-      "name": "copilotprompts-m365-Power-Automate-Debugger",
+      "name": "copilotprompts-m365-power-automate-debugger",
       "source": "pnp",
       "title": "Analyze Power Automate Flow Run Error(s)",
       "shortDescription": "Streamline error handling with CoPilot.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilotprompts-m365-Power-Automate-Debugger",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilotprompts-m365-Power-Automate-Debugger",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-power-automate-debugger",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-power-automate-debugger",
       "longDescription": [
         "A prompt to help interpret your Power Automate flow run error, and provide potential solutions."
       ],
