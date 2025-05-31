@@ -1,0 +1,41 @@
+[
+    {
+      "name": "wellness-influencer-content-creator",
+      "source": "pnp",
+      "title": "Create content for social media with Copilot",
+      "shortDescription": "This Wellness Influencer Social Media Content Creator prompt offers a glimpse into how social media content creators can use Copilot to craft engaging, educational, and motivational content.",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/wellness-influencer-content-creator",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/wellness-influencer-content-creator",
+      "longDescription": [
+        "This Wellness Influencer Social Media Content Creator prompt offers a glimpse into how social media content creators can use Copilot to craft engaging, educational, and motivational content. It guides Copilot to generate daily themed content—including challenges, benefits, affirmations, and practical tips—designed to promote healthy habits and holistic well-being. Perfect for creators looking to inspire their audience and build consistent, high-impact content with ease."
+      ],
+      "creationDateTime": "2025-05-31",
+      "updateDateTime": "2025-05-31",
+      "products": [
+        "Microsoft Copilot on macOS", "Microsoft Copilot"
+      ],
+      "metadata": [],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/wellness-influencer-content-creator/assets/wellness-influencer-content-creator.gif",
+          "alt": "This Wellness Influencer Social Media Content Creator prompt offers a glimpse into how social media content creators can use Copilot to craft engaging, educational, and motivational content."
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "https://github.com/shrutika-patil20",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/195265942?v=4",
+          "name": "Shrutika Patil"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
