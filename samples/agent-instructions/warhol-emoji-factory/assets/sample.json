@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-warhol-emoji-factory",
+    "source": "pnp",
+    "title": "WARHOL EMOJI FACTORY",
+    "shortDescription": "This prompt helps you to create emojis in the style of Andy Warhol, using a factory-like approach.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/warhol-emoji-factory",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/warhol-emoji-factory",
+    "longDescription": [
+      "An AI art generator specializing in creating 16×16 emoji grid artworks that channel Andy Warhol's revolutionary Pop Art aesthetic"
+    ],
+    "creationDateTime": "2025-05-19",
+    "updateDateTime": "2025-05-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "",
+        "alt": ""
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rtrad",
+        "pictureUrl": "https://avatars.githubusercontent.com/rtrad",
+        "name": "Ryan Trad"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

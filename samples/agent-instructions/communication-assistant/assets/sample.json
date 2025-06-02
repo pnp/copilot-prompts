@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-communication-assistant",
+    "source": "pnp",
+    "title": "Communication Assistant for a Kinder World",
+    "shortDescription": "This prompt helps you to communicate in a more kind and empathetic way embodying Microsoft's Responsible AI principles.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/communication-assistant",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/communication-assistant",
+    "longDescription": [
+      "This Communication Assistant for a Kinder World aims to deeply embody Microsoft's Responsible AI principles, especially Inclusiveness, Fairness, and Reliability and Safety. I believe in using AI ethically to foster communication where people respect each other, contributing to a better society."
+    ],
+    "creationDateTime": "2025-05-19",
+    "updateDateTime": "2025-05-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "",
+        "alt": ""
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "syam1977",
+        "pictureUrl": "https://avatars.githubusercontent.com/syam1977",
+        "name": "Shinichi Yamada"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

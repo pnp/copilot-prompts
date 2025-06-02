@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-elevator-pitch-alchemist",
+    "source": "pnp",
+    "title": "Elevator-Pitch Alchemist",
+    "shortDescription": "Turn any half-baked thought into a 90-second pitch that makes heads snap.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/elevator-pitch-alchemist",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/elevator-pitch-alchemist",
+    "longDescription": [
+      "Turn any half-baked thought into a 90-second pitch that makes heads snap."
+    ],
+    "creationDateTime": "2025-05-19",
+    "updateDateTime": "2025-05-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "",
+        "alt": ""
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "andbalashov",
+        "pictureUrl": "https://avatars.githubusercontent.com/andbalashov",
+        "name": "Andrii Balashov"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

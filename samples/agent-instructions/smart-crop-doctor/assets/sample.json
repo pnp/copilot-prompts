@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-smart-crop-doctor",
+    "source": "pnp",
+    "title": "AgriGuard – Smart Crop Doctor",
+    "shortDescription": "An agent designed to assist farmers, agronomists, and agricultural extension workers in diagnosing crop health issues",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/smart-crop-doctor",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/smart-crop-doctor",
+    "longDescription": [
+      "AgriGuard is an AI agent designed to assist farmers, agronomists, and agricultural extension workers in diagnosing crop health issues. It leverages advanced image recognition and machine learning algorithms to analyze images of crops and provide actionable insights for disease management, pest control, and nutrient deficiencies. The agent can also suggest best practices for crop care based on the latest agricultural research and local conditions."
+    ],
+    "creationDateTime": "2025-05-19",
+    "updateDateTime": "2025-05-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "",
+        "alt": ""
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "Shrusti13",
+        "pictureUrl": "https://avatars.githubusercontent.com/Shrusti13",
+        "name": "Shrushti Shah"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
