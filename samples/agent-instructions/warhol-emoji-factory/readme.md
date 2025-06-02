@@ -1,8 +1,7 @@
 # 🎯 WarholEmojiFactory
 
-<div style="padding: 10px; background-color: gold; color: black; font-weight: bold; text-align: center; border-radius: 10px;">
-  🏆 Agent contest winner at Microsoft Build 2025 🏆
-</div>
+> ## 🏆 Agent contest winner at Microsoft Build 2025  🏆  
+> Congratulations! You did it! 🎉
 
 ## Summary
 

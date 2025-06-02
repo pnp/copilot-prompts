@@ -1,8 +1,8 @@
 # 🎯 AgriGuard – Smart Crop Doctor
 
-<div style="padding: 10px; background-color: gold; color: black; font-weight: bold; text-align: center; border-radius: 10px;">
-  🏆 Agent contest runner up at Microsoft Build 2025 🏆
-</div>
+> ## 🏆 Agent contest runner up at Microsoft Build 2025  🏆  
+> Congratulations! You did it! 🎉
+
 
 ## Summary
 
