@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-peace-keeper-agent",
+    "source": "pnp",
+    "title": "PeaceKeeper: AI-Powered Conflict Resolution & De-escalation Advisor",
+    "shortDescription": "The PeaceKeeper Agent is designed to assist in conflict resolution and de-escalation.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/peace-keeper-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/peace-keeper-agent",
+    "longDescription": [
+      "The PeaceKeeper Agent is designed to assist in conflict resolution and de-escalation."
+    ],
+    "creationDateTime": "2025-05-19",
+    "updateDateTime": "2025-05-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "",
+        "alt": ""
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "shshukla77",
+        "pictureUrl": "https://avatars.githubusercontent.com/shshukla77",
+        "name": "Shubham Shukla"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
