@@ -20,8 +20,8 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/communication-assistant/assets/demo.png",
-        "alt": "copilotprompts-communication-assistant"
+        "url": "",
+        "alt": ""
       }
     ],
     "authors": [

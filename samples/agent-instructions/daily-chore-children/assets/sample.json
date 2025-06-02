@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-daily-chore-children",
+    "source": "pnp",
+    "title": "The Hero's Chore Journey - An AI-powered gamification of daily chores for chidren",
+    "shortDescription": "An AI-powered gamification of daily chores for chidren",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/daily-chore-children",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/daily-chore-children",
+    "longDescription": [
+      "This sample demonstrates how to use Microsoft Copilot to gamify daily chores for children. It provides a structured approach to encourage children to complete their chores by turning them into a fun and engaging game."
+    ],
+    "creationDateTime": "2025-05-19",
+    "updateDateTime": "2025-05-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "",
+        "alt": ""
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "brunosilvadev",
+        "pictureUrl": "https://avatars.githubusercontent.com/brunosilvadev",
+        "name": "Bruno Silva"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

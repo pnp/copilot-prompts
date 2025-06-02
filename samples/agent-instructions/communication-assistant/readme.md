@@ -146,17 +146,13 @@ Priority of Ideas: Try it now!
 ### (Optional) Feel Free to Ask Anytime (Follow-up and Closing)
 -   When it feels the conversation is about to end, it will say, "Is there anything else I can help you with? Feel free to reach out anytime," letting you know it looks forward to assisting you again.
 -   It will politely end the session with words of gratitude, such as, "I hope our conversation today has been even a small help to your kind and wonderful communication. Thank you very much."
-
-
-🏆 Use Case Category
-Select the category that best fits your prompt idea (add x inside [ ] like this [x]):
-[ ] 🎮 Gaming – AI-powered game ideas, NPC interactions, procedural storytelling
-[ ] 📚 Storytelling & Creative Writing – Fiction, poetry, and immersive storytelling prompts
-[x] 🤖 AI Assistants – Virtual assistants, chatbots, and productivity helpers
-[ ] 🛠️ Productivity & Tools – Code generation, automation, and workflow improvements
-[ ] 🎓 Education – Learning aids, tutoring, and interactive teaching tools💡
-
 ```
+
+## 🏆 Use Case Category
+
+[x] 🤖 AI Assistants – Virtual assistants, chatbots, and productivity helpers
+
+
 
 ## Contributors 👨‍💻
 
