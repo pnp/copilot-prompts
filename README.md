@@ -6,6 +6,25 @@ This repository contains examples of prompts for Microsoft Copilot.
 
 > **Disclaimer:** The sample prompts provided in this repository are for demonstration purposes. They may not always be accurate or suitable for your specific use case. Please use them at your own discretion and review and modify them as necessary.By using the prompts in this repository, you acknowledge these limitations and agree to use the content responsibly. The authors of this repository or the prompts are not liable for any inaccuracies or issues that arise from the use of these prompts.
 
+
+## Agent Instruction Contest  at Microsoft Build 2025
+
+###  Winners
+
+🧹 [The Hero's Chore Journey – Bruno Silva  🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/daily-chore-children)
+
+🤝 [Communication Assistant for a Kinder World – Shinichi Yamada 🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/communication-assistant)
+
+🎨 [WarholEmojiFactory – Ryan Trad 🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/warhol-emoji-factory)
+
+### Runners up
+
+🌾 [AgriGuard – Smart Crop Doctor – Shrushti Shah 🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/smart-crop-doctor)
+
+🧪 [Elevator-Pitch Alchemist – Andrii Balashov  🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/elevator-pitch-alchemist)
+
+🕊️ [PeaceKeeper: AI-Powered Conflict Resolution & De-escalation Advisor – Shubham Shukla  🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/peace-keeper-agent)
+
 ## Have an idea, issues or questions?
 
 If you've got an idea or questions or experience an issue with any of the samples in this repo, please [create an issue](https://github.com/pnp/copilot-prompts/issues/new).
