@@ -22,7 +22,7 @@ This prompt enables users to receive a comprehensive weekly summary of their pro
 
 Version|Date|Comments
 -------|----|--------
-1.0|June 6, 2025|Initial release
+1.0|June 4, 2025|Initial release
 
 ## Instructions 📝
 
