@@ -1,13 +1,13 @@
 # 🤖 Generate Prompt for new chat 📃
 
-![Continue Copilot conversation](./assets/continue-converastion.png)
+![Continue Copilot conversation](./assets/continue-conversation.png)
 
 ## Summary
 This prompt is designed to generate a prompt for starting a new chat continuing a chat that has run out of responses.
 
 ## Prompt💡
 
-I only have one response left in this chat, so I will have to start a new one after this. Please summarize what we're attempting to accomplish overall and we've accomplished so far. Include enough detail that I can use it in the next chat and pick up where we're leaving off in this chat. Craft your response as a prompt that I can paste into the new chat.
+I only have one response left in this chat, so I will have to start a new one after this. Please summarize what we're attempting to accomplish overall and what we've accomplished so far. Include enough detail that I can use it in the next chat and pick up where we're leaving off in this chat. Craft your response as a prompt that I can paste into the new chat.
 
 ### Description ℹ️
 Sometimes you need to have a chat with Copilot that is longer than the limited number of responses in a single session. This prompt can be used when you have only one response left and it will generate a prompt that you can paste into a new chat session to pick up right where you left off, limiting the need to repeat yourself.
@@ -29,7 +29,6 @@ Version|Date|Comments
 3. Keep an eye on the number of responses you have remaining, watching for it to get down to one
 4. End the conversation using this prompt
 5. Copy the response and paste into a new Copilot chat to pick up where you left off
-
 
 ## Prerequisites
 
