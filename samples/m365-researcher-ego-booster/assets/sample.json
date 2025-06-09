@@ -1,0 +1,43 @@
+[
+  {
+    "name": "copilotprompts-m365-researcher-ego-booster",
+    "source": "pnp",
+    "title": "Generate a personal work history report",   
+    "shortDescription": "Use the Researcher agent to create a comprehensive work history report.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-researcher-ego-booster",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-researcher-ego-booster",
+    "longDescription": [
+      "This prompt, when given to the Researcher agent, will generate a comprehensive report detailing the work you've done (in your M365 tenant) over the years."
+    ],
+    "creationDateTime": "2025-06-06",
+    "updateDateTime": "2025-06-06",
+    "products": [
+      "Microsoft 365 Copilot",
+      "Copilot Researcher agent"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-researcher-ego-booster/assets/m365-researcher-ego-booster.png",
+        "alt": "Prompt to generate a work history report"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sparkitect",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/9206808?v=4",
+        "name": "Jim Duncan"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
