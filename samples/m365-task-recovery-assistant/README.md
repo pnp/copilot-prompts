@@ -5,13 +5,13 @@
 ![Task Recovery Assistant](./assets/demo2.png)
 
 ## Summary
-This prompt helps users recover control of their workload by checking Outlook, Teams, To-Do, Planner and Calendar data to identify overdue, forgotten, or unacknowledged tasks. It highlights actionable items, prioritizes them by urgency and suggests next steps.
+This prompt helps users recover control of their workload by checking Outlook, Teams, To Do, Planner and Calendar data to identify overdue, forgotten, or unacknowledged tasks. It highlights actionable items, prioritizes them by urgency and suggest next steps.
 
 ## Prompt💡
 
 Act as my task recovery assistant.
 
-Search across my Microsoft 365 data—including Outlook, Teams, To Do, and Planner and identify any tasks that appear overdue, forgotten, or unacknowledged.
+Search across my Microsoft 365 data, including Outlook, Teams, To Do, and Planner and identify any tasks that appear overdue, forgotten, or unacknowledged.
 
 Specifically:
 - List tasks that were assigned to me but I haven’t responded to or completed.
@@ -26,7 +26,7 @@ Then:
 - Optionally: Draft quick responses I can send to acknowledge or delegate them.
 
 ### Description ℹ️
-Quickly surface overdue, forgotten or unacknowledged tasks accross Outlook, Teams, To-Do and Planner, then prioritize and suggests next steps.
+Quickly surface overdue, forgotten or unacknowledged tasks across Outlook, Teams, To Do and Planner, then prioritize and suggest next steps.
 
 
 ## Contributors 👨‍💻
@@ -65,4 +65,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-top-5-tasks-of-the-day)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-task-recovery-assistant)
