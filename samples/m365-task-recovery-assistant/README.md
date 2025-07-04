@@ -5,7 +5,7 @@
 ![Task Recovery Assistant](./assets/demo2.png)
 
 ## Summary
-This prompt helps users recover control of their workload by checking Outlook, Teams, To Do, Planner and Calendar data to identify overdue, forgotten, or unacknowledged tasks. It highlights actionable items, prioritizes them by urgency and suggest next steps.
+This prompt helps users recover control of their workload by checking Outlook, Teams, To Do, Planner and Calendar data to identify overdue, forgotten, or unacknowledged tasks. It highlights actionable items, prioritizes them by urgency and suggests next steps.
 
 ## Prompt💡
 
@@ -26,7 +26,7 @@ Then:
 - Optionally: Draft quick responses I can send to acknowledge or delegate them.
 
 ### Description ℹ️
-Quickly surface overdue, forgotten or unacknowledged tasks across Outlook, Teams, To Do and Planner, then prioritize and suggest next steps.
+Quickly surface overdue, forgotten or unacknowledged tasks across Outlook, Teams, To Do and Planner, then prioritize and suggests next steps.
 
 
 ## Contributors 👨‍💻
