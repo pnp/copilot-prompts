@@ -3,11 +3,11 @@
     "name": "copilotprompts-m365-task-recovery-assistant",
     "source": "pnp",
     "title": "Task Recovery Assistant",   
-    "shortDescription": "This prompt helps you summarise responses to create a Microsoft 365 Copilot page.",
+    "shortDescription": "This prompt helps you reocver lost tasks.",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-rask-recovery-assistant",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-task-recovery-assistant",
     "longDescription": [
-      "This prompt helps you summarise chat responses to create a Microsoft 365 Copilot page."
+      "This prompt helps users recover control of their workload by checking Outlook, Teams, To-Do and Planner, to identify overdue, forgotten or unacknowledged tasks. It highlights them as actionable items, prioritizes them by urgency and suggests next steps."
     ],
     "creationDateTime": "2025-07-04",
     "updateDateTime": "2025-07-04",
@@ -20,8 +20,8 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-summarize-responses-as-page/assets/conversaion-summary-as-page-prompt.png",
-        "alt": "Prompt to recover rasks"
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-task-recovery-asistant/assets/demo2.png",
+        "alt": "Task recovery assistant"
       }
     ],
     "authors": [
