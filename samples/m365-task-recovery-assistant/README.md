@@ -1,27 +1,41 @@
-# 🚀 Top 5 tasks of the day 📅
+# 🚀 Task Recovery Assistant 📅
 
 ![top 5 tasks of the day](./assets/demo.png)
 
 ## Summary
-This prompt is designed to generate a simple report of the top 5 tasks of the day, their status, and any blockers preventing completion. Include upcoming deadlines for the week. It will provide a brief description for each task title, status and blockers. This helps you plan your day, manage your time and identify areas where you should give more focus.
+This prompt helps users recover control of their workload by checking Outlook, Teams, To-Do, Planner and Calendar data to identify overdue, forgotten, or unacknowledged tasks. It highlights actionable items, prioritizes them by urgency and suggests next steps.
 
 ## Prompt💡
 
-Build a dashboard summarizing the top 5 tasks of the day, their status, and any blockers preventing completion. Include upcoming deadlines for the week.
+Act as my task recovery assistant.
+
+Search across my Microsoft 365 data—including Outlook, Teams, To Do, and Planner and identify any tasks that appear overdue, forgotten, or unacknowledged.
+
+Specifically:
+- List tasks that were assigned to me but I haven’t responded to or completed.
+- Find action items from emails or Teams chats I didn’t follow up on.
+- Highlight calendar events with prep work or follow-ups I’ve likely missed.
+- Include To Do or Planner tasks that are past due or have no status update.
+- Flag anything urgent or that someone may be waiting on from me.
+
+Then:
+- Categorize these tasks by urgency (High, Medium, Low).
+- Suggest which ones to tackle today based on my calendar availability.
+- Optionally: Draft quick responses I can send to acknowledge or delegate them.
 
 ### Description ℹ️
-This prompt will generate a simple report of the top 5 tasks of the day.
+Quickly surface overdue, forgotten or unacknowledged tasks accross Outlook, Teams, To-Do and Planner, then prioritize and suggests next steps.
 
 
 ## Contributors 👨‍💻
 
-[Mohammad Amer](https://github.com/mohammadamer)
+[Adam Bezance](https://github.com/bezanca84)
 
 ## Version history
 
 Version|Date|Comments
 -------|----|--------
-1.0|Oct 9, 2024|Initial release
+1.0|Jul 4, 2025|Initial release
 
 ## Instructions 📝
 
