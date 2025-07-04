@@ -1,1 +1,42 @@
-
+[
+  {
+    "name": "copilotprompts-m365-task-recovery-assistant",
+    "source": "pnp",
+    "title": "Task Recovery Assistant",   
+    "shortDescription": "This prompt helps you summarise responses to create a Microsoft 365 Copilot page.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-rask-recovery-assistant",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-task-recovery-assistant",
+    "longDescription": [
+      "This prompt helps you summarise chat responses to create a Microsoft 365 Copilot page."
+    ],
+    "creationDateTime": "2025-07-04",
+    "updateDateTime": "2025-07-04",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-summarize-responses-as-page/assets/conversaion-summary-as-page-prompt.png",
+        "alt": "Prompt to recover rasks"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "Bezanca84",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/202672762?v=4",
+        "name": "Adam Bezance"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
