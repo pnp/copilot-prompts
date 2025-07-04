@@ -1,6 +1,8 @@
 # 🚀 Task Recovery Assistant 📅
 
-![top 5 tasks of the day](./assets/demo.png)
+![Task Recovery Assistant](./assets/demo1.png)
+
+![Task Recovery Assistant](./assets/demo2.png)
 
 ## Summary
 This prompt helps users recover control of their workload by checking Outlook, Teams, To-Do, Planner and Calendar data to identify overdue, forgotten, or unacknowledged tasks. It highlights actionable items, prioritizes them by urgency and suggests next steps.
