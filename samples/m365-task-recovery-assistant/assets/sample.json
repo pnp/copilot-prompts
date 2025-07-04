@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-task-recovery-asistant/assets/demo2.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-task-recovery-assistant/assets/demo2.png",
         "alt": "Task recovery assistant"
       }
     ],
