@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-m365-generate-prompt-for-next-chat",
+    "source": "pnp",
+    "title": "Generate a prompt to continue a chat",   
+    "shortDescription": "Continue a conversation with Microsoft 365 Copilot in a new chat.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-prompt-for-next-chat",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-prompt-for-next-chat",
+    "longDescription": [
+      "This prompt will generate a prompt that can be used to continue a conversation that has hit the limit of responses."
+    ],
+    "creationDateTime": "2025-06-04",
+    "updateDateTime": "2025-06-04",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-generate-prompt-for-next-chat/assets/continue-conversation.png",
+        "alt": "Prompt to generate a 'continue conversation' prompt"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sparkitect",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/9206808?v=4",
+        "name": "Jim Duncan"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
