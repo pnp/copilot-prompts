@@ -1,8 +1,8 @@
 # 🚀 Weekly Highlights Summary
 
-![Task Recovery Assistant](./assets/demo1.png)
+![Weekly Highlights Summary](./assets/WeeklyHighlightsSummary.jpg)
 
-![Task Recovery Assistant](./assets/demo2.png)
+![Weekly Highlights Summary](./assets/WeeklyHighlightsSummary2.jpg)
 
 ## Summary
 A weekly highlights summary prompt which scans Outlook, Teams, To Do, and Planner to generate a consise summary of key wins, upcoming plans and blockers.
@@ -28,7 +28,6 @@ On the Key wins and project sections, include a bold title for each point.
 
 ### Description ℹ️
 This prompt acts as a Weekly Highlights Assistant by searching across Microsoft 365 data sources such as Outlook, Teams, To Do, and Planner, for the past week. It compiles a professional summary with three structured sections: Key Wins (top 3 accomplishments), Plans for Next Week (upcoming priorities), and Risks and Blockers (presented in a clear table format). The tone is confident and manager-friendly, making it ideal for weekly reporting, stakeholder updates, or performance tracking. The output is formatted for easy copy and paste into emails.
-
 
 ## Contributors 👨‍💻
 
@@ -56,7 +55,7 @@ Version|Date|Comments
 
 We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for  community members to volunteer their time and help resolve issues.
 
-You can try looking at [issues related to this sample](https://github.com/pnp/copilot-prompts/issues?q=label%3A%22sample%3A%20YOUR-SAMPLE-NAME%22) to see if anybody else is having the same issues.
+You can try looking at [issues related to this sample](https://github.com/pnp/copilot-prompts/issues?q=label%3A%22sample%3A%20m365-weekly-highlights-summary%22) to see if anybody else is having the same issues.
 
 If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/copilot-prompts/issues/new).
 
