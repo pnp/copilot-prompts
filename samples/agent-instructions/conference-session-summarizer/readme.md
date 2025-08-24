@@ -95,7 +95,7 @@ Try out your agent in the same window.
 
 ## Prerequisites
 
-* [Copilot Studio](https://copilotstudio.microsoft.com/)
+Copilot License
 
 ## Help
 

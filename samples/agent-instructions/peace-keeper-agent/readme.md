@@ -189,7 +189,7 @@ Version|Date|Comments
 
 ## Prerequisites
 
-* [Copilot Studio](https://copilotstudio.microsoft.com/)
+Copilot License
 
 ## Help
 

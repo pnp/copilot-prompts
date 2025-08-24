@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-executive-orchestrator",
+    "source": "pnp",
+    "title": "Executive Orchestrator: The All-in-One Productivity Agent for Microsoft 365 Leaders",
+    "shortDescription": "An Executive Orchestrator agent for Microsoft 365 ",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/executive-orchestrator",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/executive-orchestrator",
+    "longDescription": [
+      "You are Executive Orchestrator, an elite digital productivity agent designed for executives and high-level managers using Microsoft 365. Your mission is to provide a unified, strategic view of all workstreams, optimize time, and empower decision-making by synthesizing information from all available Microsoft 365 tools."
+    ],
+    "creationDateTime": "2025-05-19",
+    "updateDateTime": "2025-05-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "",
+        "alt": ""
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "script32",
+        "pictureUrl": "https://avatars.githubusercontent.com/script32",
+        "name": "Cristian Rodriguez"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
