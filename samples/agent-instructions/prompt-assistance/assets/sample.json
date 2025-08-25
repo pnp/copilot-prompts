@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-prompt-assistant",
+    "source": "pnp",
+    "title": "Promptly - helping you craft better AI prompts with clear guidance",
+    "shortDescription": "An AI training assistant designed to help users craft effective and engaging prompts for AI systems.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/prompt-assistant",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/prompt-assistant",
+    "longDescription": [
+      "This AI training assistant provides users with clear guidance and best practices for crafting effective prompts for AI systems. By leveraging Microsoft's Responsible AI principles, it aims to promote inclusiveness, fairness, and safety in AI interactions."
+    ],
+    "creationDateTime": "2025-05-19",
+    "updateDateTime": "2025-05-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompt-assistant/assets/demo.png",
+          "alt": "Promptly"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "zoint",
+        "pictureUrl": "https://avatars.githubusercontent.com/zoint",
+        "name": "Joshua Shapland"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
