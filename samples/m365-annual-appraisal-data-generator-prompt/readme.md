@@ -12,23 +12,19 @@ From this data, identify and summarize the key activities, contributions, and va
 
 Present the output in a tabular format with the following columns:
 
-Work Category
-
-Description (Goals/Objectives)
-
-Employee Remarks (Summarized activities & value adds in first-person, concise and impact-oriented)
+Work Category, Description (Goals/Objectives), Employee Remarks (Summarized activities & value adds in first-person, concise and impact-oriented)
 
 Here are the work categories:
 
-Work Category: Strategic Project Delivery
+Sample Work Category 1: [Strategic Project Delivery]
 Description: [Insert goals/objectives details]
 Employee Remarks: [To be generated]
 
-Work Category: Growth
+Sample Work Category 2: [Growth]
 Description: [Insert goals/objectives details]
 Employee Remarks: [To be generated]
 
-Work Category: People
+Sample Work Category 3: People
 Description: [Insert goals/objectives details]
 Employee Remarks: [To be generated].
 
@@ -50,7 +46,7 @@ Version|Date|Comments
 
 1. Make sure you have copilot for Microsoft 365 in your tenant
 2. Go to Microsoft 365 Copilot in Office.com or use Copilot chat in Teams
-3. Copy paste the above prompt
+3. Copy paste the above prompt and replace the text in [] as per your requirements
 4. Copilot will start extracting data
 
 ## Prerequisites
