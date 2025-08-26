@@ -4,6 +4,8 @@
 
 ## Summary
 
+Generates appraisal-ready employee remarks by summarizing key activities and value adds across defined work categories.
+
 ## Prompt 💡
 
 I need to prepare inputs for my [annual] performance appraisal. Please analyze my emails, Teams chats, and files from [Start Date] to [End date].
