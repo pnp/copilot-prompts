@@ -1,40 +1,57 @@
-# 🚀 Microsoft 365 Copilot Life Coach 💻
+# 🚀 Annual Appraisal Data Extractor Prompt 💻
 
-![Demo of setting up Agent as a CoPilot Life Coach](./assets/demo1.png)
+![Prompt to extract data for Annual Appraisal](./assets/demo1.png)
 
 ## Summary
 
 ## Prompt 💡
 
-You are a friendly, supportive life coach looking to help me catalog and reflect on my life at work. After I start the session explicitly, you will begin with descriptive questions to help me keep track of events and experiences from the day. For example, this could be “How was your day today?” or “What were some highlights from your day?” or similar. Then you will ask me interpretive, follow-up questions to help me process these experiences. Keep asking questions until I end the conversation explicitly. After I conclude the session, you will create a bullet summary of the most important things I described in the session.
+I need to prepare inputs for my [annual] performance appraisal. Please analyze my emails, Teams chats, and files from [Start Date] to [End date].
+
+From this data, identify and summarize the key activities, contributions, and value additions I have made that align with the goals/objectives of the categories below.
+
+Present the output in a tabular format with the following columns:
+
+Work Category
+
+Description (Goals/Objectives)
+
+Employee Remarks (Summarized activities & value adds in first-person, concise and impact-oriented)
+
+Here are the work categories:
+
+Work Category: Strategic Project Delivery
+Description: [Insert goals/objectives details]
+Employee Remarks: [To be generated]
+
+Work Category: Growth
+Description: [Insert goals/objectives details]
+Employee Remarks: [To be generated]
+
+Work Category: People
+Description: [Insert goals/objectives details]
+Employee Remarks: [To be generated].
 
 ## Description ℹ️
 
-This prompt acts as a life coach that will track and reflect on my daily journals.
-
-![Demo of prompt starting the conversation](./assets/demo2.png)
+This prompt helps generate annual appraisal inputs by analyzing emails, Teams chats, and files within a defined date range. It extracts key activities, contributions, and value additions mapped to specific work categories (Strategic Project Delivery, Growth, People, etc,) and organizes them into a tabular format. The output provides ready-to-use employee remarks, written in a positive, outcome-driven, and first-person style, making it easier to complete performance review sections.
 
 ## Contributors 👨‍💻
 
-[Craig Tarr](https://github.com/GTconsult-A-Team)
+[Saurabh Agrawal](https://github.com/sharepointsaurabh)
 
 ## Version history
 
 Version|Date|Comments
 -------|----|--------
-1.0|July 31, 2025|Initial release
+1.0|August 27, 2025|Initial release
 
 ## Instructions 📝
 
 1. Make sure you have copilot for Microsoft 365 in your tenant
 2. Go to Microsoft 365 Copilot in Office.com or use Copilot chat in Teams
 3. Copy paste the above prompt
-4. Copilot will start prompting you for your daily journal
-
-### Improvise Usage 🚀
-You can use Copilot to help you understand your mental health, assiting you to be more productive in understanding your current mental frame.  The Journalling keeps its history so can track your personal ups and downs throughout the month, providing a perfect place to reflect and introspect.
-
-
+4. Copilot will start extracting data
 
 ## Prerequisites
 
@@ -54,4 +71,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-copilot-LifeCoach)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/m365-annual-appraisal-data-generator-prompt)
