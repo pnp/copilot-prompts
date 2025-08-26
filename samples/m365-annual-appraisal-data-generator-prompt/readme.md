@@ -18,16 +18,16 @@ Work Category, Description (Goals/Objectives), Employee Remarks (Summarized acti
 
 Here are the work categories:
 
-Sample Work Category 1: [Strategic Project Delivery]
-Description: [Insert goals/objectives details]
+Sample Work Category 1: [Strategic Project Delivery], 
+Description: [Insert goals/objectives details], 
 Employee Remarks: [To be generated]
 
-Sample Work Category 2: [Growth]
-Description: [Insert goals/objectives details]
+Sample Work Category 2: [Growth], 
+Description: [Insert goals/objectives details], 
 Employee Remarks: [To be generated]
 
-Sample Work Category 3: People
-Description: [Insert goals/objectives details]
+Sample Work Category 3: [People], 
+Description: [Insert goals/objectives details], 
 Employee Remarks: [To be generated].
 
 ## Description ℹ️
