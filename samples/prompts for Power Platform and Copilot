@@ -1,0 +1,6 @@
+This commit adds three new GPT prompt examples to the Power Platform GPT Prompts repository. These prompts are designed to help users create intelligent solutions using Power Platform and Copilot.
+
+Prompts included:
+1. Generate a Power Automate Flow for Approvals
+2. Build a Power Apps Canvas App for Expense Tracking
+3. Create a Copilot Prompt for Summarizing Teams Meeting Notes
