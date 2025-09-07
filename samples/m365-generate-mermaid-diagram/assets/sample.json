@@ -1,0 +1,43 @@
+[
+    {
+      "name": "copilotprompts-m365-generate-mermaid-diagram",
+      "source": "pnp",
+      "title": "Mermaid Diagram/Chart Generator",
+      "shortDescription": "Generate Mermaid diagrams from text descriptions",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-mermaid-diagram",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-mermaid-diagram",
+      "longDescription": [
+        "This prompt helps you generate a Mermaid diagram based on a given description. Mermaid is a powerful tool for creating diagrams and visualizations using a simple markdown-like syntax. With this prompt, you can easily create flowcharts, sequence diagrams, class diagrams, and more by providing a textual description of the desired diagram.",
+      ],
+      "creationDateTime": "2025-08-26",
+      "updateDateTime": "2025-08-26",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-generate-mermaid-diagram/assets/Copilot_Output_Sample.png",
+          "alt": "Mermaid diagram"
+        }
+        
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "tvahk",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/17594489?v=4",
+          "name": "Tanel Vahk"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
