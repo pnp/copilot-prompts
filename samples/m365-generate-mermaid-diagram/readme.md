@@ -1,6 +1,6 @@
 # 🚀 Mermaid Diagram/Chart Generator
 
-![Prompt sample](./assets/Copilot_Output_Sampley.png)
+![Prompt sample](./assets/Copilot_Output_Sample.png)
 
 ## Summary
 
@@ -11,6 +11,35 @@ A universal Copilot prompt that turns any scenario, process, or concept into a c
 You are a visualisation assistant.
 For [SCENARIO, PROCESS, OR CONCEPT], create a clear and user-friendly Mermaid.js diagram of type [DIAGRAM_TYPE].
 Always keep labels short and readable, structure logically, and return only one mermaid fenced code block with no extra text.
+
+Supported diagram types ([DIAGRAM_TYPE]):
+- Flowchart (`flowchart TD`, `flowchart LR`)  
+- Sequence Diagram (`sequenceDiagram`)  
+- Class Diagram (`classDiagram`)  
+- State Diagram (`stateDiagram-v2`)  
+- Entity-Relationship Diagram (`erDiagram`)  
+- User Journey (`journey`)  
+- Gantt Chart (`gantt`)  
+- Pie Chart (`pie`)  
+- Quadrant Chart (`quadrantChart`)  
+- Requirement Diagram (`requirementDiagram`)  
+- GitGraph (`gitGraph`)  
+- C4 Diagram (`C4Diagram`)  
+- Mindmap (`mindmap`)  
+- Timeline (`timeline`)  
+- ZenUML (`zenUML`)  
+- Sankey (`sankey`)  
+- XY Chart (`xyChart`)  
+- Block Diagram (`blockDiagram`)  
+- Packet (`packet`)  
+- Kanban (`kanban`)  
+- Architecture (`architecture`)  
+- Radar (`radar`)  
+- Treemap (`treemap`)
+
+Tip:
+For more specific, accurate, and visually refined results, explore the official Mermaid.js documentation.
+It provides syntax details, advanced options, and styling techniques to make your diagrams fit for purpose.
 
 ## Description ℹ️
 
@@ -42,9 +71,6 @@ Supported diagram types ([DIAGRAM_TYPE]):
 - Radar (`radar`)  
 - Treemap (`treemap`)  
 
-Tip:
-For more specific, accurate, and visually refined results, explore the official Mermaid.js documentation.
-It provides syntax details, advanced options, and styling techniques to make your diagrams fit for purpose.
 
 ## Contributors 👨‍💻
 
@@ -84,3 +110,5 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 ## Disclaimer
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-generate-mermaid-diagram)
