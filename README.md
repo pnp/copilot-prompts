@@ -5,7 +5,8 @@ This repository contains examples of prompts for Microsoft Copilot.
 > We welcome community contributions to the `samples` folder in this repository for demonstrating different prompts for Microsoft Copilot. If you have a great sample prompt for Microsoft Copilot, GitHub Copilot or Microsoft Copilot for Microsoft 365, please share your work and help others!
 
 > **Disclaimer:** The sample prompts provided in this repository are for demonstration purposes. They may not always be accurate or suitable for your specific use case. Please use them at your own discretion and review and modify them as necessary.By using the prompts in this repository, you acknowledge these limitations and agree to use the content responsibly. The authors of this repository or the prompts are not liable for any inaccuracies or issues that arise from the use of these prompts.
-
+**Disclaimer: Use of GitHub Avatars for Recognition Posts**
+By contributing to this open-source project, you grant us permission to use your GitHub avatar in our “Prompt of the Week Kudos” posts on LinkedIn, celebrating your contributions. If you prefer to use a different photo or opt out entirely, please open an issue in the repository or contact us directly. We’re happy to accommodate your preferences.
 
 ## Agent Instruction Contest  at Microsoft Build 2025
 
