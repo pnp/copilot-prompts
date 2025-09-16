@@ -2,7 +2,7 @@
     {
       "name": "copilotprompts-copilot-github-copilot-fix-code",
       "source": "pnp",
-      "title": "Fixing your code using GitHub copilot",
+      "title": "Fixing your code using GitHub Copilot",
       "shortDescription": "Quick check and guidance for your code using GitHub copilot",
       "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/github-copilot-fix-code",
       "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/github-copilot-fix-code",
