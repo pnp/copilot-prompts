@@ -1,5 +1,5 @@
 # AI-Powered Risk Analysis for Project Management
-![demo of prompt](./assets/)
+![demo of prompt](./assets/demo.png)
 ## Summary
 
 Prompt for analysing a project plan and identify potential risks with mitigation strategies.
