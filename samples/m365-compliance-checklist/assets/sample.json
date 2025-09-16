@@ -1,0 +1,42 @@
+[
+    {
+      "name": "copilotprompts-m365-compliance-checklist",
+      "source": "pnp",
+      "title": "AI-Powered Compliance Checklist for Microsoft 365",
+      "shortDescription": "Prompt for generating a compliance audit checklist",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-compliance-checklist",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-compliance-checklist",
+      "longDescription": [
+        "The agent is designed to generate a comprehensive compliance audit checklist in Microsoft 365 environment."
+      ],
+      "creationDateTime": "2025-09-16",
+      "updateDateTime": "2025-09-16",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-compliance-checklist/assets/demo.png",
+          "alt": "AI-Powered Compliance Checklist for Project Management"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "https://github.com/rogerscarias",
+          "pictureUrl": "https://avatars.githubusercontent.com/rogerscarias",
+          "name": "Roger Carias"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
