@@ -20,8 +20,8 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-generate-pbi-dashboard/assets/demo.png",
-          "alt": "Generate a Power BI Dashboard Specification"
+          "url": "",
+          "alt": ""
         }
       ],
       "authors": [
