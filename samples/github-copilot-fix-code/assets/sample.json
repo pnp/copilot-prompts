@@ -7,7 +7,7 @@
       "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/github-copilot-fix-code",
       "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/github-copilot-fix-code",
       "longDescription": [
-        "Leverage the vast knwoledge of AI to help you with your code, explain where it's not working correctly and offer alternatives if needed."
+        "Leverage the vast knowledge of AI to help you with your code, explain where it's not working correctly and offer alternatives if needed."
       ],
       "creationDateTime": "2025-09-16",
       "updateDateTime": "2025-09-16",
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/github-adaptivecard-prompt/assets/prompt.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/github-copilot-fix-code/assets/prompt.png",
           "alt": "Prompt for getting guidance with your code regardless of technology"
         }
       ],
