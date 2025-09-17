@@ -48,7 +48,7 @@ Version|Date|Comments
 4. Check your output and select the suggestion you need, copy into your designated area.
 
 ### Improvise Usage 🚀
-You can change the prompt to fit your business purpose, or explain other things alongside 'fixing' your code. Sometimes it will grab info from an .md file you have open, or from an older chat, try /clear if that happens.
+You can change the prompt to fit your business purpose. You can also explain other things alongside 'fixing' your code. Sometimes Copilot will grab info from an .md file you have open, or from an older chat. Try using /clear if that happens.
 
 ## Prerequisites
 
