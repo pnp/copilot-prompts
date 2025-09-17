@@ -1,4 +1,4 @@
-# Fixing your code using GitHub copilot
+# Fixing your code using GitHub Copilot
 
 ![Screenshot of the prompt in use](./assets/prompt.png)
 
