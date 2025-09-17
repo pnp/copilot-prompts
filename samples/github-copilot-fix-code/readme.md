@@ -37,7 +37,7 @@ Version|Date|Comments
 
 ## Instructions 📝
 
-1. Make sure you have Github copilot extension installed in VSCode and enable it
+1. Make sure you have GitHub Copilot extension installed in VSCode and enable it
 2. Create a .json file
 3. Launch GitHub copilot chat "command"+ i or "ctrl" +i
 4. Copy the above prompt and paste and select `Enter`
