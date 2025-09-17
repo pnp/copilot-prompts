@@ -50,7 +50,7 @@ You can change the prompt to fit your business purpose, or explain other things 
 
 ## Prerequisites
 
-* [GitHub copilot](https://copilot.github.com/)
+* [GitHub Copilot](https://copilot.github.com/)
 
 ## Help
 
