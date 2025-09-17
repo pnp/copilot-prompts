@@ -19,7 +19,7 @@ Please highlight what I'm not doing correctly, and provide tips how I can improv
 It might sound straight forward, but this is such a helpful prompt. 
 
 For example, I wanted to set up a trigger condition, but couldn't remember the exact syntax.
-I asked it to check my code; 
+I asked it to check my code: 
 ```powerfx
 triggerOutputs()?['body/crea8_attachment'] is not equal to null
 ```
