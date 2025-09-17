@@ -5,11 +5,13 @@
 ## Summary
 
 This guide explains how to use GitHub Copilot to fix your code by providing effective prompts, troubleshooting tips, and practical examples for improving your workflow.
+
 ## Prompt 💡
 Can you please help me fix my code? I'm trying to accomplish 'blank' using 'blank' (insert your technology here).
 The code I'm using is:
 ```powerfx
 triggerOutputs()?['body/crea8_attachment'] is not equal to null
+```
 Please highlight what I'm not doing correctly, and provide tips how I can improve in the future. 
 
 ### Description ℹ️
