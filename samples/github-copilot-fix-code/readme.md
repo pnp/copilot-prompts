@@ -41,7 +41,7 @@ Version|Date|Comments
 
 1. Make sure you have GitHub Copilot extension installed in VSCode and enable it
 2. Create a .json file
-3. Launch GitHub copilot chat "command"+ i or "ctrl" +i
+3. Launch GitHub Copilot Chat using `Cmd+I` (Mac) or `Ctrl+I` (Windows)
 4. Copy the above prompt, paste, and press `Enter`
 5. Check your output and select the suggestion you need, copy into your designated area.
 
