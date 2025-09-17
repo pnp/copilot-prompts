@@ -16,7 +16,7 @@ Please highlight what I'm not doing correctly, and provide tips how I can improv
 
 ### Description ℹ️
 
-It might sound straight forward, but this is such a helpful prompt. 
+It might sound straightforward, but this is such a helpful prompt. 
 
 For example, I wanted to set up a trigger condition, but couldn't remember the exact syntax.
 I asked it to check my code: 
