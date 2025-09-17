@@ -6,7 +6,9 @@
 
 ## Prompt 💡
 Can you please help me fix my code? I'm trying to accomplish 'blank' using 'blank' (insert your technology here).
-The code I'm using is crea8_attachment is not equal to null.
+The code I'm using is:
+```powerfx
+triggerOutputs()?['body/crea8_attachment'] is not equal to null
 Please highlight what I'm not doing correctly, and provide tips how I can improve in the future. 
 
 ### Description ℹ️
