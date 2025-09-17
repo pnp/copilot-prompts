@@ -43,10 +43,9 @@ Version|Date|Comments
 ## Instructions 📝
 
 1. Make sure you have GitHub Copilot extension installed in VSCode and enable it
-2. Create a .json file
-3. Launch GitHub Copilot Chat using `Cmd+I` (Mac) or `Ctrl+I` (Windows)
-4. Copy the above prompt, paste, and press `Enter`
-5. Check your output and select the suggestion you need, copy into your designated area.
+2. Launch GitHub Copilot Chat using `Cmd+I` (Mac) or `Ctrl+I` (Windows)
+3. Copy the above prompt, paste, and press `Enter`
+4. Check your output and select the suggestion you need, copy into your designated area.
 
 ### Improvise Usage 🚀
 You can change the prompt to fit your business purpose, or explain other things alongside 'fixing' your code. Sometimes it will grab info from an .md file you have open, or from an older chat, try /clear if that happens.
