@@ -9,7 +9,7 @@ This prompt is designed to put Copilot into a "confirm understanding" mode.
 I will explain what we are trying to accomplish. Please endeavor, for now, to simply understand the goal and wait to provide guidance or a solution until I have verified that your understanding is accurate. Deal?
 
 ### Description ℹ️
-Ocassionally, Copilot will go straight to the "solution" before fully understanding what your actual goal is. With GPT-5 this "premature solution" might be even more long-winded and detailed and not really the solution you need.
+Ocassionally, Copilot will go straight to the "solution" before fully understanding what your actual goal is. With GPT-5 this "premature solution" might be even more long-winded and detailed, but not really the solution you need.
 This prompt can be used to ensure that Copilot doesn't offer a solution until you have verified that it understands the issue sufficiently.
 
 ![Copilot in Confirm Understainding mode](./assets/confirm-understanding-mode-active.png)
@@ -27,10 +27,10 @@ Version|Date|Comments
 ## Instructions 📝
 
 1. Make sure you have Copilot for Microsoft 365 in your tenant
-2. Start with this prompt
+2. Start with this prompt; for a bornus, add "Feel free to ask clarifying questions if needed" to the prompt.
 3. Explain your scenario, issue and/or goal, over multiple prompts (you're having a *conversation* with Copilot)
-4. At each response Copilot should summarize its understanding so far
-5. When you are confident that Coiplot understands things sufficiently, tell it so
+4. At each response Copilot should/might summarize its understanding so far though you may have to ask it to do so
+6. When you are confident that Copilot understands things sufficiently, tell it so
 
 ## Prerequisites
 
