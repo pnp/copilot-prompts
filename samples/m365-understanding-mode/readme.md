@@ -27,7 +27,7 @@ Version|Date|Comments
 ## Instructions 📝
 
 1. Make sure you have Copilot for Microsoft 365 in your tenant
-2. Start with this prompt; for a bornus, add "Feel free to ask clarifying questions if needed" to the prompt.
+2. Start with this prompt; for a bonus, add "Feel free to ask clarifying questions if needed" to the prompt.
 3. Explain your scenario, issue and/or goal, over multiple prompts (you're having a *conversation* with Copilot)
 4. At each response Copilot should/might summarize its understanding so far though you may have to ask it to do so
 6. When you are confident that Copilot understands things sufficiently, tell it so
