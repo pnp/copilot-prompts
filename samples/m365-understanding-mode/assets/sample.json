@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-m365-understanding-mode",
+    "source": "pnp",
+    "title": "Confirming Understanding mode",   
+    "shortDescription": "This prompt is designed to put Copilot into a 'confirm understanding' mode.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-understanding-mode",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-understanding-mode",
+    "longDescription": [
+      "Ocassionally, Copilot will go straight to the 'solution' before fully understanding what your actual goal is. With GPT-5 this 'premature solution' might be even more long-winded and detailed and not really the solution you need. This prompt can be used to ensure that Copilot doesn't offer a solution until you have verified that it understands the issue sufficiently."      
+    ],
+    "creationDateTime": "2025-09-18",
+    "updateDateTime": "2025-09-18",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-understanding-mode/assets/confirm-understanding-mode-active.png",
+        "alt": "Copilot in 'confirm understanding' mode"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sparkitect",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/9206808?v=4",
+        "name": "Jim Duncan"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
