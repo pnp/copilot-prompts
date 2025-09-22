@@ -1,0 +1,35 @@
+🔍 Descripción del prompt
+Analiza el siguiente conjunto de decisiones empresariales y detecta posibles sesgos cognitivos. Para cada sesgo identificado, incluye:
+
+Tipo de sesgo (ej. confirmación, anclaje, disponibilidad)
+Impacto potencial en la decisión
+Evidencia en el texto
+Recomendación para mitigar el sesgo
+
+🧪 Ejemplo de entrada
+Markdown
+1. Decidimos seguir con el proveedor actual porque siempre nos ha funcionado bien.
+2. El equipo de ventas cree que el nuevo CRM no funcionará porque el anterior fracasó.
+3. Elegimos la estrategia más popular entre nuestros competidores.
+
+✅ Ejemplo de salida esperada
+Markdown
+**1. Sesgo de disponibilidad**
+- Impacto: Medio
+- Evidencia: “siempre nos ha funcionado bien”
+- Recomendación: Evaluar métricas actuales del proveedor y comparar con alternativas.
+
+**2. Sesgo de anclaje**
+- Impacto: Alto
+- Evidencia: “el anterior fracasó”
+- Recomendación: Analizar funcionalidades del nuevo CRM sin comparar con el anterior.
+
+**3. Sesgo de conformidad social**
+- Impacto: Medio
+- Evidencia: “más popular entre nuestros competidores”
+- Recomendación: Validar si la estrategia se adapta a nuestro contexto específico.
+
+🛠️ ¿Cómo usarlo?
+Copia el prompt en Copilot Studio o Prompt Gallery.
+Pega decisiones reales o simuladas.
+Revisa los sesgos detectados y aplica las recomendaciones.
