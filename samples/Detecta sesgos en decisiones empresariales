@@ -7,13 +7,11 @@ Evidencia en el texto
 Recomendación para mitigar el sesgo
 
 🧪 Ejemplo de entrada
-Markdown
 1. Decidimos seguir con el proveedor actual porque siempre nos ha funcionado bien.
 2. El equipo de ventas cree que el nuevo CRM no funcionará porque el anterior fracasó.
 3. Elegimos la estrategia más popular entre nuestros competidores.
 
 ✅ Ejemplo de salida esperada
-Markdown
 **1. Sesgo de disponibilidad**
 - Impacto: Medio
 - Evidencia: “siempre nos ha funcionado bien”
