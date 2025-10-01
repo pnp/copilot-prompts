@@ -4,7 +4,7 @@
 
 ## Summary
 
-Prompt for generating a compliance audit checklist. 
+This one is a palate cleanser! The prompt generates a photorealistic 9:16 vertical selfie with Michael Jackson, Prince, Whitney Houston, and Tina Turner, all styled in authentic 1980s fashion.
 
 ## Prompt 💡
 
