@@ -1,6 +1,6 @@
 # 1980s backstage selfie with music legends
 
-![80s Legends](https://copilot.microsoft.com/copilot-prompts/samples/m365-80s-legends/assets/Designer.png)
+![80s Legends](./assets/Designer.png)
 
 ## Summary
 
