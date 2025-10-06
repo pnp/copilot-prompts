@@ -1,11 +1,11 @@
 [
     {
-      "name": "copilotprompts-copilot-80s-legends",
+      "name": "copilotprompts-m365-80s-legends",
       "source": "pnp",
       "title": "Selfie with 80's Legends",
       "shortDescription": "A photorealistic 1980s-style backstage selfie featuring the reference subject with four music legends, captured with cinematic lighting, authentic styling, and a filmic finish.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/copilot-80s-legends",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/copilot-80s-legends",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-80s-legends",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-80s-legends",
       "longDescription": [
         "The prompt generates a photorealistic 9:16 vertical selfie featuring the person from the reference photo with Michael Jackson, Prince, Whitney Houston, and Tina Turner, all styled in authentic 1980s fashion. "
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/copilot-80s-legends/assets/Designer.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-80s-legends/assets/Designer.png",
           "alt": "Get your own selfie with some of the top music legends from the 80's."
         }
       ],

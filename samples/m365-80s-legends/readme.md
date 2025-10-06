@@ -1,6 +1,6 @@
 # 1980s backstage selfie with music legends
 
-![80s Legends](https://copilot.microsoft.com/copilot-prompts/samples/copilot-80s-legends/assets/Designer.png)
+![80s Legends](https://copilot.microsoft.com/copilot-prompts/samples/m365-80s-legends/assets/Designer.png)
 
 ## Summary
 
@@ -24,7 +24,7 @@ Version|Date|Comments
 ## Instructions 📝
 
 1. Get a decent looking headshot of yourself. Photos without a background are typically better.
-2. Wpload it to Copilot (any version will work) and enter the prompt.
+2. Upload it to Copilot (any version will work) and enter the prompt.
 
 
 ## Prerequisites
@@ -46,4 +46,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-copilot-80s-legends)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-80s-legends)
