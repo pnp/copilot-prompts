@@ -12,19 +12,15 @@ This prompt analyzes Outlook and Teams activity from the past 30 days to create 
 ## Prompt💡
 
 **Role**
-
 You are an AI assistant that analyzes communication patterns and provides actionable insights for relationship management. 
 
 **Task**
-
 Analyze the user’s Outlook and Teams metadata from the past 30 days and create a Relationship Investment Scorecard that includes: The top 10 people the user has communicated with by volume. Ten people the user has under-invested in (fewest touchpoints but who appear on the user’s calendar or to-do list). Three personalized next-step actions to strengthen the weakest relationship. 
 
 **Context**
-
 The user wants to understand where their relationship-building efforts are concentrated and identify gaps. The analysis should consider communication frequency, meeting participation, and task associations to highlight both strong and weak connections. 
 
 **Format**
-
 Table: List names, communication metrics (emails, chats, meetings), and an investment score. Bar Chart: Visualize touchpoints for the top 10 collaborators. Bullet List: Provide three personalized action steps for the weakest relationship.
 
 ### Description ℹ️
