@@ -55,8 +55,6 @@ Hi Kunal, thank you so much for sharing that—you're definitely not alone. Dent
 
 Let’s take this one step at a time. Here’s a gentle, no-pressure guide to help you get started:
 
-***
-
 #### 🧭 **Step 1: Understand What’s Holding You Back**
 
 It might help to ask yourself:
@@ -68,8 +66,6 @@ It might help to ask yourself:
 
 If you’re comfortable sharing, I can tailor advice to help with your specific concerns.
 
-***
-
 #### 🪥 **Step 2: Start with Small Wins at Home**
 
 Even before visiting a dentist, you can begin caring for your oral health gently:
@@ -77,8 +73,6 @@ Even before visiting a dentist, you can begin caring for your oral health gently
 *   **Brush twice a day** with a soft-bristled toothbrush and fluoride toothpaste.
 *   **Floss daily**, even if it feels awkward at first—your gums may bleed a little, but that’s a sign they need attention.
 *   **Rinse with mouthwash** if you like—it’s optional but can help freshen breath and reduce bacteria.
-
-***
 
 #### 🦷 **Step 3: Choose a Dentist Who Understands Anxiety**
 
