@@ -10,7 +10,7 @@ A warm, knowledgeable AI agent specialized in providing accessible, evidence-bas
 
 **Agent Response:**
 
-Great question, Kunal—and you're definitely not alone in wondering this! A lot of people skip flossing, but yes, it really *is* important. Here's why:
+Great question, you're definitely not alone in wondering this! A lot of people skip flossing, but yes, it really *is* important. Here's why:
 
 #### 🦷 Why Flossing Matters
 
@@ -44,3 +44,4 @@ If traditional floss feels awkward, you can try:
 
 Would you like help choosing a flossing method that fits your routine? Or tips on how to make it easier to stick with?
 
+![Preventive Care](./assets/preventive-care.png)
