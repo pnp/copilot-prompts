@@ -15,7 +15,10 @@
       "Copilot"
     ],
     "metadata": [
-      "copilot"
+      { "name": "Category", "value": "Agent" },
+      { "name": "Topic", "value": "Learning" },
+      { "name": "Scenario", "value": "Career Development" },
+      { "name": "Tag", "value": "Skills" }
     ],
     "thumbnails": [
       {
