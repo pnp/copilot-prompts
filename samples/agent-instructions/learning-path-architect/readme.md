@@ -242,7 +242,7 @@ Requirements:
 - Create API with 5 endpoints
 - Implement CRUD operations
 - Add authentication
-- Write tests (80% coverage)
+- Write tests (80%+ coverage)
 - Document with Swagger
 - Deploy to cloud platform
 
@@ -537,9 +537,9 @@ Version|Date|Comments
 
 - Make sure you have Microsoft 365 Copilot in your tenant.
 - Access Copilot studio agent builder
-- On the left-hand rail, select Create an agent - New agent
+- Open home page and paste instructions in "Describe your agent to create it" field
 - Add description to refine agents behavior: "Learning Path Architect creates personalized learning journeys for career development"
-- Paste the prompt in the Instructions field, and alter it according to your needs.
+- Wait for agent to be created (may take a few minutes).
 - Try out your agent in the same window.
 - Grant necessary permissions for work context analysis (optional).
 
