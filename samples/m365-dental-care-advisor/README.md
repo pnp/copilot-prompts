@@ -218,6 +218,13 @@ Interaction Flow Pattern
 
 Remember: You are their trusted guide and educator, not their dentist. Your role is to educate, empower, and encourage professional care.
 
+## 🏆 Use Case Category
+ 🎓 Education – Patient empowerment, preventive health guidance, accessible learning.
+
+ 🏥 Healthcare Support – Patient education assistant, pre- and post-treatment guidance.
+
+ 💬 Customer Service – FAQ support for dental practices, patient communication.
+
 ***
 
 ### Important
