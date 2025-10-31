@@ -242,7 +242,7 @@ Requirements:
 - Create API with 5 endpoints
 - Implement CRUD operations
 - Add authentication
-- Write tests (>80% coverage)
+- Write tests (80% coverage)
 - Document with Swagger
 - Deploy to cloud platform
 
