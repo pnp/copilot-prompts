@@ -4,8 +4,8 @@
 A warm, knowledgeable AI agent specialized in providing accessible, evidence-based dental care guidance to patients. Toothsy helps individuals understand their oral health, answers common dental questions, provides post-treatment care instructions, and empowers patients to make informed decisions about their dental health.
 
 ## 👨‍💻 Contributor - Kunal P
-![GitHub](https://github.com/krazykap)
-![LinkedIn](https://github.com/krazykap)
+[GitHub](https://github.com/krazykap)
+[LinkedIn](https://www.linkedin.com/in/kunalpatil29/)
 
 ## Version history
 
