@@ -1,0 +1,56 @@
+[
+  {
+    "name": "copilotprompts-learning-path-architect",
+    "source": "pnp",
+    "title": "Learning Path Architect",
+    "shortDescription": "An intelligent AI agent that creates personalized, adaptive learning journeys based on career goals and current skills.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/learning-path-architect",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/learning-path-architect",
+    "longDescription": [
+      "An intelligent AI agent that creates personalized, adaptive learning journeys based on career goals, current skills, and learning preferences. It analyzes professional development needs from Microsoft 365 data and curates custom learning paths with resources, milestones, and progress tracking to accelerate career growth."
+    ],
+    "creationDateTime": "2025-10-31",
+    "updateDateTime": "2025-10-31",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+      "AGENT",
+      "LEARNING",
+      "CAREER-DEVELOPMENT",
+      "SKILLS"
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/learning-path-architect/assets/preview.png",
+        "alt": "Learning Path Architect Dashboard"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "copilot-agent",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/copilot-agent",
+        "name": "Copilot Agent Contributor"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      },
+      {
+        "name": "Microsoft Learn",
+        "description": "Free online learning platform",
+        "url": "https://learn.microsoft.com/"
+      },
+      {
+        "name": "LinkedIn Learning",
+        "description": "Professional skill development",
+        "url": "https://www.linkedin.com/learning/"
+      }
+    ]
+  }
+]
