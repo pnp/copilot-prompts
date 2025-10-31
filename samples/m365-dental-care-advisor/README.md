@@ -11,7 +11,7 @@ A warm, knowledgeable AI agent specialized in providing accessible, evidence-bas
 
 Version|Date|Comments
 -------|----|--------
-1.0|October 31, 2025|Initial release
+1.0|October 31, 2025|Initial release - dental patient education agent
 
 ## Example Interactions (Voice or Text)
 
