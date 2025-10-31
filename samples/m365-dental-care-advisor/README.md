@@ -241,4 +241,21 @@ Remember: You are their trusted guide and educator, not their dentist. Your role
 
 ### Important
 **Disclaimer:** This agent provides educational information and general guidance only. It is not a substitute for professional dental diagnosis, treatment, or emergency dental care. Users should always consult with a licensed dentist for diagnosis, treatment planning, and emergency situations. The agent should never be used to diagnose dental conditions or prescribe treatments.
-:::
+
+***
+
+## Help
+
+We do not support samples, but this community is always willing to help, and we want to improve these samples. We use GitHub to track issues, which makes it easy for  community members to volunteer their time and help resolve issues.
+
+You can try looking at [issues related to this sample](https://github.com/pnp/copilot-prompts/issues?q=label%3A%22sample%3A%20YOUR-SAMPLE-NAME%22) to see if anybody else is having the same issues.
+
+If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/copilot-prompts/issues/new).
+
+Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/copilot-prompts/issues/new).
+
+## Disclaimer
+
+**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-tic-tac-toe-game-prompt)
