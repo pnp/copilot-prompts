@@ -20,7 +20,7 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/toothsy-dental-care-advisor-prompt/assets/toothsy-dental-care-advisor.png",
+                "url": "https://github.com/krazykap/copilot-prompts/blob/kp-copilot-prompts/samples/m365-dental-care-advisor/assets/preventive-care.png",
                 "alt": "Illustration representing Toothsy Dental Care Advisor answering dental health questions."
             }
         ],
