@@ -1,0 +1,42 @@
+[
+    {
+        "name": "toothsy-dental-care-advisor-prompt",
+        "source": "pnp",
+        "title": "Toothsy Dental Care Advisor",
+        "shortDescription": "Toothsy Dental Care Advisor: An AI-powered agent for answering dental health questions, offering patient education, and supporting oral hygiene care.",
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/toothsy-dental-care-advisor-prompt",
+        "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/toothsy-dental-care-advisor-prompt",
+        "longDescription": [
+            "Toothsy Dental Care Advisor serves as a friendly, knowledgeable AI agent that educates and empowers patients on oral health topics. The agent answers common dental questions, provides step-by-step care guidance, explains preventive practices, supports post-treatment care, and helps manage dental anxiety. Designed for use in dental practices, patient portals, or educational platforms, Toothsy combines evidence-based knowledge with an approachable, empathetic style, focusing on clarity, patient trust, and actionable oral hygiene advice."
+        ],
+        "creationDateTime": "2025-11-01",
+        "updateDateTime": "2025-11-01",
+        "products": [
+            "Copilot for Microsoft 365",
+            "Microsoft Copilot"
+        ],
+        "metadata": [],
+        "thumbnails": [
+            {
+                "type": "image",
+                "order": 100,
+                "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/toothsy-dental-care-advisor-prompt/assets/toothsy-dental-care-advisor.png",
+                "alt": "Illustration representing Toothsy Dental Care Advisor answering dental health questions."
+            }
+        ],
+        "authors": [
+            {
+                "gitHubAccount": "https://github.com/krazykap",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/30044088?v=4",
+                "name": "Kunal Patil"
+            }
+        ],
+        "references": [
+            {
+                "name": "Microsoft Copilot",
+                "description": "Microsoft Copilot",
+                "url": "https://copilot.microsoft.com/"
+            }
+        ]
+    }
+]
