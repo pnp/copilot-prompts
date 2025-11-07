@@ -1,5 +1,6 @@
 # 🚀 7-Day Inbox Review & Action Framework 💻
 
+![Sample](https://github.com/ondrejvysek/copilot-prompts/blob/m365-7-day-inbox-review-and-action/samples/m365-7-day-inbox-review-action-framework/assets/sample1.png)
 
 ## Summary
 
