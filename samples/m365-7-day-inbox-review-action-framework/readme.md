@@ -1,6 +1,5 @@
 # 🚀 7-Day Inbox Review & Action Framework 💻
 
-<img width="811" height="976" alt="image" src="https://github.com/user-attachments/assets/866f8df7-3ff0-49f4-9d1f-f8f6b3a7db8d" />
 
 ## Summary
 
