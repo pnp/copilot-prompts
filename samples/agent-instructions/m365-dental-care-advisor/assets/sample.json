@@ -1,11 +1,11 @@
 [
     {
-        "name": "toothsy-dental-care-advisor-prompt",
+        "name": "copilotprompts-toothsy-dental-care-advisor-prompt",
         "source": "pnp",
         "title": "Toothsy Dental Care Advisor",
         "shortDescription": "Toothsy Dental Care Advisor: An AI-powered agent for answering dental health questions, offering patient education, and supporting oral hygiene care.",
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/toothsy-dental-care-advisor-prompt",
-        "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/toothsy-dental-care-advisor-prompt",
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/m365-dental-care-advisor",
+        "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/m365-dental-care-advisor",
         "longDescription": [
             "Toothsy Dental Care Advisor serves as a friendly, knowledgeable AI agent that educates and empowers patients on oral health topics. The agent answers common dental questions, provides step-by-step care guidance, explains preventive practices, supports post-treatment care, and helps manage dental anxiety. Designed for use in dental practices, patient portals, or educational platforms, Toothsy combines evidence-based knowledge with an approachable, empathetic style, focusing on clarity, patient trust, and actionable oral hygiene advice."
         ],
@@ -20,7 +20,7 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/krazykap/copilot-prompts/blob/kp-copilot-prompts/samples/m365-dental-care-advisor/assets/preventive-care.png",
+                "url": "https://github.com/pnp/copilot-prompts/blob/main/samples/agent-instructions/m365-dental-care-advisor/assets/preventive-care.png",
                 "alt": "Illustration representing Toothsy Dental Care Advisor answering dental health questions."
             }
         ],
