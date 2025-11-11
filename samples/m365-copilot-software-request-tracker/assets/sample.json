@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-copilot-software-request-tracker/assets/demo1.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-copilot-software-request-tracker/assets/Demo1.png",
           "alt": "This prompt tracks all software requests sent via email or teams chat by providing email address of the requestor(s), generates an executive summary, table along with status and security posture of each software."
         }
       ],
