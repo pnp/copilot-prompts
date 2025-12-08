@@ -1,0 +1,42 @@
+[
+    {
+      "name": "copilotprompts-m365-ai-code-review-feedback",
+      "source": "pnp",
+      "title": "AI-Powered Code Review Feedback Generator",
+      "shortDescription": "This prompt helps developers receive comprehensive, constructive code review feedback on their pull requests or code snippets.",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-ai-code-review-feedback",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-ai-code-review-feedback",
+      "longDescription": [
+        "This prompt analyzes code submissions and provides comprehensive feedback covering quality, security, performance, and best practices. It helps developers improve their code before merging and maintains high code standards across teams. The analysis includes code quality assessment, security vulnerabilities, performance optimization opportunities, and best practices compliance with suggested improvements."
+      ],
+      "creationDateTime": "2024-10-31",
+      "updateDateTime": "2024-10-31",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-ai-code-review-feedback/assets/demo.png",
+          "alt": "Demo of AI Code Review Feedback"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "ValerasNarbutas",
+          "pictureUrl": "https://avatars.githubusercontent.com/ValerasNarbutas",
+          "name": "Valeras Narbutas"
+        }
+      ],
+      "references": [        
+        {
+          "name": "Copilot for Microsoft 365",
+          "description": "Microsoft 365 Copilot",
+          "url": "https://developer.microsoft.com/microsoft-365/dev-program"
+        }
+      ]
+    }
+  ]
