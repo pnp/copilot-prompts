@@ -1,0 +1,45 @@
+[
+  {
+    "name": "copilotprompts-m365-tenant-compliance-and-security-summary-report",
+    "source": "pnp",
+    "title": "Tenant Compliance & Security Summary Report for Microsoft 365",
+    "shortDescription": "A comprehensive overview of the Microsoft 365 tenant's compliance and security posture, summarizing retention policies, sensitivity labels, and DLP policies.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-tenant-compliance-and-security-summary-report",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-tenant-compliance-and-security-summary-report",
+    "longDescription": [
+      "This report provides a comprehensive overview of the Microsoft 365 tenant's compliance and security posture, summarizing all active retention policies, sensitivity labels, and DLP policies. It highlights coverage across SharePoint sites, Teams, OneDrive accounts, and mailboxes, and identifies gaps or locations not governed by any policy. The report is designed to support governance reviews, audit preparation, and proactive risk management in a Microsoft 365 environment."
+    ],
+    "creationDateTime": "2025-12-18",
+    "updateDateTime": "2025-12-18",
+    "products": [
+      "Microsoft Copilot",
+      "Microsoft 365"
+    ],
+    "metadata": [
+      {
+        "key": "COPILOT-PRODUCT",
+        "value": "Microsoft 365"
+      },
+      {
+        "key": "COPILOT-EXPERIENCE",
+        "value": "Microsoft Teams"
+      }
+    ],
+    "thumbnails": [
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ojopiyo",
+        "pictureUrl": "https://github.com/ojopiyo.png",
+        "name": "Josiah Opiyo"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot for Microsoft 365",
+        "description": "Microsoft Copilot for Microsoft 365",
+        "url": "https://www.microsoft.com/microsoft-365/copilot"
+      }
+    ]
+  }
+]
