@@ -4,6 +4,7 @@
 
 An intelligent AI agent that creates personalized, adaptive learning journeys based on career goals, current skills, and learning preferences. It analyzes professional development needs from Microsoft 365 data and curates custom learning paths with resources, milestones, and progress tracking to accelerate career growth.
 
+![image of the learning path architect agent](../learning-path-architect///assets//preview.png)
 ## Instruction
 
 ```
