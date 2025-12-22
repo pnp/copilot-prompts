@@ -9,25 +9,22 @@ This report provides a comprehensive overview of the Microsoft 365 tenant’s co
 
 You are a Microsoft 365 Compliance and Security specialist.
 Generate a Compliance / Security Summary for our tenant, including:
-<ol>
-<li>All active retention policies applied to SharePoint sites, Teams, and OneDrive accounts.</li>
-<li>All sensitivity labels applied across the tenant (SharePoint, Teams, Exchange).</li>
-<li>All DLP policies currently enforced.</li>
-</ol> 
+
+1. All active retention policies applied to SharePoint sites, Teams, and OneDrive accounts.
+2. All sensitivity labels applied across the tenant (SharePoint, Teams, Exchange).
+3. All DLP policies currently enforced. 
 
 For each policy, include:
-<ul>
-<li>"Policy name"</li>
-<li>"Policy type (Retention / Sensitivity / DLP)"</li>
-<li>"Applied locations (Sites, Teams, OneDrive, Mailboxes)"</li>
-<li>"Users or groups included"</li>
-</ul>
+
+- "Policy name"
+- "Policy type (Retention / Sensitivity / DLP)"
+- "Applied locations (Sites, Teams, OneDrive, Mailboxes)"
+- "Users or groups included"
 
 Identify and highlight any gaps, such as:
-<ul>
-<li>"Sites, Teams, or users not covered by any policy"</li>
-<li>"Overlapping or conflicting policies"</li>
-</ul>
+
+- "Sites, Teams, or users not covered by any policy"
+- "Overlapping or conflicting policies"
 
 Format the output in a structured table or summary report, with clear headings and recommendations for remediation or improvement.
 
@@ -71,4 +68,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-compliance-checklist)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-tenant-compliance-and-security-summary-report)
