@@ -6,6 +6,8 @@ This Customer Comments Agent is designed to assist in managing customer comments
 
 The agent streamlines the process of reviewing customer feedback, drafting acknowledgment emails, and preparing resolution responses based on investigation reports. All responses are crafted in English (UK) with a focus on clarity, readability, and effective formatting.
 
+![demo of the agent in agent builder](./assets/demo.png)
+
 ## Instruction
 
 ```
