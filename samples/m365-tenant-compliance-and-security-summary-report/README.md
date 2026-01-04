@@ -1,9 +1,15 @@
 # Tenant Compliance & Security Summary Report for Microsoft 365
 
 
+
 ## Summary
 
-This report provides a comprehensive overview of the Microsoft 365 tenant’s compliance and security posture, summarizing all active retention policies, sensitivity labels, and DLP policies. It highlights coverage across SharePoint sites, Teams, OneDrive accounts, and mailboxes, and identifies gaps or locations not governed by any policy. The report is designed to support governance reviews, audit preparation, and proactive risk management in a Microsoft 365 environment. 
+This prompt can generate an audit-ready report template which you can use immediately—just paste in your actual policy data. Microsoft 365 Copilot will not able to query tenant configuration, such as:
+
+Active Retention Policies
+Active Sensitivity Labels
+Active DLP Policies
+Policy assignments to sites, Teams, OneDrive, or mailboxes
 
 ## Prompt 💡
 
@@ -47,6 +53,7 @@ Version|Date|Comments
 2. Open the Microsoft Teams app
 3. Open the Copilot app within Teams
 4. Paste the prompt in the Copilot app
+5. Paste your actual data onto the report and finish
 
 
 ## Prerequisites
