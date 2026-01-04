@@ -20,8 +20,8 @@
       {
         "type": "image",
         "order": 100,
-        "url": "",
-        "alt": ""
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/customer-comments-agent/assets/demo.png",
+        "alt": "Demo of the Customer Comments Agent in action."
       }
     ],
     "authors": [
