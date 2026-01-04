@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-customer-comments-agent",
+    "source": "pnp",
+    "title": "Customer Comments Agent",
+    "shortDescription": "An agent designed to assist in managing customer comments about services at provided facilities by analyzing form submissions and drafting responses based on complaint handling guidelines.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/customer-comments-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/customer-comments-agent",
+    "longDescription": [
+      "This Customer Comments Agent analyzes form submissions from customers and drafts responses based on a Guidelines for Handling Complaints document. It helps manage customer feedback by filtering submissions based on criteria, drafting acknowledgement emails, and preparing resolution responses. The agent maintains a professional and neutral tone while showing empathy for customer concerns, ensuring all communication is clear, consistent, and aligned with organizational guidelines."
+    ],
+    "creationDateTime": "2025-05-21",
+    "updateDateTime": "2026-01-05",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "",
+        "alt": ""
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "jayshree2020",
+        "pictureUrl": "https://avatars.githubusercontent.com/jayshree2020",
+        "name": "Jayshree Ostwal"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
