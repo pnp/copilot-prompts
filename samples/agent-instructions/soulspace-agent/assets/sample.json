@@ -24,7 +24,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/soulspace-agent/assets/demo.png",
+        "url": "",
         "alt": "copilotprompts-soulspace-agent"
       }
     ],
