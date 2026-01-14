@@ -1,0 +1,46 @@
+[
+  {
+    "name": "copilotprompts-soulspace-agent",
+    "source": "pnp",
+    "title": "Soulspace: AI Instructions for Calm, Clarity, and Care",
+    "shortDescription": "Mental wellness assistant for calm, clarity, and emotional care",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/soulspace-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/soulspace-agent",
+    "longDescription": [
+      "A compassionate mental wellness assistant that helps users reflect on their emotional state, reduce stress, build positive habits, and promote mental well-being through mindfulness techniques, CBT-based reframing exercises, and motivational encouragement."
+    ],
+    "creationDateTime": "2026-01-14",
+    "updateDateTime": "2026-01-14",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "CATEGORY",
+        "value": "Healthcare & Wellbeing"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/soulspace-agent/assets/demo.png",
+        "alt": "copilotprompts-soulspace-agent"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "anuraj",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/anuraj",
+        "name": "Anuraj Parameswaran"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot for mental wellness support",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
