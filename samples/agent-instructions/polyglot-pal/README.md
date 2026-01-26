@@ -1,4 +1,4 @@
-````markdown
+
 # 🎯 "Polyglot Pal" Spontaneous Language Buddy
 
 ## Summary
@@ -82,4 +82,3 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 ![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-polyglot-pal)
 
-````
