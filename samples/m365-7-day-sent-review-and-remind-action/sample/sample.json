@@ -34,7 +34,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-7-day-sent-review-and-remind-action/assets/sample1.png",
+        "url": "https://github.com/ondrejvysek/copilot-prompts/blob/m365-7-day-sent-review-and-remind-action/samples/m365-7-day-sent-review-and-remind-action/sample/sample1.png",
         "alt": "Prioritized Sent Items Follow-Up Review"
       }
     ],
