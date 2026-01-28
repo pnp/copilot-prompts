@@ -2,7 +2,7 @@
 
 Bored of tracking requests, questions, or tasks you sent by email and not sure whether anyone answered?
 
-![Sample](https://github.com/ondrejvysek/copilot-prompts/blob/m365-7-day-sent-review-and-remind-action/samples/m365-7-day-sent-review-and-remind-action/assets/sample1.png)
+![Sample](https://github.com/ondrejvysek/copilot-prompts/blob/m365-7-day-sent-review-and-action/samples/m365-7-day-sent-review-and-remind-action/assets/sample1.png)
 
 ## Summary
 
