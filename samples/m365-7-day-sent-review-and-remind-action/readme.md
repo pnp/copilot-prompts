@@ -107,7 +107,7 @@ Sales, presales, delivery leads, team leads, and execs.
 
 Version|Date|Comments
 -------|----|--------
-1.0|Nov 7, 2025|Initial release
+1.0|Jan 28, 2026|Initial release
 
 ## Instructions 📝
 
