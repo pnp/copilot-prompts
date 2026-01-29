@@ -19,7 +19,7 @@ DECISIONS MADE:
 QUESTIONS TO FOLLOW UP:
 - [Any open questions]
 ```
-![View](./assets/image.png)
+![Preview](./assets/preview.png)
 
 
 ## Description

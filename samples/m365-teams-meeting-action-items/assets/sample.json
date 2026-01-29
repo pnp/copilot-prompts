@@ -20,8 +20,8 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-teams-meeting-action-items/assets/image.png",
-        "alt": "Task recovery assistant"
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-teams-meeting-action-items/assets/preview.png",
+        "alt": "Teams Meetings"
       }
     ],
     "authors": [
