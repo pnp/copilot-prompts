@@ -1,0 +1,48 @@
+[
+    {
+      "name": "copilotprompts-vscode-daily-usage-summary",
+      "source": "pnp",
+      "title": "VS Code Daily Usage Summary",
+      "shortDescription": "Generate daily VS Code activity summary with metrics and insights",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/vscode-daily-usage-summary-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/vscode-daily-usage-summary-prompt",
+      "longDescription": [
+        "This prompt analyzes your daily VS Code activity and provides a comprehensive summary including lines of code written, new files added, files modified, and time spent coding. Perfect for PR reviewers, developer performance tracking, and daily productivity insights."
+      ],
+      "creationDateTime": "2026-02-08",
+      "updateDateTime": "2026-02-08",
+      "products": [
+        "Microsoft 365 Copilot",
+        "VS Code"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/vscode-daily-usage-summary-prompt/assets/demo.png",
+          "alt": "VS Code Daily Usage Summary"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "pranamk",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/pranamk?v=4",
+          "name": "Pranam K"
+        }
+      ],
+      "references": [
+        {
+          "name": "VS Code",
+          "description": "Visual Studio Code",
+          "url": "https://code.visualstudio.com/"
+        },
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]
