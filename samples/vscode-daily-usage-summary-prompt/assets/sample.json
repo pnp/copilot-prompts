@@ -17,12 +17,6 @@
       "metadata": [
       ],
       "thumbnails": [
-        {
-          "type": "image",
-          "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/vscode-daily-usage-summary-prompt/assets/demo.png",
-          "alt": "VS Code Daily Usage Summary"
-        }
       ],
       "authors": [
         {

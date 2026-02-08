@@ -1,7 +1,5 @@
 # 📊 VS Code Daily Usage Summary 💻
 
-![VS Code Daily Usage](./assets/demo.png)
-
 ## Summary
 This prompt generates a comprehensive daily usage summary of your VS Code activity. It analyzes metrics such as lines of code written, new files added, files changed, and total time spent in VS Code. This helps developers track their productivity, assist PR reviewers with context, and provide insights for individual developer summaries.
 
