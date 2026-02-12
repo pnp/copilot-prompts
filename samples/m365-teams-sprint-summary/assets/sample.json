@@ -1,0 +1,50 @@
+[
+    {
+      "name": "m365-teams-sprint-summary",
+      "source": "pnp",
+      "title": "Summarize This Email Thread",
+      "shortDescription": "Get main points from long email threads in 3 bullets",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-teams-sprint-summary",
+      "longDescription": [
+        "Long email threads are hard to follow. This prompt gives you the important stuff: main topic, key decisions, and what you need to do next."
+      ],
+      "creationDateTime": "2025-01-29",
+      "updateDateTime": "2025-01-29",
+      "products": [
+        "Microsoft 365 Copilot",
+        "Teams"
+      ],
+      "metadata": [
+        {
+          "key": "PROMPT-TYPE",
+          "value": "Productivity"
+        },
+        {
+          "key": "COPILOT-AGENT",
+          "value": "Microsoft 365 Copilot"
+        }
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-teams-sprint-summary/assets/preview.png",
+          "alt": "Email thread summary preview"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "saiiiiiii",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/46020510?v=4",
+          "name": "Sai Siva Ram Bandaru"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft 365 Copilot",
+          "description": "Learn about Copilot",
+          "url": "https://www.microsoft.com/microsoft-365/copilot"
+        }
+      ]
+    }
+  ]
