@@ -122,6 +122,7 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 ```
 
 **README rules:**
+- **NEVER rephrase, rewrite, or modify the user's system prompt / agent instructions.** Copy the prompt exactly as provided by the user — word for word, character for character. The user's original wording is the contribution; do not "improve", shorten, expand, or restructure it.
 - The file should be named `readme.md` (matching existing convention in agent-instructions)
 - The **Instruction** section is the most important part — it contains the full system prompt in a fenced code block
 - The system prompt should be well-structured with clear sections (Purpose, Execution Steps, Operating Principles, Tone, etc.)
@@ -231,6 +232,7 @@ Before finalizing, verify:
 
 ## Key Rules
 
+- **NEVER rephrase, rewrite, or modify the user's system prompt / agent instructions.** Always copy them verbatim into the readme's Instruction section. The user's exact wording is the contribution.
 - **This skill is for agent instruction / system prompt samples ONLY** — not for simple prompt samples
 - Samples MUST go in `samples/agent-instructions/{agent-name}/`, never directly under `samples/`
 - Every sample needs exactly: `readme.md` + `assets/sample.json`
