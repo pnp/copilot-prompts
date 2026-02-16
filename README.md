@@ -8,24 +8,6 @@ This repository contains examples of prompts for Microsoft Copilot.
 **Disclaimer: Use of GitHub Avatars for Recognition Posts**
 By contributing to this open-source project, you grant us permission to use your GitHub avatar in our “Prompt of the Week Kudos” posts on LinkedIn, celebrating your contributions. If you prefer to use a different photo or opt out entirely, please open an issue in the repository or contact us directly. We’re happy to accommodate your preferences.
 
-## Agent Instruction Contest  at Microsoft Build 2025
-
-###  Winners
-
-🧹 [The Hero's Chore Journey – Bruno Silva  🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/daily-chore-children)
-
-🤝 [Communication Assistant for a Kinder World – Shinichi Yamada 🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/communication-assistant)
-
-🎨 [WarholEmojiFactory – Ryan Trad 🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/warhol-emoji-factory)
-
-### Runners up
-
-🌾 [AgriGuard – Smart Crop Doctor – Shrushti Shah 🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/smart-crop-doctor)
-
-🧪 [Elevator-Pitch Alchemist – Andrii Balashov  🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/elevator-pitch-alchemist)
-
-🕊️ [PeaceKeeper: AI-Powered Conflict Resolution & De-escalation Advisor – Shubham Shukla  🤖 ](https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/peace-keeper-agent)
-
 ## Have an idea, issues or questions?
 
 If you've got an idea or questions or experience an issue with any of the samples in this repo, please [create an issue](https://github.com/pnp/copilot-prompts/issues/new).
@@ -42,42 +24,87 @@ Simply go to the [samples](https://github.com/pnp/copilot-prompts/tree/main/samp
 
 ## Contributions
 
-Samples in this repository are submitted by Microsoft's product groups, and the [Microsoft 365 and Power Platform community](http://aka.ms/m365pnp). We welcome your feedback and suggestions for new samples. We also welcome community contributions. If you have any questions, just let us know.
+Samples in this repository are submitted by Microsoft’s product groups, and the [Microsoft 365 and Power Platform community](http://aka.ms/m365pnp). We welcome your feedback and suggestions for new samples. We also welcome community contributions. If you have any questions, just let us know.
 
-Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Create a pull request from your forked repos’ new branch to the upstream repository’s main branch so your prompts can be reviewed and approved by the one of the community folks in their free time.
+Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Create a pull request from your forked repo’s new branch to the upstream repository’s main branch so your prompts can be reviewed and approved by the one of the community folks in their free time.
 
-Here is a detailed description to how you can contribute your own sample:
+This repository has two types of prompt samples:
 
-### Contributing your own prompts
+| Type | Location | What it is |
+|------|----------|------------|
+| **Prompt samples** | `samples/{folder-name}/` | A prompt you use directly in Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
+| **Agent instruction samples** | `samples/agent-instructions/{agent-name}/` | A system prompt / agent instructions you paste into Copilot Studio to create an agent |
+
+Both types follow the same basic structure: a `README.md` (or `readme.md`) file and an `assets/` folder containing a `sample.json` metadata file.
+
+You can contribute in two ways — **traditionally** (manually creating files) or using **GitHub Copilot** to scaffold everything for you.
+
+---
+
+### Option 1: Contribute using GitHub Copilot (recommended)
+
+If you have GitHub Copilot in VS Code, you can use the built-in skills to scaffold your sample automatically with the correct folder structure, README, and sample.json.
+
+#### For prompt samples
+
+Open GitHub Copilot Chat and say one of the following:
+
+- *"Create a new prompt sample"*
+- *"Add a new prompt sample"*
+- *"Scaffold a new prompt sample"*
+
+GitHub Copilot will ask you for details (title, prompt text, target product, author info) and create the folder under `samples/` with all required files.
+
+#### For agent instruction / system prompt samples
+
+Open GitHub Copilot Chat and say one of the following:
+
+- *"Create an agent instruction"*
+- *"Create a system prompt sample"*
+- *"Scaffold an agent sample"*
+- *"Build an agent"*
+
+GitHub Copilot will ask you for details (agent name, system prompt, use case category, author info) and create the folder under `samples/agent-instructions/` with all required files.
+
+> **Note:** After scaffolding, remember to add a screenshot to the `assets/` folder and update the `sample.json` thumbnails if applicable.
+
+---
+
+### Option 2: Contribute traditionally
+
 Your insights can help the community thrive. If you have prompts that can benefit others or if you have figured out a hack, here’s how to share them:
 
 #### Fork the repository
-Go to the repository https://aka.ms/pnp-prompt-bank, select the Fork button to create your own copy.
+Go to the repository https://aka.ms/copilot-prompt-library, select the Fork button to create your own copy.
 
 #### Create a new branch
 Clone your forked repository and create a new branch with a unique name that reflects your prompt’s purpose.
 
 #### Add a new folder
-Inside the samples folder, create a new folder following the naming convention: <apphost-functionality-prompt>.
 
-For example, if you’re creating a prompt for a PowerPoint sales report, name it ppt-sales-report-prompt.
+**For prompt samples:** Inside the `samples` folder, create a new folder following the naming convention: `<apphost-functionality-prompt>`. For example, if you’re creating a prompt for a PowerPoint sales report, name it `ppt-sales-report-prompt`.
+
+**For agent instruction samples:** Inside `samples/agent-instructions`, create a new folder with a descriptive name for your agent (e.g., `communication-assistant`, `smart-crop-doctor`).
 
 #### Prepare the readme file
-Find an existing readme.md file in any sample folder.
+Find an existing `readme.md` file in any sample folder of the same type.
 
-Copy it into the new folder you created in the step above and update the contents in the file to describe your prompt.
+Copy it into the new folder you created in the step above and update the contents in the file to describe your prompt or agent instructions.
+
+For agent instruction samples, the key section is **Instruction** — place your full system prompt inside a fenced code block.
 
 #### Create an assets folder
-Within your new folder, add a subfolder named assets. This is where you’ll store any images or GIF files that your readme file refers to.
+Within your new folder, add a subfolder named `assets`. This is where you’ll store any images or GIF files that your readme file refers to.
 
 #### Copy the sample JSON file
-Locate the sample.json file in any existing sample’s assets folder. Copy this file into your own assets folder.
+Locate the `sample.json` file in any existing sample’s `assets` folder. Copy this file into your own `assets` folder.
 
-> Each of the samples in this repository will be shown in the [ M365 Solution Gallery page](https://adoption.microsoft.com/en-us/sample-solution-gallery/) for better discovery and use. The `sample.json` file is what helps feed the solution gallery website with the metadata of a sample.
+> Each of the samples in this repository will be shown in the [M365 Solution Gallery page](https://adoption.microsoft.com/en-us/sample-solution-gallery/) for better discovery and use. The `sample.json` file is what helps feed the solution gallery website with the metadata of a sample.
 
 #### Update the JSON file
-Modify the sample.json file in your assets folder to match the details of your prompt.
+Modify the `sample.json` file in your `assets` folder to match the details of your prompt or agent.
 
+---
 
 And that’s it! You’re now ready to contribute your creative prompts to the repository.
 
