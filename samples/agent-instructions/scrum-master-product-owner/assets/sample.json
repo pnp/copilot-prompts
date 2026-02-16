@@ -15,14 +15,7 @@
       "Copilot"
     ],
     "metadata": [],
-    "thumbnails": [
-      {
-        "type": "image",
-        "order": 100,
-        "url": "",
-        "alt": ""
-      }
-    ],
+    "thumbnails": [],
     "authors": [
       {
         "gitHubAccount": "StfBauer",
