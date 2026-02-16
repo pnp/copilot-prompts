@@ -1,116 +1,81 @@
-# Copilot prompts
+# Copilot Prompts
 
-This repository contains examples of prompts for Microsoft Copilot.
+This repository contains sample prompts and agent instructions for Microsoft Copilot, GitHub Copilot, and Microsoft 365 Copilot. We welcome community contributions — if you have a great prompt or agent idea, please share your work and help others!
 
-> We welcome community contributions to the `samples` folder in this repository for demonstrating different prompts for Microsoft Copilot. If you have a great sample prompt for Microsoft Copilot, GitHub Copilot or Microsoft Copilot for Microsoft 365, please share your work and help others!
+> **Disclaimer:** The sample prompts provided in this repository are for demonstration purposes. They may not always be accurate or suitable for your specific use case. Please use them at your own discretion and review and modify them as necessary. By using the prompts in this repository, you acknowledge these limitations and agree to use the content responsibly. The authors are not liable for any inaccuracies or issues that arise from their use.
+> **Use of GitHub Avatars:** By contributing to this project, you grant us permission to use your GitHub avatar in our "Prompt of the Week Kudos" posts on LinkedIn. If you prefer a different photo or wish to opt out, please [open an issue](https://github.com/pnp/copilot-prompts/issues/new) or contact us directly.
 
-> **Disclaimer:** The sample prompts provided in this repository are for demonstration purposes. They may not always be accurate or suitable for your specific use case. Please use them at your own discretion and review and modify them as necessary.By using the prompts in this repository, you acknowledge these limitations and agree to use the content responsibly. The authors of this repository or the prompts are not liable for any inaccuracies or issues that arise from the use of these prompts.
-**Disclaimer: Use of GitHub Avatars for Recognition Posts**
-By contributing to this open-source project, you grant us permission to use your GitHub avatar in our “Prompt of the Week Kudos” posts on LinkedIn, celebrating your contributions. If you prefer to use a different photo or opt out entirely, please open an issue in the repository or contact us directly. We’re happy to accommodate your preferences.
+## Have ideas, issues, or questions?
 
-## Have an idea, issues or questions?
-
-If you've got an idea or questions or experience an issue with any of the samples in this repo, please [create an issue](https://github.com/pnp/copilot-prompts/issues/new).
+Please [create an issue](https://github.com/pnp/copilot-prompts/issues/new) — we'd love to hear from you.
 
 ## Authors
 
-This repository's contributors are all community members who volunteered their time to share code samples.
+This repository's contributors are community members who volunteered their time to share prompt samples.
 
 ## How to use this repo
 
-Simply go to the [samples](https://github.com/pnp/copilot-prompts/tree/main/samples) folder and select one sample (see steps 1-3) in the figure below. Then find the instructions in the readme.md file to run the prompt yourself. Be sure to checkout the prerequisites before you get started.
+Go to the [samples](https://github.com/pnp/copilot-prompts/tree/main/samples) folder, select a sample, and follow the instructions in its `readme.md`. Be sure to check the prerequisites before you get started.
 
 ![how to use this repo image](./images/how-to.png)
 
 ## Contributions
 
-Samples in this repository are submitted by Microsoft’s product groups, and the [Microsoft 365 and Power Platform community](http://aka.ms/m365pnp). We welcome your feedback and suggestions for new samples. We also welcome community contributions. If you have any questions, just let us know.
+Samples are submitted by Microsoft's product groups and the [Microsoft 365 and Power Platform community](http://aka.ms/m365pnp). We welcome community contributions — please review our [Contribution Guidance](./CONTRIBUTING.md) before submitting a pull request.
 
-Please have a look on our [Contribution Guidance](./CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible. Create a pull request from your forked repo’s new branch to the upstream repository’s main branch so your prompts can be reviewed and approved by the one of the community folks in their free time.
-
-This repository has two types of prompt samples:
+This repository has two types of samples:
 
 | Type | Location | What it is |
 |------|----------|------------|
 | **Prompt samples** | `samples/{folder-name}/` | A prompt you use directly in Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
 | **Agent instruction samples** | `samples/agent-instructions/{agent-name}/` | A system prompt / agent instructions you paste into Copilot Studio to create an agent |
 
-Both types follow the same basic structure: a `README.md` (or `readme.md`) file and an `assets/` folder containing a `sample.json` metadata file.
+Both types share the same structure: a `readme.md` file and an `assets/` folder containing a `sample.json` metadata file.
 
-You can contribute in two ways — **traditionally** (manually creating files) or using **GitHub Copilot** to scaffold everything for you.
+You can contribute in two ways — **using GitHub Copilot** to scaffold everything automatically, or **traditionally** by creating files manually.
 
 ---
 
 ### Option 1: Contribute using GitHub Copilot (recommended)
 
-If you have GitHub Copilot in VS Code, you can use the built-in skills to scaffold your sample automatically with the correct folder structure, README, and sample.json.
+With GitHub Copilot in VS Code, built-in skills can scaffold your sample with the correct folder structure, README, and `sample.json`.
 
 #### For prompt samples
 
-Open GitHub Copilot Chat and say one of the following:
+Open GitHub Copilot Chat and say:
 
 - *"Create a new prompt sample"*
-- *"Add a new prompt sample"*
 - *"Scaffold a new prompt sample"*
-
-GitHub Copilot will ask you for details (title, prompt text, target product, author info) and create the folder under `samples/` with all required files.
 
 #### For agent instruction / system prompt samples
 
-Open GitHub Copilot Chat and say one of the following:
+Open GitHub Copilot Chat and say:
 
 - *"Create an agent instruction"*
 - *"Create a system prompt sample"*
-- *"Scaffold an agent sample"*
 - *"Build an agent"*
 
-GitHub Copilot will ask you for details (agent name, system prompt, use case category, author info) and create the folder under `samples/agent-instructions/` with all required files.
+GitHub Copilot will ask for the required details and generate the folder with all files.
 
-> **Note:** After scaffolding, remember to add a screenshot to the `assets/` folder and update the `sample.json` thumbnails if applicable.
+> **Note:** After scaffolding, add a screenshot to the `assets/` folder and update the `sample.json` thumbnails.
 
 ---
 
 ### Option 2: Contribute traditionally
 
-Your insights can help the community thrive. If you have prompts that can benefit others or if you have figured out a hack, here’s how to share them:
+1. **Fork** the repository at https://aka.ms/copilot-prompt-library.
+2. **Clone** your fork and create a new branch.
+3. **Add a new folder:**
+   - **Prompt samples:** `samples/<apphost-functionality-prompt>` (e.g., `ppt-sales-report-prompt`)
+   - **Agent instructions:** `samples/agent-instructions/<agent-name>` (e.g., `communication-assistant`)
+4. **Add a `readme.md`** — copy one from an existing sample of the same type and update it. For agent instruction samples, place your full system prompt in the **Instruction** section inside a fenced code block.
+5. **Add an `assets/` folder** with screenshots and a `sample.json` file (copy from any existing sample and update the metadata).
 
-#### Fork the repository
-Go to the repository https://aka.ms/copilot-prompt-library, select the Fork button to create your own copy.
-
-#### Create a new branch
-Clone your forked repository and create a new branch with a unique name that reflects your prompt’s purpose.
-
-#### Add a new folder
-
-**For prompt samples:** Inside the `samples` folder, create a new folder following the naming convention: `<apphost-functionality-prompt>`. For example, if you’re creating a prompt for a PowerPoint sales report, name it `ppt-sales-report-prompt`.
-
-**For agent instruction samples:** Inside `samples/agent-instructions`, create a new folder with a descriptive name for your agent (e.g., `communication-assistant`, `smart-crop-doctor`).
-
-#### Prepare the readme file
-Find an existing `readme.md` file in any sample folder of the same type.
-
-Copy it into the new folder you created in the step above and update the contents in the file to describe your prompt or agent instructions.
-
-For agent instruction samples, the key section is **Instruction** — place your full system prompt inside a fenced code block.
-
-#### Create an assets folder
-Within your new folder, add a subfolder named `assets`. This is where you’ll store any images or GIF files that your readme file refers to.
-
-#### Copy the sample JSON file
-Locate the `sample.json` file in any existing sample’s `assets` folder. Copy this file into your own `assets` folder.
-
-> Each of the samples in this repository will be shown in the [M365 Solution Gallery page](https://adoption.microsoft.com/en-us/sample-solution-gallery/) for better discovery and use. The `sample.json` file is what helps feed the solution gallery website with the metadata of a sample.
-
-#### Update the JSON file
-Modify the `sample.json` file in your `assets` folder to match the details of your prompt or agent.
-
----
-
-And that’s it! You’re now ready to contribute your creative prompts to the repository.
+> The `sample.json` feeds the [M365 Solution Gallery](https://adoption.microsoft.com/en-us/sample-solution-gallery/) for discoverability — make sure it's accurate.
 
 ## Resources
-- [https://aka.ms/Copilot-For-M365](https://aka.ms/Copilot-For-M365
-)
+
+- [Microsoft Copilot for Microsoft 365](https://aka.ms/Copilot-For-M365)
 - [Copilot Lab](https://copilot.cloud.microsoft/prompts)
 
 
