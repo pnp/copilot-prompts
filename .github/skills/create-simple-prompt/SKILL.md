@@ -114,6 +114,7 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 ```
 
 **README rules:**
+- **NEVER rephrase, rewrite, or modify the user's prompt text.** Copy the prompt exactly as provided by the user — word for word, character for character. The user's original wording is the contribution; do not "improve", shorten, expand, or restructure it.
 - The file MUST be named `README.md` (capital letters)
 - Always include a screenshot reference at the top (use `./assets/demo.png` as placeholder)
 - The tracking image at the bottom MUST follow the pattern: `https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-{folder-name}`
@@ -250,6 +251,7 @@ Before finalizing, verify:
 
 ## Key Rules
 
+- **NEVER rephrase, rewrite, or modify the user's prompt text.** Always copy it verbatim into the README. The user's exact wording is the contribution.
 - **This skill is for simple prompt samples ONLY** — not for agent instructions or system prompts
 - Samples go in `samples/{folder-name}/`, never in `samples/agent-instructions/`
 - Every sample needs exactly: `README.md` + `assets/sample.json`
