@@ -1,0 +1,117 @@
+Este repositorio reúne 7 plantillas de resúmenes personalizados para Copilot en Microsoft Teams, diseñadas para mejorar la productividad en reuniones y generar actas claras, estructuradas y reutilizables.
+“Explícamelo como si no hubiera estado”
+Objetivo: entender la reunión incluso si no pudiste asistir completa.
+Uso típico:
+
+➜ Acta de planificación o arranque de iniciativa
+Objetivo: dejar claro el propósito, alcance y primeros pasos de un nuevo proyecto o iniciativa.
+Prompt ejemplo:
+`Genera el acta de una reunión de planificación o arranque de iniciativa con la siguiente estructura:
+
+Objetivo de la iniciativa y contexto breve.
+Alcance acordado (qué entra y qué no entra).
+Entregables principales y criterios de éxito.
+Roles y responsabilidades de cada participante.
+Hitos clave y fechas estimadas.
+Primeras acciones a realizar tras esta reunión.
+Usa un tono profesional y orientado a proyectos.`
+
+➜ Acta de reunión con stakeholders externos
+Objetivo: documentar conversaciones con dirección, clientes u otras áreas, dejando claro qué esperan y qué se ha comprometido.
+Prompt ejemplo:
+`Genera un acta orientada a stakeholders externos con la siguiente estructura:
+
+Propósito de la reunión y quién ha participado.
+Puntos tratados desde la perspectiva del stakeholder.
+Necesidades, expectativas u objetivos expresados por el stakeholder.
+Compromisos adquiridos por nuestra parte.
+Compromisos adquiridos por el stakeholder (si los hay).
+Próximo hito relevante (reunión, entrega, decisión).
+Usa un tono claro, diplomático y fácil de compartir por correo.`
+
+➜ Acta de sesión formativa o workshop técnico
+Objetivo: capturar el conocimiento clave de una formación o taller técnico.
+Prompt ejemplo:
+`Genera el resumen de una sesión formativa o workshop técnico con esta estructura:
+
+Objetivo de la sesión y público al que iba dirigida.
+Temas principales explicados, con una breve descripción de cada uno.
+Ejemplos prácticos o demos que se hayan mostrado.
+Preguntas frecuentes planteadas por los asistentes y respuestas dadas.
+Recomendaciones o recursos adicionales mencionados.
+Próximos pasos sugeridos tras la formación.
+Usa un tono didáctico y orientado al aprendizaje.`
+
+➜ Acta de revisión de control interno y cumplimiento
+Objetivo: recoger hallazgos, evidencias y acciones relacionadas con compliance o auditoría interna.
+Prompt ejemplo:
+`Genera un acta de revisión de control interno y cumplimiento con esta estructura:
+
+Alcance de la revisión (procesos, áreas, sistemas).
+Hallazgos detectados, con una breve descripción.
+Evidencias mencionadas durante la reunión.
+Clasificación de cada hallazgo (crítico, alto, medio, bajo).
+Acciones correctivas propuestas, con responsables y plazos estimados.
+Riesgos asociados si no se implementan las acciones.
+Usa un tono formal y preciso.`
+
+➜ Acta de análisis y valoración de riesgos
+Objetivo: gestionar riesgos de forma ordenada, especialmente en proyectos o entornos IT.
+Prompt ejemplo:
+`Genera un acta de análisis y valoración de riesgos con la siguiente estructura:
+
+Lista de riesgos identificados.
+
+Para cada riesgo:
+
+Descripción
+Impacto (bajo, medio, alto)
+Probabilidad (baja, media, alta)
+Mitigación propuesta
+Responsable de seguimiento
+Resumen de los riesgos más críticos.
+
+Próximas acciones para revisar o actualizar los riesgos.
+
+Usa un tono claro y orientado a gestión de riesgos.`
+
+➜ Acta de retrospectiva o evaluación del equipo
+Objetivo: capturar aprendizajes después de un sprint, proyecto o fase importante.
+Prompt ejemplo:
+`Genera el acta de una retrospectiva o evaluación del equipo con esta estructura:
+
+Qué ha funcionado bien.
+Qué no ha funcionado o ha bloqueado el avance.
+Ideas de mejora propuestas por el equipo.
+Acciones concretas que se van a implementar.`
+➜ Acta de “plan de acción” tras reuniones operativas
+Objetivo: salir de reuniones operativas con un plan claro y ejecutable.
+Prompt ejemplo:
+`Genera un acta tipo "plan de acción" con esta estructura:
+
+Resumen muy breve de los temas tratados.
+
+Lista de decisiones tomadas.
+
+Lista de acciones con:
+
+Descripción
+Responsable
+Fecha objetivo
+Dependencias (si las hay)
+Riesgos o bloqueos identificados.
+
+Próxima fecha de seguimiento.
+
+Usa un tono muy práctico y centrado en la ejecución.`
+
+Los resúmenes personalizados de Copilot para Teams convierten las actas de reunión en algo mucho más útil y reutilizable.
+La clave está en diseñar buenos prompts y guardarlos como tus propias plantillas para cada tipo de reunión.
+Te invito a:
+
+Adaptar estas plantillas a tu contexto y a tu equipo
+Versionarlas en tu propio repo (por ejemplo, copilot-templates/)
+Compartir nuevas ideas de prompts para otros escenarios
+
+¿Tienes alguna plantilla que te gustaría añadir?
+¡Las contribuciones están abiertas! 😄
