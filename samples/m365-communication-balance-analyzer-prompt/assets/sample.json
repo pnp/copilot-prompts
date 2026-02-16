@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-m365-communication-balance-analyzer-prompt",
+    "source": "pnp",
+    "title": "Communication Balance Analyzer",
+    "shortDescription": "Analyzes your recent work context to identify one thing you're over‑communicating and one thing you're under‑communicating, with specific and constructive feedback.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-communication-balance-analyzer-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-communication-balance-analyzer-prompt",
+    "longDescription": [
+      "This prompt leverages Microsoft 365 Copilot's awareness of your recent emails, chats, meetings, and documents to surface communication patterns. It identifies one area where you may be over‑communicating and one area where you may be under‑communicating, providing specific and constructive feedback you can act on immediately."
+    ],
+    "creationDateTime": "2026-02-16",
+    "updateDateTime": "2026-02-16",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-communication-balance-analyzer-prompt/assets/demo.png",
+        "alt": "Screenshot of the Communication Balance Analyzer prompt in Microsoft 365 Copilot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rabwill",
+        "pictureUrl": "https://github.com/rabwill.png",
+        "name": "Rabia Williams"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
