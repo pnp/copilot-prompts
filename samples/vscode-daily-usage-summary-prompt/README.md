@@ -30,17 +30,15 @@ Version|Date|Comments
 
 ## Instructions 📝
 
-1. Make sure you have Copilot for Microsoft 365 in your tenant
-2. Open the Microsoft Teams app
-3. Open the Copilot app within Teams
-4. Paste the prompt in the Copilot app
-5. Connect your VS Code activity data or session
+1. Make sure you have GitHub Copilot extension installed in VSCode and enable it
+2. Launch GitHub Copilot Chat using `Cmd+I` (Mac) or `Ctrl+I` (Windows)
+3. Copy the above prompt, paste, and press `Enter`
+4. Allow scripts if safe to run to see the output
 
 
 ## Prerequisites
 
-* [Copilot for Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program)
-* VS Code with GitLens or similar extensions (optional, for enhanced metrics)
+* [GitHub Copilot](https://copilot.github.com/)
 
 ## Help
 
