@@ -1,0 +1,42 @@
+[
+    {
+      "name": "copilotprompts-m365-calendar-upcoming-week",
+      "source": "pnp",
+      "title": "Upcoming Week: Meeting Organization and Task Prep",
+      "shortDescription": "This prompt helps organize meetings agendas and tasks for the upcoming week",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-calendar-upcoming-week",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-calendar-upcoming-week",
+      "longDescription": [
+        "This prompt helps organize meetings and tasks for the upcoming week, ensuring preparation and preventing anything from being overlooked."
+      ],
+      "creationDateTime": "2025-02-21",
+      "updateDateTime": "2025-02-21",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-calendar-upcoming-week/assets/demo.png",
+          "alt": "prompt result in structure"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "petkir",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/13123689?v=4",
+          "name": "Peter Paul Kirschner"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]

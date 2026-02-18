@@ -1,0 +1,35 @@
+[
+  {
+    "name": "copilotprompts-code-review-csharp",
+    "source": "pnp",
+    "title": "C# Code Review Skill for GitHub Copilot",
+    "shortDescription": "A GitHub Copilot custom skill that performs structured code reviews of C# source code, checking naming conventions, performance, security, and .NET best practices.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/code-review-csharp",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/code-review-csharp",
+    "longDescription": [
+      "A reusable GitHub Copilot skill that teaches Copilot to perform comprehensive C# code reviews. The skill analyzes code for naming conventions, performance pitfalls, security vulnerabilities, and .NET best practices, then produces a prioritized Markdown report with actionable suggestions. Install it by copying the SKILL.md file into your repository's .github/skills/ folder."
+    ],
+    "creationDateTime": "2026-02-18",
+    "updateDateTime": "2026-02-18",
+    "products": [
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": []
+   ,
+    "authors": [
+      {
+        "gitHubAccount": "pnp",
+        "pictureUrl": "https://github.com/pnp.png",
+        "name": "PnP Community"
+      }
+    ],
+    "references": [
+      {
+        "name": "GitHub Copilot",
+        "description": "GitHub Copilot",
+        "url": "https://copilot.github.com/"
+      }
+    ]
+  }
+]

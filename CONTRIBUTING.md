@@ -27,12 +27,23 @@ Whenever you are submitting any changes to repositories in the PnP organization,
 
 When you submit a new sample, please follow these guidelines:
 
-* Each sample must be placed in a folder under the `samples` folder
+* Each sample must be placed in the appropriate subfolder under the `samples` folder:
+  * Prompt samples go in `samples/prompts/`
+  * Agent instructions go in `samples/agent-instructions/`
+  * Skill samples go in `samples/skills/`
 * Your sample folder must include the following content:
   * Your solution's source code
   * An `assets` folder, containing screenshots
   * A `README.md` file
 * You must only submit samples for which you have the rights to share. Make sure that you asked for permission from your employer and/or clients before committing the code to an open-source repository, because once you submit a pull request, the information is public and _cannot be removed_.
+
+This repository accepts three types of contributions:
+
+| Type | Location | Core file | Description |
+|------|----------|-----------|-------------|
+| **Prompt samples** | `samples/prompts/{folder-name}/` | `README.md` | A prompt for Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
+| **Agent instructions** | `samples/agent-instructions/{agent-name}/` | `readme.md` | System prompt / instructions for a Copilot Studio agent |
+| **Skill samples** | `samples/skills/{skill-name}/` | `SKILL.md` + `README.md` | A reusable instruction file that teaches GitHub Copilot a multi-step task |
 
 ### Sample Folder
 
@@ -70,6 +81,87 @@ When you submit a new sample, please follow these guidelines:
 * If possible, use a resolution of **1920x1080**
 * You can add as many screen shots as you'd like to help users understand your sample without having to download it and install it.
 * You can include animated images (such as `.gif` files), but you must provide at least one static `.png` file
+
+---
+
+## Skill Sample Guidelines
+
+Skill samples are **GitHub Copilot custom skills** — reusable `SKILL.md` instruction files that teach GitHub Copilot how to perform specific, repeatable tasks. They are a new contribution type alongside prompts and agent instructions.
+
+### What Is a Skill?
+
+A skill is a Markdown file with YAML frontmatter that GitHub Copilot reads at runtime. When a user's request matches the skill's description, Copilot follows the instructions in the file to complete a multi-step task — gathering inputs, generating outputs, and validating results.
+
+### Folder Structure
+
+Skill samples live in `samples/skills/{skill-name}/`:
+
+```
+samples/skills/{skill-name}/
+├── SKILL.md                  # The skill definition (core contribution)
+├── README.md                 # Documentation and usage instructions
+├── assets/
+│   └── sample.json           # Metadata for the Solution Gallery
+```
+
+### Naming Rules
+
+* Use **lowercase and hyphens only** (e.g., `code-review-csharp`, `api-docs-generator`)
+* Do **NOT** use periods/dots in the folder name
+* Keep names concise — **2–5 words** that describe the task
+* Do **NOT** use app-host prefixes like `m365-` or `github-`
+
+### SKILL.md Schema
+
+The `SKILL.md` file must follow the schema defined in [SKILL-SCHEMA.md](./SKILL-SCHEMA.md). At minimum, it must include:
+
+1. **YAML frontmatter** with `name` (kebab-case, must match folder name) and `description` (trigger phrases)
+2. **Title** — top-level heading
+3. **Before Starting** — inputs the skill needs from the user
+4. **Output Structure** — what the skill produces
+5. **Step-by-step instructions** — `## Step N: <Action>` sections
+6. **Rules** — non-negotiable constraints
+7. **Examples** (recommended) — at least one worked input → output example
+8. **Validation Checklist** (recommended) — self-verification checks
+
+### README.md for Skills
+
+The README should:
+
+* Explain what the skill does and why it's useful
+* Link to the `SKILL.md` file as the core contribution
+* List **trigger phrases** the user can say to activate the skill
+* Include **installation instructions** (copy `SKILL.md` to `.github/skills/{skill-name}/`)
+* List prerequisites (always includes GitHub Copilot and VS Code)
+* Include the standard Help and Disclaimer sections
+
+### sample.json for Skills
+
+The metadata file follows the same format as other samples, with these specifics:
+
+* `products` must be `["GitHub Copilot"]`
+* `url` must point to `samples/skills/{skill-name}`
+* `name` must follow the pattern `copilotprompts-{skill-name}`
+
+### Scaffolding with GitHub Copilot
+
+You can scaffold a new skill sample automatically! Open GitHub Copilot Chat in VS Code and say:
+
+* *"Create a new skill sample"*
+* *"Scaffold a new skill"*
+* *"Contribute a skill"*
+
+### Best Practices for Writing Skills
+
+1. **Be specific in the description** — include exact trigger phrases users might say
+2. **Ask before assuming** — define required inputs and instruct Copilot to ask for missing ones
+3. **Show, don't just tell** — include at least one worked example
+4. **Keep steps atomic** — one action per step; 3–7 steps is ideal
+5. **Define hard rules** — prevent common mistakes explicitly
+6. **Test your skill** — try triggering it with different phrasings before submitting
+7. **One skill = one task** — if it does two unrelated things, split it into two skills
+
+---
 
 ## Submitting Pull Requests
 
@@ -154,10 +246,10 @@ If the sample you wish to contribute is stored in your own GitHub repository, yo
     git pull origin main
     ```
 
-* Pull your other project from GitHub into the `samples` folder of your local copy of `copilot-prompts`
+* Pull your other project from GitHub into the appropriate subfolder of your local copy of `copilot-prompts`
 
     ```shell
-    git subtree add --prefix=samples/projectname https://github.com/yourgitaccount/projectname.git main
+    git subtree add --prefix=samples/prompts/projectname https://github.com/yourgitaccount/projectname.git main
     ```
 
 * Push the changes up to your forked repository

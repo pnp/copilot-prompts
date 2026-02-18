@@ -1,0 +1,42 @@
+[
+    {
+      "name": "m365-azure-devops-pipeline-prompt",
+      "source": "pnp",
+      "title": "Azure DevOps Build and Release Pipelines",
+      "shortDescription": "Prompt to generate the build and release pipelines in Azure DevOps to automate the deployment of ASP.Net Core MVC Application to Azure Container Apps",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-azure-devops-pipeline-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-azure-devops-pipeline-prompt",
+      "longDescription": [
+        "This prompt illustrates how to get the desired help from Copilot to automate the deployment of ASP.Net Core MVC Application to Azure Container Apps using the Build and Release Pipelines in Azure DevOps."
+      ],
+      "creationDateTime": "2024-10-19",
+      "updateDateTime": "2024-10-19",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-azure-devops-pipeline-prompt/assets/prompt-query.jpg",
+          "alt": "Azure DevOps Build and Release Pipelines"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "arceegomes",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/26863017?v=4",
+          "name": "Arcee Gomes"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]

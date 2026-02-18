@@ -1,0 +1,51 @@
+[
+  {
+    "name": "copilotprompts-m365-7-day-inbox-review-action-framework",
+    "source": "pnp",
+    "title": "7-Day Outlook Inbox Review & Action Framework",
+    "shortDescription": "Generate a prioritized action list from your Outlook Inbox for the past 7 days using strict rules for inclusion, exclusions, and threading.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-7-day-inbox-review-action-framework",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-7-day-inbox-review-action-framework",
+    "longDescription": [
+      "This prompt reviews your Outlook Inbox for the last 7 days and creates a structured, prioritized action list. It applies strict scope rules: only messages where you are in 'To', excludes automated notifications and newsletters, deduplicates threads, and categorizes emails into Immediate Action (@mentions), Action Required (Unread or Read-but-not-replied), and Other (informational). Each item includes subject, sender, local timestamp, and a recommended next step for efficient inbox triage.",
+      "Requires GPT-5 capabilities in Microsoft 365 Copilot to handle complex filtering, threading logic, and structured output formatting."
+    ],
+    "creationDateTime": "2025-11-07",
+    "updateDateTime": "2025-11-07",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "requiresGPT",
+        "value": "GPT-5"
+      },
+      {
+        "key": "category",
+        "value": "Productivity"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-7-day-inbox-review-action-framework/assets/sample1.png",
+        "alt": "Prioritized Outlook Inbox Action Review"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ondrejvysek",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/29834082?v=4",
+        "name": "Ondrej Vysek"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Learn more about Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

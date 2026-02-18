@@ -23,14 +23,15 @@ Go to the [samples](https://github.com/pnp/copilot-prompts/tree/main/samples) fo
 
 Samples are submitted by Microsoft's product groups and the [Microsoft 365 and Power Platform community](http://aka.ms/m365pnp). We welcome community contributions — please review our [Contribution Guidance](./CONTRIBUTING.md) before submitting a pull request.
 
-This repository has two types of samples:
+This repository has three types of samples:
 
 | Type | Location | What it is |
 |------|----------|------------|
-| **Prompt samples** | `samples/{folder-name}/` | A prompt you use directly in Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
+| **Prompt samples** | `samples/prompts/{folder-name}/` | A prompt you use directly in Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
 | **Agent instruction samples** | `samples/agent-instructions/{agent-name}/` | A system prompt / agent instructions you paste into Copilot Studio to create an agent |
+| **Skill samples** | `samples/skills/{skill-name}/` | A reusable `SKILL.md` instruction file that teaches GitHub Copilot a multi-step task |
 
-Both types share the same structure: a `readme.md` file and an `assets/` folder containing a `sample.json` metadata file.
+Prompt and agent instruction samples share the same structure: a `readme.md` file and an `assets/` folder containing a `sample.json` metadata file. Skill samples add a `SKILL.md` file — the core skill definition that GitHub Copilot reads at runtime. See the [Skill Schema Spec](./SKILL-SCHEMA.md) for the full schema.
 
 You can contribute in two ways — **using GitHub Copilot** to scaffold everything automatically, or **traditionally** by creating files manually.
 
@@ -55,6 +56,14 @@ Open GitHub Copilot Chat and say:
 - *"Create a system prompt sample"*
 - *"Build an agent"*
 
+#### For skill samples
+
+Open GitHub Copilot Chat and say:
+
+- *"Create a new skill sample"*
+- *"Scaffold a new skill"*
+- *"Contribute a skill"*
+
 GitHub Copilot will ask for the required details and generate the folder with all files.
 
 > **Note:** After scaffolding, add a screenshot to the `assets/` folder and update the `sample.json` thumbnails.
@@ -66,9 +75,10 @@ GitHub Copilot will ask for the required details and generate the folder with al
 1. **Fork** the repository at https://aka.ms/copilot-prompt-library.
 2. **Clone** your fork and create a new branch.
 3. **Add a new folder:**
-   - **Prompt samples:** `samples/<apphost-functionality-prompt>` (e.g., `ppt-sales-report-prompt`)
+   - **Prompt samples:** `samples/prompts/<apphost-functionality-prompt>` (e.g., `ppt-sales-report-prompt`)
    - **Agent instructions:** `samples/agent-instructions/<agent-name>` (e.g., `communication-assistant`)
-4. **Add a `readme.md`** — copy one from an existing sample of the same type and update it. For agent instruction samples, place your full system prompt in the **Instruction** section inside a fenced code block.
+   - **Skills:** `samples/skills/<skill-name>` (e.g., `code-review-csharp`)
+4. **Add a `readme.md`** — copy one from an existing sample of the same type and update it. For agent instruction samples, place your full system prompt in the **Instruction** section inside a fenced code block. For skill samples, also create a `SKILL.md` file following the [Skill Schema Spec](./SKILL-SCHEMA.md).
 5. **Add an `assets/` folder** with screenshots and a `sample.json` file (copy from any existing sample and update the metadata).
 
 > The `sample.json` feeds the [M365 Solution Gallery](https://adoption.microsoft.com/en-us/sample-solution-gallery/) for discoverability — make sure it's accurate.
@@ -77,6 +87,8 @@ GitHub Copilot will ask for the required details and generate the folder with al
 
 - [Microsoft Copilot for Microsoft 365](https://aka.ms/Copilot-For-M365)
 - [Copilot Lab](https://copilot.cloud.microsoft/prompts)
+- [GitHub Copilot Custom Skills](https://copilot.github.com/)
+- [Skill Schema Specification](./SKILL-SCHEMA.md)
 
 
 

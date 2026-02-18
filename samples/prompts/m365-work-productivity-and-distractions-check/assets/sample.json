@@ -1,0 +1,44 @@
+
+[
+    {
+      "name": "copilotprompts-m365-productivity-distractions-check",
+      "source": "pnp",
+      "title": "Check for work productivity and distractions",
+      "shortDescription": "",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-work-productivity-and-distractions-check",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-work-productivity-and-distractions-check",
+      "longDescription": [
+        "This prompt enables users to receive a comprehensive weekly summary of their productivity across all engagements by analyzing Outlook and Teams data. It offers a clear view of performance, highlights key collaborations, identifies potential distractions, and provides actionable suggestions to enhance focus and efficiency. Ideal for professionals aiming to reflect, improve, and stay aligned with their goals."
+      ],
+      "creationDateTime": "2025-06-04",
+      "updateDateTime": "2025-06-04",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-work-productivity-and-distractions-check/assets/demo.png",
+          "alt": "Check work productivity and distractions"
+        }
+        
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "GouravBagora",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/60379353",
+          "name": "Gourav Bagora"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]

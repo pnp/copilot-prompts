@@ -1,0 +1,42 @@
+[
+    {
+      "name": "copilotprompts-m365-competitor-analysis-report",
+      "source": "pnp",
+      "title": "Generate a competitor analysis report",
+      "shortDescription": "Generate a competitor analysis report",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-competitor-analysis-report",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-competitor-analysis-report",
+      "longDescription": [
+        "The prompt is designed to help you generate a competitor analysis report. It provides clear guidelines for identifying competitors, analyzing their strengths and weaknesses, and identifying opportunities and threats. By focusing on user needs and company goals, the prompt aims to stimulate innovative thinking and identify potential solutions for creating a comprehensive competitor analysis report."
+      ],
+      "creationDateTime": "2025-03-05",
+      "updateDateTime": "2025-03-05",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-competitor-analysis-report/assets/demo.png",
+          "alt": "Generate a competitor analysis report"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "ValerasNarbutas",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/16476453?v=4",
+          "name": "Valeras Narbutas"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]

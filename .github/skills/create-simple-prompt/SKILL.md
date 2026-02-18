@@ -34,10 +34,10 @@ If the user doesn't provide all details upfront, ask for the missing ones before
 
 ## Sample Directory Structure
 
-Create the sample in `samples/{folder-name}/`:
+Create the sample in `samples/prompts/{folder-name}/`:
 
 ```
-samples/{folder-name}/
+samples/prompts/{folder-name}/
 ├── assets/
 │   └── sample.json          # Metadata for the M365 Solution Gallery
 ├── README.md                # Documentation
@@ -52,7 +52,7 @@ samples/{folder-name}/
 
 ## Step 1: Create README.md
 
-Create `samples/{folder-name}/README.md` using this structure:
+Create `samples/prompts/{folder-name}/README.md` using this structure:
 
 ```markdown
 # {Prompt Title}
@@ -138,7 +138,7 @@ For **Microsoft Copilot** prompts:
 
 ## Step 2: Create Metadata (assets/sample.json)
 
-Create `samples/{folder-name}/assets/sample.json`:
+Create `samples/prompts/{folder-name}/assets/sample.json`:
 
 ```json
 [
@@ -147,8 +147,8 @@ Create `samples/{folder-name}/assets/sample.json`:
     "source": "pnp",
     "title": "{Prompt Title}",
     "shortDescription": "{Short description of what the prompt does}",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/{folder-name}",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/{folder-name}",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/{folder-name}",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/{folder-name}",
     "longDescription": [
       "{A longer description of what the prompt does and why it's useful. Can be the same as shortDescription if appropriate.}"
     ],
@@ -162,7 +162,7 @@ Create `samples/{folder-name}/assets/sample.json`:
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/{folder-name}/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/{folder-name}/assets/demo.png",
         "alt": "{Description of the screenshot}"
       }
     ],
@@ -235,7 +235,7 @@ After creating the files, remind the user to:
 ## Validation Checklist
 
 Before finalizing, verify:
-- [ ] Folder is inside `samples/` and NOT inside `samples/agent-instructions/`
+- [ ] Folder is inside `samples/prompts/` (NOT inside `samples/agent-instructions/` or `samples/skills/`)
 - [ ] Folder name follows the `{prefix}-{description}-prompt` convention (lowercase, hyphens, no dots)
 - [ ] `README.md` exists with correct capitalization
 - [ ] `assets/` folder exists
@@ -253,7 +253,7 @@ Before finalizing, verify:
 
 - **NEVER rephrase, rewrite, or modify the user's prompt text.** Always copy it verbatim into the README. The user's exact wording is the contribution.
 - **This skill is for simple prompt samples ONLY** — not for agent instructions or system prompts
-- Samples go in `samples/{folder-name}/`, never in `samples/agent-instructions/`
+- Samples go in `samples/prompts/{folder-name}/`, never in `samples/agent-instructions/` or `samples/skills/`
 - Every sample needs exactly: `README.md` + `assets/sample.json`
 - Screenshots go in the `assets/` folder
 - The `sample.json` feeds the [M365 Solution Gallery](https://adoption.microsoft.com/en-us/sample-solution-gallery/) — accuracy matters
