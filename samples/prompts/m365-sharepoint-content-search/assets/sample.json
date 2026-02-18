@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Search for documents in SharePoint Online for specific topic and summarize the content  ",
     "shortDescription": "Ask copilot to search for documents in SharePoint Online for specific topic and summarize the content",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-sharepoint-content-search",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-sharepoint-content-search",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-sharepoint-content-search",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-sharepoint-content-search",
     "longDescription": [
       "This prompt will search for documents in SharePoint Online for a specific topic and summarize the content.The prompt will return the list of documents found and the summarized content of the documents."
     ],
@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-sharepoint-content-search/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-sharepoint-content-search/assets/demo.png",
         "alt": "Prompt for Copilot to search for documents in SharePoint Online for specific topic and summarize the content"
       }
     ],

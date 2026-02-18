@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Generate a list of features for a company intranet",
     "shortDescription": "Ask copilot to generate a list of features for the intranet",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/whiteboard-intranet-ideation-prompt",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/whiteboard-intranet-ideation-prompt",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/whiteboard-intranet-ideation-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/whiteboard-intranet-ideation-prompt",
     "longDescription": [
       "The prompt is designed to initiate the brainstorming process for developing a company intranet. It provides clear guidelines to generate a wide array of potential features, functionalities, and initiatives. By focusing on user needs and company culture, the prompt aims to stimulate innovative thinking and identify potential solutions for enhancing employee experience and productivity through the intranet platform."
     ],
@@ -21,7 +21,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/whiteboard-intranet-ideation-prompt/assets/microsoft-whiteboard-intranet-ideation-prompt-query.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/whiteboard-intranet-ideation-prompt/assets/microsoft-whiteboard-intranet-ideation-prompt-query.png",
         "alt": "The prompt is designed to generate a comprehensive list of potential features, functionalities, and initiatives for a company intranet."
       }
     ],

@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Draft Actionable Tasks from Meeting Summary",
     "shortDescription": "Drafts planner tasks and meeting summary from email",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-actionable-meeting-summary",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-actionable-meeting-summary",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-actionable-meeting-summary",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-actionable-meeting-summary",
     "longDescription": [
       "This prompt creates meeting summaries by analyzing related emails, drafting actionable tasks for creating them in  Planner with reminders, and summarizing for attendees."
     ],
@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-actionable-meeting-summary/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-actionable-meeting-summary/assets/demo.png",
         "alt": "Draft Meeting Summary"
       }
     ],

@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Create a sales proposal for a sales lead with content refering from a document in SharePoint in Microsoft Word",
       "shortDescription": "Ask Copilot to create a sales proposal for a sales lead with content refering from a document in SharePoint in Microsoft Word.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/word-sales-proposal-with-file-reference-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/word-sales-proposal-with-file-reference-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/word-sales-proposal-with-file-reference-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/word-sales-proposal-with-file-reference-prompt",
       "longDescription": [
         "Create a sales proposal for an energy sales lead in Microsoft Word referring the content from a file uploaded in SharePoint. The proposal is expected to be crisp and clear and should fit in less than 3 pages"
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/word-sales-proposal-with-file-reference-prompt/assets/prompt.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/word-sales-proposal-with-file-reference-prompt/assets/prompt.png",
           "alt": "Prompt to create a sales proposal for a sales lead with content refering from a document in SharePoint in Microsoft Word."
         }
       ],

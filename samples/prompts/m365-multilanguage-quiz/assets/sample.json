@@ -3,8 +3,8 @@
   "source": "pnp",
   "title": "Multilanguage Quiz in Microsoft Forms",
   "shortDescription": "Create multilingual quizzes using Microsoft Forms and Microsoft 365 Copilot",
-  "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-multilanguage-quiz",
-  "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-multilanguage-quiz",
+  "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-multilanguage-quiz",
+  "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-multilanguage-quiz",
   "longDescription": [
     "This prompt helps you create quizzes in multiple languages using Microsoft Forms.",
     "It provides a structured approach with a reusable prompt format, useful for Copilot users and content creators working across language barriers."
@@ -20,7 +20,7 @@
     {
       "type": "image",
       "order": 100,
-      "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-multilanguage-quiz/assets/demo.png",
+      "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-multilanguage-quiz/assets/demo.png",
       "alt": "Multilanguage Quiz in Microsoft Forms"
     }
   ],

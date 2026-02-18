@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "7-Day Sent Items Follow-Up Review Framework",
     "shortDescription": "Generate a prioritized follow-up action list from your Outlook Sent Items for the past 7 days, including reply detection and Internal vs External grouping.",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-7-day-sent-review-and-remind-action",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-7-day-sent-review-and-remind-action",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-7-day-sent-review-and-remind-action",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-7-day-sent-review-and-remind-action",
     "longDescription": [
       "Bored of tracking requests, questions, or tasks you sent by email and not sure whether anyone answered? This prompt reviews your Outlook Sent Items for the last 7 days and creates a structured, prioritized follow-up list. It uses strict scope rules (Sent Items only, From = you), deduplicates conversation threads, and checks whether any inbound reply arrived after your latest sent message in each thread.",
       "Actionable threads are categorized into Immediate Action (your sent emails that contain an @mention and request an action) and Action Required, which is split into External and Internal based on recipient domains to separate customer or partner follow-ups from internal coordination. Non-actionable, informational, or excluded threads are listed under Other as an audit trail.",

@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "M365 Summarise Most Recent Discussion In Well Format Prompt",
       "shortDescription": "Ask copilot to summarise most recent discussion in well format",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-summarise-most-recent-discussion-in-well-format-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-summarise-most-recent-discussion-in-well-format-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-summarise-most-recent-discussion-in-well-format-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-summarise-most-recent-discussion-in-well-format-prompt",
       "longDescription": [
         "This prompt will help you to summarise chat group discussions in well formate manner. It will provide you with a summary of recent chat group discussions, so you can quickly catch up on what you missed in group chat."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-summarise-most-recent-discussion-in-well-format-prompt/assets/demo.jpeg",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-summarise-most-recent-discussion-in-well-format-prompt/assets/demo.jpeg",
           "alt": "Ask copilot to summarise most recent discussion in well format"
         }
       ],

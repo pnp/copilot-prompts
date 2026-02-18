@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Create a new record in Power Apps ",
       "shortDescription": "Generate PowerFx code to create a new record in Power Apps using GitHub Copilot",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/github-powerplatform-patchfunction",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/github-powerplatform-patchfunction",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/github-powerplatform-patchfunction",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/github-powerplatform-patchfunction",
       "longDescription": [
         "This prompt asks GitHub Copilot to generate PowerFx code that creates a new record in a Power Apps data source. "
       ],
@@ -19,7 +19,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/github-powerplatform-patchfunction/assets/CopilotPatchFunction.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/github-powerplatform-patchfunction/assets/CopilotPatchFunction.png",
           "alt": "Prompt for generating PowerFx code to create a new record in Power Apps"
         }
       ],

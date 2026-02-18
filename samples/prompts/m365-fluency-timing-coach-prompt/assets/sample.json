@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Improve Presentation Fluency and Timing for Non-Native English Speakers",
     "shortDescription": "Ask Copilot to optimize your speaking notes for fluency and add estimated speaking times to help non-native English speakers deliver presentations more effectively",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-fluency-timing-coach-prompt",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-fluency-timing-coach-prompt",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-fluency-timing-coach-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-fluency-timing-coach-prompt",
     "longDescription": [
       "This prompt will assist Copilot in enhancing your speaking notes by improving the fluency for non-native English speakers, ensuring clear and concise delivery. Additionally, it will generate estimated speaking times for each section of your presentation, helping you maintain an organized and smooth flow. It also provides a summary of changes for further learning and improvement, so you can gain confidence and refine your speaking skills."
     ],
@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-fluency-timing-coach-prompt/assets/demo.gif",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-fluency-timing-coach-prompt/assets/demo.gif",
         "alt": "Demo of a Copilot prompt optimizing speaking notes for non-native English speakers, enhancing fluency, and adding estimated speaking times for smoother presentations."
       }
     ],

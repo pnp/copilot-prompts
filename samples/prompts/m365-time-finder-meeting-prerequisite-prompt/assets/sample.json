@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Find meeting time with another user - Prerequisite prompt",
       "shortDescription": "Prerequisite prompt example for finding a meeting time with another user",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-time-finder-meeting-prerequisite-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-time-finder-meeting-prerequisite-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-time-finder-meeting-prerequisite-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-time-finder-meeting-prerequisite-prompt",
       "longDescription": [
         "What is a prerequisite prompt? A prerequisite prompt is a prompt that is used to gather information that is needed before executing the main task of the prompt. In this example, the prerequisite prompt will ask for the meeting attendees name and date you would like to meet. This information will be used to find a meeting time with the specified user."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-time-finder-meeting-prerequisite-prompt/assets/thumbnail.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-time-finder-meeting-prerequisite-prompt/assets/thumbnail.png",
           "alt": "Image for m365-time-finder-meeting-prerequisite-prompt"
         }
       ],

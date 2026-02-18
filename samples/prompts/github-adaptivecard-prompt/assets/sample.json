@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Generate adaptive card using GitHub copilot",
       "shortDescription": "Create adaptive card with fields mentioned in simple language using GitHub copilot",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/github-adaptivecard-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/github-adaptivecard-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/github-adaptivecard-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/github-adaptivecard-prompt",
       "longDescription": [
         "Create adaptive card with fields mentioned in simple language using GitHub copilot which can be used in your application to display information in a card format."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/github-adaptivecard-prompt/assets/demo.gif",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/github-adaptivecard-prompt/assets/demo.gif",
           "alt": "Prompt for generating adaptive card using GitHub copilot"
         }
       ],

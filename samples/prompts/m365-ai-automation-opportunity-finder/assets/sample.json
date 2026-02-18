@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "AI Automation Opportunity Finder & ROI Calculator",
     "shortDescription": "Analyzes business processes to identify AI and automation opportunities, calculate potential ROI, and create implementation roadmaps for digital transformation initiatives.",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-ai-automation-opportunity-finder",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-ai-automation-opportunity-finder",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-ai-automation-opportunity-finder",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-ai-automation-opportunity-finder",
     "longDescription": [
       "This prompt helps organizations identify where AI and automation can deliver the most value. It provides data-driven recommendations for digital transformation, helping prioritize initiatives that maximize ROI while minimizing implementation risks. The analysis includes process inventory, automation opportunity scoring, specific AI/automation solutions, comprehensive ROI analysis, implementation roadmaps, risk assessment, and change management planning."
     ],
@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-ai-automation-opportunity-finder/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-ai-automation-opportunity-finder/assets/demo.png",
         "alt": "Demo of AI Automation Opportunity Finder analyzing business processes for AI and automation opportunities"
       }
     ],

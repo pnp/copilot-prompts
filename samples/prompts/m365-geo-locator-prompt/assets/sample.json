@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Play geo locator game",
       "shortDescription": "This prompt will create an instruction to play a geo locator game.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-geo-locator-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-geo-locator-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-geo-locator-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-geo-locator-prompt",
       "longDescription": [
         "This prompt will create an instruction to play a geo locator game."
       ],
@@ -19,7 +19,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-geo-locator-prompt/assets/geo-locator.gif",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-geo-locator-prompt/assets/geo-locator.gif",
           "alt": "This prompt will create an instruction to play a geo locator game."
         }
       ],

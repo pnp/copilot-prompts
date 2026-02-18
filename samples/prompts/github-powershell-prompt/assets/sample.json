@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Generate PnP Powershell script using GitHub copilot",
       "shortDescription": "Create a PnP PowerShell script to fetch all documents from a given sharepoint site, use ClientID, TenantID & DeviceLogin as parameters",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/github-powershell-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/github-powershell-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/github-powershell-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/github-powershell-prompt",
       "longDescription": [
         "Create a PnP PowerShell script to fetch all documents from a given sharepoint site, use ClientID, TenantID & DeviceLogin as parameters."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/github-powershell-prompt/assets/demo.gif",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/github-powershell-prompt/assets/demo.gif",
           "alt": "Prompt for generating PnP PowerShell script using GitHub copilot"
         }
       ],

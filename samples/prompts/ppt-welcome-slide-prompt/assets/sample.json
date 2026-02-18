@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Create an welcome slide to existing PowerPoint presentation",
       "shortDescription": "Ask copilot to create a welcome slide for your presentation",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/ppt-welcome-slide-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/ppt-welcome-slide-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/ppt-welcome-slide-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/ppt-welcome-slide-prompt",
       "longDescription": [
         "This prompt will help you create a welcome slide for your presentation. It will also add notes for the presenter to use when presenting the slides."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/ppt-welcome-slide-prompt/assets/demo.gif",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/ppt-welcome-slide-prompt/assets/demo.gif",
           "alt": "Prompt for creating a welcome slide in PowerPoint"
         }
       ],

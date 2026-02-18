@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Mail overview by sorting and categorizing after vacation",
       "shortDescription": "Analyzes your week and provides insights",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-mail-overview-vacation",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-mail-overview-vacation",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-mail-overview-vacation",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-mail-overview-vacation",
       "longDescription": [
         "These Prompts shows emails by sorting them based on priority and categorizing them by required action"
       ],
@@ -20,13 +20,13 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-mail-overview-vacation/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-mail-overview-vacation/assets/demo.png",
           "alt": "Mail Overview by sorting after vacation"
         },
         {
           "type": "image",
           "order": 200,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-mail-overview-vacation/assets/demo1.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-mail-overview-vacation/assets/demo1.png",
           "alt": "Mail Overview by categorizing after vacation"
         }
       ],

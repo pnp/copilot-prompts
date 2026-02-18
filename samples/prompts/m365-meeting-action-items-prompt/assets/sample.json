@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Create a bulleted list of action items for me based on a meeting",
       "shortDescription": "Ask copilot to create a bulleted list of action items based on a meeting",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-meeting-action-items-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-meeting-action-items-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-action-items-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-action-items-prompt",
       "longDescription": [
         "This prompt will help you create a bulleted list of action items based on a meeting"
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-meeting-action-items-prompt/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-meeting-action-items-prompt/assets/demo.png",
           "alt": "Prompt for Copilot for Microsoft 365 to create a bulleted list of action items based on a meeting"
         }
       ],

@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "List meeting invitees for a meeting distinguishing internal and external invitees",
     "shortDescription": "Ask copilot to list the invitees for a meeting and distinguish between internal and external invitees",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-meeting-details-invitee-list",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-meeting-details-invitee-list",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-details-invitee-list",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-details-invitee-list",
     "longDescription": [
       "This prompt will help you show the list of invitees for the meeting in a tabular format. It will show the name of the invitee, the organization name from the email domain, and user type, whether the user is internal or external."
     ],
@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-meeting-details-invitee-list/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-meeting-details-invitee-list/assets/demo.png",
         "alt": "Prompt for Copilot for Microsoft 365 to list the invitees for a meeting and distinguish between internal and external invitees"
       }
     ],

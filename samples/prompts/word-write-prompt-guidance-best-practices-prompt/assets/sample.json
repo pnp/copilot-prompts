@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Create guidance with best practices and comprehensive examples on prompting Gen AI tools like Microsoft Copilot for your users in Microsoft Word.",
       "shortDescription": "Create a baseline guideline for prompting in specific business context that can be easily understood by users from different businesses and departments using comprehensive context and examples.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/word-write-prompt-guidance-best-practices-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/word-write-prompt-guidance-best-practices-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/word-write-prompt-guidance-best-practices-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/word-write-prompt-guidance-best-practices-prompt",
       "longDescription": [
         "This prompt provides prompting guidance for Microsoft 365 Copilot tailored to your different user departments for smoother adoption of Generative AI tools across your business, that users can customize by replacing variables in brackets with specific tool names, business roles, and department names."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/word-write-prompt-guidance-best-practices-prompt/assets/prompt.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/word-write-prompt-guidance-best-practices-prompt/assets/prompt.png",
           "alt": "Create guidance with best practices and comprehensive examples on prompting Gen AI tools like Microsoft Copilot for your users in Microsoft Word."
         }
       ],

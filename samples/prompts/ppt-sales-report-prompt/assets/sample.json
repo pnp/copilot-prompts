@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Create Annual Sales Report template in PowerPoint",
       "shortDescription": "Ask copilot to create a PowerPoint presentation for an annual sales report",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/ppt-sales-report-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/ppt-sales-report-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/ppt-sales-report-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/ppt-sales-report-prompt",
       "longDescription": [
         "This prompt will help you create a PowerPoint presentation for an annual sales report. You can then customize the presentation to fit your needs."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/ppt-sales-report-prompt/assets/demo.gif",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/ppt-sales-report-prompt/assets/demo.gif",
           "alt": "Prompt for creating a PowerPoint presentation for an annual sales report"
         }
       ],

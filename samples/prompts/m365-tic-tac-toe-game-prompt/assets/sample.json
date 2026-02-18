@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Play Tic-Tac-Toe game with Copilot",
       "shortDescription": "This Tic-Tac-Toe Game prompt is designed to let you play the classic game interactively with Copilot.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-tic-tac-toe-game-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-tic-tac-toe-game-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-tic-tac-toe-game-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-tic-tac-toe-game-prompt",
       "longDescription": [
         "This Tic-Tac-Toe Game prompt is designed to let you play the classic game interactively with Copilot. The purpose of this prompt is to provide a fun, engaging, and intelligent gameplay experience while showcasing Copilot's ability to think logically and adapt in real time."
       ],
@@ -19,7 +19,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-tic-tac-toe-game-prompt/assets/tic-tac-toe-game.gif",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-tic-tac-toe-game-prompt/assets/tic-tac-toe-game.gif",
           "alt": "This Tic-Tac-Toe Game prompt is designed to let you play the classic game interactively with Copilot."
         }
       ],

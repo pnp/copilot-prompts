@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Generate Rough Consolidated Timesheet Overview for [Day]",
       "shortDescription": "This prompt list the time you spend during your day based on e-mail, meetings and chats.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-timesheet",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-timesheet",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-generate-timesheet",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-generate-timesheet",
       "longDescription": [
         "This prompt list the time you spend during your day based on e-mail, meetings and chats."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-generate-timesheet/assets/demo.gif",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-generate-timesheet/assets/demo.gif",
           "alt": "Prompt for listing your time spent during the day"
         }
       ],

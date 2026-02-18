@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Create List of Accomplishments for Yearly Performance Review",
       "shortDescription": "Ask copilot to generate a list of accomplishments and areas of development for yearly performance review.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-yearly-performance-review-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-yearly-performance-review-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-yearly-performance-review-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-yearly-performance-review-prompt",
       "longDescription": [
         "This prompt will help you compile a list of top accomplishments as well as areas of development to serve as background and talking points for yearly review discussion."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-yearly-performance-review-prompt/assets/yearlyreview.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-yearly-performance-review-prompt/assets/yearlyreview.png",
           "alt": "Prompt for creating a list of accomplishments and areas of development for yearly performance review."
         }
       ],

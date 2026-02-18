@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": " Microsoft 365 Copilot Life Coach",
       "shortDescription": "This prompt acts as a life coach that will track and reflect on my daily journals.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilot-LifeCoach",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilot-LifeCoach",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-LifeCoach",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-LifeCoach",
       "longDescription": [
         "This prompt acts as a life coach that will track and reflect on my daily journals."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-Copilot-LifeCoach/assets/demo1.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-Copilot-LifeCoach/assets/demo1.png",
           "alt": "This prompt acts as a life coach that will track and reflect on my daily journals."
         }
       ],

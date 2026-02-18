@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Locate my name mentioned in meetings",
       "shortDescription": "Ask copilot to find my name mentioned in meetings",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-my-name-mentioned-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-my-name-mentioned-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-my-name-mentioned-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-my-name-mentioned-prompt",
       "longDescription": [
         "This prompt will help you to locate your name mentioned in meetings."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-my-name-mentioned-prompt/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-my-name-mentioned-prompt/assets/demo.png",
           "alt": "Prompt for Copilot for Microsoft 365 showing how to locate your name mentioned in meetings"
         }
       ],

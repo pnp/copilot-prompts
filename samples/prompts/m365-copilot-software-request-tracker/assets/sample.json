@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": " Microsoft 365 Copilot as software request tracker and vendor security validator",
       "shortDescription": "This prompt tracks all software requests sent via email or teams chat by providing email address of the requestor(s), generates an executive summary, table along with status and security posture of each software.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilot-as-an-excel-tutor",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilot-software-request-tracker",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-as-an-excel-tutor",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-software-request-tracker",
       "longDescription": [
         "This prompt tracks all software requests sent via email or teams chat by providing email address of the requestor(s), generates an executive summary, table along with status and security posture of each software."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-copilot-software-request-tracker/assets/Demo1.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-copilot-software-request-tracker/assets/Demo1.png",
           "alt": "This prompt tracks all software requests sent via email or teams chat by providing email address of the requestor(s), generates an executive summary, table along with status and security posture of each software."
         }
       ],

@@ -4,8 +4,8 @@
         "source": "pnp",
         "title": "Compare technical proposals to find the suitable proposal based on the defined criteria using Microsoft 365 Copilot",
         "shortDescription": "Compare technical proposals to find the suitable proposal based on the defined criteria using Microsoft 365 Copilot",
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilot-compare-proposals-on-defined-criteria",
-        "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilot-compare-proposals-on-defined-criteria",
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-compare-proposals-on-defined-criteria",
+        "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-compare-proposals-on-defined-criteria",
         "longDescription": [
             "This prompt helps in creating a comparison with 2 proposal in tabular format. In this scenario the proposal is compared based on the following criteria, risks & challenges, secure and governed approach and value outcome. Also take recommendation from AI on the suitable proposal based on the provided criteria."
         ],
@@ -19,13 +19,13 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-copilot-compare-proposals-on-defined-criteria/assets/prompt.png",
+                "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-copilot-compare-proposals-on-defined-criteria/assets/prompt.png",
                 "alt": "Prompt used to to find the suitable proposal based on the defined criteria using Microsoft 365 Copilot"
             },
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-copilot-compare-proposals-on-defined-criteria/assets/generatedResponse.png",
+                "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-copilot-compare-proposals-on-defined-criteria/assets/generatedResponse.png",
                 "alt": "Generated response in tabular format based on the criteria provided in prompt"
             }
         ],

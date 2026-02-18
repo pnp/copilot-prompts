@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Create a Timeline of My Upcoming Meetings",
       "shortDescription": "Ask copilot to create a timeline of your upcoming meetings.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-upcoming-meetings-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-upcoming-meetings-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-upcoming-meetings-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-upcoming-meetings-prompt",
       "longDescription": [
         "This prompt will help you create a timeline of your upcoming meetings."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-upcoming-meetings-prompt/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-upcoming-meetings-prompt/assets/demo.png",
           "alt": "Prompt for Copilot for Microsoft 365 showing how to create a timeline of your upcoming meetings."
         }
       ],

@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Fetch the top 10 bullet points of a Document",
       "shortDescription": "A prompt to fetch the top 10 bullet points of a Document",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-top10_bullet_points_in_document",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-top10_bullet_points_in_document",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-top10_bullet_points_in_document",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-top10_bullet_points_in_document",
       "longDescription": [
         "This prompt will help fetch the top 10 bullet points of a Document"
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-top10_bullet_points_in_document/assets/prompt.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-top10_bullet_points_in_document/assets/prompt.png",
           "alt": "Prompt for help fetch the top 10 bullet points of a Document"
         }
       ],

@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Convert text to diagram with mermaid.js",
       "shortDescription": "This prompt will ask Copilot to convert text to diagram using mermaid.js.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-create-diagram-mermaid-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-create-diagram-mermaid-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-create-diagram-mermaid-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-create-diagram-mermaid-prompt",
       "longDescription": [
         "This prompt will ask Copilot to convert text to diagram using mermaid.js in a multi-turn conversation."
       ],
@@ -19,7 +19,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-create-diagram-mermaid-prompt/assets/demo.gif",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-create-diagram-mermaid-prompt/assets/demo.gif",
           "alt": "Prompt for Copilot for Microsoft 365 to convert text to diagram with mermaid.js"
         }
       ],

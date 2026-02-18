@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Prepare the meeting minutes in the similar and familiar format after the meeting is completed with recordings",
     "shortDescription": "Ask copilot to generate the meeting mintues for the recorded teams meetings",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-meeting-minutes-generator",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-meeting-minutes-generator",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-minutes-generator",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-minutes-generator",
     "longDescription": [
       "This prompt will help you generate the meeting mintues in a tabular format. It will show the meeting title, name of the attendees, meeting time and duration, discussions and action items with action assigned to column."
     ],
@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-meeting-minutes-generator/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-meeting-minutes-generator/assets/demo.png",
         "alt": "Prompt for Copilot for Microsoft 365 to generate the meeting mintues in a tabular format"
       }
     ],

@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Extract unresolved issues from chat discussions",
       "shortDescription": "Ask copilot to extract unresolved issues from chat discussions",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-extract-unresolved-issues",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-extract-unresolved-issues",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-extract-unresolved-issues",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-extract-unresolved-issues",
       "longDescription": [
         "This prompt will ask Copilot to extract unresolved issues from chat discussions. It will help you to identify and track the unresolved issues in the chat discussions."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-extract-unresolved-issues/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-extract-unresolved-issues/assets/demo.png",
           "alt": "Prompt for extracting unresolved issues from chat discussions"
         }
       ],

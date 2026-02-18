@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "m365 Summarise Email",
     "shortDescription": "Ask copilot to summarise email",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-summarise-email",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-summarise-email",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-summarise-email",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-summarise-email",
     "longDescription": [
       "This prompt will help you to summarise email discussions. It will provide you with a summary of the email discussions, so you can quickly catch up on what you missed."
     ],
@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-summarise-email/assets/demo.jpg",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-summarise-email/assets/demo.jpg",
         "alt": "Prompt for Copilot for Microsoft 365 showing how to summarise email discussions"
       }
     ],

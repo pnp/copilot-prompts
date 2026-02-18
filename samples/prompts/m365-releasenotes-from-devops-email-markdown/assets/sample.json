@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Generate Release Notes from DevOps email query",
       "shortDescription": "Generates well formatted Release Notes from a DevOps email query.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-releasenotes-from-devops-email-markdown",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-releasenotes-from-devops-email-markdown",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-releasenotes-from-devops-email-markdown",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-releasenotes-from-devops-email-markdown",
       "longDescription": [
         "This prompt will help you to generate well formatted Release Notes from a DevOps email query, helping to automate the process"
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-releasenotes-from-devops-email-markdown/assets/Demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-releasenotes-from-devops-email-markdown/assets/Demo.png",
           "alt": "Prompt for Copilot for Microsoft 365 showing how to generate release notes, from an email received from an Azure DevOps query in your inbox"
         }
       ],

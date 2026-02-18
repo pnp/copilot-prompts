@@ -4,7 +4,7 @@
       "source": "pnp",
       "title": "Summarize This Email Thread",
       "shortDescription": "Get main points from long email threads in 3 bullets",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-outlook-thread-summary",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-outlook-thread-summary",
       "longDescription": [
         "Long email threads are hard to follow. This prompt gives you the important stuff: main topic, key decisions, and what you need to do next."
       ],
@@ -28,7 +28,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-outlook-thread-summary/assets/preview.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-outlook-thread-summary/assets/preview.png",
           "alt": "Email thread summary preview"
         }
       ],

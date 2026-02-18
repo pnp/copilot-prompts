@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Generate a prompt to continue a chat",   
     "shortDescription": "Continue a conversation with Microsoft 365 Copilot in a new chat.",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-prompt-for-next-chat",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generate-prompt-for-next-chat",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-generate-prompt-for-next-chat",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-generate-prompt-for-next-chat",
     "longDescription": [
       "This prompt will generate a prompt that can be used to continue a conversation that has hit the limit of responses."
     ],
@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-generate-prompt-for-next-chat/assets/continue-conversation.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-generate-prompt-for-next-chat/assets/continue-conversation.png",
         "alt": "Prompt to generate a 'continue conversation' prompt"
       }
     ],

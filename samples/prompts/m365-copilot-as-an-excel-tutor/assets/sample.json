@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": " Microsoft 365 Copilot as an Excel tutor",
       "shortDescription": "This prompt acts an Excel tutor, generates a sample data table along with excel formula's applied to the generated table to understand basics of Excel.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilot-as-an-excel-tutor",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-copilot-as-an-excel-tutor",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-as-an-excel-tutor",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-as-an-excel-tutor",
       "longDescription": [
         "This prompt acts an Excel tutor, generates a sample data table along with excel formula's applied to the generated table to understand basics of Excel."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-copilot-as-an-excel-tutor/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-copilot-as-an-excel-tutor/assets/demo.png",
           "alt": "This prompt acts an Excel tutor, generates a sample data table along with excel formula's applied to the generated table to understand basics of Excel."
         }
       ],

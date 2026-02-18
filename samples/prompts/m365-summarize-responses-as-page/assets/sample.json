@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Summarize Copilot chat as page",   
     "shortDescription": "This prompt helps you summarise responses to create a Microsoft 365 Copilot page.",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-summarize-responses-as-page",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-summarize-responses-as-page",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-summarize-responses-as-page",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-summarize-responses-as-page",
     "longDescription": [
       "This prompt helps you summarise chat responses to create a Microsoft 365 Copilot page."
     ],
@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-summarize-responses-as-page/assets/conversaion-summary-as-page-prompt.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-summarize-responses-as-page/assets/conversaion-summary-as-page-prompt.png",
         "alt": "Prompt to summarise reponse as page"
       }
     ],

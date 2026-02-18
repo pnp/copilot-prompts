@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Relationship Investment Scorecard",   
     "shortDescription": "Analyze Outlook and Teams activity to identify your strongest and weakest professional connections, then get actionable steps to strengthen key relationships.",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-relationship-investment-scorecard",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-relationship-investment-scorecard",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-relationship-investment-scorecard",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-relationship-investment-scorecard",
     "longDescription": [
       "This prompt reviews the past 30 days of Outlook and Teams activity to create a Relationship Investment Scorecard. It identifies your top 10 collaborators by communication volume, highlights 10 under-invested contacts who appear on your calendar or to-do list, and suggests three personalized actions to strengthen your weakest relationship. The output includes a table with communication metrics and scores, a bar chart of top collaborators, and actionable recommendations to improve engagement."
     ],
@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-relationship-investment-scorecard/assets/demo1.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-relationship-investment-scorecard/assets/demo1.png",
         "alt": "Relationship Investment Scorecard"
       }
     ],

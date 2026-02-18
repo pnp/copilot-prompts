@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Summarise chat group discussions",
       "shortDescription": "Ask copilot to summarise chat group discussions",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-summarise-chat-group-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-summarise-chat-group-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-summarise-chat-group-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-summarise-chat-group-prompt",
       "longDescription": [
         "This prompt will help you to summarise chat group discussions. It will provide you with a summary of the chat group discussions, so you can quickly catch up on what you missed."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-summarise-chat-group-prompt/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-summarise-chat-group-prompt/assets/demo.png",
           "alt": "Prompt for Copilot for Microsoft 365 showing how to summarise chat group discussions"
         }
       ],

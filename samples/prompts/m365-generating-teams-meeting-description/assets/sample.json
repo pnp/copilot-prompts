@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Generating Teams Meeting Description",
       "shortDescription": "A prompt to help you to write description for your next meeting based on title",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generating-teams-meeting-description",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-generating-teams-meeting-description",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-generating-teams-meeting-description",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-generating-teams-meeting-description",
       "longDescription": [
         "A prompt to help you to write description for your next meeting based on title"
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-generating-teams-meeting-description/assets/Demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-generating-teams-meeting-description/assets/Demo.png",
           "alt": "A prompt to help you to write description for your next meeting based on title"
         }
       ],

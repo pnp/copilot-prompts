@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Analyze emails from your leader(s)",
       "shortDescription": "Locate emails from your manager, or their manager",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-find-emails-from-leaders-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-find-emails-from-leaders-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-find-emails-from-leaders-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-find-emails-from-leaders-prompt",
       "longDescription": [
         "This prompt will help you to locate any emails from your manager, or their manager"
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-find-emails-from-leaders-prompt/assets/Demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-find-emails-from-leaders-prompt/assets/Demo.png",
           "alt": "Prompt for Copilot for Microsoft 365 showing how to from your inbox any emails from your manager, or their manager"
         }
       ],

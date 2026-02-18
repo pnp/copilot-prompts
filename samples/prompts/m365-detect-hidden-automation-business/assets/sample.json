@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Detect Hidden Automation in Business",
       "shortDescription": "",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-detect-hidden-automation-business",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-detect-hidden-automation-business",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-detect-hidden-automation-business",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-detect-hidden-automation-business",
       "longDescription": [
         ""
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-detect-hidden-automation-business/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-detect-hidden-automation-business/assets/demo.png",
           "alt": "Detect Hidden Automation in Business"
         }
         

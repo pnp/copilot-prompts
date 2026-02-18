@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Top 5 tasks of the day",
       "shortDescription": "generate a simple report of the top 5 tasks of the day, their status, and any blockers preventing completion.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-top-5-tasks-of-the-day",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-top-5-tasks-of-the-day",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-top-5-tasks-of-the-day",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-top-5-tasks-of-the-day",
       "longDescription": [
         "Generate a simple report of the top 5 tasks of the day, their status, and any blockers preventing completion. Include upcoming deadlines for the week."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-top-5-tasks-of-the-day/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-top-5-tasks-of-the-day/assets/demo.png",
           "alt": "Top 5 tasks of the day"
         }
       ],

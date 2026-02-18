@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "AI-Powered Risk Analysis for Project Management",
       "shortDescription": "An AI agent that analyzes project data to identify potential risks and suggests mitigation strategies.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-risk-analysis",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-risk-analysis",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-risk-analysis",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-risk-analysis",
       "longDescription": [
         "The agent is designed to analyze project data, including timelines, resource allocation, and team dynamics, to identify potential risks. It provides actionable insights and recommendations for mitigating these risks, helping project managers make informed decisions and keep projects on track."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-risk-analysis/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-risk-analysis/assets/demo.png",
           "alt": "AI-Powered Risk Analysis for Project Management"
         }
       ],

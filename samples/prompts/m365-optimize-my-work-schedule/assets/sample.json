@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Help me optimize my daily work schedule",
       "shortDescription": "This prompt helps you optimize your daily work schedule by analyzing your calendar and tasks.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-optimize-my-work-schedule",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-optimize-my-work-schedule",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-optimize-my-work-schedule",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-optimize-my-work-schedule",
       "longDescription": [
         "This prompt helps you optimize your daily work schedule by analyzing your calendar and tasks. It will suggest the best time to work on tasks based on your calendar availability and deadlines. It will also suggest the best time to take breaks"
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-optimize-my-work-schedule/assets/Demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-optimize-my-work-schedule/assets/Demo.png",
           "alt": "Demo"
         }
       ],

@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Meeting minutes from meeting transcript",
       "shortDescription": "Meeting minutes from meeting transcript",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-meeting-summary-transcript",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-meeting-summary-transcript",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-summary-transcript",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-summary-transcript",
       "longDescription": [
         "This prompt gets meeting minutes from meeting transcript."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-meeting-summary-transcript/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-meeting-summary-transcript/assets/demo.png",
           "alt": "Meeting minutes from meeting transcript"
         }
       ],

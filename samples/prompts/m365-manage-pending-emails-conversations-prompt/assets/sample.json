@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "List emails and Teams conversations needing attention and not yet replied",
     "shortDescription": "Ask Copilot to list the emails and Teams conversations needing attention and not yet replied",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-manage-pending-emails-conversations-prompt",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-manage-pending-emails-conversations-prompt",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-manage-pending-emails-conversations-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-manage-pending-emails-conversations-prompt",
     "longDescription": [
       "This prompt will ask Copilot to systematically track and manage pending communications, ensuring no important messages are overlooked. A detailed list of emails and Teams conversations that need the user's action. Each item includes essential details such as the sender, subject, date, importance, and mention."
     ],
@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-manage-pending-emails-conversations-prompt/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-manage-pending-emails-conversations-prompt/assets/demo.png",
         "alt": "Prompt for Copilot for Microsoft 365 to track and manage pending communications"
       }
     ],

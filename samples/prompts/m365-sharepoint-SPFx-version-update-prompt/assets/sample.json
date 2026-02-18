@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "New features/updates in SPFx 1.21.1",
       "shortDescription": "Ask copilot what are the new features/updates in SPFx 1.21.1",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-sharepoint-SPFx-version-update-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-sharepoint-SPFx-version-update-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-sharepoint-SPFx-version-update-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-sharepoint-SPFx-version-update-prompt",
       "longDescription": [
         "This prompt will help you to get the new features or updates in SharePoint framework 1.21.1. It provide you the detail updates along with their resolutions."
       ],
@@ -20,7 +20,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-sharepoint-SPFx-version-update-prompt/assets/demo.png",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-sharepoint-SPFx-version-update-prompt/assets/demo.png",
           "alt": "Prompt for Copilot for Microsoft 365 showing what are the new features/updates in SPFx 1.21.1 version"
         }
       ],

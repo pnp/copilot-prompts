@@ -4,8 +4,8 @@
     "source": "pnp",
     "title": "Weekly Highlights Summary",   
     "shortDescription": "A weekly highlights summary prompt which scans Outlook, Teams, To Do, and Planner to generate a consise summary of key wins, upcoming plans and blockers.",
-    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-weekly-highlights-summary",
-    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-weekly-highlights-summary",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-weekly-highlights-summary",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-weekly-highlights-summary",
     "longDescription": [
       "This prompt acts as a Weekly Highlights Assistant by searching across Microsoft 365 data sources such as Outlook, Teams, To Do, and Planner, for the past week. It compiles a professional summary with three structured sections: Key Wins (top 3 accomplishments), Plans for Next Week (upcoming priorities), and Risks and Blockers (presented in a clear table format). The tone is confident and manager friendly, making it ideal for weekly reporting, stakeholder updates, or performance tracking. The output is formatted for easy copy and paste into emails."
     ],
@@ -20,7 +20,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/m365-weekly-highlights-summary/assets/WeeklyHighlightsSummary.jpg",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-weekly-highlights-summary/assets/WeeklyHighlightsSummary.jpg",
         "alt": "Weekly Highlights Summary"
       }
     ],

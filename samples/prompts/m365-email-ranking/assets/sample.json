@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Email Ranking",
       "shortDescription": "",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-email-ranking",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/m365-email-ranking",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-email-ranking",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-email-ranking",
       "longDescription": [
         ""
       ],

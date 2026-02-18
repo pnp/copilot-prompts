@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "VS Code Daily Usage Summary",
       "shortDescription": "Generate daily VS Code activity summary with metrics and insights",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/vscode-daily-usage-summary-prompt",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/vscode-daily-usage-summary-prompt",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/vscode-daily-usage-summary-prompt",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/vscode-daily-usage-summary-prompt",
       "longDescription": [
         "This prompt analyzes your daily VS Code activity and provides a comprehensive summary including lines of code written, new files added, files modified, and time spent coding. Perfect for PR reviewers, developer performance tracking, and daily productivity insights."
       ],

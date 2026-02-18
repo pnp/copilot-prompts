@@ -4,8 +4,8 @@
       "source": "pnp",
       "title": "Create content for social media with Copilot",
       "shortDescription": "This Wellness Influencer Social Media Content Creator prompt offers a glimpse into how social media content creators can use Copilot to craft engaging, educational, and motivational content.",
-      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/wellness-influencer-content-creator",
-      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/wellness-influencer-content-creator",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/wellness-influencer-content-creator",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/wellness-influencer-content-creator",
       "longDescription": [
         "This Wellness Influencer Social Media Content Creator prompt offers a glimpse into how social media content creators can use Copilot to craft engaging, educational, and motivational content. It guides Copilot to generate daily themed content—including challenges, benefits, affirmations, and practical tips—designed to promote healthy habits and holistic well-being. Perfect for creators looking to inspire their audience and build consistent, high-impact content with ease."
       ],
@@ -19,7 +19,7 @@
         {
           "type": "image",
           "order": 100,
-          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/wellness-influencer-content-creator/assets/wellness-influencer-content-creator.gif",
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/wellness-influencer-content-creator/assets/wellness-influencer-content-creator.gif",
           "alt": "This Wellness Influencer Social Media Content Creator prompt offers a glimpse into how social media content creators can use Copilot to craft engaging, educational, and motivational content."
         }
       ],
