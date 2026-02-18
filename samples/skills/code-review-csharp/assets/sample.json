@@ -15,19 +15,13 @@
       "GitHub Copilot"
     ],
     "metadata": [],
-    "thumbnails": [
-      {
-        "type": "image",
-        "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/code-review-csharp/assets/demo.png",
-        "alt": "Screenshot of GitHub Copilot performing a C# code review using the skill"
-      }
-    ],
+    "thumbnails": []
+   ,
     "authors": [
       {
-        "gitHubAccount": "rabwill",
-        "pictureUrl": "https://github.com/rabwill.png",
-        "name": "Rabia Williams"
+        "gitHubAccount": "pnp",
+        "pictureUrl": "https://github.com/pnp.png",
+        "name": "PnP Community"
       }
     ],
     "references": [

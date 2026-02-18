@@ -15,14 +15,7 @@
       "GitHub Copilot"
     ],
     "metadata": [],
-    "thumbnails": [
-      {
-        "type": "image",
-        "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/api-docs-generator/assets/demo.png",
-        "alt": "Screenshot of GitHub Copilot generating API documentation using the skill"
-      }
-    ],
+    "thumbnails": [],
     "authors": [
       {
         "gitHubAccount": "pnp",
