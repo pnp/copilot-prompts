@@ -27,7 +27,7 @@ This repository has three types of samples:
 
 | Type | Location | What it is |
 |------|----------|------------|
-| **Prompt samples** | `samples/{folder-name}/` | A prompt you use directly in Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
+| **Prompt samples** | `samples/prompts/{folder-name}/` | A prompt you use directly in Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
 | **Agent instruction samples** | `samples/agent-instructions/{agent-name}/` | A system prompt / agent instructions you paste into Copilot Studio to create an agent |
 | **Skill samples** | `samples/skills/{skill-name}/` | A reusable `SKILL.md` instruction file that teaches GitHub Copilot a multi-step task |
 
@@ -75,7 +75,7 @@ GitHub Copilot will ask for the required details and generate the folder with al
 1. **Fork** the repository at https://aka.ms/copilot-prompt-library.
 2. **Clone** your fork and create a new branch.
 3. **Add a new folder:**
-   - **Prompt samples:** `samples/<apphost-functionality-prompt>` (e.g., `ppt-sales-report-prompt`)
+   - **Prompt samples:** `samples/prompts/<apphost-functionality-prompt>` (e.g., `ppt-sales-report-prompt`)
    - **Agent instructions:** `samples/agent-instructions/<agent-name>` (e.g., `communication-assistant`)
    - **Skills:** `samples/skills/<skill-name>` (e.g., `code-review-csharp`)
 4. **Add a `readme.md`** — copy one from an existing sample of the same type and update it. For agent instruction samples, place your full system prompt in the **Instruction** section inside a fenced code block. For skill samples, also create a `SKILL.md` file following the [Skill Schema Spec](./SKILL-SCHEMA.md).

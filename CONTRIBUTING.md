@@ -27,7 +27,10 @@ Whenever you are submitting any changes to repositories in the PnP organization,
 
 When you submit a new sample, please follow these guidelines:
 
-* Each sample must be placed in a folder under the `samples` folder
+* Each sample must be placed in the appropriate subfolder under the `samples` folder:
+  * Prompt samples go in `samples/prompts/`
+  * Agent instructions go in `samples/agent-instructions/`
+  * Skill samples go in `samples/skills/`
 * Your sample folder must include the following content:
   * Your solution's source code
   * An `assets` folder, containing screenshots
@@ -38,7 +41,7 @@ This repository accepts three types of contributions:
 
 | Type | Location | Core file | Description |
 |------|----------|-----------|-------------|
-| **Prompt samples** | `samples/{folder-name}/` | `README.md` | A prompt for Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
+| **Prompt samples** | `samples/prompts/{folder-name}/` | `README.md` | A prompt for Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
 | **Agent instructions** | `samples/agent-instructions/{agent-name}/` | `readme.md` | System prompt / instructions for a Copilot Studio agent |
 | **Skill samples** | `samples/skills/{skill-name}/` | `SKILL.md` + `README.md` | A reusable instruction file that teaches GitHub Copilot a multi-step task |
 
@@ -243,10 +246,10 @@ If the sample you wish to contribute is stored in your own GitHub repository, yo
     git pull origin main
     ```
 
-* Pull your other project from GitHub into the `samples` folder of your local copy of `copilot-prompts`
+* Pull your other project from GitHub into the appropriate subfolder of your local copy of `copilot-prompts`
 
     ```shell
-    git subtree add --prefix=samples/projectname https://github.com/yourgitaccount/projectname.git main
+    git subtree add --prefix=samples/prompts/projectname https://github.com/yourgitaccount/projectname.git main
     ```
 
 * Push the changes up to your forked repository
