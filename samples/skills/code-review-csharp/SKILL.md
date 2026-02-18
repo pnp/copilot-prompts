@@ -1,132 +1,169 @@
 ---
 name: code-review-csharp
-description: This skill should be used when the user asks to "review C# code", "check my C# for best practices", "analyze this C# class", "find issues in my C# code", or needs a structured code review of C# source files covering naming conventions, performance, security, and .NET best practices.
+description: Perform structured code reviews of C# source code covering naming conventions, performance, security, readability, and .NET best practices. Trigger phrases include "review this C# code", "check my C# for best practices", "analyze this C# class", "find issues in my C# code".
 ---
 
 # Review C# Code for Best Practices
 
-This skill performs a structured code review of C# source code, identifying issues related to naming conventions, performance, security, readability, and .NET best practices. It produces a prioritized report with actionable suggestions.
+Perform a structured code review of C# source code. Identify issues related to naming conventions, performance, security, readability, and .NET best practices. Produce a prioritized report with actionable suggestions.
 
-## Before Starting
+## Gather Context
 
-**Critical**: Always gather the following before proceeding:
+Before reviewing, determine:
 
-1. **Code to review** — the C# file, class, or code snippet the user wants reviewed. If the user points to a file, read it. If they paste code, use that directly.
-2. **Review focus** — what aspects to prioritize. Options:
-   - `all` (default) — full review covering all categories
-   - `naming` — naming conventions and consistency
-   - `performance` — performance and memory considerations
-   - `security` — security vulnerabilities and input validation
-   - `readability` — code clarity, structure, and maintainability
-3. **Target framework** — the .NET version (defaults to .NET 8 if not specified)
-4. **Severity threshold** — minimum severity to report. Options: `all` (default), `warnings-and-above`, `critical-only`
+1. **Code to review** — the C# file, class, or snippet. If the user points to a file, read it. If they paste code, use it directly.
+2. **Review focus** — what to prioritize:
+   - `all` (default) — full review across all categories
+   - `naming` — naming conventions only
+   - `performance` — performance and memory only
+   - `security` — security vulnerabilities only
+   - `readability` — clarity, structure, and maintainability only
+3. **Target framework** — the .NET version. Default to .NET 8 if not specified. Auto-detect from `<TargetFramework>` in `.csproj` if accessible.
+4. **Severity threshold** — `all` (default), `warnings-and-above`, or `critical-only`.
 
-If the user doesn't provide all details upfront, ask for the missing ones before proceeding.
+**If context is missing:** Default to `all` focus, .NET 8, and `all` severities. Don't block the review to ask — just state your assumptions at the top of the report. Only ask if you genuinely have no code to review.
 
-## Output Structure
-
-The review produces a structured report in Markdown with these sections:
+## Report Format
 
 ```markdown
 # Code Review: {FileName or ClassName}
 
+> Target: .NET {version} | Focus: {focus} | Reviewed: {date}
+
 ## Summary
-{One-paragraph overview of code quality, highlighting the most important finding.}
 
-## Issues Found
+{One-paragraph overview. Lead with the most important finding. State the total issue count by severity.}
 
-| # | Severity | Location | Issue | Suggestion |
-|---|----------|----------|-------|------------|
-| 1 | 🔴 Critical | `ClassName.Method:L12` | {issue} | {fix} |
-| 2 | 🟡 Warning | `ClassName.Property` | {issue} | {fix} |
-| 3 | 🔵 Info | `ClassName.Method:L25` | {issue} | {fix} |
+## Issues
 
-## Positive Patterns ✅
-- {Things the code does well}
+| # | Severity | Location | Issue | Why It Matters | Suggestion |
+|---|----------|----------|-------|----------------|------------|
+| 1 | Critical | `Class.Method:L12` | {issue} | {impact} | {fix} |
+| 2 | Warning  | `Class.Property`   | {issue} | {impact} | {fix} |
+| 3 | Info     | `Class.Method:L25` | {issue} | {impact} | {fix} |
+
+## What's Done Well
+
+- {Positive pattern — be specific, not generic}
 
 ## Recommendations
-1. {Highest priority change}
-2. {Next priority}
+
+1. **[Critical]** {Highest-impact change}
+2. **[Warning]** {Next priority}
 3. ...
 ```
 
-## Step 1: Analyze Code Structure
+**Severity levels:**
+- **Critical** — bugs, security vulnerabilities, data loss risks. Fix immediately.
+- **Warning** — convention violations, performance pitfalls, maintainability concerns. Fix soon.
+- **Info** — style preferences, minor modernization opportunities. Fix when convenient.
 
-Examine the overall structure of the code:
-- Class organization and responsibility (Single Responsibility Principle)
-- File length and complexity
-- Namespace usage and organization
-- Using directives (unnecessary imports, missing imports)
-- Dependency injection patterns
+## Review Categories
 
-## Step 2: Check Naming Conventions
+### 1. Structure and Design
 
-Verify naming against [C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions):
-- **Classes, records, structs**: PascalCase (e.g., `UserManager`)
-- **Interfaces**: PascalCase with `I` prefix (e.g., `IUserRepository`)
-- **Methods**: PascalCase (e.g., `GetUserById`)
-- **Properties**: PascalCase (e.g., `FirstName`)
-- **Private fields**: camelCase with `_` prefix (e.g., `_userCount`)
-- **Local variables and parameters**: camelCase (e.g., `userId`)
-- **Constants**: PascalCase (e.g., `MaxRetryCount`)
-- **Async methods**: Suffix with `Async` (e.g., `GetUserAsync`)
-- **Boolean properties/variables**: Prefix with `Is`, `Has`, `Can`, `Should` where appropriate
+- Single Responsibility Principle — does the class do too many things?
+- File length and class complexity
+- Namespace organization
+- Unnecessary or missing `using` directives
+- Dependency injection — is `new` used where DI should be?
+- Constructor complexity — too many dependencies suggests SRP violation
+- Proper use of `sealed` on classes not designed for inheritance
 
-## Step 3: Evaluate Performance Patterns
+### 2. Naming Conventions
 
-Check for common performance issues:
-- String concatenation in loops (suggest `StringBuilder`)
-- Unnecessary allocations (boxing, repeated `ToList()`, etc.)
+Verify against [C# Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions):
+
+| Element | Convention | Example |
+|---------|-----------|---------|
+| Classes, records, structs | PascalCase | `UserManager` |
+| Interfaces | `I` + PascalCase | `IUserRepository` |
+| Methods | PascalCase | `GetUserById` |
+| Properties | PascalCase | `FirstName` |
+| Public constants/statics | PascalCase | `MaxRetryCount` |
+| Private fields | `_camelCase` | `_userCount` |
+| Local variables, parameters | camelCase | `userId` |
+| Enum types and values | PascalCase | `OrderStatus.Pending` |
+| Type parameters | `T` + PascalCase | `TEntity`, `TKey` |
+| Async methods | PascalCase + `Async` suffix | `GetUserAsync` |
+| Booleans | `Is`/`Has`/`Can`/`Should` prefix | `IsActive`, `HasPermission` |
+| Event handlers | PascalCase + `EventArgs` | `OnUserCreated` |
+
+### 3. Performance
+
+Check for:
+
+- String concatenation in loops → suggest `StringBuilder` or `string.Join`
+- Unnecessary allocations: boxing, repeated `ToList()`, `new` in hot paths
+- `async void` → should be `async Task` (except event handlers)
+- `Task.Result` or `Task.Wait()` → deadlock risk, use `await` instead
 - Missing `ConfigureAwait(false)` in library code
-- Sync-over-async or async-over-sync patterns
-- IEnumerable multiple enumeration
-- LINQ misuse (e.g., `Count()` when `Any()` suffices)
-- Missing `IDisposable` implementation or `using` statements
+- Sync-over-async (`Task.Run(() => AsyncMethod().Result)`)
+- `IEnumerable` multiple enumeration → materialize with `ToList()` or use `IReadOnlyList`
+- LINQ misuse: `Count() > 0` → `Any()`, `.Count()` on `ICollection` → `.Count`
+- Missing `IDisposable` / `using` / `await using` for disposable resources
+- Unnecessary `Task.Run` on already-async code
+- Large `struct` types being copied repeatedly (consider `ref` or `class`)
 
-## Step 4: Assess Security Considerations
+### 4. Security
 
-Look for security issues:
-- SQL injection vulnerabilities (string concatenation in queries)
-- Missing input validation
-- Hardcoded secrets or connection strings
-- Improper exception handling that leaks internal details
-- Missing null checks (or improper nullable reference type usage)
-- Insecure cryptography or hashing
+Check for:
 
-## Step 5: Review Readability and Maintainability
+- **SQL injection** — string concatenation or interpolation in SQL → use parameterized queries
+- **Hardcoded secrets** — connection strings, API keys, passwords in source → use configuration/secrets management
+- **Missing input validation** — public method parameters not validated → add guard clauses
+- **Exception information leakage** — returning stack traces or internal messages to callers → use generic error responses
+- **Null safety** — missing null checks, inconsistent nullable reference type annotations
+- **Insecure cryptography** — MD5/SHA1 for security purposes, custom crypto → use standard libraries
+- **Unsafe deserialization** — `BinaryFormatter`, `TypeNameHandling.All` in JSON → use safe serializers
+- **Path traversal** — user input in file paths without sanitization
+- **`HttpClient` misuse** — creating new instances per request → use `IHttpClientFactory`
+- **LINQ injection** — dynamic LINQ from user input without sanitization
 
-Evaluate code clarity:
-- Method length (flag methods over ~30 lines)
-- Cyclomatic complexity (deeply nested conditionals)
-- Magic numbers and strings (should be constants)
-- Comment quality (outdated, redundant, or missing where complex logic exists)
-- Consistent formatting and whitespace
-- Use of modern C# features where appropriate (pattern matching, records, file-scoped namespaces, etc.)
+### 5. Readability and Maintainability
 
-## Step 6: Generate Report
+Check for:
 
-Produce the report following the Output Structure above:
-1. Write a concise Summary paragraph
-2. List all issues in the table, sorted by severity (🔴 → 🟡 → 🔵)
-3. Acknowledge positive patterns (at least 1–2 things done well)
-4. Provide prioritized recommendations (top 3–5 actions)
+- Methods over ~30 lines → suggest extraction
+- Deeply nested conditionals (3+ levels) → suggest guard clauses or early returns
+- Magic numbers and strings → extract to named constants
+- Outdated or misleading comments (worse than no comments)
+- Missing XML doc comments on public API members
+- Inconsistent formatting and whitespace
+- Modern C# opportunities (based on target framework):
+  - Pattern matching (`is`, `switch` expressions)
+  - File-scoped namespaces (.NET 6+)
+  - Primary constructors (.NET 8+)
+  - Records for immutable data types
+  - `var` usage consistency
+  - Collection expressions (.NET 8+)
+  - Raw string literals (.NET 7+)
+  - `required` properties (.NET 7+)
 
 ## Rules
 
-- **NEVER modify the user's code directly** — only report findings and suggest changes
-- **Always explain WHY each issue matters**, not just what to change
-- **If the code has no issues, say so explicitly** — do not invent problems to fill the report
-- **Prioritize issues by severity**: 🔴 Critical (bugs, security) → 🟡 Warning (conventions, performance) → 🔵 Info (style, minor improvements)
-- **Be specific about locations** — reference class names, method names, and line numbers where possible
-- **Suggest modern C# alternatives** when appropriate, but respect the target framework version
-- **Do not flag framework-version-specific features** as issues if they match the user's target framework
-- **Acknowledge good patterns** — a review that only lists problems is discouraging; balance criticism with recognition
+**Do:**
 
-## Examples
+- Explain **why** each issue matters, not just what to change
+- Be specific about locations — class name, method name, and line number where possible
+- Acknowledge good patterns — at least 1-2 things done well. A review that only lists problems is demoralizing.
+- Respect the target framework — don't suggest `.NET 8` features for a `.NET 6` project
+- Sort issues by severity: Critical → Warning → Info
+- If the code has no issues, say so. Don't invent problems to fill a report.
+- If asked to fix issues (not just review), apply the changes directly
 
-### Example: Reviewing a simple class
+**Don't:**
+
+- Modify code unless the user explicitly asks you to apply fixes
+- Flag framework-specific features as issues when they match the target version
+- Report false positives — every issue must be verifiable in the code
+- Be vague — "consider improving performance" is not actionable. Say exactly what to change and why.
+- Overwhelm with low-severity noise — if there are many Info items, summarize them rather than listing each one
+
+## Example
 
 **Input:**
+
 ```csharp
 public class userManager
 {
@@ -154,44 +191,43 @@ public class userManager
 
 # Code Review: userManager
 
+> Target: .NET 8 (assumed) | Focus: all | Reviewed: 2026-02-18
+
 ## Summary
-The class has **critical security issues** (hardcoded credentials, SQL injection) alongside naming convention violations and missed opportunities for modern C# patterns. Immediate remediation of the security issues is strongly recommended.
 
-## Issues Found
+This class has **2 critical security issues** that need immediate attention: hardcoded credentials and a SQL injection vulnerability. There are also naming convention violations and missed opportunities for modern C# patterns. 6 issues total (2 Critical, 3 Warning, 1 Info).
 
-| # | Severity | Location | Issue | Suggestion |
-|---|----------|----------|-------|------------|
-| 1 | 🔴 Critical | `userManager.connStr` | Hardcoded connection string with plaintext password | Move to configuration/secrets management (e.g., `appsettings.json` + Azure Key Vault) |
-| 2 | 🔴 Critical | `userManager.deleteUser:L6` | SQL injection — string concatenation in SQL query | Use parameterized queries or an ORM like Entity Framework |
-| 3 | 🟡 Warning | Class name | `userManager` does not follow PascalCase | Rename to `UserManager` |
-| 4 | 🟡 Warning | `deleteUser` method | Method name does not follow PascalCase | Rename to `DeleteUser` |
-| 5 | 🟡 Warning | `connStr` field | Private field missing underscore prefix | Rename to `_connStr` (or better: remove entirely) |
-| 6 | 🔵 Info | `GetNames` method | Manual loop with string concat could use LINQ and interpolation | Use `users.Select(u => $"{u.FirstName} {u.LastName}").ToList()` |
+## Issues
 
-## Positive Patterns ✅
-- `GetNames` returns a clear, typed result
-- Method names are descriptive of their purpose
+| # | Severity | Location | Issue | Why It Matters | Suggestion |
+|---|----------|----------|-------|----------------|------------|
+| 1 | Critical | `userManager.connStr` | Hardcoded connection string with plaintext password | Credentials in source code end up in version control and are trivially extractable | Move to `appsettings.json` + secrets management (e.g., Azure Key Vault, User Secrets for dev) |
+| 2 | Critical | `userManager.deleteUser:L6` | SQL injection via string concatenation | Attacker-controlled input can execute arbitrary SQL | Use parameterized queries or an ORM (e.g., Entity Framework, Dapper with parameters) |
+| 3 | Warning | Class declaration | `userManager` violates PascalCase convention | Inconsistent naming makes the codebase harder to navigate | Rename to `UserManager` |
+| 4 | Warning | `deleteUser` method | Method name violates PascalCase convention | Same as above | Rename to `DeleteUser` |
+| 5 | Warning | `connStr` field | Private field missing `_` prefix and access modifier | Implicit `private` is less readable; missing prefix breaks convention | Rename to `_connectionString` with explicit `private` |
+| 6 | Info | `GetNames` method | Manual loop with string concatenation where LINQ would be clearer | LINQ expresses intent more directly and reduces boilerplate | `users.Select(u => $"{u.FirstName} {u.LastName}").ToList()` |
+
+## What's Done Well
+
+- `GetNames` returns a clearly typed `List<string>` — good use of explicit return types
+- Method names are descriptive of their intent (`deleteUser`, `GetNames`)
 
 ## Recommendations
-1. **[Critical]** Remove hardcoded credentials and use secure configuration
-2. **[Critical]** Replace string-concatenated SQL with parameterized queries
-3. Fix all naming convention violations to follow C# standards
-4. Modernize `GetNames` with LINQ for readability
 
-## Validation Checklist
+1. **[Critical]** Remove hardcoded credentials — externalize all secrets to configuration
+2. **[Critical]** Replace concatenated SQL with parameterized queries throughout the codebase
+3. **[Warning]** Apply consistent PascalCase naming to all classes, methods, and properties
+4. **[Info]** Modernize `GetNames` with LINQ and string interpolation
 
-Before finalizing, verify:
-- [ ] All issues include severity, location, and an actionable suggestion
-- [ ] No false positives — every reported issue is real and verifiable
-- [ ] Positive patterns are acknowledged (at least 1–2)
-- [ ] Recommendations are prioritized by impact
-- [ ] Report follows the defined output structure
-- [ ] Security issues (if any) are marked 🔴 Critical
-- [ ] Suggestions respect the target .NET framework version
+## Pre-Delivery Checklist
 
-## References
+Before finalizing the report, verify:
 
-- [C# Coding Conventions — Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
-- [.NET Design Guidelines](https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/)
-- [Secure Coding Guidelines for .NET](https://learn.microsoft.com/en-us/dotnet/standard/security/secure-coding-guidelines)
-- [CA Rules — .NET Code Analysis](https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/quality-rules/)
+- [ ] Every reported issue is real and verifiable in the code — no false positives
+- [ ] Each issue has a severity, location, explanation, and actionable suggestion
+- [ ] At least 1-2 positive patterns acknowledged
+- [ ] Recommendations are ordered by impact
+- [ ] Suggestions are compatible with the target .NET version
+- [ ] Security issues (if any) are marked Critical
+- [ ] Report follows the defined format

@@ -1,6 +1,5 @@
 # 🔍 C# Code Review Skill for GitHub Copilot
 
-![Screenshot of the skill in use](./assets/demo.png)
 
 ## Summary
 

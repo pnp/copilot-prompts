@@ -1,39 +1,75 @@
 ---
 name: api-docs-generator
-description: This skill should be used when the user asks to "generate API documentation", "document this API", "create API docs", "scaffold API reference docs", "write endpoint documentation", or needs to generate structured API reference documentation from source code, OpenAPI specs, or code comments.
+description: Generate structured API reference documentation from source code, OpenAPI specs, or route definitions. Trigger phrases include "generate API docs", "document this API", "create API reference", "write endpoint docs", "scaffold API docs".
 ---
 
-# Generate API Reference Documentation
+# API Documentation Generator
 
-This skill generates structured API reference documentation from source code files, controllers, or OpenAPI/Swagger specifications. It produces clean Markdown documentation covering endpoints, parameters, request/response schemas, authentication, and usage examples.
+Generate clean, structured Markdown API reference docs from source code, OpenAPI/Swagger specs, or route definitions.
 
-## Before Starting
+## Gather Context
 
-**Critical**: Always gather the following before proceeding:
+Before writing anything, determine:
 
-1. **Source material** — one of the following:
-   - A source code file (controller, route handler, service class)
-   - An OpenAPI/Swagger specification file (JSON or YAML)
-   - A set of files the user points to
-2. **API name** — the name of the API or service (e.g., "User Management API")
-3. **Output format** — how the docs should be organized. Options:
+1. **Source** — Controller, route file, OpenAPI spec (JSON/YAML), or a set of files?
+2. **API name** — e.g., "User Management API". Infer from class/file name if not stated.
+3. **Base URL** — e.g., `https://api.example.com/v1`. Default to `https://api.example.com` if unknown.
+4. **Auth method** — Bearer token (default), API key, OAuth 2.0, or none.
+5. **Output format**:
    - `single-file` (default) — one Markdown file with all endpoints
-   - `per-endpoint` — separate Markdown file per endpoint
-4. **Base URL** — the API's base URL (e.g., `https://api.example.com/v1`). Use a placeholder if unknown.
-5. **Authentication method** — how the API authenticates requests. Common values:
-   - `Bearer token` (default if not specified)
-   - `API key`
-   - `OAuth 2.0`
-   - `None`
-6. **Language/framework** — the backend language and framework (e.g., ASP.NET Core, Express.js, FastAPI). Auto-detect from source code if not specified.
+   - `per-endpoint` — one file per endpoint (`{method}-{path-slug}.md`) plus a `README.md` index
+6. **Language/framework** — Auto-detect from file extensions, imports, and decorators.
 
-If the user doesn't provide all details upfront, ask for the missing ones before proceeding.
+**If context is missing:** In conversational mode, ask. In agent/inline mode, use sensible defaults and note your assumptions at the top of the output.
 
-## Output Structure
+## Analyzing the Source
 
-### Single-File Format (default)
+### From Source Code
 
-```markdown
+Read the file(s) and extract:
+
+- Every endpoint: HTTP method + route path
+- Route params, query params, request body schemas
+- Response types, status codes, and return models
+- Auth requirements (per-endpoint if they vary)
+- Doc comments, decorators, or annotations (`/// <summary>`, `@ApiOperation`, `@app.get(...)`, JSDoc `@param`/`@returns`, etc.)
+
+**Framework detection hints:**
+
+| Signal | Framework |
+|--------|-----------|
+| `[ApiController]`, `[HttpGet]` | ASP.NET Core |
+| `@app.get()`, `@router.post()` | FastAPI |
+| `router.get()`, `app.use()` | Express.js |
+| `@GetMapping`, `@RestController` | Spring Boot |
+| `@Controller`, `@Get()` | NestJS |
+| `resources :users` | Rails |
+
+### From OpenAPI/Swagger Specs
+
+Parse the spec and map directly:
+
+- `paths` → endpoints
+- `parameters` → params table
+- `requestBody` → request body section
+- `responses` → response table + examples
+- `components/schemas` → inline the referenced models
+- `securityDefinitions` / `securitySchemes` → auth section
+- `info.title`, `info.version`, `servers[0].url` → header metadata
+
+Prefer descriptions from the spec. Only infer descriptions when the spec omits them.
+
+### Handling Incomplete Source
+
+If the source references models, DTOs, or types defined in other files:
+
+- Document what's visible. Use the type name as-is (e.g., `UserDto`) and note that the full schema is defined elsewhere.
+- If the user provides multiple files, cross-reference them to build complete schemas.
+- Never fabricate fields for a model you can't see.
+
+## Documentation Template
+
+````markdown
 # {API Name} — API Reference
 
 > Base URL: `{base-url}`
@@ -41,46 +77,58 @@ If the user doesn't provide all details upfront, ask for the missing ones before
 > Version: {version}
 
 ## Table of Contents
+
 - [Authentication](#authentication)
-- [{Resource Group 1}](#{resource-group-1})
-  - [{Method} {Path}](#{endpoint-anchor})
-- [{Resource Group 2}](#{resource-group-2})
-  - ...
+- [{Resource Group}](#{resource-group-slug})
+  - [{METHOD} {path}](#{endpoint-anchor})
 
 ## Authentication
-{How to authenticate — headers, tokens, etc.}
+
+{How to authenticate: header format, token acquisition, expiration/refresh if known.}
+
+**Header format:**
+
+```
+Authorization: Bearer {token}
+```
+
+---
 
 ## {Resource Group}
 
-### {HTTP Method} `{path}`
+### {METHOD} `{path}`
 
-{Short description of what the endpoint does.}
+{One-line description from doc comments or inferred from the code.}
 
 **Parameters**
 
 | Name | In | Type | Required | Description |
 |------|----|------|----------|-------------|
-| `id` | path | integer | ✅ | The user's unique ID |
+| `id` | path | integer | ✅ | Resource ID |
 | `limit` | query | integer | ❌ | Max results (default: 20) |
 
-**Request Body**
+**Request Body** *(POST/PUT/PATCH only)*
 
 ```json
 {
-  "field": "type — description"
+  "email": "string — the user's email address",
+  "displayName": "string — display name"
 }
 ```
 
-**Response**
+**Responses**
 
 | Status | Description |
 |--------|-------------|
-| `200 OK` | Success — returns {description} |
+| `200 OK` | Returns the resource |
 | `404 Not Found` | Resource not found |
 
 ```json
 {
-  "example": "response"
+  "id": 42,
+  "email": "jane@example.com",
+  "displayName": "Jane Smith",
+  "createdAt": "2026-01-15T10:30:00Z"
 }
 ```
 
@@ -88,115 +136,64 @@ If the user doesn't provide all details upfront, ask for the missing ones before
 
 ```bash
 curl -X GET "{base-url}/{path}" \
-  -H "Authorization: Bearer {token}"
+  -H "Authorization: Bearer eyJhbG..."
 ```
-```
+````
 
-### Per-Endpoint Format
+For `per-endpoint` format: one file per endpoint named `{method}-{path-slug}.md` (e.g., `get-users-id.md`), each using the endpoint section above, plus a `README.md` that links to all of them grouped by resource.
 
-Creates one file per endpoint named `{method}-{path-slug}.md` (e.g., `get-users-id.md`), each following the same endpoint template above, plus a `README.md` index file linking to all endpoints.
+## Common API Patterns to Document
 
-## Step 1: Analyze the Source
+When you encounter these in the source, document them:
 
-Read the source material and identify:
-- All API endpoints (HTTP method + path)
-- Route parameters, query parameters, and request body schemas
-- Response types and status codes
-- Authentication requirements
-- Grouping by resource (e.g., Users, Orders, Products)
-- Any existing doc comments, decorators, or annotations (e.g., `/// <summary>`, `@ApiOperation`, JSDoc)
-
-Sort endpoints by resource group, then by path, then by HTTP method order: GET → POST → PUT → PATCH → DELETE.
-
-## Step 2: Extract Parameter Details
-
-For each endpoint, document:
-- **Path parameters** — identify from route template (e.g., `/users/{id}`)
-- **Query parameters** — identify from method signatures, decorators, or spec
-- **Request body** — identify the schema/model, include field types and descriptions
-- **Headers** — any custom headers beyond standard auth
-
-For each parameter, determine:
-- Name, location (path/query/header/body), type, required/optional, default value, description
-
-## Step 3: Document Response Schemas
-
-For each endpoint, document:
-- All possible HTTP status codes and their meaning
-- Response body schema with field types
-- Provide a realistic JSON example for the success case (200/201)
-- Document error response format if consistent across the API
-
-## Step 4: Write Authentication Section
-
-Document how to authenticate:
-- Where to include credentials (header, query param, cookie)
-- Format (e.g., `Authorization: Bearer {token}`)
-- How to obtain credentials (link to auth endpoint or external provider)
-- Token expiration and refresh (if applicable)
-
-## Step 5: Generate Usage Examples
-
-For each endpoint, provide a `curl` example showing:
-- The full URL with path parameters filled in with realistic sample values
-- Required headers (including auth)
-- Request body (for POST/PUT/PATCH)
-- Use realistic but obviously fake data (e.g., `user@example.com`, `acme-corp`)
-
-## Step 6: Assemble Documentation
-
-Combine all sections following the Output Structure:
-1. Write the header with API name, base URL, auth method, and version
-2. Generate the Table of Contents with anchor links
-3. Write the Authentication section
-4. Write each resource group with its endpoints
-5. Add a footer with generation timestamp
+- **Pagination** — query params like `page`, `limit`, `offset`, `cursor`. Note defaults and max values if visible.
+- **Filtering/sorting** — query params like `sort`, `filter`, `q`, `status`. Document allowed values.
+- **Rate limiting** — if headers like `X-RateLimit-*` or decorators like `@Throttle()` are present, add a "Rate Limiting" section.
+- **Versioning** — if the API uses path versioning (`/v1/`, `/v2/`) or header versioning, note it in the header.
+- **Bulk operations** — endpoints accepting arrays or batch payloads.
 
 ## Rules
 
-- **Extract documentation from the source — do not invent endpoints or parameters** that don't exist in the code
-- **Use the exact route paths, parameter names, and types** from the source code
-- **Preserve any existing descriptions** from doc comments, annotations, or OpenAPI descriptions
-- **Every endpoint must have at least one curl example**
-- **Response examples must be realistic** — use plausible fake data, not `"string"` or `"value"`
-- **Group endpoints by resource** (e.g., all `/users/*` endpoints together)
-- **Sort within groups**: GET → POST → PUT → PATCH → DELETE
-- **If the source code is ambiguous**, note the ambiguity in the docs rather than guessing
-- **Include both success and error responses** for each endpoint where possible
-- **Use standard HTTP status code descriptions** (200 OK, 201 Created, 400 Bad Request, etc.)
+**Do:**
 
-## Examples
+- Extract only what exists in the source — never invent endpoints, params, or fields
+- Use exact route paths, param names, and types from the code
+- Preserve existing descriptions from doc comments, annotations, or spec descriptions
+- Include a `curl` example for every endpoint
+- Use realistic fake data in examples (`jane@example.com`, `42`, `"acme-corp"` — not `"string"` or `"value"`)
+- Document both success and error responses
+- Use standard HTTP status descriptions (200 OK, 201 Created, 400 Bad Request, 401 Unauthorized, 404 Not Found, etc.)
+- Flag ambiguity with a note (e.g., *"Response schema inferred from return type; actual response may differ"*)
 
-### Example: Documenting an ASP.NET Core controller
+**Don't:**
 
-**Input:**
+- Invent endpoints or params that aren't in the source
+- Use placeholder junk like `"string"`, `"value"`, or `"example"` in response bodies
+- Skip error responses — include at least 400 and 404 where applicable
+- Assume auth requirements if the code doesn't specify them — note the uncertainty instead
+
+## Example
+
+**Input** — ASP.NET Core controller:
+
 ```csharp
 [ApiController]
 [Route("api/[controller]")]
 public class UsersController : ControllerBase
 {
-    /// <summary>
-    /// Gets a user by their ID.
-    /// </summary>
+    /// <summary>Gets a user by their ID.</summary>
     [HttpGet("{id}")]
-    public async Task<ActionResult<UserDto>> GetUser(int id)
-    {
-        // ...
-    }
+    public async Task<ActionResult<UserDto>> GetUser(int id) { }
 
-    /// <summary>
-    /// Creates a new user.
-    /// </summary>
+    /// <summary>Creates a new user.</summary>
     [HttpPost]
-    public async Task<ActionResult<UserDto>> CreateUser([FromBody] CreateUserRequest request)
-    {
-        // ...
-    }
+    public async Task<ActionResult<UserDto>> CreateUser([FromBody] CreateUserRequest request) { }
 }
 ```
 
 **Output:**
 
+````markdown
 # Users API — API Reference
 
 > Base URL: `https://api.example.com`
@@ -214,7 +211,7 @@ Gets a user by their ID.
 |------|----|------|----------|-------------|
 | `id` | path | integer | ✅ | The user's unique ID |
 
-**Response**
+**Responses**
 
 | Status | Description |
 |--------|-------------|
@@ -253,7 +250,7 @@ Creates a new user.
 }
 ```
 
-**Response**
+**Responses**
 
 | Status | Description |
 |--------|-------------|
@@ -278,22 +275,15 @@ curl -X POST "https://api.example.com/api/users" \
   -H "Content-Type: application/json" \
   -d '{"email": "john@example.com", "displayName": "John Doe", "role": "member"}'
 ```
+````
 
-## Validation Checklist
+## Pre-Delivery Checklist
 
-Before finalizing, verify:
-- [ ] Every endpoint from the source is documented (none missing)
-- [ ] No endpoints were invented that don't exist in the source
-- [ ] All parameters have correct name, location, type, and required status
-- [ ] Every endpoint has at least one curl example
-- [ ] Response examples use realistic fake data
-- [ ] Endpoints are grouped by resource and sorted by HTTP method
-- [ ] Authentication section accurately describes the auth mechanism
-- [ ] Table of Contents links are correct
-- [ ] All code blocks have correct language tags
-
-## References
-
-- [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Microsoft REST API Guidelines](https://github.com/microsoft/api-guidelines)
-- [ASP.NET Core Web API Documentation](https://learn.microsoft.com/en-us/aspnet/core/tutorials/web-api-help-pages-using-swagger)
+- [ ] Every endpoint in the source is documented — none missing, none invented
+- [ ] All params have correct name, location (`path`/`query`/`header`/`body`), type, and required status
+- [ ] Every endpoint has a `curl` example with realistic data
+- [ ] Response examples use plausible fake data, not placeholders
+- [ ] Endpoints are grouped by resource and sorted GET → POST → PUT → PATCH → DELETE
+- [ ] Auth section matches what the code actually specifies
+- [ ] Ambiguities are flagged, not silently assumed
+- [ ] TOC anchors resolve correctly
