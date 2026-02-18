@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-api-docs-generator",
+    "source": "pnp",
+    "title": "API Documentation Generator Skill for GitHub Copilot",
+    "shortDescription": "A GitHub Copilot custom skill that generates structured API reference documentation from source code or OpenAPI specifications.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/api-docs-generator",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/api-docs-generator",
+    "longDescription": [
+      "A reusable GitHub Copilot skill that teaches Copilot to generate professional API reference documentation by analyzing source code files or OpenAPI specs. It extracts endpoints, parameters, response schemas, and authentication details, then produces clean Markdown docs with curl examples. Works with any language or framework. Install it by copying the SKILL.md file into your repository's .github/skills/ folder."
+    ],
+    "creationDateTime": "2026-02-18",
+    "updateDateTime": "2026-02-18",
+    "products": [
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/api-docs-generator/assets/demo.png",
+        "alt": "Screenshot of GitHub Copilot generating API documentation using the skill"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "pnp",
+        "pictureUrl": "https://github.com/pnp.png",
+        "name": "PnP Community"
+      }
+    ],
+    "references": [
+      {
+        "name": "GitHub Copilot",
+        "description": "GitHub Copilot",
+        "url": "https://copilot.github.com/"
+      }
+    ]
+  }
+]
