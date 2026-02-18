@@ -15,7 +15,7 @@ This repository's contributors are community members who volunteered their time 
 
 ## How to use this repo
 
-Go to the [samples](https://github.com/pnp/copilot-prompts/tree/main/samples) folder, select a sample, and follow the instructions in its `readme.md`. Be sure to check the prerequisites before you get started.
+Go to the [samples](https://github.com/pnp/copilot-prompts/tree/main/samples) folder, select a prompts or agent-instructions or skills to see subfolders in them which are the samples of each type. Follow the instructions in its `readme.md`. Be sure to check the prerequisites before you get started.
 
 ![how to use this repo image](./images/how-to.png)
 
