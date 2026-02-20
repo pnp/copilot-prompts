@@ -1,0 +1,11 @@
+<botcomponent schemaname="ca_agent.topic.Goodbye">
+  <componenttype>9</componenttype>
+  <description>This topic triggers when the user says goodbye. By default, it does not end the conversation. If you would like to end the conversation when the user says goodbye, you can add an "End of Conversation" action to this topic, or redirect to the "End of Conversation" system topic.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Goodbye</name>
+  <parentbotid>
+    <schemaname>ca_agent</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

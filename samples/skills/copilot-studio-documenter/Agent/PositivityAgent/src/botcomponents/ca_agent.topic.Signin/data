@@ -1,0 +1,19 @@
+kind: AdaptiveDialog
+beginDialog:
+  kind: OnSignIn
+  id: main
+  actions:
+    - kind: ConditionGroup
+      id: conditionGroup_ypjGKL
+      conditions:
+        - id: conditionItem_7XYIIR
+          condition: =System.SignInReason = SignInReason.SignInRequired
+          actions:
+            - kind: SendActivity
+              id: sendMessage_1jHUNO
+              activity: Hello! To be able to help you, I'll need you to sign in.
+
+    - kind: OAuthInput
+      id: gOjhZA
+      title: Login
+      text: To continue, please login

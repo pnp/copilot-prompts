@@ -1,0 +1,11 @@
+<botcomponent schemaname="ca_agent.topic.Greeting">
+  <componenttype>9</componenttype>
+  <description>This topic is triggered when the user greets the agent.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Greeting</name>
+  <parentbotid>
+    <schemaname>ca_agent</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

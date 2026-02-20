@@ -1,0 +1,12 @@
+<botcomponent schemaname="ca_agent.topic.EndofConversation">
+  <componenttype>9</componenttype>
+  <description>This system topic is only triggered by a redirect action,
+and guides the user through rating their conversation with the agent.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>End of Conversation</name>
+  <parentbotid>
+    <schemaname>ca_agent</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>
