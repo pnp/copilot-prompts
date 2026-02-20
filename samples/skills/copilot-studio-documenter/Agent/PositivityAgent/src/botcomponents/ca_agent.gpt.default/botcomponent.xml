@@ -1,0 +1,11 @@
+<botcomponent schemaname="ca_agent.gpt.default">
+  <componenttype>15</componenttype>
+  <description>An agent designed to provide positivity, motivation, and confidence-building support to users. It offers encouraging and uplifting responses to help users maintain a positive mindset and build their self-esteem.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Positivity Agent (MCS)</name>
+  <parentbotid>
+    <schemaname>ca_agent</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

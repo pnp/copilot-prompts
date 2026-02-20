@@ -1,0 +1,60 @@
+kind: AdaptiveDialog
+startBehavior: CancelOtherTopics
+beginDialog:
+  kind: OnEscalate
+  id: main
+  intent:
+    displayName: Escalate
+    includeInOnSelectIntent: false
+    triggerQueries:
+      - Talk to agent
+      - Talk to a person
+      - Talk to someone
+      - Call back
+      - Call customer service
+      - Call me please
+      - Call support
+      - Call technical support
+      - Can an agent call me
+      - Can I call
+      - Can I get in touch with someone else
+      - Can I get real agent support
+      - Can I get transferred to a person to call
+      - Can I have a call in number Or can I be called
+      - Can I have a representative call me
+      - Can I schedule a call
+      - Can I speak to a representative
+      - Can I talk to a human
+      - Can I talk to a human assistant
+      - Can someone call me
+      - Chat with a human
+      - Chat with a representative
+      - Chat with agent
+      - Chat with someone please
+      - Connect me to a live agent
+      - Connect me to a person
+      - Could some one contact me by phone
+      - Customer agent
+      - Customer representative
+      - Customer service
+      - I need a manager to contact me
+      - I need customer service
+      - I need help from a person
+      - I need to speak with a live argent
+      - I need to talk to a specialist please
+      - I want to talk to customer service
+      - I want to proceed with live support
+      - I want to speak with a consultant
+      - I want to speak with a live tech
+      - I would like to speak with an associate
+      - I would like to talk to a technician
+      - Talk with tech support member
+
+  actions:
+    - kind: SendActivity
+      id: sendMessage_s39DCt
+      conversationOutcome: Escalated
+      activity: |-
+        Escalating to a representative is not currently configured for this agent, however this is where the agent could provide information about how to get in touch with someone another way.
+
+        Is there anything else I can help you with?

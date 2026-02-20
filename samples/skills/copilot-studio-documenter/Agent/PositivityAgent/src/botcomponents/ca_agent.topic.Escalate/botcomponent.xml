@@ -1,0 +1,13 @@
+<botcomponent schemaname="ca_agent.topic.Escalate">
+  <componenttype>9</componenttype>
+  <description>This system topic is triggered when the user indicates they would like to speak to a representative.
+You can configure how the agent will handle human hand-off scenarios in the agent settings..
+If your agent does not handle escalations, this topic should be disabled.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Escalate</name>
+  <parentbotid>
+    <schemaname>ca_agent</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

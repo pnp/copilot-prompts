@@ -1,0 +1,16 @@
+kind: AdaptiveDialog
+startBehavior: UseLatestPublishedContentAndCancelOtherTopics
+beginDialog:
+  kind: OnSystemRedirect
+  id: main
+  actions:
+    - kind: SendActivity
+      id: sendMessage_OPsT1O
+      activity: What can I help you with?
+
+    - kind: ClearAllVariables
+      id: clearAllVariables_73bTFR
+      variables: ConversationScopedVariables
+
+    - kind: CancelAllDialogs
+      id: cancelAllDialogs_12Gt21

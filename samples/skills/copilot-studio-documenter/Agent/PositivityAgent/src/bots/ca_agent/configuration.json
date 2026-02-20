@@ -1,0 +1,21 @@
+{
+  "$kind": "BotConfiguration",
+  "settings": {
+    "GenerativeActionsEnabled": true
+  },
+  "isAgentConnectable": true,
+  "gPTSettings": {
+    "$kind": "GPTSettings",
+    "defaultSchemaName": "ca_agent.gpt.default"
+  },
+  "aISettings": {
+    "$kind": "AISettings",
+    "useModelKnowledge": true,
+    "isFileAnalysisEnabled": true,
+    "isSemanticSearchEnabled": true,
+    "optInUseLatestModels": false
+  },
+  "recognizer": {
+    "$kind": "GenerativeAIRecognizer"
+  }
+}
