@@ -1,5 +1,5 @@
-{
-  "name": "pnp-copilot-socratic-tutor-agent",
+[{
+  "name": "copilotprompts-socratic-tutor-agent",
   "source": "pnp",
   "title": "Socratic Tutor Agent",
   "shortDescription": "A teaching agent that uses Socratic questioning to guide learning",
@@ -12,26 +12,9 @@
   "creationDateTime": "2026-02-21",
   "updateDateTime": "2026-02-21",
   "products": [
-    "Microsoft 365 Copilot",
-    "Copilot Studio",
-    "VS Code Copilot Chat Extension"
+    "Copilot"
   ],
-  "categories": [
-    "Education"
-  ],
-  "tags": [
-    "teaching",
-    "learning",
-    "education",
-    "socratic-method",
-    "critical-thinking"
-  ],
-  "metadata": [
-    {
-      "key": "COPILOT-PLATFORM",
-      "value": "Microsoft 365 Copilot, Copilot Studio, VS Code Copilot Chat Extension"
-    }
-  ],
+  "metadata": [],
   "thumbnails": [
     {
       "type": "image",
@@ -43,8 +26,17 @@
   "authors": [
     {
       "gitHubAccount": "JayanthT7",
-      "name": "Jayanth T",
-      "pictureUrl": "https://github.com/JayanthT7.png"
+      "pictureUrl": "https://github.com/JayanthT7.png",
+      "name": "Jayanth T"
     }
-  ]
-}
+  ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
+
