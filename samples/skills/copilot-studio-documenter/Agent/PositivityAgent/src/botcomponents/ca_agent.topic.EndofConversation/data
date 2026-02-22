@@ -1,0 +1,75 @@
+kind: AdaptiveDialog
+startBehavior: CancelOtherTopics
+beginDialog:
+  kind: OnSystemRedirect
+  id: main
+  actions:
+    - kind: Question
+      id: 41d42054-d4cb-4e90-b922-2b16b37fe379
+      conversationOutcome: ResolvedImplied
+      alwaysPrompt: true
+      variable: init:Topic.SurveyResponse
+      prompt: Did that answer your question?
+      entity: BooleanPrebuiltEntity
+
+    - kind: ConditionGroup
+      id: condition-0
+      conditions:
+        - id: condition-0-item-0
+          condition: =Topic.SurveyResponse = true
+          actions:
+            - kind: CSATQuestion
+              id: csat_1
+              conversationOutcome: ResolvedConfirmed
+
+            - kind: SendActivity
+              id: sendMessage_8r29O0
+              activity: Thanks for your feedback.
+
+            - kind: Question
+              id: question_1
+              alwaysPrompt: true
+              variable: init:Topic.Continue
+              prompt: Can I help with anything else?
+              entity: BooleanPrebuiltEntity
+
+            - kind: ConditionGroup
+              id: condition-1
+              conditions:
+                - id: condition-1-item-0
+                  condition: =Topic.Continue = true
+                  actions:
+                    - kind: SendActivity
+                      id: sendMessage_4eOE6h
+                      activity: Go ahead. I'm listening.
+
+              elseActions:
+                - kind: SendActivity
+                  id: yHBz55
+                  activity: Ok, goodbye.
+
+                - kind: EndConversation
+                  id: jh1GMT
+
+      elseActions:
+        - kind: Question
+          id: PM68ot
+          alwaysPrompt: true
+          variable: init:Topic.TryAgain
+          prompt: Sorry I wasn't able to help better. Would you like to try again?
+          entity: BooleanPrebuiltEntity
+
+        - kind: ConditionGroup
+          id: KNxYBf
+          conditions:
+            - id: DPveFP
+              condition: =Topic.TryAgain = false
+              actions:
+                - kind: BeginDialog
+                  id: cngqi4
+                  dialog: ca_agent.topic.Escalate
+
+          elseActions:
+            - kind: SendActivity
+              id: GrVHEW
+              activity: Go ahead. I'm listening.

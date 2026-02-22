@@ -1,0 +1,41 @@
+[
+  {
+    "name": "m365-meeting-list-invitees-rsvp",
+    "source": "pnp",
+    "title": "List upcoming meeting with list of invitees along with RSVP Status",
+    "shortDescription": "Ask Copilot to list the upcoming meetings with the list of invitees and their RSVP status",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-list-invitees-rsvp",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-list-invitees-rsvp",
+    "longDescription": [
+      "This prompt will ask Copilot to list the upcoming meetings with the list of invitees and their RSVP status. This will help you to list the meeting details along with the invitees, my RSVP status. If there are any conflicts in the meeting schedule, it will show the details in the bold text."
+    ],
+    "creationDateTime": "2024-05-23",
+    "updateDateTime": "2024-05-23",
+    "products": [
+      "Copilot for Microsoft 365"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-meeting-list-invitees-rsvp/assets/demo.png",
+        "alt": "Prompt for Copilot for Microsoft 365 to list upcoming meeting with list of invitees along with RSVP Status"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "arjunumenon",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/10369964?v=4",
+        "name": "Arjun Menon"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

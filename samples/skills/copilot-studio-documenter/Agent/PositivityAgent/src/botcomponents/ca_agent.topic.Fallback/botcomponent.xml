@@ -1,0 +1,11 @@
+<botcomponent schemaname="ca_agent.topic.Fallback">
+  <componenttype>9</componenttype>
+  <description>This system topic triggers when the user's utterance does not match any existing topics.</description>
+  <iscustomizable>0</iscustomizable>
+  <name>Fallback</name>
+  <parentbotid>
+    <schemaname>ca_agent</schemaname>
+  </parentbotid>
+  <statecode>0</statecode>
+  <statuscode>1</statuscode>
+</botcomponent>

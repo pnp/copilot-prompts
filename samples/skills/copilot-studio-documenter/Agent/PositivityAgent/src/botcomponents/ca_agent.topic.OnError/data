@@ -1,0 +1,45 @@
+kind: AdaptiveDialog
+startBehavior: UseLatestPublishedContentAndCancelOtherTopics
+beginDialog:
+  kind: OnError
+  id: main
+  actions:
+    - kind: SetVariable
+      id: setVariable_timestamp
+      variable: init:Topic.CurrentTime
+      value: =Text(Now(), DateTimeFormat.UTC)
+
+    - kind: ConditionGroup
+      id: condition_1
+      conditions:
+        - id: bL4wmY
+          condition: =System.Conversation.InTestMode = true
+          actions:
+            - kind: SendActivity
+              id: sendMessage_XJBYMo
+              activity: |-
+                Error Message: {System.Error.Message}
+                Error Code: {System.Error.Code}
+                Conversation Id: {System.Conversation.Id}
+                Time (UTC): {Topic.CurrentTime}
+
+      elseActions:
+        - kind: SendActivity
+          id: sendMessage_dZ0gaF
+          activity:
+            text:
+              - |-
+                An error has occurred.
+                Error code: {System.Error.Code}
+                Conversation Id: {System.Conversation.Id}
+                Time (UTC): {Topic.CurrentTime}.
+            speak:
+              - An error has occurred, please try again.
+
+    - kind: LogCustomTelemetryEvent
+      id: 9KwEAn
+      eventName: OnErrorLog
+      properties: "={ErrorMessage: System.Error.Message, ErrorCode: System.Error.Code, TimeUTC: Topic.CurrentTime, ConversationId: System.Conversation.Id}"
+
+    - kind: CancelAllDialogs
+      id: NW7NyY
