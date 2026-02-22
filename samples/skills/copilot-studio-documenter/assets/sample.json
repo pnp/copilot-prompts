@@ -1,0 +1,40 @@
+[
+  {
+    "name": "copilotprompts-copilot-studio-documenter",
+    "source": "pnp",
+    "title": "Copilot Studio Agent Documenter Skill",
+    "shortDescription": "Generate comprehensive documentation for Microsoft Copilot Studio agents from exported Dataverse solutions",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/copilot-studio-documenter",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/copilot-studio-documenter",
+    "longDescription": [
+      "This skill enables GitHub Copilot to automatically generate comprehensive documentation for Microsoft Copilot Studio agents from exported Dataverse solutions. It analyzes agent structure, topics, GPT instructions, connector actions, multi-agent orchestration, Dataverse integrations, and test phrases to create detailed markdown documentation with diagrams and component inventories."
+    ],
+    "creationDateTime": "2026-02-20",
+    "updateDateTime": "2026-02-20",
+    "products": [
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": []
+   ,
+    "authors": [
+      {
+        "gitHubAccount": "pkbullock",
+        "pictureUrl": "https://github.com/pkbullock.png",
+        "name": "Paul Bullock"
+      }
+    ],
+    "references": [
+      {
+        "name": "GitHub Copilot",
+        "description": "GitHub Copilot",
+        "url": "https://copilot.github.com/"
+      },
+      {
+        "name":"About Agent Skills - GitHub Copilot",
+        "description":"Learn about agent skills in GitHub Copilot, including how they enhance agent capabilities and enable seamless integration with various tools and services.",
+        "url":"https://docs.github.com/en/copilot/concepts/agents/about-agent-skills"
+      }
+    ]
+  }
+]
