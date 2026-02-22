@@ -7,6 +7,8 @@ This skill enables GitHub Copilot to automatically generate comprehensive docume
 
 ## Skill 💡
 
+The full skill definition is in [`SKILL.md`](./SKILL.md). To use it, copy the `SKILL.md` file into your repository's `.github/skills/copilot-studio-documenter/` folder.
+
 Generates comprehensive documentation for Microsoft Copilot Studio agents from exported Dataverse solutions using the Power Platform CLI. The skill analyzes agent components, extracts metadata, and creates structured markdown documentation with diagrams and component inventories.
 
 ### Trigger Phrases
@@ -46,6 +48,8 @@ Version|Date|Comments
 
 ## Instructions 📝
 
+These instructions assume you have already copied the [`SKILL.md`](./SKILL.md) file into your repository at `.github/skills/copilot-studio-documenter/SKILL.md`.
+
 1. **Export your Copilot Studio agent** as a Dataverse solution using Power Platform CLI:
 
    ```bash
@@ -54,10 +58,11 @@ Version|Date|Comments
 
    ```
 
-2. **Trigger the skill** by asking GitHub Copilot:
+2. **Open GitHub Copilot Chat** in VS Code
+3. **Trigger the skill** by asking GitHub Copilot:
    - "Document the agent in Agents/<AgentName>/"
 
-3. **Review the generated documentation** in `Docs/<AgentName>.md`
+4. **Review the generated documentation** in `Docs/<AgentName>.md`
 
 The skill will automatically:
 - Identify all agents in the solution
