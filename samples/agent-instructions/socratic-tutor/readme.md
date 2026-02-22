@@ -176,5 +176,4 @@ If you encounter any issues while using this sample, you can [create a new issue
 - [Microsoft Copilot Studio Documentation](https://learn.microsoft.com/microsoft-copilot-studio/)
 
 ---
-
-<img src="https://m365-visitor-stats.azurewebsites.net/copilot-prompts/samples/agent-instructions/socratic-tutor" aria-hidden="true" />
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-socratic-tutor-agent)
