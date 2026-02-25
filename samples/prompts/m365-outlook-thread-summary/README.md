@@ -28,7 +28,7 @@ Use it in Outlook when you have a long email chain and need to quickly understan
 
 Version|Date|Comments
 -------|----|--------
-1.0|January 29, 2025|Initial release
+1.0|January 29, 2026|Initial release
 
 ## Disclaimer
 
