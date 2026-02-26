@@ -48,11 +48,21 @@ Version|Date|Comments
 
 1. **Export your Copilot Studio agent** as a Dataverse solution using Power Platform CLI:
 
-   ```bash
-   
+This sample uses the Power Platform CLI to export solutions, for documenation and installation instructions please visit: [What is Microsoft Power Platform CLI? | Microsoft Learn](https://learn.microsoft.com/en-us/power-platform/developer/cli/introduction) 
+
+- Add your copilot agent to a solution (unmanaged) - [Create a custom solution and add your agent | Microsoft Learn](https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-solutions-import-export#create-a-custom-solution-and-add-your-agent)
+
+- Ensure you are authenticated with ```pac auth```, if you are using a mac use ```pac auth --deviceCode``` and if you want to connect to a specific environment, add ```--environment <guid>``` as an parmeter.
+
+- Once authenticated, extract the solution
+
+   ```powershell
+   # Extract the solution
    pac solution clone --name "PositivityAgent" --outputDirectory ./Agents/ --packagetype Unmanaged
 
    ```
+   
+- Ensure the files are located in "Agents/<AgentName>/" folder.
 
 2. **Trigger the skill** by asking GitHub Copilot:
    - "Document the agent in Agents/<AgentName>/"
