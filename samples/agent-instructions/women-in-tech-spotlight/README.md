@@ -154,7 +154,7 @@ If you encounter any issues while using this sample, you can [create a new issue
 
 ## Authors
 
-* [Amit S](https://github.com/amitsuthram1)
+women-in-tech-spotlight | Amit Suthram ([LinkedIn](www.linkedin.com/in/amitsuthram1))
 
 ## References
 
