@@ -1,0 +1,42 @@
+[{
+  "name": "copilotprompts-women-in-tech-spotlight",
+  "source": "pnp",
+  "title": "Women in Tech Spotlight Agent",
+  "shortDescription": "A professional agent that generates achievement-focused spotlight content highlighting women in technology.",
+  "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/women-in-tech-spotlight",
+  "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/women-in-tech-spotlight",
+  "longDescription": [
+    "The Women in Tech Spotlight Agent generates structured, professional spotlight content highlighting women in technology across industries.",
+    "It supports LinkedIn spotlight posts, conference introductions, professional bios, internal newsletter features, and interview questions.",
+    "The agent adaptively gathers only missing information, emphasizes measurable impact, and maintains a professional, non-tokenistic tone.",
+    "Suitable for year-round recognition initiatives, including International Women’s Day and leadership spotlight campaigns."
+  ],
+  "creationDateTime": "2026-02-28",
+  "updateDateTime": "2026-02-28",
+  "products": [
+    "Copilot"
+  ],
+  "metadata": [],
+  "thumbnails": [
+    {
+      "type": "image",
+      "order": 100,
+      "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/women-in-tech-spotlight/assets/demo.png",
+      "alt": "Women in Tech Spotlight Agent structured follow-up interaction"
+    }
+  ],
+  "authors": [
+    {
+      "gitHubAccount": "amitsuthram1",
+      "pictureUrl": "https://github.com/amitsuthram1.png",
+      "name": "Amit S"
+    }
+  ],
+  "references": [
+    {
+      "name": "Microsoft Copilot",
+      "description": "Microsoft Copilot",
+      "url": "https://copilot.microsoft.com/"
+    }
+  ]
+}]
