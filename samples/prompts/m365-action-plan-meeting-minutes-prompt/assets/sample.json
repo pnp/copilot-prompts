@@ -1,0 +1,34 @@
+[
+  {
+    "name": "copilotprompts-m365-action-plan-meeting-minutes-prompt",
+    "source": "pnp",
+    "title": "Action Plan Minutes After Operational Meetings",
+    "shortDescription": "Generate action plan style minutes from operational meetings in Teams",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-action-plan-meeting-minutes-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-action-plan-meeting-minutes-prompt",
+    "longDescription": [
+      "This prompt generates action plan style minutes from operational meetings, covering topics discussed, decisions made, detailed action items with owners and timelines, and the next follow-up date using a practical, execution-focused tone."
+    ],
+    "creationDateTime": "2026-03-16",
+    "updateDateTime": "2026-03-16",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [],
+    "authors": [
+      {
+        "gitHubAccount": "rogerscarias",
+        "pictureUrl": "https://github.com/rogerscarias.png",
+        "name": "Roger Scarias"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
