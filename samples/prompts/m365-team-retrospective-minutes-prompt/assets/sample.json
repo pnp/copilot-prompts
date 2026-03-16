@@ -1,0 +1,34 @@
+[
+  {
+    "name": "copilotprompts-m365-team-retrospective-minutes-prompt",
+    "source": "pnp",
+    "title": "Team Retrospective or Evaluation Minutes",
+    "shortDescription": "Generate minutes of a team retrospective or evaluation meeting in Teams",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-team-retrospective-minutes-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-team-retrospective-minutes-prompt",
+    "longDescription": [
+      "This prompt generates minutes of a team retrospective or evaluation, capturing what worked well, what didn't, improvement ideas, and concrete actions to implement after a sprint, project, or major phase."
+    ],
+    "creationDateTime": "2026-03-16",
+    "updateDateTime": "2026-03-16",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [],
+    "authors": [
+      {
+        "gitHubAccount": "rogerscarias",
+        "pictureUrl": "https://github.com/rogerscarias.png",
+        "name": "Roger Scarias"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
