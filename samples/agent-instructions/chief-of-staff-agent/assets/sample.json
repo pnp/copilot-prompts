@@ -2,8 +2,8 @@
   {
     "name": "copilotprompts-chief-of-staff-agent",
     "source": "pnp",
-    "title": "Chief of Staff: Your AI-Powered Executive Assistant",
-    "shortDescription": "A warm teaching assistant that recommends Newbery Medal-winning children's books daily",
+    "title": "Chief of Staff: Your productivity just skyrocketed",
+    "shortDescription": "Your AI-powered Chief of Staff for Microsoft 365, cutting through the noise and putting you back in control.",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/chief-of-staff-agent",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/chief-of-staff-agent",
     "longDescription": [
