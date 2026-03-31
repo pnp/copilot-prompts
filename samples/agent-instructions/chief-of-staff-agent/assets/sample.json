@@ -12,15 +12,15 @@
     "creationDateTime": "2026-03-31",
     "updateDateTime": "2026-03-31",
     "products": [
-      "Copilot"
+      "Microsoft 365 Copilot"
     ],
     "metadata": [],
     "thumbnails": [
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/chief-of-staff-agent/assets/onboarding.png",
-        "alt": "copilotprompts-chief-of-staff-agent"
+        "url": "https://raw.githubusercontent.com/pnp/copilot-prompts/main/samples/agent-instructions/chief-of-staff-agent/assets/onboarding.png",
+        "alt": "Chief of Staff agent onboarding screenshot"
       }
     ],
     "authors": [
