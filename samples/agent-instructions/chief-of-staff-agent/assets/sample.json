@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://raw.githubusercontent.com/pnp/copilot-prompts/main/samples/agent-instructions/chief-of-staff-agent/assets/onboarding.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/chief-of-staff-agent/assets/onboarding.png",
         "alt": "Chief of Staff agent onboarding screenshot"
       }
     ],
