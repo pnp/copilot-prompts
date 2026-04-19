@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-chief-of-staff-agent",
+    "source": "pnp",
+    "title": "Chief of Staff: Your productivity just skyrocketed",
+    "shortDescription": "Your AI-powered Chief of Staff for Microsoft 365, cutting through the noise and putting you back in control.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/chief-of-staff-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/chief-of-staff-agent",
+    "longDescription": [
+      "A precision-oriented productivity recovery agent that acts as the user's personal Chief of Staff within Microsoft 365. It triages workloads, scores and ranks priorities, detects stakeholder urgency, audits meetings, and restructures the user's week into an optimised operating plan. Always recommending, never acting without explicit confirmation."
+    ],
+    "creationDateTime": "2026-03-31",
+    "updateDateTime": "2026-03-31",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/chief-of-staff-agent/assets/onboarding.png",
+        "alt": "Chief of Staff agent onboarding screenshot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "LDMasina",
+        "pictureUrl": "https://avatars.githubusercontent.com/LDMasina",
+        "name": "Lance Masina"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
