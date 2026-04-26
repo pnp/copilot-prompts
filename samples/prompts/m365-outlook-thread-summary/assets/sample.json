@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-outlook-thread-summary",
+      "name": "copilotprompts-m365-outlook-thread-summary",
       "source": "pnp",
       "title": "Summarize This Email Thread",
       "shortDescription": "Get main points from long email threads in 3 bullets",
