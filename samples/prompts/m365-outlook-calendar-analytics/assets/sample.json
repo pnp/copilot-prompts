@@ -1,6 +1,6 @@
 [
   {
-    "name": "m365-outlook-calendar-analytics",
+    "name": "copilotprompts-m365-outlook-calendar-analytics",
     "source": "pnp",
     "title": "Outlook Calendar Meeting Analytics",
     "shortDescription": "Analyze monthly meeting time and generate a visual breakdown of calendar usage.",
