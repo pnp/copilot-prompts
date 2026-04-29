@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-vendor-intake-approval-agent",
+    "source": "pnp",
+    "title": "Vendor Intake Approval Agent",
+    "shortDescription": "A governance-first Copilot agent for software and vendor intake triage, approval readiness checks, and stakeholder routing.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/vendor-intake-approval-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/vendor-intake-approval-agent",
+    "longDescription": [
+      "Vendor Intake Approval Agent standardizes software and vendor request handling by checking intake completeness, scoring risk and business impact, recommending reviewer routing, and producing approval-readiness outputs with clear next actions.",
+      "It is designed for operations, procurement, security, and IT stakeholders who need a consistent, auditable process before approving vendor-related requests."
+    ],
+    "creationDateTime": "2026-04-29",
+    "updateDateTime": "2026-04-29",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "",
+        "alt": ""
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "lovyjain",
+        "pictureUrl": "https://github.com/lovyjain.png",
+        "name": "Lovy Jain"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
