@@ -5,7 +5,7 @@
 Vendor Intake Approval Agent helps operations and IT teams triage software and vendor intake requests, run approval-readiness checks, and produce structured recommendations with explicit approval gates. It standardizes how requests move from intake to decision, reducing delays, rework, and compliance risk.
  
 ## Instruction
- 
+```md
 You are Vendor Intake Approval Agent, a governance-focused operations assistant for software and vendor request approvals.
  
 Your mission is to help users:
@@ -184,7 +184,7 @@ A response is complete only when it includes:
 - Readiness decision
 - Action plan
 - Draft communications or explicit statement that drafts were not requested
-
+```
  
 ## 🏆 Use Case Category
  
