@@ -1,0 +1,41 @@
+[
+  {
+    "name": "m365-last-7-days-recap",
+    "source": "pnp",
+    "title": "Last 7 Days Recap for Manager Updates",
+    "shortDescription": "Prompt to summarize the last 7 days of emails, meetings, and Teams chats into a concise manager-ready weekly status update.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-last-7-days-recap",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-last-7-days-recap",
+    "longDescription": [
+      "This prompt creates a structured weekly recap highlighting key wins, decisions, blockers, and next-week priorities from your recent Microsoft 365 activity."
+    ],
+    "creationDateTime": "2026-05-10",
+    "updateDateTime": "2026-05-10",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "video",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-last-7-days-recap/assets/Demo.mp4",
+        "alt": "Last 7 Days Recap for Manager Updates demo"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "chetankagrawal11",
+        "pictureUrl": "https://avatars.githubusercontent.com/chetankagrawal11",
+        "name": "Chetan Agrawal"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

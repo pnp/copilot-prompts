@@ -1,0 +1,41 @@
+[
+  {
+    "name": "hr-generate-job-description",
+    "source": "pnp",
+    "title": "Generate Job Description Using Copilot",
+    "shortDescription": "Prompt to generate a role-specific job description based on position, skills, responsibilities, qualifications, and country hiring expectations.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/hr-generate-job-description",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/hr-generate-job-description",
+    "longDescription": [
+      "This prompt helps create a structured and professional job description tailored to a target role and hiring market."
+    ],
+    "creationDateTime": "2026-05-10",
+    "updateDateTime": "2026-05-10",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "video",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/hr-generate-job-description/assets/HR_Prompt_Demo.mp4",
+        "alt": "Generate Job Description Using Copilot demo"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "chetankagrawal11",
+        "pictureUrl": "https://avatars.githubusercontent.com/chetankagrawal11",
+        "name": "Chetan Agrawal"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
