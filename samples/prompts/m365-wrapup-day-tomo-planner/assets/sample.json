@@ -1,0 +1,51 @@
+[
+    {
+        "name": "copilotprompts-m365-wrapup-day-tomo-planner",
+        "source": "pnp",
+        "title": "M365 Daily Wrap-Up and Tomorrow Planner",
+        "shortDescription": "Summarize today's progress and generate a concise action plan for tomorrow using Outlook, calendar, and task data.",
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-wrapup-day-tomo-planner",
+        "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-wrapup-day-tomo-planner",
+        "longDescription": [
+            "Daily wrap-up and tomorrow planning prompt for Microsoft 365 Copilot. Reviews today's meetings, emails, and tasks; captures outcomes, blockers, and top priorities; and builds a practical plan for the next day with focus blocks and follow-up actions.",
+            "Use this prompt as a daily productivity ritual for finishing strong and starting tomorrow with clear direction."
+        ],
+        "creationDateTime": "2026-03-31",
+        "updateDateTime": "2026-03-31",
+        "products": [
+            "Microsoft 365 Copilot"
+        ],
+        "metadata": [
+            {
+                "key": "requiresGPT",
+                "value": "GPT-5"
+            },
+            {
+                "key": "category",
+                "value": "Productivity"
+            }
+        ],
+        "thumbnails": [
+            {
+                "type": "image",
+                "order": 100,
+                "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-wrapup-day-tomo-planner/assets/wrapup-day-tomo-planner.gif",
+                "alt": "Prompt for daily wrap-up and tomorrow planning using Microsoft 365 Copilot"
+            }
+        ],
+        "authors": [
+            {
+                "gitHubAccount": "arjunumenon",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/10369964?v=4",
+                "name": "Arjun Menon"
+            }
+        ],
+        "references": [
+            {
+                "name": "Microsoft Copilot",
+                "description": "Learn more about Microsoft Copilot",
+                "url": "https://copilot.microsoft.com/"
+            }
+        ]
+    }
+]

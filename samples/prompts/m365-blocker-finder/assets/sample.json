@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-m365-blocker-finder",
+    "source": "pnp",
+    "title": "Blocker Finder",   
+    "shortDescription": "Identify key blockers across Microsoft 365 and generate clear next actions and replies.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-blocker-finder",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-blocker-finder",
+    "longDescription": [
+      "Scan Outlook, Teams, To Do, and Planner to surface urgent blockers, stalled items, and dependencies. Get prioritised actions, “waiting on” insights, and ready-to-send draft responses to keep work moving."
+    ],
+    "creationDateTime": "2026-03-18",
+    "updateDateTime": "2026-03-18",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-blocker-finder/assets/Blocker-Finder-2.png",
+        "alt": "Blocker Finder"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "Bezanca84",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/202672762?v=4",
+        "name": "Adam Bezance"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

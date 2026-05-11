@@ -1,0 +1,44 @@
+[
+  {
+    "name": "copilotprompts-polyglot-pal",
+    "source": "pnp",
+    "title": "Polyglot Pal - Spontaneous Language Buddy",
+    "shortDescription": "An immersive language-learning companion that conducts micro-conversations in the user's target language and adapts in real time",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/polyglot-pal",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/polyglot-pal",
+    "longDescription": [
+      "Polyglot Pal is an AI-powered language-learning agent that creates immersive micro-conversations to help users build fluency in their target language.",
+      "It engages learners in short, realistic dialogues like ordering coffee or asking directions, adapting vocabulary and grammar complexity based on performance.",
+      "The agent provides gentle inline corrections, offers 2-3 vocabulary or grammar tips after each exchange, and enriches conversations with cultural notes.",
+      "Supporting 10+ languages with dialect variants, it can assess CEFR levels and generate quick fill-in-the-blank or multiple-choice quizzes to reinforce learning."
+    ],
+    "creationDateTime": "2026-01-27",
+    "updateDateTime": "2026-01-27",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/polyglot-pal/assets/demo.png",
+        "alt": "copilotprompts-polyglot-pal"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "iamalexmang",
+        "pictureUrl": "https://avatars.githubusercontent.com/iamalexmang",
+        "name": "Alex Mang"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

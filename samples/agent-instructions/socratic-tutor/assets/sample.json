@@ -1,0 +1,42 @@
+[{
+  "name": "copilotprompts-socratic-tutor-agent",
+  "source": "pnp",
+  "title": "Socratic Tutor Agent",
+  "shortDescription": "A teaching agent that uses Socratic questioning to guide learning",
+  "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/socratic-tutor",
+  "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/socratic-tutor",
+  "longDescription": [
+    "This agent uses the Socratic method of teaching through guided questioning...",
+    "Perfect for learning programming concepts, understanding complex topics..."
+  ],
+  "creationDateTime": "2026-02-21",
+  "updateDateTime": "2026-02-21",
+  "products": [
+    "Copilot"
+  ],
+  "metadata": [],
+  "thumbnails": [
+    {
+      "type": "image",
+      "order": 100,
+      "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/socratic-tutor/assets/demo.png",
+      "alt": "Socratic Tutor Agent in action"
+    }
+  ],
+  "authors": [
+    {
+      "gitHubAccount": "JayanthT7",
+      "pictureUrl": "https://github.com/JayanthT7.png",
+      "name": "Jayanth T"
+    }
+  ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
+

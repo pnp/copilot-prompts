@@ -1,0 +1,57 @@
+[
+  {
+    "name": "copilotprompts-m365-outlook-calendar-analytics",
+    "source": "pnp",
+    "title": "Outlook Calendar Meeting Analytics",
+    "shortDescription": "Analyze monthly meeting time and generate a visual breakdown of calendar usage.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-outlook-calendar-analytics",
+    "longDescription": [
+      "This prompt reviews your Outlook calendar for the current month and summarizes total meeting time.",
+      "It generates a clear graphical presentation showing total blocked time, organized meetings, accepted/tentative meetings, and meetings not yet responded to."
+    ],
+    "creationDateTime": "2026-02-25",
+    "updateDateTime": "2026-02-25",
+    "products": [
+      "Microsoft 365 Copilot",
+      "Outlook"
+    ],
+    "metadata": [
+      {
+        "key": "PROMPT-TYPE",
+        "value": "Productivity"
+      },
+      {
+        "key": "COPILOT-AGENT",
+        "value": "Microsoft 365 Copilot"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-outlook-calendar-analytics/assets/preview.png",
+        "alt": "Outlook calendar analytics preview"
+      },
+      {
+        "type": "image",
+        "order": 101,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-outlook-calendar-analytics/assets/graph.png",
+        "alt": "Outlook calendar analytics graph"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "saiiiiiii",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/46020510?v=4",
+        "name": "Sai Siva Ram Bandaru"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Learn more about Microsoft 365 Copilot",
+        "url": "https://www.microsoft.com/microsoft-365/copilot"
+      }
+    ]
+  }
+]

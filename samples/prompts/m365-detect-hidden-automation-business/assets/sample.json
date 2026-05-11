@@ -1,0 +1,43 @@
+[
+    {
+      "name": "copilotprompts-m365-detect-hidden-automation-business",
+      "source": "pnp",
+      "title": "Detect Hidden Automation in Business",
+      "shortDescription": "",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-detect-hidden-automation-business",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-detect-hidden-automation-business",
+      "longDescription": [
+        ""
+      ],
+      "creationDateTime": "2025-10-14",
+      "updateDateTime": "2025-10-14",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-detect-hidden-automation-business/assets/demo.png",
+          "alt": "Detect Hidden Automation in Business"
+        }
+        
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "rogerscarias",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/17912156?v=4",
+          "name": "Roger Scarias"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com/"
+        }
+      ]
+    }
+  ]

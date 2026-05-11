@@ -1,0 +1,44 @@
+[
+  {
+    "name": "copilotprompts-childrens-book-recommender",
+    "source": "pnp",
+    "title": "AI Children's Book Reading Enthusiast and Recommender",
+    "shortDescription": "A warm teaching assistant that recommends Newbery Medal-winning children's books daily",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/childrens-book-recommender",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/childrens-book-recommender",
+    "longDescription": [
+      "This agent acts as a warm, patient, and encouraging teacher who introduces students to award-winning children's literature through the Newbery Medal book list.",
+      "It uses a structured SCIR (Situation, Complication, Implication, Review) approach to engage students without spoiling endings.",
+      "The agent recommends books based on daily categories: Historical (Sunday), Realistic (Monday), Animal (Tuesday), Humor (Wednesday), Mystery (Thursday), Fantasy and Folklore (Friday), and Science Fiction and Supernatural (Saturday).",
+      "It fosters a love for reading while maintaining appropriate boundaries in student interactions."
+    ],
+    "creationDateTime": "2026-01-19",
+    "updateDateTime": "2026-01-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/childrens-book-recommender/assets/demo.png",
+        "alt": "copilotprompts-childrens-book-recommender"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "TonyHsieh",
+        "pictureUrl": "https://avatars.githubusercontent.com/TonyHsieh",
+        "name": "Tony Hsieh"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]

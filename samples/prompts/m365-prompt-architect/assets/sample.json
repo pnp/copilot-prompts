@@ -1,0 +1,35 @@
+[
+  {
+    "name": "copilotprompts-m365-prompt-architect",
+    "source": "pnp",
+    "title": "Prompt Architect - Craft, Test & Refine AI Prompts",
+    "shortDescription": "A guided meta-prompt that helps you design, test, and refine effective prompts for Copilot and AI assistants.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-prompt-architect",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-prompt-architect",
+    "longDescription": [
+      "This meta-prompt helps users turn a rough idea or existing prompt into a structured, production-ready prompt for Copilot and AI assistants, complete with persona, instructions, and worked examples in professional French."
+    ],
+    "creationDateTime": "2026-03-30",
+    "updateDateTime": "2026-03-30",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+     ],
+    "authors": [
+      {
+        "gitHubAccount": "OwnOptic",
+        "pictureUrl": "https://github.com/OwnOptic.png",
+        "name": "OwnOptic"
+      }
+    ],
+    "references": [
+      {
+        "name": "Copilot for Microsoft 365",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://developer.microsoft.com/microsoft-365/dev-program"
+      }
+    ]
+  }
+]

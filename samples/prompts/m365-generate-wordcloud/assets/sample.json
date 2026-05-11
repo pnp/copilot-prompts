@@ -1,0 +1,42 @@
+[
+    {
+      "name": "copilotprompts-m365-generate-wordcloud",
+      "source": "pnp",
+      "title": "Word Cloud Generator",
+      "shortDescription": "This Copilot prompt generates a word cloud based on a given text",
+      "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-generate-wordcloud",
+      "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-generate-wordcloud",
+      "longDescription": [
+        "This Copilot prompt helps to generate word clouds in order to visualize textual information to support presentations or workshops or simply to pimp project pages or GitHub readme files."
+      ],
+      "creationDateTime": "2025-10-14",
+      "updateDateTime": "2025-10-14",
+      "products": [
+        "Microsoft 365 Copilot"
+      ],
+      "metadata": [
+      ],
+      "thumbnails": [
+        {
+          "type": "image",
+          "order": 100,
+          "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-generate-wordcloud/assets/wordcloud-result.png",
+          "alt": "Word Cloud"
+        }
+      ],
+      "authors": [
+        {
+          "gitHubAccount": "ChVeen",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/124370897?v=4",
+          "name": "Christian Veenhuis"
+        }
+      ],
+      "references": [
+        {
+          "name": "Microsoft Copilot",
+          "description": "Microsoft Copilot",
+          "url": "https://copilot.microsoft.com"
+        }
+      ]
+    }
+  ]

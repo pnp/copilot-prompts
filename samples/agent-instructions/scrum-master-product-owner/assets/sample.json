@@ -1,0 +1,34 @@
+[
+  {
+    "name": "copilotprompts-scrum-master-product-owner",
+    "source": "pnp",
+    "title": "Scrum Master and Product Owner",
+    "shortDescription": "An expert Product Owner and Scrum Master agent that reviews open issues, ranks them by priority, proposes labels, defines milestones, plans sprints, and generates an actionable backlog.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/scrum-master-product-owner",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/scrum-master-product-owner",
+    "longDescription": [
+      "An expert Product Owner and Scrum Master agent specializing in open-source project governance. It reviews all open issues on a given repository, ranks them by priority (1-5 stars), proposes standardized labels, defines milestones, splits work into 2-week Scrum sprints, and generates an actionable backlog with user stories, estimates, tasks, dependencies, risks, draft checklists, and 3-5 acceptance criteria per issue. Output is delivered as both a concise Markdown summary and machine-readable JSON for automation."
+    ],
+    "creationDateTime": "2026-02-16",
+    "updateDateTime": "2026-02-16",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [],
+    "authors": [
+      {
+        "gitHubAccount": "StfBauer",
+        "pictureUrl": "https://avatars.githubusercontent.com/StfBauer",
+        "name": "Stefan Bauer"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
