@@ -1,0 +1,51 @@
+[
+  {
+    "name": "copilotprompts-ai-use-case-qualifier",
+    "source": "pnp",
+    "title": "The Use Case Qualifier: qualify AI ideas before you build",
+    "shortDescription": "A structured five-dimension qualification agent that scores AI use cases, recommends the right Microsoft platform, and produces a shareable Go/No-Go report.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/ai-use-case-qualifier",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/ai-use-case-qualifier",
+    "longDescription": [
+      "The Use Case Qualifier guides partners, consultants, and AI program leads through a structured qualification conversation before committing to build an AI solution. It scores the use case across five weighted dimensions - Business Value, Technical Feasibility, Adoption Readiness, Governance and Compliance, and Scope and Delivery Risk - recommends the right Microsoft AI platform from the full stack (M365 Copilot, Copilot Studio, Azure AI Foundry, AI Builder, Microsoft Fabric), surfaces the top risks and success factors, and produces a formatted qualification report ready for stakeholder review. The methodology is inspired by the Microsoft Jumpstart use case qualification approach used in enterprise AI programs."
+    ],
+    "creationDateTime": "2026-05-14",
+    "updateDateTime": "2026-05-14",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/ai-use-case-qualifier/assets/qualification-report.png",
+        "alt": "The Use Case Qualifier - sample qualification report output in Microsoft 365 Copilot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "OwnOptic",
+        "pictureUrl": "https://avatars.githubusercontent.com/OwnOptic",
+        "name": "Elliot Margot"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot Studio",
+        "description": "Build and configure agents in Microsoft Copilot Studio",
+        "url": "https://copilotstudio.microsoft.com/"
+      },
+      {
+        "name": "Microsoft AI Builder",
+        "description": "AI Builder documentation for document processing and classification",
+        "url": "https://learn.microsoft.com/en-us/ai-builder/overview"
+      },
+      {
+        "name": "Azure AI Foundry",
+        "description": "Azure AI Foundry for complex RAG and multi-agent orchestration",
+        "url": "https://ai.azure.com/"
+      }
+    ]
+  }
+]
