@@ -30,7 +30,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://raw.githubusercontent.com/pnp/copilot-prompts/main/samples/skills/powerapps-canvas-yaml-generator/assets/screenshot.png",
+        "url": "https://github.com/summitbaj/copilot-prompts/blob/powerapps-canvas-yaml-generator/samples/skills/powerapps-canvas-yaml-generator/assets/screenshot.png",
         "alt": "Power Apps Canvas App YAML Generator skill in action"
       }
     ],
