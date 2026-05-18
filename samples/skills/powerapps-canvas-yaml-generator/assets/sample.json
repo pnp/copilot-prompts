@@ -1,0 +1,62 @@
+[
+  {
+    "name": "powerapps-canvas-yaml-generator",
+    "source": "pnp",
+    "title": "Power Apps Canvas App YAML Generator",
+    "shortDescription": "A GitHub Copilot skill that generates valid, importable Power Apps Source Code YAML for canvas app screens or components — including layout containers, galleries, status badges, sidebar navigation, and Power Fx formulas following delegation best practices.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/powerapps-canvas-yaml-generator",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/powerapps-canvas-yaml-generator",
+    "longDescription": [
+      "This skill teaches GitHub Copilot to act as a Power Apps canvas app YAML code generator. It encodes the Power Apps Source Code YAML schema rules, a full enterprise design system (two-column shell, dark navy sidebar, top bar, status badges, table headers, typography scale), Power Fx delegation rules for SharePoint and Dataverse, and naming conventions for all control types. Given a screen name, nav item, data source, and layout requirements, it produces complete YAML ready for import — and documents all column name assumptions so you can align them with your actual data source."
+    ],
+    "creationDateTime": "2026-05-15",
+    "updateDateTime": "2026-05-15",
+    "products": ["Power Apps", "GitHub Copilot"],
+    "metadata": [
+      {
+        "key": "SKILL-TYPE",
+        "value": "Code Generator"
+      },
+      {
+        "key": "PLATFORM",
+        "value": "Power Apps Canvas App"
+      },
+      {
+        "key": "DATA-SOURCE",
+        "value": "SharePoint, Dataverse"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/summitbaj/copilot-prompts/blob/powerapps-canvas-yaml-generator/samples/skills/powerapps-canvas-yaml-generator/assets/screenshot.png",
+        "alt": "Power Apps Canvas App YAML Generator skill in action"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "summitbaj",
+        "pictureUrl": "https://github.com/summitbaj.png",
+        "name": "Summit Bajracharya"
+      }
+    ],
+    "references": [
+      {
+        "name": "Power Apps YAML source format",
+        "description": "Official documentation for the Power Apps canvas app source code YAML format",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/component-framework/reference/yaml-source-format"
+      },
+      {
+        "name": "Power Fx delegation overview",
+        "description": "Understanding delegable vs non-delegable functions for SharePoint and Dataverse",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/delegation-overview"
+      },
+      {
+        "name": "GroupContainer AutoLayout",
+        "description": "Using layout containers in Power Apps canvas apps",
+        "url": "https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/controls/container-layout"
+      }
+    ]
+  }
+]
