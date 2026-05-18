@@ -1,5 +1,6 @@
 # Power Apps Canvas YAML Generator Skill for GitHub Copilot
 
+![image of skill](./assets/screenshot.png)
 ## Summary
 
 This GitHub Copilot custom skill generates valid, importable Power Apps Source Code YAML for canvas app screens and components. It is intended for makers and developers who want fast, production-ready scaffolding for screens, forms, dialogs, galleries, and dashboard layouts using Power Fx-compatible YAML output.
