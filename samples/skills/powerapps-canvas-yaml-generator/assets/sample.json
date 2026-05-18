@@ -12,20 +12,7 @@
     "creationDateTime": "2026-05-15",
     "updateDateTime": "2026-05-15",
     "products": ["Power Apps", "GitHub Copilot"],
-    "metadata": [
-      {
-        "key": "SKILL-TYPE",
-        "value": "Code Generator"
-      },
-      {
-        "key": "PLATFORM",
-        "value": "Power Apps Canvas App"
-      },
-      {
-        "key": "DATA-SOURCE",
-        "value": "SharePoint, Dataverse"
-      }
-    ],
+    "metadata": [],
     "thumbnails": [
       {
         "type": "image",
