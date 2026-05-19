@@ -84,13 +84,22 @@ If the source prompt exceeds this:
 
 ---
 
-## Image Placeholder
+## Author Photo (IMPORTANT)
 
-The slide contains a photo placeholder (`Image 1`, id="3"). This is a pre-encoded PNG of the original author's photo. 
+The **visible large photo on the right side** of the slide is `Picture 30` (id=31, **rId5 → `ppt/media/image5.png`**). This is the shape to replace — NOT `Image 1` (id=3), which sits off-slide at x=14393221 and is not visible.
 
-- If the user provides a photo URL or file: replace the image relationship in `slide1.xml._rels` and swap the media file in `unpacked/ppt/media/`.
-- If no photo is provided: leave the existing image in place — it will look slightly off but the slide will still render cleanly.
-- To blank the image: replace with a solid-colour rectangle shape at the same coordinates.
+To swap the author photo:
+
+1. Take the single image from the skill's `author/` folder (any extension — .jpeg/.jpg/.png).
+2. Convert it to PNG and overwrite `unpacked/ppt/media/image5.png` (keep the filename — that way `rId5` and `[Content_Types].xml` need no changes):
+   ```python
+   from PIL import Image
+   Image.open(AUTHOR_PATH).save('unpacked/ppt/media/image5.png', 'PNG')
+   ```
+3. Do NOT touch `Image 1` / id=3 / rId3 — that shape is off-slide and irrelevant. The original `media/image3.svg` reference is unused and will be pruned by `clean.py`.
+4. The `Picture 30` shape has photo effects applied (`sharpenSoften`, `brightnessContrast`) and a 3D bevel — these stay as-is and apply to the new image automatically.
+
+Square images (1:1) render best — the slot is 6246328 × 7659056 EMU but with `srcRect` cropping.
 
 ---
 
@@ -98,7 +107,7 @@ The slide contains a photo placeholder (`Image 1`, id="3"). This is a pre-encode
 
 These shapes must remain unchanged:
 - `Graphic 1` — the Microsoft Copilot logo (top-left)
-- `Picture 30` — decorative abstract background shape (right side)
+- `Image 1` (id=3) — off-slide placeholder, leave alone
 - `Rectangle: Rounded Corners 5` — the outer dashed border frame
 - Background gradient fill on the slide master
 

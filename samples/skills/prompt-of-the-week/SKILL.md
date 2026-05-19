@@ -31,7 +31,7 @@ download avatars from GitHub or the web — this sandbox has no outbound interne
 fetches.
 
 ```bash
-SKILL_DIR="/mnt/user-config/.claude/prompt-of-the-week"
+SKILL_DIR="/mnt/user-config/.claude/skills/prompt-of-the-week"
 AUTHOR_IMG=$(ls "$SKILL_DIR/author/" | head -1)   # exactly one file expected
 AUTHOR_PATH="$SKILL_DIR/author/$AUTHOR_IMG"
 ```
@@ -40,14 +40,19 @@ If the folder is empty or missing, ask the user to drop the week's author photo 
 `prompt-of-the-week/author/` before continuing. The user maintains this folder — replacing the
 image each week is part of their workflow.
 
-To swap it into the slide:
-1. Copy `$AUTHOR_PATH` into `working/unpacked/ppt/media/` (overwrite the existing author image
-   referenced by `rId3` — typically `image1.svg` or `image1.png`).
-2. If the new file extension differs from the original, update
-   `working/unpacked/ppt/slides/_rels/slide1.xml.rels` so `rId3` points to the new filename, and
-   update `working/unpacked/\[Content_Types\].xml` if a new MIME type is introduced.
-3. The `<asvg:svgBlip>` extension in `slide1.xml` is only needed if the new image is SVG —
-   for raster images (JPG/PNG), keep just the `<a:blip r:embed="rId3"/>`.
+To swap it into the slide (the visible photo on the right side is **`Picture 30` / id=31 / rId5 → `image5.png`**, NOT the off-slide `Image 1` / id=3 / rId3):
+
+1. Convert the author image to PNG and overwrite `working/unpacked/ppt/media/image5.png`. Keeping
+   the filename means no rels or `[Content_Types].xml` edits are needed:
+   ```python
+   from PIL import Image
+   Image.open(AUTHOR_PATH).save('working/unpacked/ppt/media/image5.png', 'PNG')
+   ```
+2. Do NOT touch `Image 1` (id=3, rId3) — that shape sits off-slide and is not visible.
+   The skill's earlier instructions referencing rId3 were wrong; rId5 is the correct target.
+3. The `Picture 30` shape already has photo effects (sharpen, brightness/contrast) and a 3D bevel
+   applied — these stay as-is and apply to the new image automatically. Square (1:1) author
+   images render best.
 
 ---
 
@@ -193,6 +198,7 @@ Visually verify (use the `view` tool on the jpg):
 - Title text matches the sample name
 - Prompt body is not cut off or overflowing the dashed border box
 - Author name is visible in the right-side name badge
+- The author photo on the right matches the image from the skill's `author/` folder
 - No leftover placeholder text ("The PROMPT…", "Creator Agent", "Cyprien Maloeuvre")
 
 Then copy to outputs and present:
