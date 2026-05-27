@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-weekly-pacing",
+    "source": "pnp",
+    "title": "Weekly Pacing Skill for Cowork",
+    "shortDescription": "A calm weekly pacing skill that classifies each day as Rest, Light, Focus, or Heavy using Work IQ signals.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/weekly-pacing",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/weekly-pacing",
+    "longDescription": [
+      "Weekly Pacing analyzes calendar load, email volume, and semantic themes to visualize the shape of the week and provide one gentle recommendation. Install by placing the weekly-pacing skill folder in Documents/Cowork/skills/ so Cowork can discover it."
+    ],
+    "creationDateTime": "2026-05-27",
+    "updateDateTime": "2026-05-27",
+    "products": [
+      "Microsoft Copilot",
+      "Cowork"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/blob/main/samples/skills/weekly-pacing/assets/demo.png",
+        "alt": "Weekly Pacing skill demo"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rabwill",
+        "pictureUrl": "https://github.com/rabwill.png",
+        "name": "rabwill"
+      }
+    ],
+    "references": [
+      {
+        "name": "Copilot Cowork Skills Documentation",
+        "description": "Official documentation for Copilot Cowork skills integration.",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/#skills"
+      }
+    ]
+  }
+]
