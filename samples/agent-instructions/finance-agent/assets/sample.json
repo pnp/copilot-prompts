@@ -18,7 +18,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://raw.githubusercontent.com/pnp/copilot-prompts/refs/heads/main/samples/agent-instructions/finance-agent/assets/AgentInstructions.png",
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/finance-agent/assets/AgentInstructions.png",
         "alt": "copilotprompts-finance-agent"
       }
     ],
