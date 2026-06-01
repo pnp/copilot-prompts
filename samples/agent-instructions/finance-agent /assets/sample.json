@@ -1,0 +1,46 @@
+[
+  {
+    "name": "copilotprompts-finance-agent",
+    "source": "pnp",
+    "title": "Finance Agent",
+    "shortDescription": "Generate structured finance summaries and help users track expenses.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/finance-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/finance-agent",
+    "longDescription": [
+      "A Copilot agent that acts as a Senior Product Manager and Solution Architect for consumer fintech use cases, helping users model expense tracking, categorization, overspending detection, and actionable savings insights."
+    ],
+    "creationDateTime": "2026-06-01",
+    "updateDateTime": "2026-06-01",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "CATEGORY",
+        "value": "Productivity & Tools"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/finance-agent/assets/AgentInstructions.png",
+        "alt": "copilotprompts-finance-agent"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "chetankagrawal11",
+        "pictureUrl": "https://avatars.githubusercontent.com/chetankagrawal11",
+        "name": "Chetan Agrawal"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
