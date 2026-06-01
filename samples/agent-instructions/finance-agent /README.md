@@ -1,5 +1,5 @@
 # Finance Agent
-![image](./assests/AgentInstructions.png)
+![image](./assets/AgentInstructions.png)
 
 ## Summary
 
