@@ -1,0 +1,46 @@
+[
+  {
+    "name": "copilotprompts-mental-health-first-aider-agent",
+    "source": "pnp",
+    "title": "Mental Health First Aider Agent",
+    "shortDescription": "Empathetic mental health support agent that offers guidance and signposts professional help.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/mental-health-first-aider-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/mental-health-first-aider-agent",
+    "longDescription": [
+      "An empathetic support agent that offers immediate mental health guidance, shares evidence-based wellbeing information, and signposts users to professional help or crisis resources when appropriate."
+    ],
+    "creationDateTime": "2026-06-08",
+    "updateDateTime": "2026-06-08",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [
+      {
+        "key": "CATEGORY",
+        "value": "Healthcare & Wellbeing"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/mental-health-first-aider-agent/assets/demo.png",
+        "alt": "Mental Health First Aider Agent in action"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "reshmee011",
+        "pictureUrl": "https://avatars.githubusercontent.com/reshmee011",
+        "name": "Reshmee Auckloo"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
