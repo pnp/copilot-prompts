@@ -1,0 +1,39 @@
+[
+  {
+    "name": "copilotprompts-prompt-of-the-week",
+    "source": "custom",
+    "title": "Prompt of the Week Skill",
+    "shortDescription": "A Cowork skill that provides a curated 'Prompt of the Week' for inspiration and productivity.",
+   "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/prompt-of-the-week",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/prompt-of-the-week",
+     "longDescription": [
+      "This skill delivers a weekly prompt designed to spark creativity, learning, or productivity within your team. Each week, a new prompt is featured, encouraging users to explore new ideas, reflect, or take action. Ideal for teams looking to foster engagement and continuous improvement using Microsoft Copilot Cowork."
+    ],
+    "creationDateTime": "2026-05-18",
+    "updateDateTime": "2026-05-18",
+    "products": ["Microsoft Copilot", "Cowork"],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/blob/main/samples/skills/prompt-of-the-week/assets/demo.png",
+        "alt": "Prompt of the Week skill demo"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rabwill",
+        "pictureUrl": "https://github.com/rabwill.png",
+        "name": "Rabia Williams"
+      }
+    ],
+    "references": [
+      {
+        "name": "Copilot Cowork Skills Documentation",
+        "description": "Official documentation for Copilot Cowork skills integration.",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/#skills"
+      }
+    ]
+  }
+]

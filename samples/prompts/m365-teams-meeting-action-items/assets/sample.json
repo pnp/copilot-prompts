@@ -4,8 +4,8 @@
     "title": "Extract Action Items from Teams Meetings",
     "shortDescription": "Simple prompt to extract action items, decisions, and follow-ups from Teams meetings",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/m365-teams-meeting-action-items",
-    "creationDateTime": "2025-01-29",
-    "updateDateTime": "2025-01-29",
+    "creationDateTime": "2026-01-29",
+    "updateDateTime": "2026-02-25",
     "products": [
       "Microsoft 365 Copilot",
       "Microsoft Teams"
