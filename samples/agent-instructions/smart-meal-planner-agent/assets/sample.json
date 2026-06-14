@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-smart-meal-planner-agent",
+    "source": "pnp",
+    "title": "Smart Meal Planner Agent",
+    "shortDescription": "An agent that creates practical meal plans based on available ingredients, dietary needs, schedules, and budget constraints.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/smart-meal-planner-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/smart-meal-planner-agent",
+    "longDescription": [
+      "Smart Meal Planner Agent is an intelligent meal planning assistant that helps users design practical, personalized meal plans based on available ingredients, dietary preferences, health goals, time constraints, and budget sensitivity. It prioritizes ingredients nearing expiration, minimizes food waste, generates cost-conscious shopping lists, and provides recipe suggestions with cooking steps and estimated nutritional breakdowns."
+    ],
+    "creationDateTime": "2026-06-15",
+    "updateDateTime": "2026-06-15",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/smart-meal-planner-agent/assets/AgentInstructions.png",
+        "alt": "Smart Meal Planner Agent instructions screenshot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "chetankagrawal11",
+        "pictureUrl": "https://avatars.githubusercontent.com/chetankagrawal11",
+        "name": "Chetan Agrawal"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
