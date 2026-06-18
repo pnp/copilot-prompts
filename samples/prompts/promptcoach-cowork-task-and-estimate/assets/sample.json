@@ -1,0 +1,40 @@
+[
+  {
+    "name": "copilotprompts-promptcoach-cowork-task-and-estimate",
+    "source": "pnp",
+    "title": "PromptCoach CoWork — Task & Estimate Collaborator",
+    "shortDescription": "A meta-prompt that generates optimized Copilot Cowork plans and estimates weekly Copilot Credit consumption.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/promptcoach-cowork-task-and-estimate",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/promptcoach-cowork-task-and-estimate",
+    "longDescription": [
+      "Describe your task and this meta-prompt generates an optimized Copilot Cowork prompt along with an estimate of weekly Copilot Credit consumption. Perfect for planning automated workflows with cost visibility."
+    ],
+    "creationDateTime": "2026-06-18",
+    "updateDateTime": "2026-06-18",
+    "products": [
+      "Microsoft 365 Copilot",
+      "Copilot Cowork"
+    ],
+    "metadata": [],
+    "thumbnails": [],
+    "authors": [
+      {
+        "gitHubAccount": "sparkitect",
+        "pictureUrl": "https://github.com/sparkitect.png",
+        "name": "sparkitect"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Copilot for Microsoft 365",
+        "url": "https://developer.microsoft.com/microsoft-365/dev-program"
+      },
+      {
+        "name": "Copilot Cowork",
+        "description": "Automate work with Copilot Cowork",
+        "url": "https://learn.microsoft.com/en-us/copilot/cowork-overview"
+      }
+    ]
+  }
+]
