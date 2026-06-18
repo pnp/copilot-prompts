@@ -1,8 +1,7 @@
 # Prompt Coach: Cowork Task & Estimate
 
 ## Summary
-
-The **Prompt Coach: Cowork Task & Estimate** is a meta-prompt that helps you create optimized Copilot Cowork plans for any task. Describe what you need done, and this prompt generates a structured Copilot Cowork prompt and estimates weekly Copilot Credit consumption.
+**Prompt Coach: Cowork Task & Estimate** is a meta-prompt that helps you create optimized Copilot Cowork plans for any task. Describe what you need done, and this prompt generates a structured Copilot Cowork prompt and estimates Copilot Credit consumption for the task run.
 
 ## Prompt 💡
 
@@ -13,9 +12,12 @@ Give me a plan, in the form of a prompt I can use in Copilot Cowork, that will d
 [‌Describe Cowork task]
 ---
 
-The prompt should be optimized for efficiency and cost. After the prompt, show me an estimate of how many Copilot Credits would be used by Cowork to execute the plan each week.
+The prompt should be optimized for efficiency and cost. After the prompt, show me an estimate of how many Copilot Credits would be used by Cowork to execute the plan each time.
 ```
-
+### Example usage
+![the prompt](./assets/promptcoach-cowork-task-and-estimate-1.png)
+### Example estimate
+![the estimate](./assets/promptcoach-cowork-task-and-estimate-2.png)
 ## Description ℹ️
 
 This meta-prompt is useful for:
@@ -44,7 +46,7 @@ Simply describe your task, and the prompt generates both an optimized Copilot Co
 3. Paste it into Copilot and describe your task in detail
 4. Prompt Coach will generate:
    - An optimized Copilot Cowork prompt for your task
-   - An estimate of weekly Copilot Credit consumption
+   - An estimate of Copilot Credit consumption
 5. Use the generated prompt in your Copilot Cowork processes
 
 ### Improvise Usage 🚀
@@ -57,8 +59,10 @@ Simply describe your task, and the prompt generates both an optimized Copilot Co
 ## Prerequisites
 
 * [Microsoft 365 Copilot](https://developer.microsoft.com/microsoft-365/dev-program)
-* [Use the Prompt Coach template to build an agent](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-prompt-coach)
-* [Install the Prompt Coach agent](https://teams.microsoft.com/l/app/90680790-0a82-47bf-bab3-6c60c4221d1d?source=share-app-dialog)
+* Prompt Coach Agent:
+  * [Use the Prompt Coach template to build an agent](https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-prompt-coach)  
+    OR
+  * [Install the Prompt Coach agent](https://teams.microsoft.com/l/app/90680790-0a82-47bf-bab3-6c60c4221d1d?source=share-app-dialog)
 * [Copilot Cowork](https://learn.microsoft.com/en-us/copilot/cowork-overview)
 
 ## Help
