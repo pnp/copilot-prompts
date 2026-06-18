@@ -2,12 +2,12 @@
   {
     "name": "copilotprompts-promptcoach-cowork-task-and-estimate",
     "source": "pnp",
-    "title": "PromptCoach CoWork — Task & Estimate Collaborator",
+    "title": "Prompt Coach: Cowork Task & Estimate",
     "shortDescription": "A meta-prompt that generates optimized Copilot Cowork plans and estimates weekly Copilot Credit consumption.",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/promptcoach-cowork-task-and-estimate",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/promptcoach-cowork-task-and-estimate",
     "longDescription": [
-      "Describe your task and this meta-prompt generates an optimized Copilot Cowork prompt along with an estimate of weekly Copilot Credit consumption. Perfect for planning automated workflows with c[...]
+      "Describe your task and this meta-prompt generates an optimized Copilot Cowork prompt along with an estimate of weekly Copilot Credit consumption. Perfect for planning automated workflows with  cost visibility."
     ],
     "creationDateTime": "2026-06-18",
     "updateDateTime": "2026-06-18",
@@ -21,13 +21,13 @@
         "type": "image",
         "order": 100,
         "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/promptcoach-cowork-task-and-estimate/assets/promptcoach-cowork-task-and-estimate-1.png",
-        "alt": "PromptCoach CoWork Task & Estimate Collaborator"
+        "alt": "Prompt Coach: CoWork Task & Estimate - Prompt"
       },
       {
         "type": "image",
         "order": 200,
         "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/promptcoach-cowork-task-and-estimate/assets/promptcoach-cowork-task-and-estimate-2.png",
-        "alt": "PromptCoach CoWork Task & Estimate Collaborator"
+        "alt": "Prompt Coach: CoWork Task & Estimate - Output"
       }
     ],
     "authors": [
@@ -47,6 +47,11 @@
         "name": "Copilot Cowork",
         "description": "Automate work with Copilot Cowork",
         "url": "https://learn.microsoft.com/en-us/copilot/cowork-overview"
+      },
+      {
+        "name": "Prompt Coach",
+        "description": "Use the Prompt Coach template to build an agent",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/agent-template-prompt-coach"
       }
     ]
   }
