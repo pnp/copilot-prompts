@@ -7,7 +7,7 @@
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/promptcoach-cowork-task-and-estimate",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/promptcoach-cowork-task-and-estimate",
     "longDescription": [
-      "Describe your task and this meta-prompt generates an optimized Copilot Cowork prompt along with an estimate of weekly Copilot Credit consumption. Perfect for planning automated workflows with cost visibility."
+      "Describe your task and this meta-prompt generates an optimized Copilot Cowork prompt along with an estimate of weekly Copilot Credit consumption. Perfect for planning automated workflows with c[...]
     ],
     "creationDateTime": "2026-06-18",
     "updateDateTime": "2026-06-18",
@@ -16,7 +16,20 @@
       "Copilot Cowork"
     ],
     "metadata": [],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/promptcoach-cowork-task-and-estimate/assets/promptcoach-cowork-task-and-estimate-1.png",
+        "alt": "PromptCoach CoWork Task & Estimate Collaborator"
+      },
+      {
+        "type": "image",
+        "order": 200,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/promptcoach-cowork-task-and-estimate/assets/promptcoach-cowork-task-and-estimate-2.png",
+        "alt": "PromptCoach CoWork Task & Estimate Collaborator"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "sparkitect",
