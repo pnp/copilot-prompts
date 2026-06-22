@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-m365-workiq-persona-sketch",
+    "source": "pnp",
+    "title": "WorkIQ Persona Sketch",
+    "shortDescription": "Generate a practical WorkIQ persona sketch from your recent Microsoft 365 activity patterns.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-workiq-persona-sketch",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-workiq-persona-sketch",
+    "longDescription": [
+      "This prompt analyzes your last 30 days of Microsoft 365 activity to create a concise WorkIQ persona sketch, highlight strengths, reveal friction points, and recommend practical improvements for the next week."
+    ],
+    "creationDateTime": "2026-06-22",
+    "updateDateTime": "2026-06-22",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-workiq-persona-sketch/assets/demo.png",
+        "alt": "WorkIQ persona sketch prompt screenshot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "tonybaloney",
+        "pictureUrl": "https://github.com/tonybaloney.png",
+        "name": "Anthony Shaw"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
