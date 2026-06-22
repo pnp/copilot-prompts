@@ -1,6 +1,8 @@
 # 👨‍💼 Personal Insurance Advisor Agent
 
-![Personal Insurance Advisor Agent](./assets/logo.png)
+<p align="center">
+  <img src="./assets/logo.png" alt="Personal Insurance Advisor Agent" width="50%" />
+</p>
 
 ## Summary
 
