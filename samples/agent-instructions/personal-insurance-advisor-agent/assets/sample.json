@@ -1,0 +1,60 @@
+[
+  {
+    "name": "copilotprompts-personal-insurance-advisor-agent",
+    "source": "pnp",
+    "title": "Personal Insurance Advisor Agent",
+    "shortDescription": "A Copilot Studio agent prompt for checking whether users are properly covered and whether insurance quotes are truly apples to apples before comparing cost.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/personal-insurance-advisor-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/personal-insurance-advisor-agent",
+    "longDescription": [
+      "Personal Insurance Advisor Agent helps people understand what their personal insurance policies actually cover, whether they appear properly insured, and whether competing quotes are truly comparable before price is used as the deciding factor. The agent supports U.S.-wide policy analysis across homeowners, renters, auto, umbrella, flood, landlord, life, and disability coverage, asks for state-specific context when needed, explains policy language in plain English, identifies important gaps and weak terms, and validates apples-to-apples quote comparisons without pretending to provide binding or licensed advice."
+    ],
+    "creationDateTime": "2026-06-18",
+    "updateDateTime": "2026-06-18",
+    "products": [
+      "Copilot for Microsoft 365",
+      "Microsoft Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/blob/main/samples/agent-instructions/personal-insurance-advisor-agent/assets/logo.png",
+        "alt": "Personal Insurance Advisor Agent logo."
+      },
+      {
+        "type": "image",
+        "order": 200,
+        "url": "https://github.com/pnp/copilot-prompts/blob/main/samples/agent-instructions/personal-insurance-advisor-agent/assets/CurrentCoverage.png",
+        "alt": "Agent summarizing current insurance coverage from uploaded policy documents."
+      },
+      {
+        "type": "image",
+        "order": 300,
+        "url": "https://github.com/pnp/copilot-prompts/blob/main/samples/agent-instructions/personal-insurance-advisor-agent/assets/CompetingBid.png",
+        "alt": "Agent comparing a current policy against a competing quote with apples-to-apples analysis."
+      },
+      {
+        "type": "image",
+        "order": 400,
+        "url": "https://github.com/pnp/copilot-prompts/blob/main/samples/agent-instructions/personal-insurance-advisor-agent/assets/Disclaimer.png",
+        "alt": "Mandatory AI-generated insurance guidance disclaimer appended to every agent response."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "https://github.com/YOUR_GITHUB_ACCOUNT",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/0?v=4",
+        "name": "YOUR_NAME_HERE"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
