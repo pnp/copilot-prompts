@@ -2,7 +2,7 @@
 
 This repository contains sample prompts and agent instructions for Microsoft Copilot, GitHub Copilot, and Microsoft 365 Copilot. We welcome community contributions — if you have a great prompt or agent idea, please share your work and help others!
 
-> **Disclaimer:** The sample prompts provided in this repository are for demonstration purposes. They may not always be accurate or suitable for your specific use case. Please use them at your own discretion and review and modify them as necessary. By using the prompts in this repository, you acknowledge these limitations and agree to use the content responsibly. The maintainers are not liable for any inaccuracies or issues that arise from their use.
+> **Disclaimer:** The sample prompts provided in this repository are for demonstration purposes. They may not always be accurate or suitable for your specific use case. Please use them at your own discretion and review and modify them as necessary. By using the prompts in this repository, you acknowledge these limitations and agree to use the content responsibly. The maintainers/authors are not liable for any inaccuracies or issues that arise from their use.
 > **Use of GitHub Avatars:** By contributing to this project, you grant us permission to use your GitHub avatar in our "Prompt of the Week Kudos" posts on LinkedIn. If you prefer a different photo or wish to opt out, please [open an issue](https://github.com/pnp/copilot-prompts/issues/new) or contact us directly.
 
 ## Have ideas, issues, or questions?
