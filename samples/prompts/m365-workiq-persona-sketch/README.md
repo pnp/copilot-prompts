@@ -2,6 +2,11 @@
 
 ![Screenshot of the prompt in use](./assets/demo.png)
 
+> [!IMPORTANT]
+> This prompt is designed to help you better understand and visualise your work. Depending on your data, generated outputs may include references to people you work with, projects, customers, teams, or other organisational details.
+>
+> If you choose to share the output publicly, we strongly recommend reviewing it first and removing any information that could expose private, confidential, or security-sensitive details. Always follow your organization's privacy and information protection guidelines when publishing generated content.
+
 ## Summary
 
 This prompt helps you build a practical persona sketch from your recent work patterns so you can understand how you spend time, collaborate, and where your focus is strongest.
