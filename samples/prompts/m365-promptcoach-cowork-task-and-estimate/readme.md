@@ -1,7 +1,10 @@
-# Prompt Coach: Cowork Task & Estimate
+# Prompt Coach: Cowork Task & Approx Estimate
+
+> Microsoft does not publicly publish an exact token-to-credit conversion. Any estimate here is inferred from typical Copilot behavior and should be treated as approximate only.
 
 ## Summary
-**Prompt Coach: Cowork Task & Estimate** is a meta-prompt that helps you create optimized Copilot Cowork plans for any task. Describe what you need done, and this prompt generates a structured Copilot Cowork prompt and estimates Copilot Credit consumption for the task run.
+
+**Prompt Coach: Cowork Task & Approx Estimate** is a meta-prompt that helps you create optimized Copilot Cowork plans for any task. Describe what you need done, and this prompt generates a structured Copilot Cowork prompt and estimates approx Copilot Credit consumption for the task run.
 
 ## Prompt 💡
 
@@ -79,4 +82,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/pnp-copilot-prompts-promptcoach-cowork-task-and-estimate)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-promptcoach-cowork-task-and-estimate)
