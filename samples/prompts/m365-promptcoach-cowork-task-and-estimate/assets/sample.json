@@ -2,7 +2,7 @@
   {
     "name": "copilotprompts-m365-promptcoach-cowork-task-and-estimate",
     "source": "pnp",
-    "title": "Prompt Coach: Cowork Task & Approx Estimate",
+    "title": "Prompt Coach: Cowork Task Plan & Approx Estimate",
     "shortDescription": "A meta-prompt that generates optimized Copilot Cowork plans and estimates weekly Copilot Credit consumption.",
     "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-promptcoach-cowork-task-and-estimate",
     "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-promptcoach-cowork-task-and-estimate",
@@ -21,13 +21,13 @@
         "type": "image",
         "order": 100,
         "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-promptcoach-cowork-task-and-estimate/assets/promptcoach-cowork-task-and-estimate-1.png",
-        "alt": "Prompt Coach: Cowork Task & Approx Estimate - Prompt"
+        "alt": "Prompt Coach: Cowork Task Plan & Approx Estimate - Prompt"
       },
       {
         "type": "image",
         "order": 200,
         "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-promptcoach-cowork-task-and-estimate/assets/promptcoach-cowork-task-and-estimate-2.png",
-        "alt": "Prompt Coach: Cowork Task & Approx Estimate - Output"
+        "alt": "Prompt Coach: Cowork Task Plan & Approx Estimate - Output"
       }
     ],
     "authors": [
