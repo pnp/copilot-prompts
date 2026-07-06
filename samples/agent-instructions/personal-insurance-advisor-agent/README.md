@@ -6,7 +6,7 @@
 
 ## Summary
 
-Personal Insurance Advisor Agent is a Copilot Studio agent that helps you quickly understand your insurance coverage, identify dangerous gaps, and determine whether competing quotes are truly apples-to-apples before making switching decisions. It translates policy language into plain English, explains coverage adequacy based on your assets and risk profile, and validates whether price differences reflect true coverage variations or structural weaknesses.
+Personal Insurance Advisor Agent is an Agent Builder agent that helps you quickly understand your insurance coverage, identify dangerous gaps, and determine whether competing quotes are truly apples-to-apples before making switching decisions. It translates policy language into plain English, explains coverage adequacy based on your assets and risk profile, and validates whether price differences reflect true coverage variations or structural weaknesses.
 
 The agent supports U.S.-wide policy analysis across homeowners, renters, auto, umbrella, flood, landlord, life, and disability coverage. It asks for state-specific context when needed, operates within ethical guardrails (never binding coverage or replacing licensed advice), and maintains objectivity across all carriers.  
 
@@ -306,10 +306,10 @@ Every substantive response from the agent closes with a mandatory AI-generated i
 
 #### Prerequisites
 - Microsoft 365 Copilot License (Enterprise Premium)
-- Access to Copilot Studio Agent Builder
+- Access to Agent Builder
 
 #### Steps to Create
-- Access Copilot Studio Agent Builder in your Microsoft 365 tenant
+- Access Agent Builder in your Microsoft 365 tenant
 - Create a new agent – Click "Create an agent" → Select "New agent"
 - Copy *Description* and *Instructions* highlighted above, and paste to their respective inputs
 - Publish and Test
@@ -351,7 +351,7 @@ The sample package includes a current-policy set and a comparison-quote set for 
 - [assets/SageHill_HomeQuote.pdf](assets/SageHill_HomeQuote.pdf)
 - [assets/SageHill_UmbrellaQuote.pdf](assets/SageHill_UmbrellaQuote.pdf)
 
-**Recommended test flow in Copilot Studio:**
+**Recommended test flow in Agent Builder:**
 
 1. Upload one current policy and one matching quote for a simple apples-to-apples comparison.
 2. Repeat by line of business (auto, home, then umbrella).
