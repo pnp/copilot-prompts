@@ -1,0 +1,40 @@
+[
+  {
+    "name": "copilotprompts-sprint-governance-agent",
+    "source": "pnp",
+    "title": "SPRINT Governance Agent",
+    "shortDescription": "Generate structured finance summaries and help users track expenses.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/sprint-governance-agent",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/sprint-governance-agent",
+    "longDescription": [
+      "A Copilot agent that acts as an AI governance architect, helping teams assess agents, flows, and automations against the SPRINT framework - Security, Privacy by Design, Responsible AI by Default, Identity, No Retrofit Rule, and Track & Measure - flagging gaps, risks, and recommendations tied to specific Microsoft controls like Entra Agent ID and Purview DLP."
+    ],
+    "creationDateTime": "2026-07-09",
+    "updateDateTime": "2026-07-09",
+    "products": [
+      "Copilot"
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/sprint-governance-agent/assets/AgentInstructions.png",
+        "alt": "copilotprompts-sprint-governance-agent"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "RichaPandit",
+        "pictureUrl": "https://avatars.githubusercontent.com/RichaPandit",
+        "name": "Richa Pandit"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
