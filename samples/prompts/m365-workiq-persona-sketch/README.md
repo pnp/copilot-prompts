@@ -34,7 +34,7 @@ Version|Date|Comments
 
 ## Instructions 📝
 
-1. Open Copilot in your Microsoft 365 app (for example, Teams or Copilot Chat) with WorkIQ enabled.
+1. Open [Copilot in your Microsoft 365 app](https://aka.ms/WorkIQPersonaSketch) (for example, Teams or Copilot Chat) with WorkIQ enabled in tenant.
 2. Copy the prompt from the Prompt section.
 3. Paste it into Copilot and run it.
 4. Review the generated persona sketch.
@@ -43,7 +43,7 @@ Version|Date|Comments
 
 ## Prerequisites
 
-* [Copilot for Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program) with WorkIQ
+* [Copilot for Microsoft 365](https://aka.ms/WorkIQPersonaSketch) with WorkIQ
 
 ## Help
 
