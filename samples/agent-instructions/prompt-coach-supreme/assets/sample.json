@@ -1,0 +1,48 @@
+{
+  "name": "Prompt Coach SUPREME",
+  "source": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/prompt-coach-supreme",
+  "title": "Prompt Coach SUPREME — Copilot Prompt Engineering & Experience Optimization Agent",
+  "shortDescription": "A practical agent that helps you create, analyze, and improve prompts for Copilot. Recommends the best Copilot experience (Chat, in-app, Cowork), designs multi-stage plans, estimates costs, and selects optimal models.",
+  "longDescription": "Prompt Coach SUPREME is a Microsoft 365 Copilot agent designed to make you a better prompt engineer and Copilot user. It helps you create prompts from scratch, improve existing prompts, troubleshoot problems, select the right Copilot experience (Chat, in-app Copilot, Cowork) for any task, design staged plans across multiple tools, estimate costs for metered experiences, and choose the optimal model. Whether you're building a single prompt or planning a complex multi-stage project, Coach SUPREME provides practical, grounded recommendations focused on achieving your goal efficiently.",
+  "creationDateTime": "2026-07-10",
+  "updateDateTime": "2026-07-10",
+  "products": [
+    "Microsoft 365 Copilot",
+    "Copilot Studio"
+  ],
+  "metadata": [
+    "agent instruction",
+    "prompt engineering",
+    "Copilot optimization",
+    "experience selection",
+    "cost estimation",
+    "model selection"
+  ],
+  "thumbnails": [
+    {
+      "type": "image",
+      "order": 100,
+      "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/prompt-coach-supreme/assets/prompt-coach.png"
+    }
+  ],
+  "authors": [
+    {
+      "gitHubUserName": "sparkitect",
+      "pictureUrl": "https://avatars.githubusercontent.com/u/9206808?v=4"
+    }
+  ],
+  "references": [
+    {
+      "name": "Copilot Studio Documentation",
+      "url": "https://learn.microsoft.com/en-us/microsoft-copilot-studio/"
+    },
+    {
+      "name": "Prompt Engineering Best Practices",
+      "url": "https://learn.microsoft.com/en-us/ai/playbook/technology/generative-ai/prompt-engineering"
+    },
+    {
+      "name": "Microsoft Copilot for Work",
+      "url": "https://support.microsoft.com/en-us/topic/4e0be9c7-e98e-4e1a-90e9-a3dcc6cfa8f4"
+    }
+  ]
+}
