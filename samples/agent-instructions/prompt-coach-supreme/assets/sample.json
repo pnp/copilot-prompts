@@ -1,8 +1,9 @@
 {
   "name": "Prompt Coach SUPREME",
-  "source": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/prompt-coach-supreme",
+  "source": "pnp",
   "title": "Prompt Coach SUPREME — Copilot Prompt Engineering & Experience Optimization Agent",
   "shortDescription": "A practical agent that helps you create, analyze, and improve prompts for Copilot. Recommends the best Copilot experience (Chat, in-app, Cowork, SharePoint, Scout), designs multi-stage plans, estimates costs, and selects optimal models.",
+  "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/prompt-coach-supreme",
   "longDescription": "Prompt Coach SUPREME is a Microsoft 365 Copilot agent designed to make you a better prompt engineer and Copilot user. It helps you create prompts from scratch, improve existing prompts, troubleshoot problems, select the right Copilot experience (Chat, in-app, Copilot Cowork, Copilot in SharePoint, Microsoft Scout) for any task, design staged plans across multiple tools, estimate costs for metered experiences, and choose the optimal model. Whether you're building a single prompt or planning a complex multi-stage project, Prompt Coach SUPREME provides practical, grounded recommendations focused on achieving your goal efficiently.",
   "creationDateTime": "2026-07-10",
   "updateDateTime": "2026-07-10",
