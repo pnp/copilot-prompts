@@ -1,0 +1,40 @@
+[
+  {
+    "name": "copilotprompts-prompt-context-engineer",
+    "source": "pnp",
+    "title": "Prompt Context Engineer Skill for Cowork",
+    "shortDescription": "A Cowork skill that transforms rough prompts into clear, reusable, context-engineered prompts.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/prompt-context-engineer",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/prompt-context-engineer",
+    "longDescription": [
+      "This skill teaches Cowork to transform rough prompts, requests, and ideas into structured prompts using context engineering principles. It audits missing components, infers sensible defaults, asks concise clarifying questions only when needed, and produces reusable prompts with clear formatting and constraints."
+    ],
+    "creationDateTime": "2026-07-14",
+    "updateDateTime": "2026-07-14",
+    "products": [
+      "Microsoft Copilot",
+      "Cowork"
+    ],
+    "metadata": [],
+    "thumbnails": [],
+    "authors": [
+      {
+        "gitHubAccount": "https://www.linkedin.com/in/barnam/",
+        "pictureUrl": "https://github.com/identicons/barnam-bora.png",
+        "name": "Barnam Bora"
+      }
+    ],
+    "references": [
+      {
+        "name": "Copilot Cowork Skills Documentation",
+        "description": "Official documentation for Copilot Cowork skills integration.",
+        "url": "https://learn.microsoft.com/en-us/microsoft-365/copilot/cowork/#skills"
+      },
+      {
+        "name": "Barnam Bora",
+        "description": "Author profile",
+        "url": "https://www.linkedin.com/in/barnam/"
+      }
+    ]
+  }
+]
