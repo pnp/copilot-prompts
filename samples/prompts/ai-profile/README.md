@@ -18,6 +18,12 @@ The final output is a single self-contained HTML file that can be saved and shar
 - Capture practical interaction patterns without relying on long chat histories.
 - Help consultants, leaders, makers, and technical users get more consistent AI responses.
 
+## Example Output
+
+The following example shows the generated AI profile HTML output.
+
+![AI Profile HTML Output](assets/ai-profile-export-html-example.png)
+
 ## Prompt
 
 ```text
