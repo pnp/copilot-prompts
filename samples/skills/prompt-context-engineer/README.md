@@ -59,7 +59,6 @@ For setup details, see [Copilot Cowork Skills documentation](https://learn.micro
 
 - [Microsoft 365 Copilot](https://www.microsoft.com/microsoft-365/copilot)
 - Cowork skills enabled in your Microsoft 365 Copilot environment
-- [Visual Studio Code](https://code.visualstudio.com/)
 
 ## Help
 
