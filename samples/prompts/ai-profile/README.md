@@ -22,7 +22,7 @@ The final output is a single self-contained HTML file that can be saved and shar
 
 The following example shows the generated AI profile HTML output.
 
-![AI Profile HTML Output](assets/ai-profile-export-html-example.png)
+![AI Profile HTML Output](assets/AI-Profile-Sample.png)
 
 ## Prompt
 
