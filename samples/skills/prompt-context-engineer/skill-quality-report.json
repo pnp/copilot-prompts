@@ -1,0 +1,66 @@
+{
+  "description": "Transform any rough prompt, request, or idea into a well-structured, context-engineered prompt using Andrej Karpathy's context engineering principles. Use this skill whenever the user asks to improve, rewrite, restructure, optimize, or \"engineer\" a prompt; mentions prompt engineering or context engineering; pastes a prompt and asks to make it better; wants help writing a system prompt or instructions for an AI; or says things like \"turn this into a good prompt\", \"make this prompt work better\", or \"Claude isn't giving me what I want with this prompt\". Also use it when the user shares a vague request and explicitly wants it converted into a reusable, high-quality prompt. Do NOT use this skill to answer or execute the original prompt itself, to write general (non-prompt) documents, or for code or content generation that isn't about crafting a prompt.",
+  "dimension_notes": {
+    "instruction_specificity": [
+      "41 workflow line(s)",
+      "no example block",
+      "names tools / data sources",
+      "specifies output format"
+    ],
+    "robustness": [
+      "has Guardrails section",
+      "12 guardrail-style rule(s)",
+      "handles missing-data / failure"
+    ],
+    "scope_boundaries": [
+      "has 'When NOT to Use' section",
+      "description states exclusions",
+      "delegates to a named skill",
+      "focused single-domain scope"
+    ],
+    "trigger_clarity": [
+      "4 explicit trigger phrase(s)",
+      "has exclusion clause"
+    ]
+  },
+  "dimensions": {
+    "instruction_specificity": 23,
+    "robustness": 23,
+    "scope_boundaries": 25,
+    "trigger_clarity": 21
+  },
+  "faithfulness": {
+    "detail": "instructs grounding / no-fabrication",
+    "status": "PASS"
+  },
+  "grade": "Excellent",
+  "improvements": [],
+  "mvb_pass": true,
+  "mvb_threshold": 80,
+  "path": "/mnt/user-config/.claude/skills/prompt-context-engineer/SKILL.md",
+  "risk": {
+    "factors": [
+      "takes actions (autonomy / blast radius)",
+      "destructive operations"
+    ],
+    "launch_floor": 80,
+    "requires_behavioral": true,
+    "requires_human_review": true,
+    "tier": "high"
+  },
+  "safety": [
+    {
+      "area": "translation/copyright",
+      "detail": "Touches 'translation/copyright' scope",
+      "status": "WARN"
+    },
+    {
+      "area": "destructive",
+      "detail": "Touches 'destructive' scope",
+      "status": "WARN"
+    }
+  ],
+  "skill_name": "prompt-context-engineer",
+  "timestamp": "2026-06-15 15:27 UTC",
+  "total": 92
+}
