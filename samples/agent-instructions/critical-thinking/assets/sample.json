@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-critical-thinking",
+    "source": "pnp",
+    "title": "Critical Thinking Agent",
+    "shortDescription": "An agent that provides honest, critical answers and doesn't automatically agree with you.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/critical-thinking",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/critical-thinking",
+    "longDescription": [
+      "Based on an excellent video by Alicia Brown of Enovair Partners, this agent is designed to provide honest, critical answers and avoid sycophantic behavior."
+    ],
+    "creationDateTime": "2026-01-19",
+    "updateDateTime": "2026-01-19",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/critical-thinking/assets/demo.png",
+        "alt": "copilotprompts-critical-thinking"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "BobGerman",
+        "pictureUrl": "https://avatars.githubusercontent.com/BobGerman",
+        "name": "Bob German"
+      }
+    ],
+    "references": [
+      {
+        "name": "The Real Reason AI Won't Tell You You're Wrong - Until You Do This",
+        "description": "Video by Alicia Brown of Enovair Partners on how to get honest, critical answers from AI.",
+        "url": "https://youtu.be/F4GmBmUJuGI"
+      }
+    ]
+  }
+]
