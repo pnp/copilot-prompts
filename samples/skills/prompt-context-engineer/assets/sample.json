@@ -16,11 +16,18 @@
       "Cowork"
     ],
     "metadata": [],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/blob/main/samples/skills/prompt-context-engineer/assets/demo2.png",
+        "alt": "Prompt Context Engineer skill demo"
+      }
+    ],
     "authors": [
       {
-        "gitHubAccount": "https://www.linkedin.com/in/barnam/",
-        "pictureUrl": "https://github.com/identicons/barnam-bora.png",
+        "gitHubAccount": "barnam-bora",
+        "pictureUrl": "https://github.com/barnam-bora.png",
         "name": "Barnam Bora"
       }
     ],
