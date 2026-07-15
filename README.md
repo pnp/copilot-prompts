@@ -11,9 +11,6 @@ This repository contains sample prompts and agent instructions for Microsoft Cop
 > **Disclaimer:** The sample prompts provided in this repository are for demonstration purposes. They may not always be accurate or suitable for your specific use case. Please use them at your own discretion and review and modify them as necessary. By using the prompts in this repository, you acknowledge these limitations and agree to use the content responsibly. The maintainers/authors are not liable for any inaccuracies or issues that arise from their use.
 > **Use of GitHub Avatars:** By contributing to this project, you grant us permission to use your GitHub avatar in our "Prompt of the Week Kudos" posts on LinkedIn. If you prefer a different photo or wish to opt out, please [open an issue](https://github.com/pnp/copilot-prompts/issues/new) or contact us directly.
 
-
-
-
 ## Have ideas, issues, or questions?
 
 Please [create an issue](https://github.com/pnp/copilot-prompts/issues/new) — we'd love to hear from you.
