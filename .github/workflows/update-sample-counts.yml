@@ -1,0 +1,42 @@
+name: Update Sample Counts
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'samples/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-counts:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Count samples and update README
+        run: |
+          PROMPTS=$(find samples/prompts -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')
+          AGENTS=$(find samples/agent-instructions -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')
+          SKILLS=$(find samples/skills -mindepth 1 -maxdepth 1 -type d | wc -l | tr -d ' ')
+
+          echo "Prompts: $PROMPTS, Agent Instructions: $AGENTS, Skills: $SKILLS"
+
+          # Replace the content between SAMPLE-COUNTS markers
+          sed -i '/<!-- SAMPLE-COUNTS:START -->/,/<!-- SAMPLE-COUNTS:END -->/c\<!-- SAMPLE-COUNTS:START -->\n| 🗂️ Prompt Samples | 🤖 Agent Instructions | 🛠️ Skills |\n|:---:|:---:|:---:|\n| **'"$PROMPTS"'** | **'"$AGENTS"'** | **'"$SKILLS"'** |\n<!-- SAMPLE-COUNTS:END -->' README.md
+
+      - name: Check for changes
+        id: changes
+        run: |
+          git diff --quiet README.md || echo "changed=true" >> "$GITHUB_OUTPUT"
+
+      - name: Commit updated counts
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "docs: update sample counts [skip ci]"
+          git push
