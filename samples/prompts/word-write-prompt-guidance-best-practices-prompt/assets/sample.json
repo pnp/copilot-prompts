@@ -1,6 +1,6 @@
 [
     {
-      "name": "word-write-prompt-guidance-best-practices-prompt",
+      "name": "copilotprompts-word-write-prompt-guidance-best-practices-prompt",
       "source": "pnp",
       "title": "Create guidance with best practices and comprehensive examples on prompting Gen AI tools like Microsoft Copilot for your users in Microsoft Word.",
       "shortDescription": "Create a baseline guideline for prompting in specific business context that can be easily understood by users from different businesses and departments using comprehensive context and examples.",

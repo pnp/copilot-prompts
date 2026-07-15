@@ -54,3 +54,5 @@ For questions regarding this sample, [create a new question](https://github.com/
 Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/copilot-prompts/discussions).
 
 <img src="https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-outlook-thread-summary" />
+
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-outlook-calendar-analytics)

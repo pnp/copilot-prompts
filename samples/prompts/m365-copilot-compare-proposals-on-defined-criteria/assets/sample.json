@@ -1,6 +1,6 @@
 [
     {
-        "name": "m365-copilot-compare-proposals-on-defined-criteria",
+        "name": "copilotprompts-m365-copilot-compare-proposals-on-defined-criteria",
         "source": "pnp",
         "title": "Compare technical proposals to find the suitable proposal based on the defined criteria using Microsoft 365 Copilot",
         "shortDescription": "Compare technical proposals to find the suitable proposal based on the defined criteria using Microsoft 365 Copilot",

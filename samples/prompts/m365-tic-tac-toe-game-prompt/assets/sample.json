@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-tic-tac-toe-game-prompt",
+      "name": "copilotprompts-m365-tic-tac-toe-game-prompt",
       "source": "pnp",
       "title": "Play Tic-Tac-Toe game with Copilot",
       "shortDescription": "This Tic-Tac-Toe Game prompt is designed to let you play the classic game interactively with Copilot.",

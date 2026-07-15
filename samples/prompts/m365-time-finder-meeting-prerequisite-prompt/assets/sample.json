@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-time-finder-meeting-prerequisite-prompt",
+      "name": "copilotprompts-m365-time-finder-meeting-prerequisite-prompt",
       "source": "pnp",
       "title": "Find meeting time with another user - Prerequisite prompt",
       "shortDescription": "Prerequisite prompt example for finding a meeting time with another user",

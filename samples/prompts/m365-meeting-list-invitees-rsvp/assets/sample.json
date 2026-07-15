@@ -1,6 +1,6 @@
 [
   {
-    "name": "m365-meeting-list-invitees-rsvp",
+    "name": "copilotprompts-m365-meeting-list-invitees-rsvp",
     "source": "pnp",
     "title": "List upcoming meeting with list of invitees along with RSVP Status",
     "shortDescription": "Ask Copilot to list the upcoming meetings with the list of invitees and their RSVP status",

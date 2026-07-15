@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-information-format-pppp-prompt",
+      "name": "copilotprompts-m365-information-format-pppp-prompt",
       "source": "pnp",
       "title": "Using the 4Ps framework to organise information with Microsoft Copilot.",
       "shortDescription": "This prompt will ask Copilot to transform data into a structure that aligns with the user's preferred information framework.",

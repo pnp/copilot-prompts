@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-annual-appraisal-data-generator-prompt",
+      "name": "copilotprompts-m365-annual-appraisal-data-generator-prompt",
       "source": "pnp",
       "title": "Annual Appraisal Data Extractor Prompt",
       "shortDescription": "Generates appraisal-ready employee remarks by summarizing key activities and value adds across defined work categories.",

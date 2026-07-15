@@ -1,6 +1,6 @@
 [
   {
-    "name": "m365-manage-pending-emails-conversations-prompt",
+    "name": "copilotprompts-m365-manage-pending-emails-conversations-prompt",
     "source": "pnp",
     "title": "List emails and Teams conversations needing attention and not yet replied",
     "shortDescription": "Ask Copilot to list the emails and Teams conversations needing attention and not yet replied",

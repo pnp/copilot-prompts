@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-create-diagram-mermaid-prompt",
+      "name": "copilotprompts-m365-create-diagram-mermaid-prompt",
       "source": "pnp",
       "title": "Convert text to diagram with mermaid.js",
       "shortDescription": "This prompt will ask Copilot to convert text to diagram using mermaid.js.",

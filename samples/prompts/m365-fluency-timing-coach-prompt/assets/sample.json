@@ -1,6 +1,6 @@
 [
   {
-    "name": "m365-fluency-timing-coach-prompt",
+    "name": "copilotprompts-m365-fluency-timing-coach-prompt",
     "source": "pnp",
     "title": "Improve Presentation Fluency and Timing for Non-Native English Speakers",
     "shortDescription": "Ask Copilot to optimize your speaking notes for fluency and add estimated speaking times to help non-native English speakers deliver presentations more effectively",

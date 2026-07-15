@@ -1,6 +1,6 @@
 [
   {
-    "name": "m365-meeting-details-invitee-list",
+    "name": "copilotprompts-m365-meeting-details-invitee-list",
     "source": "pnp",
     "title": "List meeting invitees for a meeting distinguishing internal and external invitees",
     "shortDescription": "Ask copilot to list the invitees for a meeting and distinguish between internal and external invitees",
