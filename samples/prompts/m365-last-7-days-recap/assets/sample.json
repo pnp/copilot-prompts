@@ -1,6 +1,6 @@
 [
   {
-    "name": "m365-last-7-days-recap",
+    "name": "copilotprompts-m365-last-7-days-recap",
     "source": "pnp",
     "title": "Last 7 Days Recap for Manager Updates",
     "shortDescription": "Prompt to summarize the last 7 days of emails, meetings, and Teams chats into a concise manager-ready weekly status update.",

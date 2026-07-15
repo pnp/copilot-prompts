@@ -111,4 +111,4 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![Visitor Stats](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/conference-session-summariser)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-conference-session-summarizer)

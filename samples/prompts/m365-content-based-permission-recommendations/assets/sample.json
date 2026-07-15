@@ -1,6 +1,6 @@
 [
   {
-    "name": "m365-content-based-permission-recommendations",
+    "name": "copilotprompts-m365-content-based-permission-recommendations",
     "source": "pnp",
     "title": "This prompt ensures that permissions are dynamically adjusted based on the content's nature",
     "shortDescription": "Ask copilot to recommend permissions based on the content's nature",

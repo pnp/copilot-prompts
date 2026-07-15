@@ -1,6 +1,6 @@
 [
     {
-      "name": "latest-10-announcements-from-m365-message-center",
+      "name": "copilotprompts-latest-10-announcements-from-m365-message-center",
       "source": "pnp",
       "title": "Latest 10 announcements from m365 message center",
       "shortDescription": "Provide a summary of the latest 10 announcements from the Microsoft 365 Message Center.",

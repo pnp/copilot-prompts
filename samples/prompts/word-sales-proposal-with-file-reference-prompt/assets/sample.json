@@ -1,6 +1,6 @@
 [
     {
-      "name": "word-sales-proposal-with-file-reference-prompt",
+      "name": "copilotprompts-word-sales-proposal-with-file-reference-prompt",
       "source": "pnp",
       "title": "Create a sales proposal for a sales lead with content refering from a document in SharePoint in Microsoft Word",
       "shortDescription": "Ask Copilot to create a sales proposal for a sales lead with content refering from a document in SharePoint in Microsoft Word.",

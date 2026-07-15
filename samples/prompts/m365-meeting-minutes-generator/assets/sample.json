@@ -1,6 +1,6 @@
 [
   {
-    "name": "m365-meeting-minutes-generator",
+    "name": "copilotprompts-m365-meeting-minutes-generator",
     "source": "pnp",
     "title": "Prepare the meeting minutes in the similar and familiar format after the meeting is completed with recordings",
     "shortDescription": "Ask copilot to generate the meeting mintues for the recorded teams meetings",

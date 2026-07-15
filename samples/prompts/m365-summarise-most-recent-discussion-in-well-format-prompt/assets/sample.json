@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-summarise-most-recent-discussion-in-well-format-prompt",
+      "name": "copilotprompts-m365-summarise-most-recent-discussion-in-well-format-prompt",
       "source": "pnp",
       "title": "M365 Summarise Most Recent Discussion In Well Format Prompt",
       "shortDescription": "Ask copilot to summarise most recent discussion in well format",

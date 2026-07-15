@@ -1,6 +1,6 @@
 [
     {
-      "name": "microsoft-365-copilot-to-fetch-technical-interviews-from-outlook-emails",
+      "name": "copilotprompts-microsoft-365-copilot-to-fetch-technical-interviews-from-outlook-emails",
       "source": "pnp",
       "title": "Microsoft 365 Copilot with prompt to get the list of candidates which you interviewed, date of interview and job role in tabular format in the past 6 months.",
       "shortDescription": "Ask microsoft 365 Copilot with prompt to get the list of candidates which you interviewed, date of interview and job role in tabular format in the past 6 months.",

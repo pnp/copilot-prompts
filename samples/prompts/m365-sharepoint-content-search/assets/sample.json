@@ -1,6 +1,6 @@
 [
   {
-    "name": "m365-sharepoint-content-search",
+    "name": "copilotprompts-m365-sharepoint-content-search",
     "source": "pnp",
     "title": "Search for documents in SharePoint Online for specific topic and summarize the content  ",
     "shortDescription": "Ask copilot to search for documents in SharePoint Online for specific topic and summarize the content",

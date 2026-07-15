@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-geo-locator-prompt",
+      "name": "copilotprompts-m365-geo-locator-prompt",
       "source": "pnp",
       "title": "Play geo locator game",
       "shortDescription": "This prompt will create an instruction to play a geo locator game.",

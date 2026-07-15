@@ -1,6 +1,6 @@
 [
   {
-    "name": "powerapps-canvas-yaml-generator",
+    "name": "copilotprompts-powerapps-canvas-yaml-generator",
     "source": "pnp",
     "title": "Power Apps Canvas App YAML Generator",
     "shortDescription": "A GitHub Copilot skill that generates valid, importable Power Apps Source Code YAML for canvas app screens or components — including layout containers, galleries, status badges, sidebar navigation, and Power Fx formulas following delegation best practices.",

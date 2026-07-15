@@ -1,6 +1,6 @@
 [
   {
-    "name": "hr-generate-job-description",
+    "name": "copilotprompts-hr-generate-job-description",
     "source": "pnp",
     "title": "Generate Job Description Using Copilot",
     "shortDescription": "Prompt to generate a role-specific job description based on position, skills, responsibilities, qualifications, and country hiring expectations.",

@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-teams-sprint-summary",
+      "name": "copilotprompts-m365-teams-sprint-summary",
       "source": "pnp",
       "title": "Summarize This Email Thread",
       "shortDescription": "Get main points from long email threads in 3 bullets",

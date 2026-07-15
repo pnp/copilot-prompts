@@ -110,3 +110,5 @@ Finally, if you have an idea for improvement, [make a suggestion](https://github
 ## Disclaimer
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-7-day-inbox-review-action-framework)

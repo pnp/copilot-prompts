@@ -1,6 +1,6 @@
 [
     {
-      "name": "m365-azure-devops-pipeline-prompt",
+      "name": "copilotprompts-m365-azure-devops-pipeline-prompt",
       "source": "pnp",
       "title": "Azure DevOps Build and Release Pipelines",
       "shortDescription": "Prompt to generate the build and release pipelines in Azure DevOps to automate the deployment of ASP.Net Core MVC Application to Azure Container Apps",

@@ -144,3 +144,5 @@ You can try looking at [issues related to this sample](https://github.com/pnp/co
 If you encounter any issues using this sample, [create a new issue](https://github.com/pnp/copilot-prompts/issues/new).
 
 Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/copilot-prompts/issues/new).
+
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-m365-7-day-sent-review-and-remind-action)
