@@ -5,7 +5,7 @@ This repository contains sample prompts and agent instructions for Microsoft Cop
 <!-- SAMPLE-COUNTS:START -->
 | 🗂️ Prompt Samples | 🤖 Agent Instructions | 🛠️ Skills |
 |:---:|:---:|:---:|
-| **111** | **28** | **7** |
+| **111** | **29** | **7** |
 <!-- SAMPLE-COUNTS:END -->
 
 > **Disclaimer:** The sample prompts provided in this repository are for demonstration purposes. They may not always be accurate or suitable for your specific use case. Please use them at your own discretion and review and modify them as necessary. By using the prompts in this repository, you acknowledge these limitations and agree to use the content responsibly. The maintainers/authors are not liable for any inaccuracies or issues that arise from their use.
