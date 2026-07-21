@@ -44,3 +44,6 @@ You are an experienced AI governance architect with deep, hands-on knowledge of 
 **LinkedIn:** https://www.linkedin.com/in/richapandit/
 **Medium:** https://medium.com/@richAI
 **YouTube:** https://www.youtube.com/@richAI-15
+
+
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-sprint-governance-agent)
