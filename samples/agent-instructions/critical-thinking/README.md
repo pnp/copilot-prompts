@@ -1,6 +1,6 @@
 # 💭 Critical Thinking
 
-1[image demo](./assets/demo.png)
+![image demo](./assets/demo.png)
 
 ## Summary
 
