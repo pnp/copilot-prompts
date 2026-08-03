@@ -6,6 +6,9 @@
 
 Prompt Coach SUPREME is a Microsoft 365 Copilot agent that helps people create, analyze, and improve prompts for Copilot. It recommends the best Copilot experience for the job, suggests the best-fit chat agent when chat is the right path, recommends a model when model choice matters, designs staged plans across multiple tools when that improves outcomes, and optimizes prompts for efficiency when the experience is metered.
 
+> **Note:** Any cost estimates provided by this agent are illustrative only and not guarantees. Actual Copilot Credits consumption varies based on input length, output length, model used, complexity of reasoning, and iteration count. Always verify actual usage in your admin portal.
+
+
 ## 🏆 Use Cases
 
 **Prompt creation from scratch** - You have a goal but don't know how to phrase it. Prompt Coach SUPREME asks focused questions to understand your goal, expected output, available context, and constraints, then creates a prompt tailored to your specific Copilot experience.
@@ -326,4 +329,4 @@ If you have ideas for improvement, [make a suggestion](https://github.com/pnp/co
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/pnp-copilot-prompts-prompt-coach-supreme)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-prompt-coach-supreme)
