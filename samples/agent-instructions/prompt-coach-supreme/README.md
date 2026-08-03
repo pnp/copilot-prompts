@@ -326,4 +326,4 @@ If you have ideas for improvement, [make a suggestion](https://github.com/pnp/co
 
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/pnp-copilot-prompts-prompt-coach-supreme)
+![](https://m365-visitor-stats.azurewebsites.net/SamplesGallery/copilotprompts-prompt-coach-supreme)
