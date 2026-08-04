@@ -48,7 +48,7 @@ Version|Date|Comments
 2. Choose **Skills**
 3. Upload the [`SKILL.md`](./SKILL.md) file
 4. Go to [Cowork Scheduled Tasks](https://m365.cloud.microsoft/cowork#/scheduled)
-5. Create a new scheduled task - eekly Self-Review
+5. Create a new scheduled task - Weekly Self-Review
 6. Set the schedule to run **Every Week on Friday 9PM**
 7. Use the instruction: *"Produce my weekly self-review using the self-awareness-review skill — reflecting on my recent work, contributions, accomplishments, and areas for growth over the past week — and email the completed review to me at <email>"*
 8. Cowork will automatically review your sent emails, Teams chats, and meeting transcripts each week and deliver a private self-awareness report
