@@ -47,9 +47,11 @@ Version|Date|Comments
 1. Go to the [Cowork Customize page](https://m365.cloud.microsoft/cowork#/customize)
 2. Choose **Skills**
 3. Upload the [`SKILL.md`](./SKILL.md) file
-4. Open Microsoft 365 Copilot
-5. Say: *"Was I out of line this week?"*
-6. Copilot will review your sent emails, Teams chats, and meeting transcripts for the week and deliver a private self-awareness report
+4. Go to [Cowork Scheduled Tasks](https://m365.cloud.microsoft/cowork#/scheduled)
+5. Create a new scheduled task - eekly Self-Review
+6. Set the schedule to run **Every Week on Friday 9PM**
+7. Use the instruction: *"Produce my weekly self-review using the self-awareness-review skill — reflecting on my recent work, contributions, accomplishments, and areas for growth over the past week — and email the completed review to me at <email>"*
+8. Cowork will automatically review your sent emails, Teams chats, and meeting transcripts each week and deliver a private self-awareness report
 
 ### Customization 🚀
 
