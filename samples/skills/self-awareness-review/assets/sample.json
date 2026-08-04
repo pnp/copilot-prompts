@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-self-awareness-review",
+    "source": "pnp",
+    "title": "Self-Awareness Review for Microsoft 365 Copilot Cowork",
+    "shortDescription": "Private self-reflection coaching that reviews your own Teams meetings, chats, and sent emails to surface moments where you may have misread social signals or come across as passive-aggressive, curt, or dismissive.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/self-awareness-review",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/self-awareness-review",
+    "longDescription": [
+      "A private self-awareness coaching skill that reviews your own sent emails, Teams chat messages, and meeting transcript lines over a given week. It flags specific moments where you may have misread a social signal or come across as passive-aggressive, curt, sarcastic, or dismissive — showing the exact quote, how it likely landed, and a kinder rewrite. Copy the SKILL.md file into your repository's .github/skills/self-awareness-review/ folder to use it."
+    ],
+    "creationDateTime": "2026-08-04",
+    "updateDateTime": "2026-08-04",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/self-awareness-review/assets/demo.png",
+        "alt": "Screenshot of the Self-Awareness Review skill in use showing flagged moments and kinder rewrites"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "tonybaloney",
+        "pictureUrl": "https://github.com/tonybaloney.png",
+        "name": "Anthony Shaw"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://www.microsoft.com/microsoft-365/copilot"
+      }
+    ]
+  }
+]
