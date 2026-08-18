@@ -1,0 +1,40 @@
+[
+  {
+    "name": "copilotprompts-m365-decision-log-generator-prompt",
+    "source": "pnp",
+    "title": "Generate a Structured Decision Log from a Meeting",
+    "shortDescription": "Turn a Teams meeting transcript into an auditable decision log capturing each decision, its owner, rationale, reversibility, and review date.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-decision-log-generator-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-decision-log-generator-prompt",
+    "longDescription": [
+      "This prompt makes Microsoft 365 Copilot act as a decision archivist that scans a Teams meeting transcript strictly for decisions and outputs a structured Markdown decision log. It distinguishes reversible from irreversible decisions, assigns owners and review dates, and flags any ownerless decisions for follow-up, giving teams a lightweight governance and audit trail without re-reading the entire meeting."
+    ],
+    "creationDateTime": "2026-08-07",
+    "updateDateTime": "2026-08-07",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/Bhupendrakaushik.png"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "Bhupendrakaushik",
+        "pictureUrl": "https://github.com/Bhupendrakaushik.png",
+        "name": "Bhupendra Kaushik"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
