@@ -1,6 +1,5 @@
 # Generate a Structured Decision Log from a Meeting
 
-![Screenshot of the prompt in use](./assets/demo.png)
 
 ## Summary
 
@@ -8,7 +7,9 @@ Meetings produce decisions that get lost in long transcripts and chat threads. T
 
 ## Prompt 💡
 
+```
 Act as a decision archivist. Using the transcript of my most recent Teams meeting, extract every concrete decision that was made and present them as a structured decision log in a Markdown table with these columns: Decision, Owner, Rationale, Alternatives Considered, Reversibility (Reversible / Hard to reverse / Irreversible), and Review Date. Only include actual decisions — ignore open questions, action items, and general discussion. If a decision has no clear owner or review date, mark it as "Unassigned" or "TBD". After the table, add a short "Decisions Needing Follow-up" section listing any decisions that were made without a clear owner. Keep the language factual and neutral.
+```
 
 ## Description ℹ️
 
@@ -21,7 +22,7 @@ Tips for best results:
 
 ## Contributors 👨‍💻
 
-[Your Name](https://github.com/your-username)
+[Bhupendra Kaushik](https://github.com/Bhupendrakaushik)
 
 ## Version history
 
