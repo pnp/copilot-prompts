@@ -1,0 +1,274 @@
+Perfect. Here is the **English, GitHub‑ready README** — written from an **AI Architect perspective**, clean, professional, and **100% copy‑paste friendly**.
+
+**Key idea:** Claude is **not ChatGPT with a different name**.  
+Anthropic trained Claude to perform best with **structured instructions**, **explicit context**, and **XML‑style tags**.
+
+🔴 Write vague prompts → you get generic answers  
+🟢 Write structured prompts → you get surgical precision
+
+***
+
+## 🔑 The Claude Prompting Formula (That Actually Works)
+
+### 🧠 Reusable Base Template
+
+<role>Define who Claude is (expert role)</role>
+
+<task>Define exactly what needs to be produced</task>
+
+<context>
+Provide all available input:
+- Documents
+- Emails
+- Tables
+- Transcripts
+- Constraints
+</context>
+
+<rules>
+- What Claude must do
+- What Claude must NOT do
+- Quality criteria
+- Limits (length, tone, format)
+- Do not invent information
+</rules>
+
+<output>Describe the exact final format</output>
+
+💡 **Pro tip:** You don’t need to use **all tags every time**.  
+Use what applies — but **more structure = higher accuracy**.
+
+***
+
+## Prompt 1 — Strategic Meeting Analyst
+
+**Ideal for:** Copilot Chat or Researcher after a Teams meeting
+
+<role>You are a senior business analyst specialized in digital transformation</role>
+
+<task>Analyze the transcript of my last meeting and generate an executive report</task>
+
+<rules>
+- Identify the 3 key decisions made
+- List pending tasks with owner and due date
+- Detect unresolved risks or disagreements
+- Propose 2 immediate actions that were not mentioned but are necessary
+- Do not invent information not present in the transcript
+</rules>
+
+<output>Executive report in bullet points, maximum 1 page</output>
+
+***
+
+## Prompt 2 — Process Inefficiency Detector
+
+**Ideal for:** Copilot Chat with attached documents
+
+<role>You are an operations consultant with expertise in lean management and enterprise automation</role>
+
+<task>Review the process described below and identify bottlenecks, redundant steps, and automation opportunities</task>
+
+<context>[Paste the process description or attach the document]</context>
+
+<rules>
+- Classify each issue as High / Medium / Low priority
+- For each issue, propose a concrete solution using Microsoft tools (Power Automate, Copilot Studio, SharePoint, Teams)
+- Estimate weekly time savings per improvement
+</rules>
+
+<output>Table with columns: Issue | Priority | Proposed Solution | Tool | Estimated Savings</output>
+
+***
+
+## Prompt 3 — Executive Report Generator from Raw Data
+
+**Ideal for:** Excel with Claude in Agent Mode
+
+<role>You are a senior data analyst presenting insights to C‑level executives</role>
+
+<task>Based on the data in this sheet, generate an executive‑ready summary of the key insights</task>
+
+<rules>
+- Identify the 5 most relevant metrics
+- Detect positive and negative trends
+- Highlight anomalies or outliers
+- Use business language, not technical jargon
+- If data is ambiguous, explicitly state it rather than assuming
+</rules>
+
+<output>
+1. Executive summary (3–4 sentences)
+2. Top 5 key metrics (with variation vs previous period)
+3. Alerts and anomalies
+4. Actionable recommendations (max 3)
+</output>
+
+***
+
+## Prompt 4 — High‑Impact Email Writer
+
+**Ideal for:** Copilot Chat or Outlook
+
+<role>You are a senior sales director with 15 years of experience closing B2B technology deals</role>
+
+<task>Write a follow‑up email for a prospect who showed interest but hasn’t replied in 5 days</task>
+
+<context>
+- Prospect: [Name, title, company]
+- Interest: [product/service]
+- Last interaction: [brief description]
+</context>
+
+<rules>
+- Tone: professional and approachable, not desperate
+- Max 120 words
+- Include a value hook (data point, insight, or brief case reference)
+- End with an open question that invites a response
+- Do NOT use generic phrases like “hope you’re doing well”
+</rules>
+
+<output>Email ready to send (subject + body)</output>
+
+***
+
+## Prompt 5 — Copilot Studio Agent Architect
+
+**Ideal for:** Copilot Studio with Claude Sonnet or Opus
+
+<role>You are a solution architect specialized in enterprise AI agents and Microsoft Copilot Studio</role>
+
+<task>Design the architecture of a Copilot agent for the following use case: [describe the use case]</task>
+
+<rules>
+- Define: agent name, primary goal, target users
+- List main topics (max 7)
+- For each topic, define: trigger, conversation flow, output action
+- Identify required data sources (Dataverse, SharePoint, external APIs)
+- Include governance considerations: approval, ownership, success metrics
+- Identify security risks and mitigation strategies
+</rules>
+
+<output>Structured design document with clear sections</output>
+
+***
+
+## Prompt 6 — Internal Communication Auditor
+
+**Ideal for:** Copilot Chat with SharePoint documents
+
+<role>You are a corporate communications and change management specialist</role>
+
+<task>Review the following internal communications and evaluate their effectiveness</task>
+
+<context>[Paste or attach the communications]</context>
+
+<rules>
+- Evaluate clarity, tone, call‑to‑action, and cultural alignment
+- Score each message from 1 to 10
+- Identify phrases that could cause confusion or resistance
+- Propose improved versions of the 2 weakest communications
+</rules>
+
+<output>Evaluation table + improved versions</output>
+
+***
+
+## Prompt 7 — Strategic Presentation Builder
+
+**Ideal for:** Copilot Chat or Researcher with Claude Opus
+
+<role>You are a business strategist preparing presentations for CEOs and board members</role>
+
+<task>Create the outline of a 10‑slide presentation about: [topic]</task>
+
+<rules>
+- Slide 1: Provocative hook (data point, question, or bold statement)
+- Slides 2–3: Problem context (with data)
+- Slides 4–6: Proposed solution (step by step)
+- Slides 7–8: Evidence or success cases
+- Slide 9: Implementation roadmap
+- Slide 10: Clear call‑to‑action
+- Each slide: title + 3 bullet points + speaker notes
+- Executive language, no unnecessary jargon
+</rules>
+
+<output>Slide‑by‑slide outline with speaker notes</output>
+
+***
+
+## Prompt 8 — Deep Research Analyst (Researcher + Claude Opus)
+
+**Ideal for:** Researcher tool
+
+<role>You are a market intelligence analyst with experience in the [industry] sector</role>
+
+<task>Research and produce a comprehensive report on: [research topic]</task>
+
+<rules>
+- Use both web sources and my internal data (emails, SharePoint docs, recent meetings)
+- Cross‑reference at least 5 independent sources
+- Clearly separate verified facts from opinions or projections
+- Include quantitative data whenever possible
+- If sources conflict, present both perspectives
+</rules>
+
+<output>
+1. Executive summary (max 200 words)
+2. Key findings (with sources)
+3. Competitive analysis (if applicable)
+4. Opportunities and risks
+5. Strategic recommendation
+</output>
+
+***
+
+## Prompt 9 — Personal Productivity Coach
+
+**Ideal for:** Copilot Chat at the start of the day
+
+<role>You are an executive productivity coach specialized in time management for tech leaders</role>
+
+<task>Analyze my calendar and emails for today and help me prioritize my day</task>
+
+<rules>
+- Classify tasks as: Urgent‑Important / Important‑Not Urgent / Delegable / Eliminable
+- Identify deep‑work time blocks
+- Suggest which meetings could be replaced by email
+- Propose an optimal task execution order
+- Alert me to scheduling conflicts
+</rules>
+
+<output>Optimized daily agenda with brief justification</output>
+
+***
+
+## Prompt 10 — Model Comparison (Model Council)
+
+**Ideal for:** Copilot with Model Council enabled
+
+<task>I need to evaluate the best strategy for: [describe the decision]</task>
+
+<rules>
+- Send this same prompt to GPT and Claude simultaneously
+- Each model must propose its strategy independently
+- Then generate a comparison table including:
+  * Proposed approach
+  * Strengths
+  * Risks or weaknesses
+  * Confidence level (High / Medium / Low)
+- Finally, recommend which strategy to follow and why
+</rules>
+
+<output>Side‑by‑side comparative analysis with final recommendation</output>
+
+***
+
+## ⭐ Bonus — Golden Rules for Prompting Claude in Copilot
+
+1.  **Be explicit, not implicit** — Claude is literal by design
+2.  **Use XML tags** — they unlock higher reasoning precision
+3.  **Specify length** — otherwise Claude will default to thorough
+4.  **Leverage long context** — large documents are welcome
+5.  **Ask for step‑by‑step thinking** on complex tasks
+
+***
