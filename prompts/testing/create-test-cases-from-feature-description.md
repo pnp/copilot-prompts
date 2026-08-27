@@ -47,4 +47,4 @@ Given a short feature description, generate a set of structured test cases that 
 - **Concise and consistent format**: Easy to paste into test management tools.\
 \
 ## Rationale\
-This prompt helps developers and QA quickly convert feature descriptions into executable test cases, speeding up validation and reducing miscommunication between product, engineering, and QA.}
+This prompt helps developers and QA/testers quickly convert feature descriptions into executable test cases, speeding up validation and reducing miscommunication between product, engineering, and QA.}
