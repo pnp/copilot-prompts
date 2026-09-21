@@ -1,6 +1,6 @@
 [
   {
-    "name": "copilotprompts-m365-test-case-generator-prompt",
+    "name": "copilotprompts-prompt-m365-test-case-generator-prompt",
     "source": "pnp",
     "title": "Test Case Generator",
     "shortDescription": "Generate a structured, QA-ready set of functional, negative, edge, and traceability-focused test cases from a feature description or user story.",
