@@ -1,4 +1,4 @@
-# Generate a Portable AI Profile as HTML
+# Generate a Portable AI Profile 
 
 > [!IMPORTANT]
 > This prompt can generate personal, professional, and behavioral information based on your conversation history. Review the output and remove any private, confidential, or security-sensitive details before sharing it with another person or AI tool.
