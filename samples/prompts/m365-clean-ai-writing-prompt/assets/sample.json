@@ -1,0 +1,53 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-clean-ai-writing-prompt",
+    "source": "pnp",
+    "title": "Clean AI Writing: Audit and Rewrite AI-Sounding Text",
+    "shortDescription": "Flags the patterns that make work writing read as AI-generated and rewrites it in plain, specific language while keeping the writer's voice.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-clean-ai-writing-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-clean-ai-writing-prompt",
+    "longDescription": [
+      "Paste an email, Teams message, meeting recap, report, documentation or LinkedIn post and Copilot flags AI writing patterns (overused words, em dashes, formulaic sentence shapes, filler transitions, chatbot leftovers) with a severity, then rewrites the text with rules tuned to that type of work text and runs a second pass. A flag-only mode lists the issues without changing the text."
+    ],
+    "creationDateTime": "2026-09-27",
+    "updateDateTime": "2026-09-27",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-clean-ai-writing-prompt/assets/demo.png",
+        "alt": "Copilot prompt to remove AI patterns in text"
+      },
+      {
+        "type": "image",
+        "order": 101,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-clean-ai-writing-prompt/assets/demo2.png",
+        "alt": "Copilot listing AI writing issues in a draft and returning a cleaned-up rewrite"
+      },
+      {
+        "type": "image",
+        "order": 102,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-clean-ai-writing-prompt/assets/demo3.png",
+        "alt": "Copilot rewriting original text with AI generated patterns"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "SeleneSSI",
+        "pictureUrl": "https://github.com/SeleneSSI.png",
+        "name": "Selene Suau"
+      }
+    ],
+    "references": [
+      {
+        "name": "Copilot for Microsoft 365",
+        "description": "Copilot for Microsoft 365",
+        "url": "https://developer.microsoft.com/microsoft-365/dev-program"
+      }
+    ]
+  }
+]
