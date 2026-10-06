@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-ai-profile",
+    "source": "pnp",
+    "title": "Generate a Portable AI Profile as HTML",
+    "shortDescription": "Generate a portable HTML profile that helps AI tools understand your role, goals, work style, communication preferences, and expectations.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-ai-profile",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-ai-profile",
+    "longDescription": [
+      "This prompt creates a structured, self-contained HTML profile from your previous AI interactions. The profile captures practical observations about your role, goals, communication preferences, work style, technical strengths, decision-making patterns, and expectations so other AI tools can provide more personalized and consistent responses."
+    ],
+    "creationDateTime": "2026-07-14",
+    "updateDateTime": "2026-10-06",
+    "products": [
+      "Microsoft Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-ai-profile/assets/AI-Profile-Sample.png",
+        "alt": "Generated portable AI profile displayed as a styled HTML page"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "dzblanco08",
+        "pictureUrl": "https://github.com/dzblanco08.png",
+        "name": "Delia Zuniga"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
