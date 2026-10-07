@@ -1,0 +1,49 @@
+[
+  {
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    "name": "copilotprompts-copilot-studio-sales-quote-assistant",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "creationDateTime": "2026-03-02T00:00:00Z",
+    "updateDateTime": "2026-08-29",
+    "title": "Sales Quote Assistant",
+    "shortDescription": "Copilot Studio agent that guides sales reps through iterative product-line quote building with discounts, totals, CRM recording, and email/draft delivery options.",
+    "longDescription": [
+      "Introduces the iterative loop pattern for Copilot Studio. Sales reps collect customer details and add products one at a time (product, quantity, discount: 5%/10%/15%/none) until the quote is complete. The agent displays a line-item summary with totals, generates a reference number on confirmation, records the quote in Dataverse/Dynamics 365, and offers immediate email delivery to the customer or draft saving. Reduces quote creation time and eliminates data entry errors."
+    ],
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/copilot-studio-sales-quote-assistant",
+    "products": [
+      "Copilot Studio",
+      "Power Platform",
+      "Power Automate",
+      "Dataverse",
+      "Microsoft Teams"
+    ],
+    "tags": [
+      "SALES",
+      "QUOTE",
+      "CRM",
+      "ITERATIVE LOOP",
+      "AGENT",
+      "DYNAMICS 365"
+    ],
+    "categories": [
+      "Copilot Studio"
+    ],
+    "metadata": [
+      {
+        "key": "prompt",
+        "value": "Create an agent that guides sales reps through iterative product quote building with discounts, line totals, CRM recording, and email delivery."
+      }
+    ],
+    "thumbnails": [],
+    "authors": [
+      {
+        "gitHubAccount": "OwnOptic",
+        "name": "OwnOptic",
+        "pictureUrl": "https://github.com/OwnOptic.png"
+      }
+    ],
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/copilot-studio-sales-quote-assistant"
+  }
+]
