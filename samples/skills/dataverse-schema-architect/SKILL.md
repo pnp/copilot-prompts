@@ -85,7 +85,7 @@ Choose the most specific data type. Apply these rules:
 | Money | Currency (note that it adds base-currency columns and requires `transactioncurrency`) | Decimal for money |
 | Dates without time (birth date, due date) | Date only, behavior **Date Only** | Date and Time with User Local (causes off-by-one-day across time zones) |
 | Timestamps of events | Date and Time, behavior **User Local** | Text |
-| Derived values | **Formula** column (Power Fx) | Legacy Calculated columns for new designs |
+| Derived values | **Formula** column (Power Fx). In `DateDiff`, never mix User Local with Time-Zone Independent / Date Only columns: pair User Local columns with `Now()`, TZI or Date Only columns with `UTCNow()` / `UTCToday()`. Formulas using `UTCNow()` can't feed rollups | Legacy Calculated columns for new designs |
 | Aggregates from children | Rollup column (state refresh is asynchronous) or Power BI | Plugins only for counts |
 | Sequential human IDs | Autonumber | Flows that compute "max + 1" |
 | Documents | File column (set max size) | URLs to random SharePoint folders |
@@ -108,7 +108,7 @@ Choose the most specific data type. Apply these rules:
 
 ## Step 5: Define Alternate Keys and Integration
 
-- Every table that is synced, imported or upserted from an external system gets an **alternate key** on the external ID (e.g. `cnt_ErpCode`)
+- Every table that is synced, imported or upserted from an external system gets an **alternate key** on the external ID (e.g. `cnt_ErpCode`). Creating the key starts a background index job; the key can't be used until its status is **Active** (Pending → In Progress → Active / Failed), so include that check in the Build Checklist
 - Recommend **upsert** via Dataverse Web API / Power Automate with the alternate key instead of "list rows + condition + create/update"
 - For Fabric / Power BI consumers, state whether **Azure Synapse Link / Link to Microsoft Fabric** is recommended and which tables to include
 - Note any API throttling or volume concern from Step 0 (Before Starting) inputs
@@ -188,7 +188,7 @@ erDiagram
 | Inspection | `cnt_InspectionId` | Lookup → `cnt_Inspection` | Yes | — | Yes | Parental |
 | Risk level | `cnt_RiskLevel` | Choice (global `cnt_risklevel`) | Yes | — | Yes | Low 100000000, Medium 100000001, High 100000002, Critical 100000003 |
 | Evidence photo | `cnt_EvidencePhoto` | Image | No | — | No | Full-size image enabled |
-| Days open | `cnt_DaysOpen` | Formula (Whole number) | — | — | No | `DateDiff(createdon, If(IsBlank('Closed on'), UTCNow(), 'Closed on'), TimeUnit.Days)` |
+| Days open | `cnt_DaysOpen` | Formula (Whole number) | — | — | No | `DateDiff(createdon, If(IsBlank('Closed on'), Now(), 'Closed on'), TimeUnit.Days)` — `createdon` and `cnt_ClosedOn` are User Local, so it uses `Now()` (User Local), not `UTCNow()` (Time-Zone Independent) |
 
 **Security Model (excerpt)**
 
@@ -215,7 +215,8 @@ Before presenting the design, verify:
 - [ ] Every Date column has an explicit behavior (User Local / Date Only / Time-Zone Independent)
 - [ ] Choice vs lookup decision is justified for every list
 - [ ] Every relationship has a behavior; no table is the child in more than one Parental relationship
-- [ ] Integrated tables have alternate keys
+- [ ] Integrated tables have alternate keys, and the Build Checklist waits for each key's index status to be **Active** before the first upsert
+- [ ] Every Formula column with dates pairs behaviors correctly (User Local with `Now()`; Time-Zone Independent / Date Only with `UTCNow()`)
 - [ ] Every persona has a security role; Append/Append To are consistent with the lookups
 - [ ] PII columns are in a column security profile
 - [ ] The Mermaid diagram renders (valid `erDiagram` syntax) and matches the Relationships section
