@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-skill-dataverse-fetchxml-builder",
+    "source": "pnp",
+    "title": "Dataverse FetchXML Builder for GitHub Copilot",
+    "shortDescription": "Build and troubleshoot schema-grounded FetchXML queries with explicit validation evidence.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/dataverse-fetchxml-builder",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/dataverse-fetchxml-builder",
+    "longDescription": [
+      "Build Dataverse FetchXML from business requirements and verified metadata. Explain joins, null filters, aggregates, and paging; distinguish static review from live execution. Copy SKILL.md into .github/skills/dataverse-fetchxml-builder/ to install."
+    ],
+    "creationDateTime": "2026-10-06",
+    "updateDateTime": "2026-10-09",
+    "products": [
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/94a5850036224cac0e414ef2106f3eb039705e09/samples/skills/dataverse-fetchxml-builder/assets/demo.png",
+        "alt": "Dataverse FetchXML Builder query and validation demonstration"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "summitbaj",
+        "pictureUrl": "https://github.com/summitbaj.png",
+        "name": "Summit Bajracharya"
+      }
+    ],
+    "references": [
+      {
+        "name": "FetchXML reference",
+        "description": "Microsoft Dataverse FetchXML reference",
+        "url": "https://learn.microsoft.com/en-us/power-apps/developer/data-platform/fetchxml/reference/"
+      }
+    ]
+  }
+]
