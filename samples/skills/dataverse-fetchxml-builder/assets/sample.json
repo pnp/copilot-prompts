@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/dataverse-fetchxml-builder/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/94a5850036224cac0e414ef2106f3eb039705e09/samples/skills/dataverse-fetchxml-builder/assets/demo.png",
         "alt": "Dataverse FetchXML Builder query and validation demonstration"
       }
     ],
