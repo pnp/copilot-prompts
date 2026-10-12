@@ -40,7 +40,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/copilot-studio-sales-quote-assistant/assets/ilovecopilot.png",
         "alt": "Sales Quote Assistant preview"
       }
     ],
