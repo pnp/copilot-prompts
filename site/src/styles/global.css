@@ -407,8 +407,8 @@ html[data-theme='dark'] .sample-type--skills { color: var(--green); }
 .site-footer a { color: var(--footer-link); font-size: 14px; }
 
 @keyframes card-in {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  from { transform: translateY(10px); }
+  to { transform: translateY(0); }
 }
 
 @media (prefers-reduced-motion: reduce) {
