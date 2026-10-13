@@ -72,9 +72,9 @@ jobs:
           $attempts = 12
           for ($attempt = 1; $attempt -le $attempts; $attempt++) {
             try {
-              $home = Invoke-WebRequest -Uri "$baseUrl/" -UseBasicParsing
+              $homeResponse = Invoke-WebRequest -Uri "$baseUrl/" -UseBasicParsing
               $marker = Invoke-RestMethod -Uri "$baseUrl/deployment.json"
-              if ($home.Content -notmatch "<title>Copilot Prompt Gallery</title>") {
+              if ($homeResponse.Content -notmatch "<title>Copilot Prompt Gallery</title>") {
                 throw "The deployed root is not the gallery home page."
               }
               if ($marker.commit -ne $env:EXPECTED_COMMIT) {
