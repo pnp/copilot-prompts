@@ -96,6 +96,21 @@ GitHub Copilot will ask for the required details and generate the folder with al
 - [GitHub Copilot Custom Skills](https://copilot.github.com/)
 - [Skill Schema Specification](./SKILL-SCHEMA.md)
 
+## Gallery development
+
+The static gallery is implemented in `site/` and reads every sample's canonical
+`assets/sample.json` and `README.md` during the build.
+
+```powershell
+cd site
+npm install
+npm run dev
+```
+
+Run `npm run build` before submitting gallery changes. The production build is
+published to GitHub Pages under `/copilot-prompts/` by
+`.github/workflows/deploy-site.yml`.
+
 
 
 ## Code of Conduct
