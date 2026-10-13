@@ -1,0 +1,91 @@
+name: Validate gallery
+
+on:
+  pull_request:
+    paths:
+      - "samples/**"
+      - "site/**"
+      - ".github/workflows/deploy-site.yml"
+      - ".github/workflows/validate-site.yml"
+      - "CONTRIBUTING.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: "${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}"
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Validate catalog and site
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event_name == 'pull_request' && format('refs/pull/{0}/head', github.event.pull_request.number) || github.ref }}
+
+      - name: Merge current base for validation
+        if: github.event_name == 'pull_request'
+        env:
+          BASE_REF: ${{ github.event.pull_request.base.ref }}
+        run: |
+          git fetch --no-tags origin "+refs/heads/${BASE_REF}:refs/remotes/origin/${BASE_REF}"
+          git -c user.name="github-actions[bot]" \
+            -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+            merge --no-edit "refs/remotes/origin/${BASE_REF}"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: "22.19.0"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+
+      - name: Install gallery dependencies
+        working-directory: site
+        run: npm ci
+
+      - name: Validate sample README view trackers
+        working-directory: site
+        run: npm run validate:readme-trackers
+
+      - name: Check and build gallery
+        working-directory: site
+        run: npm run check && npm run build
+
+      - name: Install Chromium
+        working-directory: site
+        run: npx playwright install --with-deps chromium
+
+      - name: Test desktop, mobile, and accessibility
+        working-directory: site
+        run: npm run test:e2e
+
+      - name: Record validation summary
+        if: always()
+        shell: bash
+        run: |
+          {
+            echo "## Gallery validation"
+            echo "- README trackers, Astro checks, production build, and browser tests run with read-only permissions."
+            if [ -d site/dist ]; then
+              echo "- Pages: $(find site/dist \( -name index.html -o -name 404.html \) | wc -l)"
+              echo "- Artifact size: $(du -sh site/dist | cut -f1)"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload browser failure diagnostics
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: playwright-failure-${{ github.run_id }}
+          path: |
+            site/playwright-report/
+            site/test-results/
+          if-no-files-found: ignore
+          retention-days: 7

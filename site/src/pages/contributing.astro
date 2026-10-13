@@ -1,0 +1,29 @@
+---
+import { ArrowRight, GitPullRequest } from "@lucide/astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Contributing" description="Contribute a prompt, agent instruction, or skill to the Copilot Prompt Gallery.">
+  <header class="page-heading container">
+    <p class="eyebrow">Contributing</p>
+    <h1>Share what works</h1>
+    <p>Add a complete, documented sample so others can understand the scenario, adapt the pattern, and use it responsibly.</p>
+    <a class="button button--primary" href="https://github.com/pnp/copilot-prompts/blob/main/CONTRIBUTING.md"><GitPullRequest size={17} aria-hidden="true" /> Read the contribution guide</a>
+  </header>
+
+  <section class="steps-band">
+    <ol class="container getting-started-steps">
+      <li><strong>1</strong><div><h2>Fork and branch</h2><p>Work from the latest main branch and keep the pull request focused.</p></div></li>
+      <li><strong>2</strong><div><h2>Add the sample</h2><p>Include a README, complete metadata, a representative preview, and the correct view tracker.</p></div></li>
+      <li><strong>3</strong><div><h2>Validate and submit</h2><p>Run gallery validation, then describe the scenario and test details in your pull request.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="content-section container contribution-requirements">
+    <div><p class="eyebrow">Choose a contribution type</p><h2>Use the matching sample folder</h2><pre><code>samples/
+├── prompts/your-prompt/
+├── agent-instructions/your-agent/
+└── skills/your-skill/</code></pre><p>Every folder includes <code>README.md</code> and <code>assets/sample.json</code>. Skills also include <code>SKILL.md</code>.</p></div>
+    <div><p class="eyebrow">Gallery quality</p><h2>Make the sample easy to trust</h2><p>Document prerequisites, setup, expected results, limitations, and references. Include a representative image and never include secrets or personal data.</p><nav class="stacked-links"><a href="https://github.com/pnp/copilot-prompts/tree/main/samples/prompts">Browse prompts <ArrowRight size={16} aria-hidden="true" /></a><a href="https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions">Browse agent instructions <ArrowRight size={16} aria-hidden="true" /></a><a href="https://github.com/pnp/copilot-prompts/tree/main/samples/skills">Browse skills <ArrowRight size={16} aria-hidden="true" /></a></nav></div>
+  </section>
+</Layout>

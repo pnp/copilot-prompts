@@ -63,6 +63,7 @@ This repository accepts three types of contributions:
   * Agent instruction: `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-agent-{folder-name}`
   * Skill: `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-skill-{folder-name}`
 * The `name` in `assets/sample.json` must match the visitor tracking ID exactly. This taxonomy keeps IDs unique across contribution types.
+* Keep the tracker as the final nonblank line. Pull request validation rejects missing or duplicate trackers, stale repository prefixes, folder-name mismatches, metadata identity mismatches, and content placed after the tracker.
 * If you find an existing sample which is similar to yours, please extend the existing one rather than submitting a new similar sample
   * When you update existing samples, please update also `README.md` file accordingly with information on provided changes and with your author details
 * Make sure to document each function in the `README.md`

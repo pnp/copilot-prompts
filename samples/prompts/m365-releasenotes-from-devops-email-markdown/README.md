@@ -8,7 +8,7 @@ Please generate release notes in Markdown format by using the following email co
 
 ### Descriptionℹ️
 
-[English](./en-us/prompt.md)
+The English prompt is included above.
 
 ## Contributors 👨‍💻
 

@@ -13,7 +13,7 @@ Meeting Topic(s)
 
 ### Descriptionℹ️
 
-[English](./en-us/prompt.md)
+The English prompt is included above.
 
 ## Contributors 👨‍💻
 

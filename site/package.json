@@ -4,20 +4,30 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "astro dev",
-    "build": "astro check && astro build",
+    "prepare:assets": "node scripts/prepare-gallery-assets.mjs",
+    "dev": "npm run prepare:assets && astro dev",
+    "build": "npm run prepare:assets && astro check && astro build && npm run validate:links",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "validate:readme-trackers": "node scripts/validate-readme-trackers.mjs",
+    "validate:links": "node scripts/validate-built-links.mjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^3.6.0",
-    "astro": "^7.4.0-beta.1",
+    "@astrojs/sitemap": "3.7.3",
+    "@lucide/astro": "1.33.0",
+    "astro": "7.3.6",
     "marked": "^16.3.0",
     "sanitize-html": "^2.17.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.63.0",
     "@types/sanitize-html": "^2.16.0",
     "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=22.19.0"
   }
 }

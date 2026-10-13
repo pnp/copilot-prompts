@@ -8,7 +8,7 @@ I'd like for you to act as my executive assistant. Can you analyze my inbox and 
 
 ### Descriptionℹ️
 
-[English](./en-us/prompt.md)
+The English prompt is included above.
 
 ## Contributors 👨‍💻
 

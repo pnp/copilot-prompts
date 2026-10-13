@@ -12,7 +12,7 @@ Please provide an explination for the error, and any recommendations for how the
 
 ### Descriptionℹ️
 
-[English](./en-us/prompt.md)
+The English prompt is included above.
 
 ## Contributors 👨‍💻
 

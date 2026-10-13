@@ -1,0 +1,13 @@
+---
+import { ArrowLeft } from "@lucide/astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Page not found" description="The requested Copilot Prompt Gallery page could not be found.">
+  <section class="not-found container">
+    <p class="eyebrow">404</p>
+    <h1>That sample is not here.</h1>
+    <p>It may have moved, been renamed, or never existed.</p>
+    <a class="button button--primary" href={`${import.meta.env.BASE_URL}`}><ArrowLeft size={17} aria-hidden="true" /> Back to the gallery</a>
+  </section>
+</Layout>

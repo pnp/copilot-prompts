@@ -100,16 +100,20 @@ GitHub Copilot will ask for the required details and generate the folder with al
 
 The static gallery is implemented in `site/` and reads every sample's canonical
 `assets/sample.json` and `README.md` during the build.
+Use Node.js 22.19.0 or newer.
 
 ```powershell
 cd site
-npm install
+npm ci
 npm run dev
 ```
 
-Run `npm run build` before submitting gallery changes. The production build is
-published to GitHub Pages under `/copilot-prompts/` by
-`.github/workflows/deploy-site.yml`.
+Run `npm run build` and `npm run test:e2e` before submitting gallery changes.
+The production build is published as the repository's GitHub Pages site at
+[pnp.github.io/copilot-prompts](https://pnp.github.io/copilot-prompts/) by
+`.github/workflows/deploy-site.yml`. In the repository settings, use **GitHub
+Actions** as the Pages source and set the repository website URL to the same
+gallery address.
 
 
 

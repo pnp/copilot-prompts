@@ -1,14 +1,53 @@
 ---
+import { GitFork, Menu, Moon, Sun } from "@lucide/astro";
+import "../styles/global.css";
+
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
 }
 
 const {
-  title = "Copilot Prompts",
+  title = "Copilot Prompt Gallery",
   description = "Community prompts, agent instructions, and skills for Microsoft and GitHub Copilot.",
+  image = "/images/copilot.png",
 } = Astro.props;
-const pageTitle = title === "Copilot Prompts" ? title : `${title} | Copilot Prompts`;
+const pageTitle = title === "Copilot Prompt Gallery" ? title : `${title} | Copilot Prompt Gallery`;
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
+const basePath = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const sitePath = (path: string) => `${basePath}${path.replace(/^\/+/, "")}`;
+const imageUrl = new URL(image.startsWith("http") ? image : sitePath(image), Astro.site);
+const currentPath = Astro.url.pathname;
+const navigation = [
+  { label: "Gallery", href: "/" },
+  { label: "Getting started", href: "/getting-started/" },
+  { label: "Contributors", href: "/contributors/" },
+  { label: "Contributing", href: "/contributing/" },
+];
+const isCurrent = (href: string) => href === "/"
+  ? currentPath === sitePath("/") || currentPath.startsWith(sitePath("/samples/"))
+  : currentPath.startsWith(sitePath(href));
+const visitorStatsBaseUrl = "https://m365-visitor-stats.azurewebsites.net/copilot-prompts";
+const siteBasePath = sitePath("").replace(/\/$/, "");
+const visitorStatsPath = currentPath
+  .slice(currentPath.startsWith(siteBasePath) ? siteBasePath.length : 0)
+  .replace(/^\/+|\/+$/g, "");
+const visitorStatsUrl = visitorStatsPath
+  ? `${visitorStatsBaseUrl}/${visitorStatsPath}`
+  : `${visitorStatsBaseUrl}/`;
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Copilot Prompt Gallery",
+  url: new URL(sitePath("/"), Astro.site),
+  description,
+  publisher: {
+    "@type": "Organization",
+    name: "Microsoft 365 & Power Platform Community",
+    url: "https://pnp.github.io/",
+  },
+};
 ---
 
 <!doctype html>
@@ -18,114 +57,132 @@ const pageTitle = title === "Copilot Prompts" ? title : `${title} | Copilot Prom
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    <meta id="theme-color" name="theme-color" content="#f1f2f4" />
+    <script is:inline>
+      (() => {
+        const storageKey = "copilot-prompts-theme";
+        let storedTheme = null;
+        try {
+          storedTheme = localStorage.getItem(storageKey);
+        } catch {}
+        const theme = storedTheme === "dark" ? "dark" : "light";
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      })();
+    </script>
+    <link rel="icon" type="image/png" href={sitePath("/images/copilot.png")} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Copilot Prompt Gallery" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={imageUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageUrl} />
+    <script is:inline type="application/ld+json" set:html={JSON.stringify(structuredData)} />
     <title>{pageTitle}</title>
-    <link rel="icon" href={`${import.meta.env.BASE_URL}/favicon.svg`} type="image/svg+xml" />
   </head>
   <body>
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header">
-      <a class="brand" href={`${import.meta.env.BASE_URL}/`}>
-        <span class="brand-mark" aria-hidden="true">C</span>
-        <span>Copilot Prompts</span>
-      </a>
-      <nav aria-label="Primary navigation">
-        <a href={`${import.meta.env.BASE_URL}/`}>Gallery</a>
-        <a href="https://github.com/pnp/copilot-prompts">GitHub</a>
-        <a href="https://github.com/pnp/copilot-prompts/blob/main/CONTRIBUTING.md">Contribute</a>
-      </nav>
+      <div class="spectrum" aria-hidden="true"></div>
+      <div class="site-header__inner container">
+        <a class="brand" href={sitePath("/")} aria-label="Copilot Prompt Gallery home">
+          <img src={sitePath("/images/copilot.png")} alt="" width="38" height="38" />
+          <span>Copilot <strong>Prompt Gallery</strong></span>
+        </a>
+        <div class="site-header__actions">
+          <nav class="desktop-nav" aria-label="Primary navigation">
+            {navigation.map((item) => (
+              <a href={sitePath(item.href)} aria-current={isCurrent(item.href) ? "page" : undefined}>
+                {item.label}
+              </a>
+            ))}
+            <a class="nav-github" href="https://github.com/pnp/copilot-prompts">
+              <GitFork size={18} aria-hidden="true" /> GitHub
+            </a>
+          </nav>
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            type="button"
+            role="switch"
+            aria-checked="false"
+            aria-label="Switch to dark mode"
+            title="Switch to dark mode"
+          >
+            <span class="theme-toggle__icons" aria-hidden="true">
+              <Sun class="theme-toggle__sun" size={16} />
+              <Moon class="theme-toggle__moon" size={15} />
+            </span>
+          </button>
+          <details class="mobile-nav">
+            <summary title="Open navigation" aria-label="Open navigation"><Menu size={22} /></summary>
+            <nav aria-label="Mobile navigation">
+              {navigation.map((item) => <a href={sitePath(item.href)}>{item.label}</a>)}
+              <a href="https://github.com/pnp/copilot-prompts">GitHub</a>
+            </nav>
+          </details>
+        </div>
+      </div>
     </header>
-    <main id="main">
-      <slot />
-    </main>
-    <footer>
-      <p>Built by the Microsoft 365 &amp; Power Platform community.</p>
-      <p><a href="https://github.com/pnp/copilot-prompts">View the source on GitHub</a></p>
+    <main id="main-content"><slot /></main>
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <div>
+          <strong>Microsoft 365 &amp; Power Platform Community</strong>
+          <p>Built by the community, for the community.</p>
+        </div>
+        <nav aria-label="Footer navigation">
+          <a href="https://aka.ms/community/home">Community home</a>
+          <a href={sitePath("/catalog.json")}>Catalog JSON</a>
+          <a href="https://github.com/pnp/copilot-prompts/issues/new">Report an issue</a>
+          <a href="https://github.com/pnp/copilot-prompts/security/policy">Security</a>
+          <a href="https://github.com/pnp/copilot-prompts/blob/main/CODE_OF_CONDUCT.md">Code of conduct</a>
+          <a href="https://github.com/pnp/copilot-prompts/blob/main/LICENSE">MIT license</a>
+        </nav>
+      </div>
     </footer>
+    <script>
+      const storageKey = "copilot-prompts-theme";
+      const root = document.documentElement;
+      const toggle = document.querySelector<HTMLButtonElement>("#theme-toggle");
+      const themeColor = document.querySelector<HTMLMetaElement>("#theme-color");
+
+      function applyTheme(theme: "light" | "dark", persist = false) {
+        root.dataset.theme = theme;
+        root.style.colorScheme = theme;
+        if (toggle) {
+          const isDark = theme === "dark";
+          const label = `Switch to ${isDark ? "light" : "dark"} mode`;
+          toggle.setAttribute("aria-checked", String(isDark));
+          toggle.setAttribute("aria-label", label);
+          toggle.title = label;
+        }
+        if (themeColor) themeColor.content = theme === "dark" ? "#0c111a" : "#f1f2f4";
+        if (persist) {
+          try {
+            localStorage.setItem(storageKey, theme);
+          } catch {}
+        }
+      }
+
+      applyTheme(root.dataset.theme === "dark" ? "dark" : "light");
+      toggle?.addEventListener("click", () => {
+        applyTheme(root.dataset.theme === "dark" ? "light" : "dark", true);
+      });
+    </script>
+    <img
+      class="sr-only"
+      data-visitor-stats
+      src={visitorStatsUrl}
+      alt=""
+      width="1"
+      height="1"
+      aria-hidden="true"
+    />
   </body>
 </html>
-
-<style is:global>
-  :root {
-    color-scheme: light;
-    --ink: #17202a;
-    --muted: #5d6876;
-    --surface: #ffffff;
-    --surface-soft: #f4f5fb;
-    --line: #dfe2ed;
-    --purple: #5d3fd3;
-    --purple-dark: #39218d;
-    --pink: #c43f91;
-    --shadow: 0 16px 40px rgb(42 30 88 / 10%);
-    font-family: "Segoe UI", system-ui, sans-serif;
-  }
-
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    color: var(--ink);
-    background: var(--surface-soft);
-    line-height: 1.6;
-  }
-  a { color: var(--purple-dark); }
-  a:hover { color: var(--pink); }
-  img { max-width: 100%; }
-  .skip-link {
-    position: fixed;
-    top: -4rem;
-    left: 1rem;
-    z-index: 10;
-    padding: .7rem 1rem;
-    color: white;
-    background: var(--purple-dark);
-    border-radius: .4rem;
-  }
-  .skip-link:focus { top: 1rem; }
-  .site-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 1rem max(1.25rem, calc((100vw - 1200px) / 2));
-    background: rgb(255 255 255 / 92%);
-    border-bottom: 1px solid var(--line);
-    backdrop-filter: blur(12px);
-  }
-  .brand {
-    display: flex;
-    align-items: center;
-    gap: .7rem;
-    color: var(--ink);
-    font-size: 1.1rem;
-    font-weight: 700;
-    text-decoration: none;
-  }
-  .brand-mark {
-    display: grid;
-    width: 2.15rem;
-    height: 2.15rem;
-    place-items: center;
-    color: white;
-    background: linear-gradient(135deg, var(--purple), var(--pink));
-    border-radius: .6rem;
-  }
-  nav { display: flex; gap: 1.25rem; }
-  nav a { color: var(--ink); font-weight: 600; text-decoration: none; }
-  main { min-height: calc(100vh - 180px); }
-  footer {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 4rem auto 0;
-    padding: 2rem 1.25rem;
-    color: var(--muted);
-    border-top: 1px solid var(--line);
-  }
-  :focus-visible { outline: 3px solid #1876d2; outline-offset: 3px; }
-  @media (max-width: 640px) {
-    .site-header { align-items: flex-start; flex-direction: column; gap: .75rem; }
-    nav { flex-wrap: wrap; }
-    footer { flex-direction: column; gap: 0; }
-  }
-</style>

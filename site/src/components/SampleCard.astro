@@ -1,0 +1,63 @@
+---
+import { ArrowUpRight } from "@lucide/astro";
+import type { CatalogSample } from "../lib/catalog";
+
+interface Props {
+  sample: CatalogSample;
+  index?: number;
+}
+
+const { sample, index = 0 } = Astro.props;
+const basePath = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const sitePath = (path: string) => `${basePath}${path.replace(/^\/+/, "")}`;
+const detailUrl = sitePath(`/${sample.route}/`);
+const thumbnail = [...sample.thumbnails].sort((left, right) => left.order - right.order)[0];
+const formattedDate = new Intl.DateTimeFormat("en", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+}).format(new Date(sample.updateDateTime));
+const searchText = [
+  sample.title,
+  sample.shortDescription,
+  sample.type,
+  ...sample.products,
+  ...sample.authors.flatMap((author) => [author.name, author.gitHubAccount]),
+].join(" ").toLocaleLowerCase("en-US");
+---
+
+<article
+  class="component-card"
+  data-component-card
+  data-search={searchText}
+  data-type={sample.category}
+  data-products={sample.products.map((product) => product.toLocaleLowerCase("en-US")).join("|")}
+  data-authors={sample.authors.map((author) => author.gitHubAccount.toLocaleLowerCase("en-US")).join("|")}
+  data-title={sample.title}
+  data-created={sample.creationDateTime}
+  data-updated={sample.updateDateTime}
+  style={`--card-index: ${Math.min(index, 8)}`}
+>
+  <a class="component-card__media" href={detailUrl} aria-label={`View ${sample.title}`}>
+    <img
+      src={thumbnail.url}
+      alt={thumbnail.alt}
+      loading={index < 3 ? "eager" : "lazy"}
+      decoding="async"
+    />
+  </a>
+  <div class="component-card__body">
+    <div class="component-card__meta">
+      <span class={`sample-type sample-type--${sample.category}`}>{sample.type}</span>
+      <time datetime={sample.updateDateTime}>{formattedDate}</time>
+    </div>
+    <h3><a href={detailUrl}>{sample.title}</a></h3>
+    <p>{sample.shortDescription}</p>
+    <div class="component-card__footer">
+      <span>{sample.authors.map((author) => author.name).join(", ")}</span>
+      <a href={detailUrl} aria-label={`View details for ${sample.title}`}>
+        Details <ArrowUpRight size={17} aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</article>

@@ -8,7 +8,7 @@ Based on the meeting title,[Title] write a concise and clear meeting description
 
 ### Descriptionℹ️
 
-[English](./en-us/prompt.md)
+The English prompt is included above.
 
 ## Contributors 👨‍💻
 

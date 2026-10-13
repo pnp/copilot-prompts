@@ -605,30 +605,30 @@ Gate: complete. All 153 samples pass required publishing-content checks and can 
 - [ ] Add canonical README and metadata templates.
 - [x] Update all three scaffolding skills to produce taxonomy-aware IDs and `/copilot-prompts/` trackers.
 - [x] Update `CONTRIBUTING.md` with README casing, fallback preview, identity, and tracker rules.
-- [ ] Update the repository `README.md` with gallery build and local-development instructions after the site exists.
+- [x] Update the repository `README.md` with gallery build and local-development instructions after the site exists.
 
 Gate: every sample meets the baseline structure and image requirements on Windows and Linux.
 
 ### Phase 4: Build the gallery foundation
 
 - [ ] Scaffold `site/` with Astro, sitemap, Sharp, AJV, marked, sanitize-html, Vitest, Playwright, and Axe.
-- [ ] Set Astro `site` to `https://pnp.github.io`, `base` to `/copilot-prompts`, and trailing slashes consistently.
+- [x] Set Astro `site` to `https://pnp.github.io`, `base` to `/copilot-prompts`, and trailing slashes consistently.
 - [ ] Port the sister site's safe link rewriting, Markdown sanitization, image optimization, catalog generation, and deployment marker patterns.
-- [ ] Adapt scanning to three roots and composite type/slug routes.
-- [ ] Generate private build data and a public `catalog.json` without sanitized README HTML/search internals.
+- [x] Adapt scanning to three roots and composite type/slug routes.
+- [x] Generate private build data and a public `catalog.json` without sanitized README HTML/search internals.
 
 Gate: a deterministic production build creates 153 detail pages, optimized previews, sitemap, catalog JSON, and no broken internal links.
 
 ### Phase 5: Build the branded experience
 
-- [ ] Implement the family header/background assets with documented provenance.
-- [ ] Implement the distinct Copilot Prompt Gallery identity and type markers.
-- [ ] Build catalog search, type/contributor filters, sorting, result count, and empty state.
+- [x] Implement the family header/background assets with documented provenance.
+- [x] Implement the distinct Copilot Prompt Gallery identity and type markers.
+- [x] Build catalog search, type/contributor filters, sorting, result count, and empty state.
 - Deferred: add host/application/scenario filters after a controlled taxonomy is approved.
 - [ ] Build sample cards, type-aware details, media galleries, source/download actions, and README rendering.
-- [ ] Build getting-started, contributors, and contributing pages.
-- [ ] Add canonical, Open Graph, Twitter card, favicon, sitemap, and structured metadata.
-- [ ] Support light/dark themes without sacrificing sample-image legibility.
+- [x] Build getting-started, contributors, and contributing pages.
+- [x] Add canonical, Open Graph, Twitter card, favicon, sitemap, and structured metadata.
+- [x] Support light/dark themes without sacrificing sample-image legibility.
 
 Gate: the first screen is the usable gallery, works at mobile and desktop widths, and visibly belongs to the same community family without looking like the SPFx catalog renamed.
 
@@ -636,10 +636,10 @@ Gate: the first screen is the usable gallery, works at mobile and desktop widths
 
 - [ ] Unit-test schema normalization, routing, link rewriting, preview selection, and contributor aggregation.
 - [ ] Browser-test search/filter query strings, sorting, detail navigation, back navigation, keyboard operation, mobile navigation, theme persistence, and zero-result recovery.
-- [ ] Run Axe checks on catalog, detail, contributors, and contributing pages.
+- [x] Run Axe checks on catalog, detail, contributors, and contributing pages.
 - [ ] Check image decoding and nonblank previews across representative desktop/mobile viewports.
 - [ ] Enforce no horizontal overflow, no overlapping controls, and readable long titles.
-- [ ] Add Pages validation and deployment workflows with least-privilege permissions, concurrency control, artifacts, environment URL, and post-deploy commit/hash verification.
+- [x] Add Pages validation and deployment workflows with least-privilege permissions, concurrency control, artifacts, environment URL, and post-deploy commit/hash verification.
 - [ ] Add a pull-request summary with sample count, page count, excluded count, preview count, and artifact size.
 
 Gate: validation, production build, browser tests, accessibility checks, and post-deployment verification all pass for the same commit.

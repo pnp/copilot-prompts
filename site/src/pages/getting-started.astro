@@ -1,0 +1,40 @@
+---
+import { ArrowRight } from "@lucide/astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Getting started" description="Choose and adapt community prompts, agent instructions, and skills for Copilot.">
+  <header class="page-heading container">
+    <p class="eyebrow">Getting started</p>
+    <h1>From sample to better result</h1>
+    <p>Each sample is self-contained. Choose a pattern, review its prerequisites, and use the contributor's README as the authoritative guide.</p>
+  </header>
+
+  <section class="steps-band">
+    <ol class="container getting-started-steps">
+      <li><strong>1</strong><div><h2>Find a starting point</h2><p>Search by task, product, contributor, or sample type.</p></div></li>
+      <li><strong>2</strong><div><h2>Review the guidance</h2><p>Check prerequisites, setup steps, references, and limitations.</p></div></li>
+      <li><strong>3</strong><div><h2>Adapt and validate</h2><p>Download the sample, tailor it to your context, and test the result.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="content-section container">
+    <div class="section-heading"><div><p class="eyebrow">Choose the right format</p><h2>Three ways to extend Copilot</h2></div></div>
+    <div class="format-grid">
+      <article><span class="sample-type sample-type--prompts">Prompt</span><h3>Guide a single outcome</h3><p>Use a prompt when you need a reusable instruction for a task, conversation, or workflow.</p></article>
+      <article><span class="sample-type sample-type--agent-instructions">Agent instruction</span><h3>Shape ongoing behavior</h3><p>Use agent instructions to define a focused role, process, tone, and operating boundaries.</p></article>
+      <article><span class="sample-type sample-type--skills">Skill</span><h3>Package a repeatable capability</h3><p>Use a skill to teach GitHub Copilot a multi-step task with clear inputs and validation.</p></article>
+    </div>
+  </section>
+
+  <section class="content-section content-section--tint">
+    <div class="container resource-list">
+      <div><p class="eyebrow">Use responsibly</p><h2>Community content is a starting point</h2><p>Review every sample against your organization's security, privacy, compliance, and governance requirements before use.</p></div>
+      <nav aria-label="Getting started resources">
+        <a href="https://learn.microsoft.com/copilot/">Microsoft Copilot documentation <ArrowRight size={16} aria-hidden="true" /></a>
+        <a href="https://docs.github.com/en/copilot">GitHub Copilot documentation <ArrowRight size={16} aria-hidden="true" /></a>
+        <a href="https://aka.ms/community/home">Microsoft 365 &amp; Power Platform Community <ArrowRight size={16} aria-hidden="true" /></a>
+      </nav>
+    </div>
+  </section>
+</Layout>

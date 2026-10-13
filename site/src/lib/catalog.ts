@@ -61,6 +61,53 @@ function requireText(value: unknown, field: string, source: string): asserts val
   }
 }
 
+function encodePath(value: string) {
+  return value.split("/").map(encodeURIComponent).join("/");
+}
+
+function normalizeReadmeTarget(category: Category, slug: string, target: string, image: boolean) {
+  const cleanedTarget = decodeURIComponent(target.trim()).replace(/^\[|\]$/g, "");
+  if (cleanedTarget === "") {
+    return cleanedTarget;
+  }
+  if (cleanedTarget.startsWith("//")) {
+    return `https:${cleanedTarget}`;
+  }
+  if (/^www\./i.test(cleanedTarget)) {
+    return `https://${cleanedTarget}`;
+  }
+  if (/^(?:[a-z]+:|#)/i.test(cleanedTarget)) {
+    return cleanedTarget;
+  }
+
+  const normalizedTarget = path.posix.normalize(
+    cleanedTarget.replaceAll("\\", "/").replace(/^\/+/, "").replaceAll("//", "/"),
+  );
+  const repositoryPath = path.posix.normalize(
+    path.posix.join("samples", category, slug, normalizedTarget),
+  );
+  const samplePrefix = `samples/${category}/${slug}/`;
+  const sharedImagePrefix = "images/";
+  if (!repositoryPath.startsWith(samplePrefix) && !(image && repositoryPath.startsWith(sharedImagePrefix))) {
+    throw new Error(`Unsafe README target in ${category}/${slug}: ${target}`);
+  }
+
+  const absoluteTarget = path.join(repositoryRoot, ...repositoryPath.split("/"));
+  if (!fs.existsSync(absoluteTarget)) {
+    throw new Error(`Missing README target in ${category}/${slug}: ${target}`);
+  }
+
+  if (!image) {
+    return `https://github.com/pnp/copilot-prompts/blob/main/${encodePath(repositoryPath)}`;
+  }
+
+  const basePath = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+  if (repositoryPath.startsWith(sharedImagePrefix)) {
+    return `${basePath}generated/content/shared/${encodePath(repositoryPath.slice(sharedImagePrefix.length))}`;
+  }
+  return `${basePath}generated/content/${category}/${slug}/${encodePath(repositoryPath.slice(samplePrefix.length))}`;
+}
+
 function loadSample(category: Category, slug: string): CatalogSample {
   const sampleDirectory = path.join(repositoryRoot, "samples", category, slug);
   const metadataPath = path.join(sampleDirectory, "assets", "sample.json");
@@ -90,15 +137,9 @@ function loadSample(category: Category, slug: string): CatalogSample {
   }
 
   const readme = fs.readFileSync(readmePath, "utf8");
-  const rawAssetBase = `https://github.com/pnp/copilot-prompts/raw/main/samples/${category}/${slug}/assets/`;
   const renderableReadme = readme
     .replace(/^#\s+.*(?:\r?\n)+/, "")
-    .replace(/^.*https:\/\/m365-visitor-stats\.azurewebsites\.net\/.*$/gim, "")
-    .replace(/\]\((?:\.\/)?assets\/([^)]+)\)/g, `](${rawAssetBase}$1)`)
-    .replace(
-      /\]\(\.\.\/\.\.\/\.\.\/images\/([^)]+)\)/g,
-      "](" + "https://github.com/pnp/copilot-prompts/raw/main/images/$1)",
-    );
+    .replace(/^.*https:\/\/m365-visitor-stats\.azurewebsites\.net\/.*$/gim, "");
   const readmeHtml = sanitizeHtml(marked.parse(renderableReadme, { async: false }), {
     allowedTags: sanitizeHtml.defaults.allowedTags.concat(["img"]),
     allowedAttributes: {
@@ -106,10 +147,36 @@ function loadSample(category: Category, slug: string): CatalogSample {
       img: ["src", "alt", "title"],
     },
     allowedSchemes: ["http", "https", "mailto"],
+    transformTags: {
+      a: (tagName, attribs) => ({
+        tagName,
+        attribs: {
+          ...attribs,
+          href: normalizeReadmeTarget(category, slug, attribs.href ?? "", false),
+        },
+      }),
+      img: (tagName, attribs) => ({
+        tagName,
+        attribs: {
+          ...attribs,
+          src: normalizeReadmeTarget(category, slug, attribs.src ?? "", true),
+        },
+      }),
+    },
+  });
+
+  const basePath = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+  const thumbnails = metadata.thumbnails.map((thumbnail) => {
+    const filename = path.basename(decodeURIComponent(new URL(thumbnail.url).pathname));
+    return {
+      ...thumbnail,
+      url: `${basePath}generated/previews/${category}/${slug}/${encodeURIComponent(filename)}`,
+    };
   });
 
   return {
     ...metadata,
+    thumbnails,
     category,
     type: categories[category],
     slug,

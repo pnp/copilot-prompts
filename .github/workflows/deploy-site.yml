@@ -6,10 +6,7 @@ on:
       - main
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+permissions: {}
 
 concurrency:
   group: pages
@@ -17,33 +14,45 @@ concurrency:
 
 jobs:
   build:
+    permissions:
+      contents: read
+      pages: read
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - name: Setup Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: 22
+          node-version: "22.19.0"
           cache: npm
           cache-dependency-path: site/package-lock.json
       - name: Install dependencies
         working-directory: site
         run: npm ci
-      - name: Validate samples
-        shell: pwsh
-        run: ./scripts/normalize-samples.ps1
+      - name: Validate sample README view trackers
+        working-directory: site
+        run: npm run validate:readme-trackers
       - name: Build gallery
         working-directory: site
         run: npm run build
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+        env:
+          PUBLIC_COMMIT_SHA: ${{ github.sha }}
+      - name: Install Chromium
+        working-directory: site
+        run: npx playwright install --with-deps chromium
+      - name: Test desktop, mobile, and accessibility
+        working-directory: site
+        run: npm run test:e2e
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
           path: site/dist
 
   deploy:
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -52,4 +61,29 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
+      - name: Verify deployed commit and home page
+        shell: pwsh
+        env:
+          SITE_URL: ${{ steps.deployment.outputs.page_url }}
+          EXPECTED_COMMIT: ${{ github.sha }}
+        run: |
+          $baseUrl = $env:SITE_URL.TrimEnd("/")
+          $attempts = 12
+          for ($attempt = 1; $attempt -le $attempts; $attempt++) {
+            try {
+              $home = Invoke-WebRequest -Uri "$baseUrl/" -UseBasicParsing
+              $marker = Invoke-RestMethod -Uri "$baseUrl/deployment.json"
+              if ($home.Content -notmatch "<title>Copilot Prompt Gallery</title>") {
+                throw "The deployed root is not the gallery home page."
+              }
+              if ($marker.commit -ne $env:EXPECTED_COMMIT) {
+                throw "Expected commit $env:EXPECTED_COMMIT but found $($marker.commit)."
+              }
+              Write-Host "Verified $baseUrl at commit $env:EXPECTED_COMMIT"
+              exit 0
+            } catch {
+              if ($attempt -eq $attempts) { throw }
+              Start-Sleep -Seconds 10
+            }
+          }

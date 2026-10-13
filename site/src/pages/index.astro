@@ -1,193 +1,200 @@
 ---
+import { ArrowRight, CalendarDays, Search, X } from "@lucide/astro";
+import SampleCard from "../components/SampleCard.astro";
 import Layout from "../layouts/Layout.astro";
 import { loadCatalog } from "../lib/catalog";
 
-const samples = loadCatalog();
+const samples = [...loadCatalog()].sort((left, right) =>
+  right.updateDateTime.localeCompare(left.updateDateTime) || left.title.localeCompare(right.title),
+);
 const products = [...new Set(samples.flatMap((sample) => sample.products))].sort();
-const authors = [...new Set(samples.flatMap((sample) => sample.authors.map((author) => author.name)))].sort();
+const contributors = [...new Map(samples.flatMap((sample) =>
+  sample.authors.map((author) => [author.gitHubAccount.toLocaleLowerCase("en-US"), author] as const),
+)).values()].sort((left, right) => left.name.localeCompare(right.name));
 const counts = {
   prompts: samples.filter((sample) => sample.category === "prompts").length,
   agents: samples.filter((sample) => sample.category === "agent-instructions").length,
   skills: samples.filter((sample) => sample.category === "skills").length,
 };
+const basePath = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const sitePath = (path: string) => `${basePath}${path.replace(/^\/+/, "")}`;
 ---
 
-<Layout>
-  <section class="hero">
+<Layout description="Discover community-built prompts, agent instructions, and reusable skills for Microsoft 365 Copilot, Microsoft Copilot, and GitHub Copilot.">
+  <section class="catalog-intro container">
     <div>
-      <p class="eyebrow">Community-built Copilot library</p>
-      <h1>Find a better starting point.</h1>
-      <p class="lede">Explore practical prompts, agent instructions, and reusable skills created by the community.</p>
+      <p class="eyebrow">Microsoft 365 &amp; Power Platform Community</p>
+      <h1>Copilot Prompt Gallery</h1>
+      <p class="catalog-intro__descriptor">Prompts, agent instructions, and skills</p>
+      <p class="catalog-intro__copy">
+        Start with proven community patterns for Microsoft 365 Copilot, Microsoft Copilot, and GitHub Copilot—then adapt them to the way you work.
+      </p>
     </div>
-    <dl class="stats" aria-label="Catalog totals">
-      <div><dt>Prompts</dt><dd>{counts.prompts}</dd></div>
-      <div><dt>Agents</dt><dd>{counts.agents}</dd></div>
-      <div><dt>Skills</dt><dd>{counts.skills}</dd></div>
-    </dl>
+    <div class="catalog-stat" aria-label={`${samples.length} community samples`}>
+      <strong>{samples.length}</strong>
+      <span>community samples</span>
+    </div>
   </section>
 
-  <section class="catalog" aria-labelledby="catalog-heading">
-    <div class="catalog-heading">
-      <div>
-        <p class="eyebrow">Browse the collection</p>
-        <h2 id="catalog-heading">All samples</h2>
-      </div>
-      <p id="result-count" aria-live="polite">{samples.length} samples</p>
+  <aside class="community-ribbon" aria-label="Community calls">
+    <div class="community-ribbon__inner container">
+      <CalendarDays size={24} aria-hidden="true" />
+      <p>Join the Copilot, Microsoft 365 &amp; Power Platform community calls.</p>
+      <a href="https://aka.ms/community/home">View community calls <ArrowRight size={16} aria-hidden="true" /></a>
     </div>
+  </aside>
 
-    <form class="filters" id="filters">
-      <label class="search">
-        <span>Search</span>
-        <input id="search" type="search" placeholder="Search titles, descriptions, and authors" />
-      </label>
-      <label>
-        <span>Type</span>
-        <select id="type">
-          <option value="">All types</option>
+  <div
+    class="catalog-backdrop"
+    style={`--catalog-side-right: url('${sitePath("/images/side-bg-right.webp")}'); --catalog-side-left: url('${sitePath("/images/side-bg-left.webp")}');`}
+  >
+    <section class="catalog-shell container" aria-labelledby="catalog-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Sample catalog</p>
+          <h2 id="catalog-heading">Explore Copilot patterns</h2>
+        </div>
+        <div class="type-summary" aria-label="Sample totals by type">
+          <span>{counts.prompts} prompts</span>
+          <span>{counts.agents} agents</span>
+          <span>{counts.skills} skills</span>
+        </div>
+      </div>
+
+      <form class="catalog-toolbar" id="catalog-filters">
+        <div class="search-control">
+          <Search size={19} aria-hidden="true" />
+          <label class="sr-only" for="search">Search samples</label>
+          <input id="search" name="q" type="search" placeholder="Search samples" autocomplete="off" />
+          <button id="clear-search" type="button" title="Clear search" aria-label="Clear search" hidden>
+            <X size={17} aria-hidden="true" />
+          </button>
+        </div>
+        <label class="sr-only" for="type">Sample type</label>
+        <select id="type" name="type">
+          <option value="">All sample types</option>
           <option value="prompts">Prompts</option>
           <option value="agent-instructions">Agent instructions</option>
           <option value="skills">Skills</option>
         </select>
-      </label>
-      <label>
-        <span>Product</span>
-        <select id="product">
+        <label class="sr-only" for="product">Product</label>
+        <select id="product" name="product">
           <option value="">All products</option>
-          {products.map((product) => <option value={product.toLowerCase()}>{product}</option>)}
+          {products.map((product) => <option value={product.toLocaleLowerCase("en-US")}>{product}</option>)}
         </select>
-      </label>
-      <label>
-        <span>Contributor</span>
-        <select id="author">
+        <label class="sr-only" for="author">Contributor</label>
+        <select id="author" name="contributor">
           <option value="">All contributors</option>
-          {authors.map((author) => <option value={author.toLowerCase()}>{author}</option>)}
+          {contributors.map((author) => <option value={author.gitHubAccount.toLocaleLowerCase("en-US")}>{author.name}</option>)}
         </select>
-      </label>
-    </form>
+        <label class="sr-only" for="sort">Sort samples</label>
+        <select id="sort" name="sort">
+          <option value="updated">Recently updated</option>
+          <option value="newest">Newest</option>
+          <option value="title">Title</option>
+        </select>
+      </form>
 
-    <div class="cards" id="cards">
-      {samples.map((sample) => {
-        const thumbnail = [...sample.thumbnails].sort((a, b) => a.order - b.order)[0];
-        const searchText = [
-          sample.title,
-          sample.shortDescription,
-          ...sample.products,
-          ...sample.authors.map((author) => author.name),
-        ].join(" ").toLowerCase();
-        return (
-          <article
-            class="card"
-            data-search={searchText}
-            data-type={sample.category}
-            data-products={sample.products.join("|").toLowerCase()}
-            data-authors={sample.authors.map((author) => author.name).join("|").toLowerCase()}
-          >
-            <a class="card-image" href={`${import.meta.env.BASE_URL}/${sample.route}/`} aria-hidden="true" tabindex="-1">
-              <img src={thumbnail.url} alt="" loading="lazy" />
-            </a>
-            <div class="card-body">
-              <span class={`badge badge-${sample.category}`}>{sample.type}</span>
-              <h3><a href={`${import.meta.env.BASE_URL}/${sample.route}/`}>{sample.title}</a></h3>
-              <p>{sample.shortDescription}</p>
-              <div class="card-meta">
-                <span>{sample.products[0]}</span>
-                <span>{sample.authors.map((author) => author.name).join(", ")}</span>
-              </div>
-            </div>
-          </article>
-        );
-      })}
-    </div>
-    <p class="empty" id="empty" hidden>No samples match these filters.</p>
-  </section>
+      <div class="catalog-status">
+        <p class="result-count" id="result-count" aria-live="polite">Showing {samples.length} samples</p>
+        <button class="clear-filters" id="clear-filters" type="button">Clear filters</button>
+      </div>
+      <div class="component-grid" id="cards">
+        {samples.map((sample, index) => <SampleCard sample={sample} index={index} />)}
+      </div>
+      <div class="empty-state" id="empty" hidden>
+        <Search size={28} aria-hidden="true" />
+        <h3>No samples found</h3>
+        <p>Try a broader search or choose different filters.</p>
+        <button class="button button--secondary" id="empty-clear" type="button">Clear filters</button>
+      </div>
+    </section>
+  </div>
 </Layout>
 
 <script>
-  const form = document.querySelector<HTMLFormElement>("#filters");
-  const search = document.querySelector<HTMLInputElement>("#search");
-  const type = document.querySelector<HTMLSelectElement>("#type");
-  const product = document.querySelector<HTMLSelectElement>("#product");
-  const author = document.querySelector<HTMLSelectElement>("#author");
-  const cards = [...document.querySelectorAll<HTMLElement>(".card")];
-  const count = document.querySelector<HTMLElement>("#result-count");
-  const empty = document.querySelector<HTMLElement>("#empty");
+  function requiredElement<T extends Element>(selector: string): T {
+    const element = document.querySelector<T>(selector);
+    if (!element) throw new Error(`Catalog control could not be initialized: ${selector}`);
+    return element;
+  }
 
-  function filterCards() {
-    const query = search?.value.trim().toLowerCase() ?? "";
-    let visible = 0;
-    for (const card of cards) {
-      const matches =
-        (query === "" || card.dataset.search?.includes(query)) &&
-        (!type?.value || card.dataset.type === type.value) &&
-        (!product?.value || card.dataset.products?.split("|").includes(product.value)) &&
-        (!author?.value || card.dataset.authors?.split("|").includes(author.value));
-      card.hidden = !matches;
-      if (matches) visible += 1;
+  const form = requiredElement<HTMLFormElement>("#catalog-filters");
+  const grid = requiredElement<HTMLElement>("#cards");
+  const search = requiredElement<HTMLInputElement>("#search");
+  const type = requiredElement<HTMLSelectElement>("#type");
+  const product = requiredElement<HTMLSelectElement>("#product");
+  const author = requiredElement<HTMLSelectElement>("#author");
+  const sort = requiredElement<HTMLSelectElement>("#sort");
+  const count = requiredElement<HTMLElement>("#result-count");
+  const empty = requiredElement<HTMLElement>("#empty");
+  const clearSearch = requiredElement<HTMLButtonElement>("#clear-search");
+  const clearFilters = requiredElement<HTMLButtonElement>("#clear-filters");
+  const cards = [...document.querySelectorAll<HTMLElement>("[data-component-card]")];
+
+  const query = new URLSearchParams(window.location.search);
+  search.value = query.get("q") ?? "";
+  for (const [control, key] of [[type, "type"], [product, "product"], [author, "contributor"], [sort, "sort"]] as const) {
+    const requestedValue = query.get(key);
+    if (requestedValue && [...control.options].some((option) => option.value === requestedValue)) {
+      control.value = requestedValue;
     }
-    if (count) count.textContent = `${visible} ${visible === 1 ? "sample" : "samples"}`;
-    if (empty) empty.hidden = visible !== 0;
   }
 
-  form?.addEventListener("input", filterCards);
+  function applyFilters() {
+    const searchValue = search.value.trim().toLocaleLowerCase("en-US");
+    const matches = cards.filter((card) =>
+      (!searchValue || card.dataset.search?.includes(searchValue)) &&
+      (!type.value || card.dataset.type === type.value) &&
+      (!product.value || card.dataset.products?.split("|").includes(product.value)) &&
+      (!author.value || card.dataset.authors?.split("|").includes(author.value)),
+    );
+
+    matches.sort((left, right) => {
+      if (sort.value === "title") {
+        return (left.dataset.title ?? "").localeCompare(right.dataset.title ?? "");
+      }
+      const field = sort.value === "newest" ? "created" : "updated";
+      return (right.dataset[field] ?? "").localeCompare(left.dataset[field] ?? "") ||
+        (left.dataset.title ?? "").localeCompare(right.dataset.title ?? "");
+    });
+    cards.forEach((card) => { card.hidden = true; });
+    matches.forEach((card) => {
+      card.hidden = false;
+      grid.append(card);
+    });
+
+    count.textContent = matches.length === cards.length
+      ? `Showing ${matches.length} samples`
+      : `Showing ${matches.length} matching samples`;
+    empty.hidden = matches.length > 0;
+    clearSearch.hidden = !searchValue;
+
+    const nextQuery = new URLSearchParams();
+    if (searchValue) nextQuery.set("q", search.value.trim());
+    if (type.value) nextQuery.set("type", type.value);
+    if (product.value) nextQuery.set("product", product.value);
+    if (author.value) nextQuery.set("contributor", author.value);
+    if (sort.value !== "updated") nextQuery.set("sort", sort.value);
+    window.history.replaceState({}, "", `${window.location.pathname}${nextQuery.size ? `?${nextQuery}` : ""}`);
+  }
+
+  form.addEventListener("input", applyFilters);
+  form.addEventListener("change", applyFilters);
+  clearSearch.addEventListener("click", () => {
+    search.value = "";
+    search.focus();
+    applyFilters();
+  });
+  clearFilters.addEventListener("click", () => {
+    form.reset();
+    applyFilters();
+    search.focus();
+  });
+  document.querySelector("#empty-clear")?.addEventListener("click", () => {
+    form.reset();
+    applyFilters();
+    search.focus();
+  });
+  applyFilters();
 </script>
-
-<style>
-  .hero {
-    display: grid;
-    grid-template-columns: 1.3fr .7fr;
-    gap: 4rem;
-    align-items: end;
-    padding: 5rem max(1.25rem, calc((100vw - 1200px) / 2));
-    color: white;
-    background:
-      radial-gradient(circle at 80% 20%, rgb(255 255 255 / 18%), transparent 28rem),
-      linear-gradient(130deg, #25136f, #6345cf 58%, #bb408e);
-  }
-  .eyebrow {
-    margin: 0 0 .65rem;
-    font-size: .78rem;
-    font-weight: 800;
-    letter-spacing: .13em;
-    text-transform: uppercase;
-  }
-  h1 { max-width: 680px; margin: 0; font-size: clamp(2.8rem, 7vw, 5.8rem); line-height: .98; letter-spacing: -.05em; }
-  .lede { max-width: 650px; margin: 1.5rem 0 0; font-size: 1.2rem; color: #eeeaff; }
-  .stats { display: grid; grid-template-columns: repeat(3, 1fr); margin: 0; overflow: hidden; border: 1px solid rgb(255 255 255 / 30%); border-radius: 1rem; }
-  .stats div { padding: 1.2rem; text-align: center; background: rgb(255 255 255 / 10%); }
-  .stats div + div { border-left: 1px solid rgb(255 255 255 / 30%); }
-  .stats dt { font-size: .75rem; text-transform: uppercase; }
-  .stats dd { margin: .1rem 0 0; font-size: 2rem; font-weight: 800; }
-  .catalog { max-width: 1200px; margin: 0 auto; padding: 4rem 1.25rem; }
-  .catalog-heading { display: flex; align-items: end; justify-content: space-between; gap: 2rem; }
-  h2 { margin: 0; font-size: 2.3rem; letter-spacing: -.03em; }
-  #result-count { color: var(--muted); font-weight: 600; }
-  .filters { display: grid; grid-template-columns: 2fr repeat(3, 1fr); gap: 1rem; margin: 2rem 0; padding: 1.25rem; background: white; border: 1px solid var(--line); border-radius: 1rem; box-shadow: var(--shadow); }
-  label span { display: block; margin-bottom: .35rem; font-size: .78rem; font-weight: 700; }
-  input, select { width: 100%; min-height: 2.8rem; padding: .6rem .75rem; color: var(--ink); background: white; border: 1px solid #aeb4c2; border-radius: .45rem; font: inherit; }
-  .cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.35rem; }
-  .card { overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 1rem; box-shadow: 0 7px 20px rgb(42 30 88 / 7%); transition: transform .2s, box-shadow .2s; }
-  .card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
-  .card[hidden] { display: none; }
-  .card-image { display: grid; height: 190px; place-items: center; overflow: hidden; background: #e9e8f2; }
-  .card-image img { width: 100%; height: 100%; object-fit: cover; }
-  .card-body { padding: 1.25rem; }
-  .badge { display: inline-block; padding: .2rem .55rem; color: #4b2cab; background: #eeeaff; border-radius: 999px; font-size: .73rem; font-weight: 800; }
-  .badge-agent-instructions { color: #8f265f; background: #fae6f1; }
-  .badge-skills { color: #176a52; background: #def6ed; }
-  h3 { margin: .8rem 0 .55rem; font-size: 1.22rem; line-height: 1.3; }
-  h3 a { color: var(--ink); text-decoration: none; }
-  .card-body > p { display: -webkit-box; min-height: 4.8em; overflow: hidden; color: var(--muted); -webkit-box-orient: vertical; -webkit-line-clamp: 3; }
-  .card-meta { display: flex; justify-content: space-between; gap: 1rem; padding-top: .9rem; color: var(--muted); border-top: 1px solid var(--line); font-size: .77rem; }
-  .card-meta span:last-child { overflow: hidden; text-align: right; text-overflow: ellipsis; white-space: nowrap; }
-  .empty { padding: 4rem; text-align: center; background: white; border-radius: 1rem; }
-  @media (max-width: 900px) {
-    .hero { grid-template-columns: 1fr; gap: 2rem; }
-    .filters { grid-template-columns: 1fr 1fr; }
-    .cards { grid-template-columns: 1fr 1fr; }
-  }
-  @media (max-width: 600px) {
-    .hero { padding-top: 3.5rem; padding-bottom: 3.5rem; }
-    .filters, .cards { grid-template-columns: 1fr; }
-    .catalog-heading { align-items: flex-start; flex-direction: column; gap: .25rem; }
-  }
-</style>
