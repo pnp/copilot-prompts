@@ -1,0 +1,104 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { loadCatalog, type CatalogSample } from "../../../lib/catalog";
+
+export function getStaticPaths() {
+  return loadCatalog().map((sample) => ({
+    params: { category: sample.category, slug: sample.slug },
+    props: { sample },
+  }));
+}
+
+const { sample } = Astro.props as { sample: CatalogSample };
+const thumbnail = [...sample.thumbnails].sort((a, b) => a.order - b.order)[0];
+---
+
+<Layout title={sample.title} description={sample.shortDescription}>
+  <article>
+    <header class="detail-hero">
+      <div>
+        <a class="back" href={`${import.meta.env.BASE_URL}/`}>← Back to gallery</a>
+        <p class="type">{sample.type}</p>
+        <h1>{sample.title}</h1>
+        <p class="lede">{sample.shortDescription}</p>
+        <div class="actions">
+          <a class="button primary" href={sample.downloadUrl}>Download sample</a>
+          <a class="button" href={sample.url}>View on GitHub</a>
+        </div>
+      </div>
+      <img src={thumbnail.url} alt={thumbnail.alt} />
+    </header>
+
+    <div class="detail-grid">
+      <div class="readme" set:html={sample.readmeHtml} />
+      <aside>
+        <section>
+          <h2>Products</h2>
+          <ul class="chips">{sample.products.map((product) => <li>{product}</li>)}</ul>
+        </section>
+        <section>
+          <h2>Contributors</h2>
+          {sample.authors.map((author) => (
+            <a class="author" href={`https://github.com/${author.gitHubAccount}`}>
+              {author.pictureUrl && <img src={author.pictureUrl} alt="" />}
+              <span>{author.name}<small>@{author.gitHubAccount}</small></span>
+            </a>
+          ))}
+        </section>
+        {sample.references?.length > 0 && (
+          <section>
+            <h2>References</h2>
+            <ul>{sample.references.map((reference) => <li><a href={reference.url}>{reference.name}</a></li>)}</ul>
+          </section>
+        )}
+        <section>
+          <h2>Last updated</h2>
+          <p>{new Date(sample.updateDateTime).toLocaleDateString("en-US", { dateStyle: "long" })}</p>
+        </section>
+      </aside>
+    </div>
+  </article>
+</Layout>
+
+<style>
+  .detail-hero {
+    display: grid;
+    grid-template-columns: 1.2fr .8fr;
+    gap: 4rem;
+    align-items: center;
+    padding: 4rem max(1.25rem, calc((100vw - 1200px) / 2));
+    background: white;
+    border-bottom: 1px solid var(--line);
+  }
+  .detail-hero > img { width: 100%; max-height: 360px; object-fit: contain; background: var(--surface-soft); border-radius: 1rem; box-shadow: var(--shadow); }
+  .back { display: inline-block; margin-bottom: 2rem; font-weight: 700; text-decoration: none; }
+  .type { margin: 0 0 .5rem; color: var(--purple); font-size: .8rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+  h1 { max-width: 800px; margin: 0; font-size: clamp(2.4rem, 5vw, 4.2rem); line-height: 1.05; letter-spacing: -.045em; }
+  .lede { max-width: 760px; color: var(--muted); font-size: 1.18rem; }
+  .actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 1.7rem; }
+  .button { padding: .7rem 1rem; color: var(--purple-dark); background: white; border: 1px solid var(--purple); border-radius: .5rem; font-weight: 700; text-decoration: none; }
+  .button.primary { color: white; background: var(--purple); }
+  .detail-grid { display: grid; grid-template-columns: minmax(0, 1fr) 280px; gap: 3rem; max-width: 1100px; margin: 3rem auto; padding: 0 1.25rem; }
+  .readme { min-width: 0; padding: 2rem; background: white; border: 1px solid var(--line); border-radius: 1rem; box-shadow: var(--shadow); }
+  .readme :global(h1) { font-size: 2.2rem; }
+  .readme :global(h2) { margin-top: 2.2rem; line-height: 1.2; }
+  .readme :global(pre) { max-width: 100%; padding: 1rem; overflow: auto; background: #f1f2f6; border-radius: .5rem; white-space: pre-wrap; }
+  .readme :global(code) { word-break: break-word; }
+  .readme :global(table) { display: block; max-width: 100%; overflow-x: auto; border-collapse: collapse; }
+  .readme :global(th), .readme :global(td) { padding: .5rem; border: 1px solid var(--line); }
+  .readme :global(img) { height: auto; border-radius: .5rem; }
+  aside section { margin-bottom: 1rem; padding: 1.2rem; background: white; border: 1px solid var(--line); border-radius: .8rem; }
+  aside h2 { margin: 0 0 .7rem; font-size: .9rem; text-transform: uppercase; }
+  aside ul { margin: 0; padding-left: 1.2rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: .4rem; padding: 0; list-style: none; }
+  .chips li { padding: .2rem .5rem; background: #eeeaff; border-radius: 999px; font-size: .75rem; }
+  .author { display: flex; align-items: center; gap: .7rem; color: var(--ink); text-decoration: none; }
+  .author + .author { margin-top: .8rem; }
+  .author img { width: 2.5rem; height: 2.5rem; border-radius: 50%; }
+  .author small { display: block; color: var(--muted); }
+  @media (max-width: 800px) {
+    .detail-hero, .detail-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .detail-hero > img { grid-row: 1; }
+    .readme { padding: 1.25rem; }
+  }
+</style>

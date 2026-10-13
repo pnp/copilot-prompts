@@ -171,7 +171,9 @@ function Get-MarkdownImagePath {
     return "./$encodedPath"
 }
 
-foreach ($sample in Get-SampleDirectories) {
+$sampleDirectories = @(Get-SampleDirectories)
+
+foreach ($sample in $sampleDirectories) {
     $category = $sample.Category
     $directory = $sample.Directory
     $slug = $directory.Name
@@ -348,7 +350,7 @@ foreach ($sample in Get-SampleDirectories) {
         '(?im)^.*https://m365-visitor-stats\.azurewebsites\.net/(?:SamplesGallery|copilot-prompts)/.*(?:\r?\n)?',
         ''
     ).TrimEnd()
-    $withoutTrackers = [regex]::Replace($withoutTrackers, '(?m)\r?\n---\s*$', '').TrimEnd()
+    $withoutTrackers = [regex]::Replace($withoutTrackers, '\r?\n---[ \t]*$', '').TrimEnd()
 
     if ($preferredImage -and $withoutTrackers.Contains("![Default sample preview]($fallbackMarkdownPath)")) {
         $contributedImagePath = Get-MarkdownImagePath -SampleDirectory $directory -Image $preferredImage
@@ -391,4 +393,4 @@ if ($changes.Count -gt 0) {
     }
 }
 
-Write-Output "Validated 153 sample folders."
+Write-Output "Validated $($sampleDirectories.Count) sample folders."

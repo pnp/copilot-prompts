@@ -1,0 +1,131 @@
+---
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Copilot Prompts",
+  description = "Community prompts, agent instructions, and skills for Microsoft and GitHub Copilot.",
+} = Astro.props;
+const pageTitle = title === "Copilot Prompts" ? title : `${title} | Copilot Prompts`;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <link rel="icon" href={`${import.meta.env.BASE_URL}/favicon.svg`} type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href={`${import.meta.env.BASE_URL}/`}>
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>Copilot Prompts</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href={`${import.meta.env.BASE_URL}/`}>Gallery</a>
+        <a href="https://github.com/pnp/copilot-prompts">GitHub</a>
+        <a href="https://github.com/pnp/copilot-prompts/blob/main/CONTRIBUTING.md">Contribute</a>
+      </nav>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer>
+      <p>Built by the Microsoft 365 &amp; Power Platform community.</p>
+      <p><a href="https://github.com/pnp/copilot-prompts">View the source on GitHub</a></p>
+    </footer>
+  </body>
+</html>
+
+<style is:global>
+  :root {
+    color-scheme: light;
+    --ink: #17202a;
+    --muted: #5d6876;
+    --surface: #ffffff;
+    --surface-soft: #f4f5fb;
+    --line: #dfe2ed;
+    --purple: #5d3fd3;
+    --purple-dark: #39218d;
+    --pink: #c43f91;
+    --shadow: 0 16px 40px rgb(42 30 88 / 10%);
+    font-family: "Segoe UI", system-ui, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    color: var(--ink);
+    background: var(--surface-soft);
+    line-height: 1.6;
+  }
+  a { color: var(--purple-dark); }
+  a:hover { color: var(--pink); }
+  img { max-width: 100%; }
+  .skip-link {
+    position: fixed;
+    top: -4rem;
+    left: 1rem;
+    z-index: 10;
+    padding: .7rem 1rem;
+    color: white;
+    background: var(--purple-dark);
+    border-radius: .4rem;
+  }
+  .skip-link:focus { top: 1rem; }
+  .site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 1rem max(1.25rem, calc((100vw - 1200px) / 2));
+    background: rgb(255 255 255 / 92%);
+    border-bottom: 1px solid var(--line);
+    backdrop-filter: blur(12px);
+  }
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    color: var(--ink);
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .brand-mark {
+    display: grid;
+    width: 2.15rem;
+    height: 2.15rem;
+    place-items: center;
+    color: white;
+    background: linear-gradient(135deg, var(--purple), var(--pink));
+    border-radius: .6rem;
+  }
+  nav { display: flex; gap: 1.25rem; }
+  nav a { color: var(--ink); font-weight: 600; text-decoration: none; }
+  main { min-height: calc(100vh - 180px); }
+  footer {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    padding: 2rem 1.25rem;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+  }
+  :focus-visible { outline: 3px solid #1876d2; outline-offset: 3px; }
+  @media (max-width: 640px) {
+    .site-header { align-items: flex-start; flex-direction: column; gap: .75rem; }
+    nav { flex-wrap: wrap; }
+    footer { flex-direction: column; gap: 0; }
+  }
+</style>

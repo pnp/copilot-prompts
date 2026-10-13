@@ -2,7 +2,22 @@
 
 Audit date: 2026-09-02
 
-Status: structural normalization completed on 2026-09-03; gallery implementation remains to be completed.
+Status: structural normalization completed on 2026-09-03; initial static gallery implemented and locally reviewed on 2026-10-13.
+
+## Gallery implementation update (2026-10-13)
+
+- [x] Synchronized the local checkout and VesaJuvonen fork with `pnp/copilot-prompts`.
+- [x] Revalidated and normalized all 159 sample folders.
+- [x] Added a deterministic Astro build that validates metadata and generates 159 detail pages, a searchable catalog, a sitemap, and public catalog JSON.
+- [x] Added type, product, and contributor filters plus responsive cards and sanitized README detail pages.
+- [x] Added a GitHub Pages build and deployment workflow for `/copilot-prompts/`.
+- [x] Completed strict Astro diagnostics, static generation, dependency audit, and manual desktop/mobile browser review.
+
+Remaining deployment steps:
+
+1. Enable GitHub Pages with GitHub Actions as the source.
+2. Verify the first live deployment, generated catalog, and outbound actions.
+3. Add automated browser, accessibility, and outbound-link regression checks after launch.
 
 ## 0. Normalization update (2026-09-03)
 

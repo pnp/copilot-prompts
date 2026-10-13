@@ -15,7 +15,14 @@
       "Microsoft Copilot"
     ],
     "metadata": [],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Explore a Learner Note-Taking Product Idea preview"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "TeerX-Code",
