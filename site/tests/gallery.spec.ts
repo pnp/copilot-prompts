@@ -40,6 +40,25 @@ test("tracks key gallery pages with page-specific images", async ({ page }) => {
   }
 });
 
+test("presents the contributor Credly badge", async ({ page }) => {
+  await page.goto("contributors/");
+  const badge = page.getByRole("img", { name: /Prompt Pro .* contributor badge/ });
+  await expect(badge).toBeVisible();
+  await expect(badge).toHaveAttribute("src", /\/generated\/brand\/contributor-badge\.png$/);
+  await expect(page.getByRole("heading", { name: "Earn the Prompt Pro Credly badge" })).toBeVisible();
+  const avatarSources = await page.locator(".contributor-card img").evaluateAll((images) =>
+    images.map((image) => image.getAttribute("src") ?? ""),
+  );
+  expect(avatarSources.every((source) =>
+    source.startsWith("https://avatars.githubusercontent.com/") ||
+    /^https:\/\/github\.com\/[^/]+\.png(?:\?size=144)?$/.test(source),
+  )).toBe(true);
+  await expect(page.getByRole("link", { name: /Credly badges work/ })).toHaveAttribute(
+    "href",
+    "https://aka.ms/community/recognition",
+  );
+});
+
 test("persists the selected theme", async ({ page }) => {
   await page.goto("./");
   await page.getByRole("switch", { name: /Switch to .* mode/ }).click();

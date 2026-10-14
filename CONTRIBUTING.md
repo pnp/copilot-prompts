@@ -2,6 +2,8 @@
 
 If you'd like to contribute to this repository, please read the following guidelines. Contributors are more than welcome to share their learnings with others in this centralized location.
 
+Accepted contributors are recognized with the **Prompt Pro Microsoft 365 & Power Platform Community Credly badge**. See [community recognition](https://aka.ms/community/recognition) for details about receiving and sharing Credly badges.
+
 ## Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).

@@ -29,6 +29,10 @@ Go to the [samples](https://github.com/pnp/copilot-prompts/tree/main/samples) fo
 
 Samples are submitted by Microsoft's product groups and the [Microsoft 365 and Power Platform community](http://aka.ms/m365pnp). We welcome community contributions — please review our [Contribution Guidance](./CONTRIBUTING.md) before submitting a pull request.
 
+Contributors to this repository are recognized with the **Prompt Pro Microsoft 365 & Power Platform Community Credly badge**. [Learn how community recognition badges work](https://aka.ms/community/recognition).
+
+![Prompt Pro Microsoft 365 and Power Platform Community Credly badge](./images/contributor-badge.png)
+
 This repository has three types of samples:
 
 | Type | Location | What it is |

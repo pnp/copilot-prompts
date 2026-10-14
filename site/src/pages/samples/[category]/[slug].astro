@@ -15,6 +15,15 @@ const thumbnail = [...sample.thumbnails].sort((left, right) => left.order - righ
 const formattedCreated = new Intl.DateTimeFormat("en", { year: "numeric", month: "short", day: "numeric" }).format(new Date(sample.creationDateTime));
 const formattedUpdated = new Intl.DateTimeFormat("en", { year: "numeric", month: "short", day: "numeric" }).format(new Date(sample.updateDateTime));
 const galleryUrl = `${import.meta.env.BASE_URL}`;
+const avatarUrl = (author: { gitHubAccount: string; pictureUrl?: string }) => {
+  if (author.pictureUrl) {
+    const pictureUrl = new URL(author.pictureUrl);
+    if (pictureUrl.hostname !== "github.com" || pictureUrl.pathname.endsWith(".png")) {
+      return author.pictureUrl;
+    }
+  }
+  return `https://github.com/${encodeURIComponent(author.gitHubAccount)}.png?size=76`;
+};
 ---
 
 <Layout title={sample.title} description={sample.shortDescription} image={thumbnail.url}>
@@ -34,7 +43,7 @@ const galleryUrl = `${import.meta.env.BASE_URL}`;
       <div class="detail-authors">
         {sample.authors.map((author) => (
           <a href={`https://github.com/${author.gitHubAccount}`}>
-            {author.pictureUrl && <img src={author.pictureUrl} alt="" width="38" height="38" />}
+            <img src={avatarUrl(author)} alt="" width="38" height="38" />
             <span>{author.name}</span>
           </a>
         ))}

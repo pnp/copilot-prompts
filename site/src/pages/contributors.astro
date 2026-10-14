@@ -13,6 +13,15 @@ const contributors = [...loadCatalog().reduce((all, sample) => {
 }, new Map<string, { gitHubAccount: string; name: string; pictureUrl?: string; samples: number }>()).values()]
   .sort((left, right) => right.samples - left.samples || left.name.localeCompare(right.name));
 const basePath = import.meta.env.BASE_URL.replace(/\/?$/, "/");
+const avatarUrl = (author: { gitHubAccount: string; pictureUrl?: string }) => {
+  if (author.pictureUrl) {
+    const pictureUrl = new URL(author.pictureUrl);
+    if (pictureUrl.hostname !== "github.com" || pictureUrl.pathname.endsWith(".png")) {
+      return author.pictureUrl;
+    }
+  }
+  return `https://github.com/${encodeURIComponent(author.gitHubAccount)}.png?size=144`;
+};
 ---
 
 <Layout title="Contributors" description="Meet the community members sharing prompts, agent instructions, and skills for Copilot.">
@@ -24,8 +33,18 @@ const basePath = import.meta.env.BASE_URL.replace(/\/?$/, "/");
 
   <section class="content-section content-section--tint">
     <div class="container recognition-band">
-      <img src={`${basePath}images/copilot.png`} alt="" width="220" height="220" />
-      <div><p class="eyebrow">Community recognition</p><h2>Sharing is caring</h2><p>{contributors.length} community members have shared samples that help others learn, experiment, and deliver better Copilot experiences.</p><a class="text-link" href="https://aka.ms/community/recognition">Learn about community recognition <ArrowRight size={17} aria-hidden="true" /></a></div>
+      <img
+        src={`${basePath}generated/brand/contributor-badge.png`}
+        alt="Prompt Pro Microsoft 365 and Power Platform Community contributor badge"
+        width="220"
+        height="220"
+      />
+      <div>
+        <p class="eyebrow">Community recognition</p>
+        <h2>Earn the Prompt Pro Credly badge</h2>
+        <p>Contributors to this repository are recognized with the Prompt Pro digital badge on Credly. Share a prompt, agent instruction, or skill to help the community learn, experiment, and deliver better Copilot experiences.</p>
+        <a class="text-link" href="https://aka.ms/community/recognition">Learn how community Credly badges work <ArrowRight size={17} aria-hidden="true" /></a>
+      </div>
     </div>
   </section>
 
@@ -33,9 +52,7 @@ const basePath = import.meta.env.BASE_URL.replace(/\/?$/, "/");
     <div class="contributor-grid">
       {contributors.map((author) => (
         <article class="contributor-card">
-          {author.pictureUrl
-            ? <img src={author.pictureUrl} alt="" width="72" height="72" loading="lazy" />
-            : <span class="contributor-avatar" aria-hidden="true">{author.name.slice(0, 1)}</span>}
+          <img src={avatarUrl(author)} alt="" width="72" height="72" loading="lazy" />
           <div><h2>{author.name}</h2><a href={`https://github.com/${author.gitHubAccount}`}>@{author.gitHubAccount}</a><p>{author.samples} {author.samples === 1 ? "sample" : "samples"}</p></div>
         </article>
       ))}
