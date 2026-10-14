@@ -19,7 +19,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/solution-deployment-readiness/assets/demo.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/051a48d7317fa4cfd226889c1fd1489d7de47086/samples/skills/solution-deployment-readiness/assets/demo.png",
         "alt": "Offline deployment settings review report with synthetic fixtures; target readiness unverified"
       }
     ],
