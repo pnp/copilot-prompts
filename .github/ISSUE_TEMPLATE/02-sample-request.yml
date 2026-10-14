@@ -1,0 +1,50 @@
+name: Sample or gallery request
+description: Suggest a new sample or an improvement to the gallery
+title: "[Request]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search the Copilot Prompt Gallery and existing issues before suggesting a new sample. General Microsoft product support requests are outside this repository's scope.
+  - type: dropdown
+    id: request-type
+    attributes:
+      label: Request type
+      options:
+        - New prompt sample
+        - New agent instruction sample
+        - New skill sample
+        - Gallery improvement
+        - Documentation improvement
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Scenario and value
+      description: Who needs this, what should it accomplish, and why is it reusable?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected experience
+      description: Describe the desired inputs, outputs, workflow, or gallery behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: References or related samples
+      description: Link to official documentation, related gallery samples, or prior discussion.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the gallery and existing issues for similar content.
+          required: true
+        - label: This is a reusable community scenario, not a request for Microsoft product support.
+          required: true

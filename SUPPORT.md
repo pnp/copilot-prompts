@@ -1,29 +1,59 @@
-# Support Guidelines
+# Support
 
-The Copilot prompts repository is maintained by the [Microsoft 365 and Power Platform community](https://aka.ms/m365pnp), who all volunteer their time.
+## Community support policy
 
-We track bugs, user questions, suggestions and sample requests through [GitHub issues](https://github.com/pnp/copilot-prompts/issues).
+This repository and the
+[Copilot Prompt Gallery](https://pnp.github.io/copilot-prompts/) are maintained
+by volunteers in the
+[Microsoft 365 & Power Platform Community](https://aka.ms/community/home).
 
-Please help out as you can in response to issues and user questions.
+The samples are provided as-is. They are **not Microsoft products**, do not
+include official Microsoft support, and do not come with a service-level
+agreement. Maintainers and contributors will try to help, but all assistance
+is provided on a best-effort, volunteer basis.
 
-## Disclaimer
+## Before requesting help
 
-**ALL SAMPLE CODE IN THIS REPOSITORY IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+1. Open the sample in the
+   [gallery](https://pnp.github.io/copilot-prompts/) and review its complete
+   documentation, prerequisites, limitations, and references.
+2. Confirm that you are using the intended Copilot product and that your
+   tenant, license, permissions, and organizational policies meet the sample's
+   requirements.
+3. Search the
+   [existing issues](https://github.com/pnp/copilot-prompts/issues) for the
+   sample name and error.
+4. Remove secrets, personal data, customer content, tenant identifiers, and
+   other sensitive information before sharing diagnostics.
 
-### How to report a bug
+## Open a repository issue when
 
-We use GitHub to track issues. To report a bug, [open a new issue](https://github.com/pnp/copilot-prompts/issues/new/choose). Please include all the information that might be relevant, including instructions for reproducing the bug.
+- a specific sample contains incorrect or incomplete instructions;
+- a sample's source, download, preview, or gallery page is broken;
+- you can provide reproducible steps for a sample-specific problem;
+- you want to request a new sample or gallery improvement.
 
-### Where can I ask for help?
+Use the matching
+[issue form](https://github.com/pnp/copilot-prompts/issues/new/choose) and
+include the gallery URL, sample name, expected result, actual result,
+reproduction steps, and relevant non-sensitive environment details.
 
-We use GitHub issues to support user questions. To ask a question, [open a new issue](https://github.com/pnp/copilot-prompts/issues/new/choose) and select the question template.
+## Use another support channel when
 
-### How to submit changes
+For general Microsoft Copilot behavior, outages, licensing, billing, tenant
+configuration, product limits, or official product support, use Microsoft
+Learn, the Microsoft 365 admin center, your organization's Microsoft support
+channel, or the relevant product community. Those issues are outside this
+repository's scope.
 
-Please see our [Contributing Guidance](./CONTRIBUTING.md).
+For suspected vulnerabilities, follow [SECURITY.md](./SECURITY.md). Do not
+publish vulnerability details, credentials, or exploit information in an
+issue.
 
-### How to request an enhancement or a new sample
+## Submit a fix
 
-To request a new sample or an enhancement to an existing one, [open a new issue](https://github.com/pnp/copilot-prompts/issues/new/choose).
+Community fixes are welcome. Follow the
+[Contribution Guidance](./CONTRIBUTING.md) and keep the pull request focused on
+one logical change.
 
 ![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/SUPPORT.md)

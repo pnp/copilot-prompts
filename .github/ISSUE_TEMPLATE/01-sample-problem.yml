@@ -1,0 +1,52 @@
+name: Sample problem
+description: Report a reproducible problem with a specific community sample
+title: "[Sample]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Samples are community-provided, not Microsoft products, and are supported on a best-effort basis. Do not include secrets, personal data, customer content, tenant identifiers, or vulnerability details.
+  - type: input
+    id: sample
+    attributes:
+      label: Gallery sample URL
+      description: Link to the affected sample in the Copilot Prompt Gallery.
+      placeholder: https://pnp.github.io/copilot-prompts/samples/...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What happened, and what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Provide the smallest reproducible sequence with sensitive information removed.
+      placeholder: |
+        1. Open...
+        2. Configure...
+        3. Run...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Relevant environment details
+      description: Copilot product, client, license assumptions, and other non-sensitive context.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I reviewed the sample documentation and searched existing issues.
+          required: true
+        - label: I removed secrets, personal data, customer content, and tenant identifiers.
+          required: true
+        - label: This report does not disclose a security vulnerability.
+          required: true

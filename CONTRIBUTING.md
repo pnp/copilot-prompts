@@ -1,278 +1,167 @@
-# Contribution Guidance
+# Contributing to Copilot Prompt Gallery
 
-If you'd like to contribute to this repository, please read the following guidelines. Contributors are more than welcome to share their learnings with others in this centralized location.
+Thank you for helping the community share useful, reusable Copilot patterns.
+We welcome new samples, improvements to existing samples, bug fixes, and
+documentation updates.
 
-Accepted contributors are recognized with the **Prompt Pro Microsoft 365 & Power Platform Community Credly badge**. See [community recognition](https://aka.ms/community/recognition) for details about receiving and sharing Credly badges.
+The **[Copilot Prompt Gallery](https://pnp.github.io/copilot-prompts/)** is the
+published experience. Sample metadata and documentation in this repository are
+the source of truth for the gallery.
 
-## Code of Conduct
+> [!NOTE]
+> This is a volunteer-maintained community project, not a Microsoft product.
+> Reviews and assistance are provided on a best-effort basis. See
+> [SUPPORT.md](./SUPPORT.md).
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/).
-For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Accepted contributors are recognized with the **Prompt Pro Microsoft 365 &
+Power Platform Community Credly badge**. See
+[community recognition](https://aka.ms/community/recognition) for details.
 
-Remember that this repository is maintained by community members who volunteer their time to help. Be courteous and patient.
+## Before you start
 
-## Question or Problem?
+- Search the [gallery](https://pnp.github.io/copilot-prompts/), open issues, and
+  pull requests to avoid duplicating an existing sample.
+- For a significant new direction, open a sample request before investing in
+  the full contribution.
+- Contribute only content you have the right to publish. Remove secrets,
+  personal data, customer data, tenant identifiers, and confidential content.
+- Keep one sample or one logical change per pull request.
+- Follow the [Code of Conduct](./CODE_OF_CONDUCT.md).
 
-Please do not open GitHub issues for general support questions as the GitHub list should be used for feature requests and bug reports. This way we can more easily track actual issues or bugs from the code and keep the general discussion separate from the actual code.
+## Choose a sample type
 
-## Typos, Issues, Bugs and contributions
+| Type | Location | Required core files |
+| --- | --- | --- |
+| Prompt | `samples/prompts/{folder-name}/` | `README.md`, `assets/sample.json` |
+| Agent instruction | `samples/agent-instructions/{folder-name}/` | `README.md`, `assets/sample.json` |
+| Skill | `samples/skills/{folder-name}/` | `SKILL.md`, `README.md`, `assets/sample.json` |
 
-Whenever you are submitting any changes to repositories in the PnP organization, please follow these recommendations.
+Use a descriptive, lowercase, hyphen-separated folder name. Do not use periods
+or spaces. Skill names must match the `name` in `SKILL.md` and follow the
+[Skill Schema Specification](./SKILL-SCHEMA.md).
 
-* Always fork the repository to your own account before making your modifications
-* Do not combine multiple changes to one pull request. For example, submit any samples and documentation updates using separate PRs
-* If your pull request shows merge conflicts, make sure to update your local main to be a mirror of what's in the main repo before making your modifications
-* If you are submitting multiple samples, please create a specific PR for each of them
-* If you are submitting typo or documentation fix, you can combine modifications to single PR where suitable
+## Scaffold with GitHub Copilot
 
-## Sample Naming and Structure Guidelines
+The repository includes custom skills that create the correct structure and
+metadata. In GitHub Copilot Chat in VS Code, ask to:
 
-When you submit a new sample, please follow these guidelines:
+- "Create a new prompt sample"
+- "Create an agent instruction"
+- "Create a new skill sample"
 
-* Each sample must be placed in the appropriate subfolder under the `samples` folder:
-  * Prompt samples go in `samples/prompts/`
-  * Agent instructions go in `samples/agent-instructions/`
-  * Skill samples go in `samples/skills/`
-* Your sample folder must include the following content:
-  * Your solution's source code
-  * An `assets` folder, containing screenshots
-  * A `README.md` file
-* You must only submit samples for which you have the rights to share. Make sure that you asked for permission from your employer and/or clients before committing the code to an open-source repository, because once you submit a pull request, the information is public and _cannot be removed_.
+You can also copy a current sample of the same type and replace all
+sample-specific content. Do not retain another contributor's identity, URLs,
+tracking ID, or screenshots.
 
-This repository accepts three types of contributions:
+## Required sample quality
 
-| Type | Location | Core file | Description |
-|------|----------|-----------|-------------|
-| **Prompt samples** | `samples/prompts/{folder-name}/` | `README.md` | A prompt for Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
-| **Agent instructions** | `samples/agent-instructions/{agent-name}/` | `README.md` | System prompt / instructions for a Copilot Studio agent |
-| **Skill samples** | `samples/skills/{skill-name}/` | `SKILL.md` + `README.md` | A reusable instruction file that teaches GitHub Copilot a multi-step task |
+### Documentation
 
-### Sample Folder
+Every `README.md` must:
 
-* When submitting a new sample solution, please name the sample solution folder accordingly
-* Do not use period/dot in the folder name of the provided sample
+- explain the scenario, expected outcome, prerequisites, setup, and usage;
+- identify known limitations and product or license assumptions;
+- link to the primary source (`SKILL.md` for skills);
+- include contributor attribution and current version history where applicable;
+- include a representative image with meaningful alt text;
+- include the standard as-is disclaimer and best-effort support language.
 
-### README.md
+Use the exact uppercase filename `README.md`.
 
-* You will need to have a `README.md` file for your contribution, which is based on [the provided template](template/README-template.md) under the `samples` folder. Please copy this template to your project and update it accordingly. Your `README.md` must be named exactly `README.md` -- with capital letters -- as this is the information we use to make your sample public.
-* You will need to have a screenshot picture of your sample in action in the `README.md` file ("pics or it didn't happen"). The preview image should be located in the `assets` folder in the root of your sample folder.
-  * All screen shots must be located in the `assets` folder. Do not point to your own repository or any other external source
-  * Existing samples may keep a local `.png`, `.jpg`, `.jpeg`, `.webp`, or `.gif` as their primary preview.
-  * Existing samples without a contributed image use the shared fallback at `../../../images/ilovecopilot.png` in `README.md` and `https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png` in `assets/sample.json`. Do not copy the fallback into the sample folder.
-  * New contributions must include at least one sample-specific static `.png` file in `assets/`; the shared fallback is not accepted for new contributions.
-* End the README with exactly one transparent visitor tracking image using the same taxonomy-aware ID as `sample.json`:
-  * Prompt: `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-prompt-{folder-name}`
-  * Agent instruction: `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-agent-{folder-name}`
-  * Skill: `https://m365-visitor-stats.azurewebsites.net/copilot-prompts/copilotprompts-skill-{folder-name}`
-* The `name` in `assets/sample.json` must match the visitor tracking ID exactly. This taxonomy keeps IDs unique across contribution types.
-* Keep the tracker as the final nonblank line. Pull request validation rejects missing or duplicate trackers, stale repository prefixes, folder-name mismatches, metadata identity mismatches, and content placed after the tracker.
-* If you find an existing sample which is similar to yours, please extend the existing one rather than submitting a new similar sample
-  * When you update existing samples, please update also `README.md` file accordingly with information on provided changes and with your author details
-* Make sure to document each function in the `README.md`
-* If you include your social media information under **Authors** in the **Solution** section, we'll use this information to promote your contribution on social media, blog posts, and community calls.
-    * Try to use the following syntax:
-    ```md
-    folder name | Author Name ([@yourtwitterhandle](https://twitter.com/yourtwitterhandle))
-    ```
-* If you include your company name after your name, we'll try to include your company name in blog posts and community calls.
-    * Try to use the following syntax:
-    ```md
-    folder name | Author Name ([@yourtwitterhandle](https://twitter.com/yourtwitterhandle)), Company Name
-    ```
-* For multiple authors, please provide one line per author
-* If you prefer to not use social media or disclose your name, we'll still accept your sample, but we'll assume that you don't want us to promote your contribution on social media.
+### Images
 
-### Assets
+- Store contributed images in the sample's `assets` folder.
+- New samples must include at least one sample-specific static PNG.
+- Reference gallery images in `assets/sample.json`; the first image by
+  ascending `order` is the primary card preview.
+- Do not use externally hosted images, secrets, personal data, customer data,
+  or tenant-specific information.
+- Existing image-less legacy samples can use the shared fallback, but new
+  contributions cannot.
 
-* To help people understand your sample, make sure to always include at least one screenshot of your solution in action. People are more likely to click on a sample if they can preview it before installing it.
-* Please provide a high-quality screenshot
-* If possible, use a resolution of **1920x1080**
-* You can add as many screen shots as you'd like to help users understand your sample without having to download it and install it.
-* New contributions can include animated images such as `.gif` files, but must also provide at least one static `.png` file. Existing samples with another supported image format are grandfathered until their assets are refreshed.
+### Metadata
 
----
+`assets/sample.json` must contain one complete record. Keep titles,
+descriptions, products, authors, dates, source URLs, download URLs, thumbnails,
+and alt text accurate.
 
-## Skill Sample Guidelines
+The `name` must use the taxonomy-aware identity for the sample type:
 
-Skill samples are **GitHub Copilot custom skills** — reusable `SKILL.md` instruction files that teach GitHub Copilot how to perform specific, repeatable tasks. They are a new contribution type alongside prompts and agent instructions.
+- Prompt: `copilotprompts-prompt-{folder-name}`
+- Agent instruction: `copilotprompts-agent-{folder-name}`
+- Skill: `copilotprompts-skill-{folder-name}`
 
-### What Is a Skill?
+When updating an existing sample, update `updateDateTime` and its documented
+version history.
 
-A skill is a Markdown file with YAML frontmatter that GitHub Copilot reads at runtime. When a user's request matches the skill's description, Copilot follows the instructions in the file to complete a multi-step task — gathering inputs, generating outputs, and validating results.
+### README view tracker
 
-### Folder Structure
+The final nonblank line of every sample `README.md` must contain exactly one
+tracker matching the `sample.json` identity:
 
-Skill samples live in `samples/skills/{skill-name}/`:
-
-```
-samples/skills/{skill-name}/
-├── SKILL.md                  # The skill definition (core contribution)
-├── README.md                 # Documentation and usage instructions
-├── assets/
-│   └── sample.json           # Metadata for the Solution Gallery
+```markdown
+![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/{sample-identity})
 ```
 
-### Naming Rules
+Pull request validation rejects missing or duplicate trackers, stale
+repository prefixes, folder-name mismatches, metadata identity mismatches, and
+content placed after the tracker.
 
-* Use **lowercase and hyphens only** (e.g., `code-review-csharp`, `api-docs-generator`)
-* Do **NOT** use periods/dots in the folder name
-* Keep names concise — **2–5 words** that describe the task
-* Do **NOT** use app-host prefixes like `m365-` or `github-`
+## Skill-specific requirements
 
-### SKILL.md Schema
+A skill is a reusable instruction package read by GitHub Copilot. `SKILL.md`
+must include:
 
-The `SKILL.md` file must follow the schema defined in [SKILL-SCHEMA.md](./SKILL-SCHEMA.md). At minimum, it must include:
+1. YAML frontmatter with a kebab-case `name` matching the folder and a precise
+   trigger-focused `description`;
+2. required inputs and what Copilot must ask before starting;
+3. a clear output structure;
+4. atomic, ordered execution steps;
+5. non-negotiable rules and validation checks;
+6. at least one worked example when practical.
 
-1. **YAML frontmatter** with `name` (kebab-case, must match folder name) and `description` (trigger phrases)
-2. **Title** — top-level heading
-3. **Before Starting** — inputs the skill needs from the user
-4. **Output Structure** — what the skill produces
-5. **Step-by-step instructions** — `## Step N: <Action>` sections
-6. **Rules** — non-negotiable constraints
-7. **Examples** (recommended) — at least one worked input → output example
-8. **Validation Checklist** (recommended) — self-verification checks
+Skill metadata must use `["GitHub Copilot"]` for `products`. Test multiple
+trigger phrasings and verify the skill asks for missing input instead of
+guessing.
 
-### README.md for Skills
+## Validate your contribution
 
-The README should:
+From `site/`, install dependencies and run the same primary checks used in CI:
 
-* Explain what the skill does and why it's useful
-* Link to the `SKILL.md` file as the core contribution
-* List **trigger phrases** the user can say to activate the skill
-* Include **installation instructions** (copy `SKILL.md` to `.github/skills/{skill-name}/`)
-* List prerequisites (always includes GitHub Copilot and VS Code)
-* Include the standard Help and Disclaimer sections
+```powershell
+npm ci
+npm run validate:readme-trackers
+npm run build
+npm run test:e2e
+```
 
-### sample.json for Skills
+The build validates metadata ingestion, safe README rendering, local images,
+generated routes, and internal links. Browser tests cover catalog behavior,
+responsive layouts, themes, tracking images, and accessibility.
 
-The metadata file follows the same format as other samples, with these specifics:
+## Submit a pull request
 
-* `products` must be `["GitHub Copilot"]`
-* `url` must point to `samples/skills/{skill-name}`
-* `name` must follow the pattern `copilotprompts-skill-{skill-name}`
+1. Fork the repository and create a branch from the latest `main`.
+2. Add and validate one focused contribution.
+3. Commit with a descriptive message.
+4. Push the branch and open a pull request against `pnp/copilot-prompts:main`.
+5. Complete the pull request checklist and respond to review feedback.
 
-### Scaffolding with GitHub Copilot
+Most contributions require the
+[Microsoft Contributor License Agreement](https://cla.opensource.microsoft.com/).
+The CLA bot will guide you; it is normally required only once.
 
-You can scaffold a new skill sample automatically! Open GitHub Copilot Chat in VS Code and say:
+Do not delete your contribution branch until the pull request is closed.
 
-* *"Create a new skill sample"*
-* *"Scaffold a new skill"*
-* *"Contribute a skill"*
+## Getting help
 
-### Best Practices for Writing Skills
+If the process is unfamiliar, join a free
+[Sharing is Caring](https://pnp.github.io/sharing-is-caring/) community session.
+For repository-specific contribution questions, use the issue forms. General
+Microsoft Copilot product questions belong in official Microsoft support and
+product-community channels.
 
-1. **Be specific in the description** — include exact trigger phrases users might say
-2. **Ask before assuming** — define required inputs and instruct Copilot to ask for missing ones
-3. **Show, don't just tell** — include at least one worked example
-4. **Keep steps atomic** — one action per step; 3–7 steps is ideal
-5. **Define hard rules** — prevent common mistakes explicitly
-6. **Test your skill** — try triggering it with different phrasings before submitting
-7. **One skill = one task** — if it does two unrelated things, split it into two skills
-
----
-
-## Submitting Pull Requests
-
-> If you aren't familiar with how to contribute to open-source repositories using GitHub, or if you find the instructions on this page confusing, [sign up](https://forms.office.com/Pages/ResponsePage.aspx?id=KtIy2vgLW0SOgZbwvQuRaXDXyCl9DkBHq4A2OG7uLpdUREZVRDVYUUJLT1VNRDM4SjhGMlpUNzBORy4u) for one of our [Sharing is Caring](https://pnp.github.io/sharing-is-caring/#pnp-sic-events) events. It's completely free, and we'll guide you through the process.
-
-Here's a high-level process for submitting new samples or updates to existing ones.
-
-1. Sign the Contributor License Agreement (see below)
-2. Fork this repository [pnp/copilot-prompts](https://github.com/pnp/copilot-prompts) to your GitHub account
-3. Create a new branch from the `main` branch for your fork for the contribution
-4. Include your changes to your branch
-5. Commit your changes using descriptive commit message. These are used to track changes on the repositories for monthly communications
-6. Create a pull request in your own fork and target the `main` branch
-7. Fill up the provided PR template with the requested details
-
-Before you submit your pull request consider the following guidelines:
-
-* Search [GitHub](https://github.com/pnp/copilot-prompts/pulls) for an open or closed Pull Request which relates to your submission. You don't want to duplicate effort.
-* Make sure you have a link in your local cloned fork to the [pnp/copilot-prompts](https://github.com/pnp/copilot-prompts):
-
-  ```shell
-  # check if you have a remote pointing to the Microsoft repo:
-  git remote -v
-
-  # if you see a pair of remotes (fetch & pull) that point to https://github.com/pnp/copilot-prompts, you're ok... otherwise you need to add one
-
-  # add a new remote named "upstream" and point to the Microsoft repo
-  git remote add upstream https://github.com/pnp/copilot-prompts.git
-  ```
-
-* Make your changes in a new git branch:
-
-  ```shell
-  git checkout -b my-prompt main
-  ```
-
-* Ensure your fork is updated and not behind the upstream **copilot-prompts** repo. Refer to these resources for more information on syncing your repo:
-  * [GitHub Help: Syncing a Fork](https://help.github.com/articles/syncing-a-fork/)
-  * [Keep Your Forked Git Repo Updated with Changes from the Original Upstream Repo](http://www.andrewconnell.com/blog/keep-your-forked-git-repo-updated-with-changes-from-the-original-upstream-repo)
-  * For a quick cheat sheet:
-
-    ```shell
-    # assuming you are in the folder of your locally cloned fork....
-    git checkout main
-
-    # assuming you have a remote named `upstream` pointing official **copilot-prompts** repo
-    git fetch upstream
-
-    # update your local main to be a mirror of what's in the main repo
-    git pull --rebase upstream main
-
-    # switch to your branch where you are working, say "my-prompt"
-    git checkout my-prompt
-
-    # update your branch to update it's fork point to the current tip of main & put your changes on top of it
-    git rebase main
-    ```
-
-* Push your branch to GitHub:
-
-  ```shell
-  git push origin my-prompt
-  ```
-
-## Merging your Existing GitHub Projects with this Repository
-
-If the sample you wish to contribute is stored in your own GitHub repository, you can use the following steps to merge it with this repository:
-
-* Fork the `copilot-prompts` repository from GitHub
-* Create a local git repository
-
-    ```shell
-    md copilot-prompts
-    cd copilot-prompts
-    git init
-    ```
-
-* Pull your forked copy of `copilot-prompts` into your local repository
-
-    ```shell
-    git remote add origin https://github.com/yourgitaccount/copilot-prompts.git
-    git pull origin main
-    ```
-
-* Pull your other project from GitHub into the appropriate subfolder of your local copy of `copilot-prompts`
-
-    ```shell
-    git subtree add --prefix=samples/prompts/projectname https://github.com/yourgitaccount/projectname.git main
-    ```
-
-* Push the changes up to your forked repository
-
-    ```shell
-    git push origin main
-    ```
-
-## Signing the CLA
-
-Before we can accept your pull requests you will be asked to sign electronically Contributor License Agreement (CLA), which is a pre-requisite for any contributions all PnP repositories. This will be one-time process, so for any future contributions you will not be asked to re-sign anything. After the CLA has been signed, our PnP core team members will have a look at your submission for a final verification of the submission. Please do not delete your development branch until the submission has been closed.
-
-You can find Microsoft CLA from the following address - [https://cla.microsoft.com](https://cla.microsoft.com/).
-
-Thank you for your contribution.
+Thank you for contributing.
 
 > Sharing is caring.
 

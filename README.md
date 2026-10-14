@@ -1,110 +1,113 @@
-# Copilot Prompts
+# Copilot Prompt Gallery
 
-This repository contains sample prompts and agent instructions for Microsoft Copilot, GitHub Copilot, and Microsoft 365 Copilot. We welcome community contributions — if you have a great prompt or agent idea, please share your work and help others!
+**[Explore the Copilot Prompt Gallery](https://pnp.github.io/copilot-prompts/)**
+
+The gallery is the primary way to discover, search, filter, and download the
+community's prompts, agent instructions, and reusable skills for Microsoft 365
+Copilot, Microsoft Copilot, and GitHub Copilot.
+
+> [!IMPORTANT]
+> This repository is a community effort maintained by volunteers in the
+> [Microsoft 365 & Power Platform Community](https://aka.ms/community/home).
+> Samples are provided as-is, are not Microsoft products, and do not include
+> official Microsoft support or a service-level agreement. See
+> [SUPPORT.md](./SUPPORT.md) for the community's best-effort support policy.
 
 <!-- SAMPLE-COUNTS:START -->
-| 🗂️ Prompt Samples | 🤖 Agent Instructions | 🛠️ Skills |
+| Prompt samples | Agent instructions | Skills |
 |:---:|:---:|:---:|
 | **118** | **31** | **10** |
 <!-- SAMPLE-COUNTS:END -->
 
-> **Disclaimer:** The sample prompts provided in this repository are for demonstration purposes. They may not always be accurate or suitable for your specific use case. Please use them at your own discretion and review and modify them as necessary. By using the prompts in this repository, you acknowledge these limitations and agree to use the content responsibly. The maintainers/authors are not liable for any inaccuracies or issues that arise from their use.
-> **Use of GitHub Avatars:** By contributing to this project, you grant us permission to use your GitHub avatar in our "Prompt of the Week Kudos" posts on LinkedIn. If you prefer a different photo or wish to opt out, please [open an issue](https://github.com/pnp/copilot-prompts/issues/new) or contact us directly.
+## Find and use a sample
 
-## Have ideas, issues, or questions?
+Start in the **[gallery](https://pnp.github.io/copilot-prompts/)**. Each sample
+page provides:
 
-Please [create an issue](https://github.com/pnp/copilot-prompts/issues/new) — we'd love to hear from you.
+- a representative preview and concise description;
+- product, contributor, creation, and update metadata;
+- the contributor's setup, prerequisites, and usage documentation;
+- links to view the source or download the sample.
 
-## Authors
+Review the sample-specific documentation before use. Prompts and instructions
+can produce incomplete or inaccurate results, and requirements differ between
+Copilot products, tenants, licenses, and organizational policies. Validate and
+adapt every sample for your own security, privacy, compliance, and governance
+requirements.
 
-This repository's contributors are community members who volunteered their time to share prompt samples.
+Source files remain available under [`samples`](./samples) for contributors and
+advanced users.
 
-## How to use this repo
+## What the gallery contains
 
-Go to the [samples](https://github.com/pnp/copilot-prompts/tree/main/samples) folder, select a prompts or agent-instructions or skills to see subfolders in them which are the samples of each type. Follow the instructions in its `readme.md`. Be sure to check the prerequisites before you get started.
+| Type | Source location | Purpose |
+| --- | --- | --- |
+| Prompt | `samples/prompts/{folder-name}/` | A reusable instruction for a focused task or outcome |
+| Agent instruction | `samples/agent-instructions/{folder-name}/` | Instructions that define an agent's role, process, tone, and boundaries |
+| Skill | `samples/skills/{folder-name}/` | A `SKILL.md` package that teaches GitHub Copilot a repeatable multi-step task |
 
-![how to use this repo image](./images/how-to.png)
+Every sample includes a canonical `README.md` and `assets/sample.json`. Skills
+also include `SKILL.md`; see the [Skill Schema Specification](./SKILL-SCHEMA.md).
 
-## Contributions
+## Contribute
 
-Samples are submitted by Microsoft's product groups and the [Microsoft 365 and Power Platform community](http://aka.ms/m365pnp). We welcome community contributions — please review our [Contribution Guidance](./CONTRIBUTING.md) before submitting a pull request.
+We welcome new samples, improvements, documentation fixes, and issue reports.
+Before starting:
 
-Contributors to this repository are recognized with the **Prompt Pro Microsoft 365 & Power Platform Community Credly badge**. [Learn how community recognition badges work](https://aka.ms/community/recognition).
+1. Search the [gallery](https://pnp.github.io/copilot-prompts/) and
+   [existing issues](https://github.com/pnp/copilot-prompts/issues) to avoid
+   duplicate work.
+2. Read the [Contribution Guidance](./CONTRIBUTING.md).
+3. Keep each pull request focused on one sample or one logical change.
+
+GitHub Copilot can scaffold all three contribution types in VS Code:
+
+- "Create a new prompt sample"
+- "Create an agent instruction"
+- "Create a new skill sample"
+
+Contributors are recognized with the **Prompt Pro Microsoft 365 & Power
+Platform Community Credly badge**. Learn how
+[community recognition badges](https://aka.ms/community/recognition) are
+issued and shared.
 
 ![Prompt Pro Microsoft 365 and Power Platform Community Credly badge](./images/contributor-badge.png)
 
-This repository has three types of samples:
+By contributing, you also permit the community to display the GitHub avatar
+listed in your sample metadata on the gallery and in community recognition
+posts. To use a different image or opt out of promotional posts, contact the
+maintainers through a
+[repository issue](https://github.com/pnp/copilot-prompts/issues/new/choose).
 
-| Type | Location | What it is |
-|------|----------|------------|
-| **Prompt samples** | `samples/prompts/{folder-name}/` | A prompt you use directly in Microsoft 365 Copilot, GitHub Copilot, or Microsoft Copilot |
-| **Agent instruction samples** | `samples/agent-instructions/{agent-name}/` | A system prompt / agent instructions you paste into Copilot Studio to create an agent |
-| **Skill samples** | `samples/skills/{skill-name}/` | A reusable `SKILL.md` instruction file that teaches GitHub Copilot a multi-step task |
+## Support and issue routing
 
-Prompt and agent instruction samples share the same structure: a `readme.md` file and an `assets/` folder containing a `sample.json` metadata file. Skill samples add a `SKILL.md` file — the core skill definition that GitHub Copilot reads at runtime. See the [Skill Schema Spec](./SKILL-SCHEMA.md) for the full schema.
+- For a problem with a specific community sample, first review that sample's
+  documentation, then search or open a
+  [GitHub issue](https://github.com/pnp/copilot-prompts/issues/new/choose).
+- For a new sample idea or gallery improvement, use the matching issue form.
+- For general Microsoft Copilot product, licensing, tenant, or service
+  questions, use official Microsoft documentation, your Microsoft support
+  channel, or the relevant product community. This repository cannot provide
+  product support.
+- For suspected security vulnerabilities, follow
+  [SECURITY.md](./SECURITY.md) and do not disclose sensitive details in a
+  public issue.
 
-You can contribute in two ways — **using GitHub Copilot** to scaffold everything automatically, or **traditionally** by creating files manually.
-
----
-
-### Option 1: Contribute using GitHub Copilot (recommended)
-
-With GitHub Copilot in VS Code, built-in skills can scaffold your sample with the correct folder structure, README, and `sample.json`.
-
-#### For prompt samples
-
-Open GitHub Copilot Chat and say:
-
-- *"Create a new prompt sample"*
-- *"Scaffold a new prompt sample"*
-
-#### For agent instruction / system prompt samples
-
-Open GitHub Copilot Chat and say:
-
-- *"Create an agent instruction"*
-- *"Create a system prompt sample"*
-- *"Build an agent"*
-
-#### For skill samples
-
-Open GitHub Copilot Chat and say:
-
-- *"Create a new skill sample"*
-- *"Scaffold a new skill"*
-- *"Contribute a skill"*
-
-GitHub Copilot will ask for the required details and generate the folder with all files.
-
-> **Note:** After scaffolding, add a screenshot to the `assets/` folder and update the `sample.json` thumbnails.
-
----
-
-### Option 2: Contribute traditionally
-
-1. **Fork** the repository at https://aka.ms/copilot-prompt-library.
-2. **Clone** your fork and create a new branch.
-3. **Add a new folder:**
-   - **Prompt samples:** `samples/prompts/<apphost-functionality-prompt>` (e.g., `ppt-sales-report-prompt`)
-   - **Agent instructions:** `samples/agent-instructions/<agent-name>` (e.g., `communication-assistant`)
-   - **Skills:** `samples/skills/<skill-name>` (e.g., `code-review-csharp`)
-4. **Add a `readme.md`** — copy one from an existing sample of the same type and update it. For agent instruction samples, place your full system prompt in the **Instruction** section inside a fenced code block. For skill samples, also create a `SKILL.md` file following the [Skill Schema Spec](./SKILL-SCHEMA.md).
-5. **Add an `assets/` folder** with screenshots and a `sample.json` file (copy from any existing sample and update the metadata).
-
-> The `sample.json` feeds the [M365 Solution Gallery](https://adoption.microsoft.com/en-us/sample-solution-gallery/) for discoverability — make sure it's accurate.
+Assistance from maintainers and contributors is voluntary and provided on a
+best-effort basis. See [SUPPORT.md](./SUPPORT.md).
 
 ## Resources
 
-- [Microsoft Copilot for Microsoft 365](https://aka.ms/Copilot-For-M365)
-- [Copilot Lab](https://copilot.cloud.microsoft/prompts)
-- [GitHub Copilot Custom Skills](https://copilot.github.com/)
-- [Skill Schema Specification](./SKILL-SCHEMA.md)
+- [Microsoft Copilot documentation](https://learn.microsoft.com/copilot/)
+- [Microsoft 365 Copilot documentation](https://learn.microsoft.com/microsoft-365-copilot/)
+- [GitHub Copilot documentation](https://docs.github.com/copilot)
+- [Microsoft 365 & Power Platform Community](https://aka.ms/community/home)
+- [Code of Conduct](./CODE_OF_CONDUCT.md)
 
 ## Gallery development
 
-The static gallery is implemented in `site/` and reads every sample's canonical
-`assets/sample.json` and `README.md` during the build.
-Use Node.js 22.19.0 or newer.
+The static Astro gallery reads every sample's `assets/sample.json` and
+`README.md` during the build. Use Node.js 22.19.0 or newer.
 
 ```powershell
 cd site
@@ -112,19 +115,24 @@ npm ci
 npm run dev
 ```
 
-Run `npm run build` and `npm run test:e2e` before submitting gallery changes.
-The production build is published as the repository's GitHub Pages site at
-[pnp.github.io/copilot-prompts](https://pnp.github.io/copilot-prompts/) by
-`.github/workflows/deploy-site.yml`. In the repository settings, use **GitHub
-Actions** as the Pages source and set the repository website URL to the same
-gallery address.
+Before submitting gallery changes, run:
 
+```powershell
+npm run validate:readme-trackers
+npm run build
+npm run test:e2e
+```
 
+The [deployment workflow](./.github/workflows/deploy-site.yml) publishes the
+validated artifact to
+[pnp.github.io/copilot-prompts](https://pnp.github.io/copilot-prompts/).
 
-## Code of Conduct
+## Disclaimer
 
-This repository has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+**SAMPLES AND DOCUMENTATION ARE PROVIDED AS-IS WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE,
+MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
-> Sharing is caring!
+> Sharing is caring.
 
 ![](https://m365-visitor-stats.azurewebsites.net/copilot-prompts/README.md)

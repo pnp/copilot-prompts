@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Explore the Copilot Prompt Gallery
+    url: https://pnp.github.io/copilot-prompts/
+    about: Find sample documentation, source links, and downloads.
+  - name: Read the support policy
+    url: https://github.com/pnp/copilot-prompts/blob/main/SUPPORT.md
+    about: Understand best-effort community support and issue routing.
+  - name: Report a Microsoft product security vulnerability
+    url: https://aka.ms/security.md/msrc/create-report
+    about: Do not disclose security vulnerabilities in a public issue.
