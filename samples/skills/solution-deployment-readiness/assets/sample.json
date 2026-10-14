@@ -1,0 +1,34 @@
+[
+  {
+    "name": "copilotprompts-skill-solution-deployment-readiness",
+    "source": "pnp",
+    "title": "Solution Deployment Readiness Review",
+    "shortDescription": "Review Power Platform deployment settings with explicit mapping findings and target verification gaps.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/solution-deployment-readiness",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/solution-deployment-readiness",
+    "longDescription": [
+      "Compare a PAC-generated settings template with target deployment settings using an offline Python checker. Explain missing mappings and connector mismatches while distinguishing static coverage from live deployment readiness."
+    ],
+    "creationDateTime": "2026-10-10",
+    "updateDateTime": "2026-10-13",
+    "products": [
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/solution-deployment-readiness/assets/demo.png",
+        "alt": "Offline deployment settings review report with synthetic fixtures; target readiness unverified"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "summitbaj",
+        "pictureUrl": "https://github.com/summitbaj.png",
+        "name": "Summit Bajracharya"
+      }
+    ]
+  }
+]
