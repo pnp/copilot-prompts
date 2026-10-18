@@ -14,9 +14,9 @@ Copilot, Microsoft Copilot, and GitHub Copilot.
 > [SUPPORT.md](./SUPPORT.md) for the community's best-effort support policy.
 
 <!-- SAMPLE-COUNTS:START -->
-| Prompt samples | Agent instructions | Skills |
+| 🗂️ Prompt Samples | 🤖 Agent Instructions | 🛠️ Skills |
 |:---:|:---:|:---:|
-| **118** | **31** | **10** |
+| **119** | **31** | **10** |
 <!-- SAMPLE-COUNTS:END -->
 
 ## Find and use a sample
