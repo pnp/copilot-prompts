@@ -1,8 +1,8 @@
 # Clean AI Writing: Audit and Rewrite AI-Sounding Text
 
-![Screenshot of the prompt in use](./assets/demo.png)
-![Screenshot of the prompt in use 2](./assets/demo2.png)
-![Screenshot of the prompt in use 2](./assets/demo3.png)
+![Copilot prompt to remove AI patterns in text](./assets/demo.png)
+![Copilot listing AI writing issues in a draft and returning a cleaned-up rewrite](./assets/demo2.png)
+![Copilot rewriting original text with AI generated patterns](./assets/demo3.png)
 
 ## Summary
 
@@ -84,6 +84,7 @@ The patterns are signals, not proof. People write this way too, especially under
 Version|Date|Comments
 -------|----|--------
 1.0|September 27, 2026|Initial release
+1.1|October 19, 2026|Clarify screenshot descriptions, prerequisites and limitations
 
 ## Instructions 📝
 
@@ -105,6 +106,15 @@ Version|Date|Comments
 ## Prerequisites
 
 * [Copilot for Microsoft 365](https://developer.microsoft.com/microsoft-365/dev-program)
+* Access to Microsoft 365 Copilot in the app you plan to use. Availability depends on your account, license and your organization's settings.
+* A draft you have permission to share with Copilot.
+* Optional: access to Copilot in Word or Microsoft Copilot Studio for the corresponding usage suggestions above. These may require additional licenses and administrator approval.
+
+## Limitations
+
+- This is an editing aid, not an AI authorship detector. Flagged patterns do not prove that text was AI-generated.
+- Copilot may miss patterns, change meaning or fail to follow every formatting rule. Review the rewrite against your original, including technical details and the reported em dash count.
+- Results vary by language and text type. Use flag-only mode when preserving deliberate stylistic choices is important.
 
 ## Help
 

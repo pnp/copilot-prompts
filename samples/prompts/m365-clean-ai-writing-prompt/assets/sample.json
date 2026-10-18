@@ -10,7 +10,7 @@
       "Paste an email, Teams message, meeting recap, report, documentation or LinkedIn post and Copilot flags AI writing patterns (overused words, em dashes, formulaic sentence shapes, filler transitions, chatbot leftovers) with a severity, then rewrites the text with rules tuned to that type of work text and runs a second pass. A flag-only mode lists the issues without changing the text."
     ],
     "creationDateTime": "2026-09-27",
-    "updateDateTime": "2026-09-27",
+    "updateDateTime": "2026-10-19",
     "products": [
       "Microsoft 365 Copilot"
     ],
