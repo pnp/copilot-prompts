@@ -1,0 +1,47 @@
+[
+  {
+    "name": "copilotprompts-skill-copilot-studio-eval-test-set",
+    "source": "pnp",
+    "title": "Copilot Studio Evaluation Test Set Skill",
+    "shortDescription": "A GitHub Copilot custom skill that writes an importable Copilot Studio evaluation test set, including information gap and out of scope questions, with expected responses.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/copilot-studio-eval-test-set",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/copilot-studio-eval-test-set",
+    "longDescription": [
+      "A reusable GitHub Copilot skill that turns an agent's instructions, topics and knowledge descriptions into a CSV that imports into Copilot Studio single response evaluation. It plans a mix of in scope, rephrased, information gap, out of scope and tool questions, writes an expected response for each, flags facts it cannot know for the maker to confirm, and checks the file against the documented import limits. Install it by copying the SKILL.md file into your repository's .github/skills/copilot-studio-eval-test-set/ folder."
+    ],
+    "creationDateTime": "2026-10-08",
+    "updateDateTime": "2026-10-08",
+    "products": [
+      "GitHub Copilot",
+      "Microsoft Copilot Studio"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/images/ilovecopilot.png",
+        "alt": "Copilot Studio Evaluation Test Set Skill preview"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "OwnOptic",
+        "pictureUrl": "https://github.com/OwnOptic.png",
+        "name": "Elliot Margot"
+      }
+    ],
+    "references": [
+      {
+        "name": "Create a single response test set",
+        "description": "Copilot Studio documentation for single response evaluation and the import file format",
+        "url": "https://learn.microsoft.com/microsoft-copilot-studio/analytics-agent-evaluation-create"
+      },
+      {
+        "name": "GitHub Copilot",
+        "description": "GitHub Copilot",
+        "url": "https://copilot.github.com/"
+      }
+    ]
+  }
+]
