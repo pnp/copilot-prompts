@@ -1,0 +1,47 @@
+[
+  {
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    "name": "copilotprompts-copilot-studio-it-helpdesk-triage-agent",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "creationDateTime": "2026-03-02T00:00:00Z",
+    "updateDateTime": "2026-08-29",
+    "title": "IT Helpdesk Triage Agent",
+    "shortDescription": "Copilot Studio agent that guides employees through self-service IT troubleshooting by device type and issue, escalating with a ticket summary if unresolved.",
+    "longDescription": [
+      "This Copilot Studio prompt generates an IT helpdesk agent that uses progressive triage: device type selection, issue category selection, three guided troubleshooting steps with per-step resolution checks, and automatic ticket creation with employee details if unresolved. Integrates with Power Automate for ticket creation in ServiceNow, Dataverse, or SharePoint."
+    ],
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/copilot-studio-it-helpdesk-triage-agent",
+    "products": [
+      "Copilot Studio",
+      "Power Platform",
+      "Power Automate",
+      "Microsoft Teams"
+    ],
+    "tags": [
+      "IT SUPPORT",
+      "HELPDESK",
+      "TRIAGE",
+      "AGENT",
+      "EMPLOYEE EXPERIENCE"
+    ],
+    "categories": [
+      "Copilot Studio"
+    ],
+    "metadata": [
+      {
+        "key": "prompt",
+        "value": "Create an agent that helps employees troubleshoot common IT issues by device type and issue category, with three troubleshooting steps and ticket escalation."
+      }
+    ],
+    "thumbnails": [],
+    "authors": [
+      {
+        "gitHubAccount": "OwnOptic",
+        "name": "OwnOptic",
+        "pictureUrl": "https://github.com/OwnOptic.png"
+      }
+    ],
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/copilot-studio-it-helpdesk-triage-agent"
+  }
+]
