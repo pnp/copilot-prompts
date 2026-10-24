@@ -1,0 +1,57 @@
+[
+  {
+    "name": "copilotprompts-agent-power-platform-build-advisor",
+    "source": "pnp",
+    "title": "Power Platform Build Advisor",
+    "shortDescription": "Asks who the users are, what they're licensed for, where the data lives and which constraints are real, then says whether a request should be a list, a flow, a canvas or model-driven app, a code app, a Power Pages site or an agent, and which licenses that needs.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/power-platform-build-advisor",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/power-platform-build-advisor",
+    "longDescription": [
+      "The Power Platform Build Advisor is a Copilot agent that settles what a business request should be built as before anyone opens a maker portal. It asks who the users are, what licenses they hold, where the data lives, how people will work with it and which constraints are real, then works through an ordered set of decision rules across Microsoft Lists and Forms, Power Automate flows, canvas apps, model-driven apps, Power Apps code apps, Power Pages, agents in agent builder or Copilot Studio, Teams tabs, and custom code on Azure.",
+      "The report recommends one shape and a runner-up, ties each reason to something the user said, lists the shapes ruled out, says whether a Microsoft 365 license is enough and names the plan each user group needs, then closes with governance watch-outs, assumptions for the tenant admin to confirm and a single next step. Plan names and deprecation dates follow Microsoft documentation and the Microsoft Power Platform Licensing Guide as of October 2026, including the channel-specific end of sale of Power Apps per app and the deprecation of Dataverse for Teams. It needs no knowledge sources or actions; the instruction pastes straight into agent builder or Copilot Studio."
+    ],
+    "creationDateTime": "2026-10-24",
+    "updateDateTime": "2026-10-24",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/power-platform-build-advisor/assets/demo.png",
+        "alt": "Example of the shape recommendation report the agent produces"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ari20089",
+        "pictureUrl": "https://avatars.githubusercontent.com/ari20089",
+        "name": "Arindam Choudhury"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Power Platform Licensing Guide",
+        "description": "Microsoft's current licensing guide for Power Apps, Power Automate, Power Pages and Dataverse; the source for plan names and prices.",
+        "url": "https://go.microsoft.com/fwlink/?linkid=2085130"
+      },
+      {
+        "name": "Power Apps and Power Automate licensing FAQ",
+        "description": "Microsoft Learn answers on premium connectors, pay-as-you-go, per app and guest licensing.",
+        "url": "https://learn.microsoft.com/power-platform/admin/powerapps-flow-licensing-faq"
+      },
+      {
+        "name": "Microsoft Copilot Studio billing and licensing",
+        "description": "Copilot Credits, capacity packs and pay-as-you-go for agents.",
+        "url": "https://learn.microsoft.com/microsoft-copilot-studio/billing-licensing"
+      },
+      {
+        "name": "Important changes coming in Power Platform",
+        "description": "Deprecations the advisor steers around, including Dataverse for Teams.",
+        "url": "https://learn.microsoft.com/power-platform/important-changes-coming"
+      }
+    ]
+  }
+]
