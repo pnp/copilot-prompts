@@ -1,0 +1,67 @@
+[
+  {
+    "name": "copilotprompts-agent-us-financial-services-agent-scope-writer",
+    "source": "pnp",
+    "title": "US Financial Services Agent Scope Writer",
+    "shortDescription": "Interviews you about a proposed Copilot agent for a US bank, broker-dealer, adviser or insurer, then writes a scope charter in a fixed structure: risk tier, permitted tasks, refusals written as the sentences the customer will read, hand-off triggers, disclosures, data boundaries, and the Microsoft control and owner behind each requirement.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/us-financial-services-agent-scope-writer",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/agent-instructions/us-financial-services-agent-scope-writer",
+    "longDescription": [
+      "The US Financial Services Agent Scope Writer is a Copilot agent for solution architects and AI governance teams in US financial services firms. Given a proposed agent built with agent builder or Copilot Studio, it asks about users, regulators and states, line of business, content, data, actions, channel and existing governance, then applies an ordered set of classification rules: credit and underwriting decisions, recommendations under Regulation Best Interest and FINRA rules, customer-facing disclosure and communications with the public, complaints and disputes, vulnerable customers, material nonpublic information and sanctions, tax and legal questions, employee-facing agents, and any write action.",
+      "The charter it writes has a fixed structure, from risk tier and permitted tasks through refusals phrased as the sentences the end user will read, hand-off triggers, disclosures, data boundaries, a controls list mapping each requirement to a Microsoft Purview, Copilot Studio or Microsoft Entra feature and an owner, audit evidence, pre-launch tests, assumptions and sign-offs. Regulatory and platform references are current to October 2026, including the replacement of SR 11-7 by SR 26-2, the withdrawal of the CFPB adverse action circulars, FINRA's guidance on generative AI, and the current Copilot Studio transcript and Purview retention behavior. It is not legal advice. It gives compliance a draft to mark up instead of a blank page."
+    ],
+    "creationDateTime": "2026-10-24",
+    "updateDateTime": "2026-10-24",
+    "products": [
+      "Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/agent-instructions/us-financial-services-agent-scope-writer/assets/demo.png",
+        "alt": "Example of the agent scope charter the agent produces"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ari20089",
+        "pictureUrl": "https://avatars.githubusercontent.com/ari20089",
+        "name": "Arindam Choudhury"
+      }
+    ],
+    "references": [
+      {
+        "name": "FINRA Regulatory Notice 24-09",
+        "description": "FINRA's reminder that its rules, including supervision under Rule 3110 and communications under Rule 2210, apply to generative AI output.",
+        "url": "https://www.finra.org/rules-guidance/notices/24-09"
+      },
+      {
+        "name": "FINRA Rule 2210 FAQ",
+        "description": "Includes FINRA's answers on supervising chatbot communications under Rules 2210 and 3110.",
+        "url": "https://www.finra.org/rules-guidance/guidance/faqs/advertising-regulation"
+      },
+      {
+        "name": "CFPB: Chatbots in consumer finance",
+        "description": "The CFPB's findings on chatbots that block access to a person, miss disputes or give inaccurate information.",
+        "url": "https://www.consumerfinance.gov/data-research/research-reports/chatbots-in-consumer-finance/"
+      },
+      {
+        "name": "Federal Reserve SR 26-2, Revised Guidance on Model Risk Management",
+        "description": "The April 2026 guidance that replaced SR 11-7 and leaves generative and agentic AI outside its scope.",
+        "url": "https://www.federalreserve.gov/supervisionreg/srletters/sr2602.htm"
+      },
+      {
+        "name": "Microsoft Purview data security and compliance protections for Copilot Studio agents",
+        "description": "Which Purview capabilities cover Copilot Studio agents, and which channels are metered.",
+        "url": "https://learn.microsoft.com/purview/ai-copilot-studio"
+      },
+      {
+        "name": "Copilot Studio security and governance",
+        "description": "Microsoft's overview of authentication, data policies, moderation, Entra Agent ID and Agent 365 controls for agents.",
+        "url": "https://learn.microsoft.com/microsoft-copilot-studio/security-and-governance"
+      }
+    ]
+  }
+]
