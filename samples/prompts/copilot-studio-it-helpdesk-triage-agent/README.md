@@ -35,7 +35,7 @@ Version|Date|Comments
 
 1. Navigate to [Copilot Studio](https://copilotstudio.microsoft.com/) and click **Create a copilot**
 2. Select **Create from description with Copilot**
-3. Copy the content from [prompt.md](./en-us/prompt.md) and paste it as the description
+3. Copy the text in the [Prompt section](#prompt) above and paste it as the description
 4. Follow the Copilot Studio setup wizard:
    - When asked for a name, enter: `IT Helpdesk Assistant`
    - When asked for a website, skip or enter your internal IT portal URL
