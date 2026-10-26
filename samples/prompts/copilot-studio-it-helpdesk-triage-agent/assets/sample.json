@@ -1,11 +1,11 @@
 [
   {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-    "name": "copilotprompts-copilot-studio-it-helpdesk-triage-agent",
-    "version": "1.0.0.0",
+    "name": "copilotprompts-prompt-copilot-studio-it-helpdesk-triage-agent",
+    "version": "1.1.0.0",
     "source": "pnp",
     "creationDateTime": "2026-03-02T00:00:00Z",
-    "updateDateTime": "2026-08-29",
+    "updateDateTime": "2026-10-26",
     "title": "IT Helpdesk Triage Agent",
     "shortDescription": "Copilot Studio agent that guides employees through self-service IT troubleshooting by device type and issue, escalating with a ticket summary if unresolved.",
     "longDescription": [
@@ -34,7 +34,14 @@
         "value": "Create an agent that helps employees troubleshoot common IT issues by device type and issue category, with three troubleshooting steps and ticket escalation."
       }
     ],
-    "thumbnails": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/copilot-studio-it-helpdesk-triage-agent/assets/ilovecopilot.png",
+        "alt": "IT Helpdesk Triage Agent preview"
+      }
+    ],
     "authors": [
       {
         "gitHubAccount": "OwnOptic",
