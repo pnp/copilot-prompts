@@ -1,0 +1,57 @@
+[
+  {
+    "name": "copilotprompts-skill-power-apps-code-apps-rpi",
+    "source": "pnp",
+    "title": "Power Apps Code Apps RPI for GitHub Copilot",
+    "shortDescription": "A GitHub Copilot skill that runs the Hyper Velocity Engineering (HVE) Research, Plan, Implement, Review loop on a Power Apps code app, with evidence-backed fit and licensing checks before planning and a review before anything is pushed.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/power-apps-code-apps-rpi",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/power-apps-code-apps-rpi",
+    "longDescription": [
+      "Power Apps code apps are the pro-code option in Power Platform. They're single-page apps in React, Vue or another JavaScript or TypeScript framework, hosted by Power Apps, with Microsoft Entra authentication and connector access from code. Microsoft's official code-apps plugin for GitHub Copilot scaffolds, wires data and deploys them, and hve-core, Microsoft's Hyper Velocity Engineering (HVE) toolkit, brings the Research, Plan, Implement, Review workflow. The questions that sink a code app later on sit outside both tools' remit: the shape being wrong for the job, an audience nobody has licensed, a connector the data loss prevention (DLP) policy blocks, an offline requirement the platform has no documented way to meet, or a tenant URL sitting in a publicly served bundle.",
+      "This skill wraps HVE's phases around the official tooling. Research gathers evidence (each item gets an ID) and is allowed to end the project early. The plan names the exact plugin skill or pa command for every task and carries a risk row for each unresolved decision and unsupported feature. Implementation is delegated to the plugin or the pa CLI, with a confirmation gate before any push or share. Review looks at the production pitfalls the build tooling doesn't, and routes each finding back to the phase that should fix it. Artifacts land under .copilot-tracking/ in hve-core's layout. Install by copying SKILL.md into your repository's .github/skills/power-apps-code-apps-rpi/ folder."
+    ],
+    "creationDateTime": "2026-10-23",
+    "updateDateTime": "2026-10-23",
+    "products": [
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/power-apps-code-apps-rpi/assets/demo.png",
+        "alt": "Example of the research verdict, plan and pre-publish review the skill produces"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ari20089",
+        "pictureUrl": "https://github.com/ari20089.png",
+        "name": "Arindam Choudhury"
+      }
+    ],
+    "references": [
+      {
+        "name": "Power Apps code apps overview",
+        "description": "Features, prerequisites, licensing and limitations of code apps.",
+        "url": "https://learn.microsoft.com/power-apps/developer/code-apps/overview"
+      },
+      {
+        "name": "Power Apps CLI command reference",
+        "description": "The pa CLI used to initialize, connect and publish code apps.",
+        "url": "https://learn.microsoft.com/power-apps/developer/code-apps/reference/cli"
+      },
+      {
+        "name": "microsoft/power-platform-skills code-apps plugin",
+        "description": "Microsoft's official Copilot plugin that this skill delegates implementation to.",
+        "url": "https://github.com/microsoft/power-platform-skills/tree/main/plugins/code-apps"
+      },
+      {
+        "name": "microsoft/hve-core",
+        "description": "Hyper Velocity Engineering components, including the RPI workflow and tracking conventions.",
+        "url": "https://github.com/microsoft/hve-core"
+      }
+    ]
+  }
+]
