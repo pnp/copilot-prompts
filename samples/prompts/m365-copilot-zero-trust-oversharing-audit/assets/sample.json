@@ -1,0 +1,47 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-copilot-zero-trust-oversharing-audit",
+    "source": "pnp",
+    "title": "Microsoft 365 Copilot Zero-Trust & Oversharing Risk Audit",
+    "shortDescription": "Audits tenant data oversharing, 'Everyone except external users' exposure, sensitivity label coverage, and orphaned workspaces before and during Microsoft 365 Copilot rollout.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-zero-trust-oversharing-audit",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-copilot-zero-trust-oversharing-audit",
+    "longDescription": [
+      "This enterprise-grade prompt evaluates organization-wide data exposure risks to prepare for or harden Microsoft 365 Copilot deployments. Because Copilot respects existing user permissions, overshared SharePoint sites, open Teams channels, and unclassified sensitive files create immediate data leakage risks when Copilot grounds responses on broad permissions like 'Everyone except external users' (EEEU).",
+      "The prompt acts as a Microsoft 365 Zero-Trust Architect and Data Security Lead, analyzing tenant governance metrics to deliver an Executive Security Scorecard, a detailed Data Exposure Risk Matrix, sensitivity classification gap analysis, and a prioritized 3-phase remediation roadmap complete with PowerShell commands for immediate operational remediation."
+    ],
+    "creationDateTime": "2026-10-23",
+    "updateDateTime": "2026-10-23",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-copilot-zero-trust-oversharing-audit/assets/demo.png",
+        "alt": "Executive Security Scorecard and Risk Matrix from Microsoft 365 Copilot Zero-Trust & Oversharing Risk Audit"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sapanpatel1230",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/304949053?v=4",
+        "name": "Sapan Patel"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot Privacy and Security",
+        "description": "Microsoft Learn guidance on data protection and zero-trust grounding in Microsoft 365 Copilot",
+        "url": "https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-privacy"
+      },
+      {
+        "name": "Microsoft Purview AI Data Security",
+        "description": "Strengthen data security posture and prevent oversharing for AI apps with Microsoft Purview",
+        "url": "https://learn.microsoft.com/purview/ai-microsoft-purview"
+      }
+    ]
+  }
+]
