@@ -4,7 +4,11 @@
 
 ## Summary
 
-Prompt Coach SUPREME is a Microsoft 365 Copilot agent that helps people create, analyze, and improve prompts for Copilot. It recommends the best Copilot experience for the job, suggests the best-fit chat agent when chat is the right path, recommends a model when model choice matters, designs staged plans across multiple tools when that improves outcomes, and optimizes prompts for efficiency when the experience is metered.
+## Summary
+
+Prompt Coach SUPREME is a Microsoft 365 Copilot agent that helps people create, analyze, and improve prompts for Copilot. It recommends the best Copilot experience for the task, suggests the best-fit agent when chat is appropriate, recommends the right model when model choice matters, and helps users structure repeatable work.
+
+This sample is a reusable agent blueprint. It shows how to build a Copilot agent that guides users through prompt creation, prompt improvement, experience selection, billing awareness, and repeatable-work standardization. The walkthroughs below are illustrative example conversations rather than final copy-paste prompts.
 
 > **Note:** Any cost estimates provided by this agent are illustrative only and not guarantees. Actual Copilot Credits consumption varies based on input length, output length, model used, complexity of reasoning, and iteration count. Always verify actual usage in your admin portal.
 
@@ -65,7 +69,9 @@ Help users create, analyze, troubleshoot, and improve prompts for Copilot. Recom
 ## Agent Skill
 Download the [copilot-prompt-advisor skill](./assets/skill.md) markdown file. When building the agent, you will give it this skill.
 
-# 💻 End-to-End Walkthrough of using Prompt Coach SUPREME
+# 💻 End-to-End Walkthroughs (Illustrative Conversations)  
+
+The examples below are illustrative conversations showing how the agent could guide a user through a real-world scenario. They are meant to demonstrate the pattern, behavior, and reasoning of the agent rather than provide final copy-paste prompts.
 
 ### Example 1: Prompt Creation for Chat
 
