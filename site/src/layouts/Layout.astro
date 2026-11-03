@@ -1,5 +1,5 @@
 ---
-import { GitFork, Menu, Moon, Sun } from "@lucide/astro";
+import { ArrowUpRight, GitFork, Menu, Moon, Sun } from "@lucide/astro";
 import "../styles/global.css";
 
 interface Props {
@@ -96,6 +96,9 @@ const structuredData = {
         </a>
         <div class="site-header__actions">
           <nav class="desktop-nav" aria-label="Primary navigation">
+            <a href="https://aka.ms/community/home">
+              Community <ArrowUpRight size={12} aria-hidden="true" />
+            </a>
             {navigation.map((item) => (
               <a href={sitePath(item.href)} aria-current={isCurrent(item.href) ? "page" : undefined}>
                 {item.label}
@@ -122,6 +125,9 @@ const structuredData = {
           <details class="mobile-nav">
             <summary title="Open navigation" aria-label="Open navigation"><Menu size={22} /></summary>
             <nav aria-label="Mobile navigation">
+              <a href="https://aka.ms/community/home">
+                Community <ArrowUpRight size={12} aria-hidden="true" />
+              </a>
               {navigation.map((item) => <a href={sitePath(item.href)}>{item.label}</a>)}
               <a href="https://github.com/pnp/copilot-prompts">GitHub</a>
             </nav>

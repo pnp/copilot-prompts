@@ -1,6 +1,31 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
 
+test("puts the Community link first in the navigation", async ({ page }) => {
+  await page.goto("./");
+  const samplePath = await page.locator(".component-card__footer a").first().getAttribute("href");
+  expect(samplePath).not.toBeNull();
+
+  for (const path of ["./", "getting-started/", "contributors/", "contributing/", samplePath!]) {
+    await page.goto(path);
+    const mobileMenu = page.locator(".mobile-nav");
+    const isMobile = await mobileMenu.isVisible();
+    if (isMobile) await mobileMenu.locator("summary").click();
+
+    const navigation = page.getByRole("navigation", {
+      name: isMobile ? "Mobile navigation" : "Primary navigation",
+      exact: true,
+    });
+    const communityLink = navigation.getByRole("link").first();
+    await expect(communityLink).toBeVisible();
+    await expect(communityLink).toHaveText("Community");
+    await expect(communityLink).toHaveAttribute("href", "https://aka.ms/community/home");
+    await expect(communityLink.locator("svg")).toHaveClass(/lucide-arrow-up-right/);
+    await expect(communityLink.locator("svg")).toHaveAttribute("aria-hidden", "true");
+    await expect(communityLink).not.toHaveAttribute("aria-current");
+  }
+});
+
 test("filters, sorts, and restores shareable catalog state", async ({ page }) => {
   await page.goto("./");
 
