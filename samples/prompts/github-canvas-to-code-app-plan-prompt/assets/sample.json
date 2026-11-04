@@ -1,0 +1,61 @@
+[
+  {
+    "name": "copilotprompts-prompt-github-canvas-to-code-app-plan-prompt",
+    "source": "pnp",
+    "title": "Plan a canvas app to code app migration with GitHub Copilot",
+    "shortDescription": "Paste a canvas app's screens, data sources and Power Fx, and GitHub Copilot returns a migration plan to a Power Apps code app, from the fit decision through the data layer and effort to a rebuild, keep or split recommendation.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/github-canvas-to-code-app-plan-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/github-canvas-to-code-app-plan-prompt",
+    "longDescription": [
+      "A GitHub Copilot prompt for solution architects weighing whether an existing canvas app should become a Power Apps code app. The prompt carries the platform facts as of October 2026 that decide the answer, including the Power Apps CLI and the @microsoft/power-apps client library, per-user Premium licensing, the canvas features with no code app equivalent, the limits of native Dataverse access and the flows a code app can call. Copilot asks up to three questions, then writes a plan in seven fixed sections ending in a rebuild, keep or split recommendation."
+    ],
+    "creationDateTime": "2026-10-24",
+    "updateDateTime": "2026-10-24",
+    "products": [
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/github-canvas-to-code-app-plan-prompt/assets/demo.png",
+        "alt": "GitHub Copilot Chat in Visual Studio Code producing a migration plan from a canvas app inventory"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ari20089",
+        "pictureUrl": "https://avatars.githubusercontent.com/ari20089",
+        "name": "Arindam Choudhury"
+      }
+    ],
+    "references": [
+      {
+        "name": "GitHub Copilot",
+        "description": "GitHub Copilot",
+        "url": "https://copilot.github.com/"
+      },
+      {
+        "name": "Power Apps code apps overview",
+        "description": "Features, prerequisites, licensing and limitations of code apps.",
+        "url": "https://learn.microsoft.com/power-apps/developer/code-apps/overview"
+      },
+      {
+        "name": "Connect your code app to Dataverse",
+        "description": "Limits of the native Dataverse data source.",
+        "url": "https://learn.microsoft.com/power-apps/developer/code-apps/how-to/connect-to-dataverse"
+      },
+      {
+        "name": "Power Apps CLI reference for code apps",
+        "description": "The pa commands used in the plan: init, add data-source, add flow, push.",
+        "url": "https://learn.microsoft.com/power-apps/developer/code-apps/reference/cli"
+      },
+      {
+        "name": "Add Power Automate flows to a code app",
+        "description": "The flow trigger and solution requirements the plan checks against.",
+        "url": "https://learn.microsoft.com/power-apps/developer/code-apps/how-to/add-flows"
+      }
+    ]
+  }
+]
