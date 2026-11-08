@@ -16,7 +16,7 @@ Copilot, Microsoft Copilot, and GitHub Copilot.
 <!-- SAMPLE-COUNTS:START -->
 | 🗂️ Prompt Samples | 🤖 Agent Instructions | 🛠️ Skills |
 |:---:|:---:|:---:|
-| **120** | **31** | **11** |
+| **120** | **31** | **12** |
 <!-- SAMPLE-COUNTS:END -->
 
 ## Find and use a sample
