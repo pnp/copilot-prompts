@@ -421,7 +421,7 @@ html[data-theme='dark'] .sample-type--skills { color: var(--green); }
   .desktop-nav { display: none; }
   .mobile-nav { display: block; }
   .mobile-nav[open] nav { position: absolute; top: 48px; right: 0; display: grid; width: 220px; padding: 8px; border: 1px solid var(--border); border-radius: 6px; background: var(--surface); box-shadow: var(--shadow); }
-  .mobile-nav nav a { padding: 10px; color: var(--ink); text-decoration: none; }
+  .mobile-nav nav a { display: flex; align-items: center; gap: 7px; padding: 10px; color: var(--ink); text-decoration: none; }
   .component-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .detail-hero { grid-template-columns: 1fr; }
   .detail-preview { min-height: 280px; }

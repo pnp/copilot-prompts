@@ -10,7 +10,7 @@
       "Build Dataverse FetchXML from business requirements and verified metadata. Explain joins, null filters, aggregates, and paging; distinguish static review from live execution. Copy SKILL.md into .github/skills/dataverse-fetchxml-builder/ to install."
     ],
     "creationDateTime": "2026-10-06",
-    "updateDateTime": "2026-10-09",
+    "updateDateTime": "2026-11-03",
     "products": [
       "GitHub Copilot"
     ],
@@ -31,6 +31,11 @@
       }
     ],
     "references": [
+      {
+        "name": "GitHub Copilot",
+        "description": "GitHub Copilot",
+        "url": "https://copilot.github.com/"
+      },
       {
         "name": "FetchXML reference",
         "description": "Microsoft Dataverse FetchXML reference",

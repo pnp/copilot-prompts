@@ -33,20 +33,22 @@ Output consists of FetchXML, schema evidence, an explanation, instructions for t
 
 Version|Date|Comments
 -------|----|--------
+1.1|November 3, 2026|Clarify Copilot Chat setup, prerequisites, and skill references
 1.0|October 9, 2026|Initial contribution with live Dataverse query validation
 
 ## Instructions 📝
 
 1. Copy [SKILL.md](./SKILL.md) into `.github/skills/dataverse-fetchxml-builder/SKILL.md`.
 2. Open your workspace in VS Code with GitHub Copilot enabled.
-3. Supply the business question and relevant Dataverse metadata or solution files.
-4. Ask: "Write a FetchXML query using this schema and explain the result grain."
-5. Review any schema questions, the query, and the reported validation status.
-6. If you want execution, identify the environment and request a read-only test using an available authenticated tool.
+3. Open GitHub Copilot Chat in Agent mode.
+4. Supply the business question and relevant Dataverse metadata or solution files.
+5. Ask: "Write a FetchXML query using this schema and explain the result grain."
+6. Answer any questions about missing schema or requirements, then review the query and reported validation status.
+7. If you want execution, identify the environment and request a read-only test using an available authenticated tool.
 
 ### Example
 
-Ask for up to ten active accounts with no contacts related through `contact.parentcustomerid`, returning account ID and name. Supply schema evidence for these tables and the active state value. The worked example in SKILL.md demonstrates the outer join and post-join null test.
+Ask for up to ten active accounts with no contacts related through `contact.parentcustomerid`, returning account ID and name. Supply schema evidence for these tables and the active state value. The worked example in [SKILL.md](./SKILL.md) demonstrates the outer join and post-join null test.
 
 ### Customization 🚀
 
@@ -54,10 +56,12 @@ Specify a target client (Power Automate, Web API, SDK, or PAC CLI), the output c
 
 ## Prerequisites
 
-* [GitHub Copilot](https://copilot.github.com/)
+* [GitHub Copilot](https://copilot.github.com/) access through an individual plan or your organization
 * [Visual Studio Code](https://code.visualstudio.com/)
 * Relevant Dataverse metadata or an authorized way to retrieve it
-* For optional execution: an authenticated Dataverse development environment and a read-only query tool
+* For optional live metadata discovery or execution: an authenticated Dataverse development environment, applicable licensing and read permissions, and a tool supporting the requested read-only operations
+
+Generating queries from supplied metadata does not require a live Dataverse connection. The skill does not provide Copilot or Dataverse licenses, credentials, or query tools.
 
 ## Validation status
 
