@@ -1,0 +1,45 @@
+📌 Prompt Description
+Analyze the business plan below and identify the top 5 strategic blind spots. For each blind spot, include:
+- Description of the blind spot
+- Risk Level (High/Medium/Low)
+- Potential Impact (High/Medium/Low)
+- Underlying Assumption that may be flawed
+- Suggested Action to address or validate it
+
+🧪 Example Input
+Our go-to-market strategy relies on rapid adoption in the LATAM region, assuming minimal regulatory friction. We expect to scale operations using our current infrastructure and plan to hire aggressively in Q3. Competitor response is expected to be slow due to their legacy systems.
+
+✅ Example Output
+1. Blind Spot: Regulatory friction in LATAM
+   - Risk Level: High
+   - Impact: High
+   - Assumption: Regulations will not delay market entry
+   - Suggested Action: Conduct legal review and engage local advisors
+
+2. Blind Spot: Infrastructure scalability
+   - Risk Level: Medium
+   - Impact: High
+   - Assumption: Current infrastructure can support rapid growth
+   - Suggested Action: Stress-test systems and prepare contingency plans
+
+3. Blind Spot: Aggressive hiring feasibility
+   - Risk Level: Medium
+   - Impact: Medium
+   - Assumption: Talent will be readily available in Q3
+   - Suggested Action: Start recruitment pipeline early and explore outsourcing
+4. **Blind Spot: Competitor inertia**
+   - Risk Level: High
+   - Impact: Medium
+   - Assumption: Competitors will not react quickly
+   - Suggested Action: Monitor competitor activity and prepare counter-strategies
+
+5. Blind Spot: Cultural adaptation
+   - Risk Level: Medium
+   - Impact: Medium
+   - Assumption: Product-market fit is universal
+   - Suggested Action: Run localized user testing and adapt messaging
+
+🛠️ How to use it
+Paste a business plan, strategy doc, or executive summary.
+Let the AI uncover hidden assumptions and risks.
+Use the output to refine your strategy or prepare for stakeholder reviews.
