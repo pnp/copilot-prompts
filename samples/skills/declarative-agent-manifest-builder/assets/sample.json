@@ -1,0 +1,52 @@
+[
+  {
+    "name": "copilotprompts-skill-declarative-agent-manifest-builder",
+    "source": "pnp",
+    "title": "Declarative Agent Manifest Builder for GitHub Copilot",
+    "shortDescription": "A GitHub Copilot skill that writes a Microsoft 365 Copilot declarative agent package (declarativeAgent.json v1.9, manifest.json, instruction.txt) from a short description of the agent, then checks it against the schema and reports what it found.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/declarative-agent-manifest-builder",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/declarative-agent-manifest-builder",
+    "longDescription": [
+      "Tell GitHub Copilot who your Microsoft 365 Copilot agent is for and what it should know, and this skill writes the whole package. You get declarativeAgent.json on schema v1.9 with the right knowledge capabilities (SharePoint, Copilot connectors, Teams, Email, Meetings, People, Dataverse, Fabric, web search, embedded files), conversation starters with dependency links, behavior overrides and an optional disclaimer. You also get the app manifest.json that references it and an instruction.txt structured the way Microsoft's guidance recommends.",
+      "The skill then runs 28 checks covering schema limits, licensing tier and confirm-before-write guidance, shows a pass/fail report, and lists the next steps for provisioning through Microsoft 365 Agents Toolkit. Point it at an existing manifest and it will check or upgrade that instead. Install it by copying SKILL.md into your repository's .github/skills/declarative-agent-manifest-builder/ folder."
+    ],
+    "creationDateTime": "2026-10-23",
+    "updateDateTime": "2026-10-23",
+    "products": [
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/declarative-agent-manifest-builder/assets/demo.png",
+        "alt": "Example of the files and validation report the skill produces"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "ari20089",
+        "pictureUrl": "https://github.com/ari20089.png",
+        "name": "Arindam Choudhury"
+      }
+    ],
+    "references": [
+      {
+        "name": "Declarative agent schema 1.9",
+        "description": "Reference for the declarative agent manifest schema used by Microsoft 365 Copilot.",
+        "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/declarative-agent-manifest-1.9"
+      },
+      {
+        "name": "Write effective instructions for declarative agents",
+        "description": "Microsoft guidance on structuring declarative agent instructions.",
+        "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/declarative-agent-instructions"
+      },
+      {
+        "name": "Microsoft 365 Agents Toolkit",
+        "description": "VS Code extension used to provision and test declarative agents.",
+        "url": "https://aka.ms/M365AgentsToolkit"
+      }
+    ]
+  }
+]
