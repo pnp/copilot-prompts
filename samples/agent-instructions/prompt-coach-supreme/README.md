@@ -202,7 +202,7 @@ This tighter version should be 20–30% faster and cheaper in a metered experien
 4. Set agent name to **Prompt Coach SUPREME**
 5. Copy the [**Agent Description**](#agent-description) section above and paste into the **Description** field
 6. Copy the [**Agent Instructions**](#agent-instructions) section above and paste into the **Instructions** field
-7. Upload the [copilot-prompt-advisor skill](./assets/skill.md) markdown file as an agent Skill
+7. Upload the [copilot-prompt-advisor skill](./assets/SKILL.md) markdown file as an agent Skill
 8. Test → Create → Share
 
 ### Suggested Starter Prompts
