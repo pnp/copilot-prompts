@@ -21,7 +21,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/cowork-plugin-session-feedback/assets/session-feedback.png",
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/cowork-plugin-session-feedback/assets/plugin-feedback.png",
         "alt": "Copilot's feedback on a plugin test session"
       }
     ],

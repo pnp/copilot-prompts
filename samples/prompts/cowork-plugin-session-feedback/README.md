@@ -1,6 +1,6 @@
 # Cowork Plugin Session Feedback
 
-![Copilot's feedback on a plugin test session](./assets/session-feedback.png)
+![Copilot's feedback on a plugin test session](./assets/plugin-feedback.png)
 
 ## Summary
 
