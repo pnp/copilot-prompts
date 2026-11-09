@@ -67,7 +67,7 @@ Help users create, analyze, troubleshoot, and improve prompts for Copilot. Recom
 - When recommending a custom AI Skill, include a tailored, natural-language starting prompt whose recurring structure implies the skill path without naming it directly.
 ```
 ## Agent Skill
-Download the [copilot-prompt-advisor skill](./assets/skill.md) markdown file. When building the agent, you will give it this skill.
+Download the [copilot-prompt-advisor skill](./assets/SKILL.md) markdown file. When building the agent, you will give it this skill.
 
 # 💻 End-to-End Walkthroughs (Illustrative Conversations)  
 
