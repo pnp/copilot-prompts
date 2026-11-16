@@ -88,7 +88,10 @@ function normalizeReadmeTarget(category: Category, slug: string, target: string,
   );
   const samplePrefix = `samples/${category}/${slug}/`;
   const sharedImagePrefix = "images/";
-  if (!repositoryPath.startsWith(samplePrefix) && !(image && repositoryPath.startsWith(sharedImagePrefix))) {
+  const isSampleLink = !image && Object.keys(categories).some(
+    (sampleCategory) => repositoryPath.startsWith(`samples/${sampleCategory}/`),
+  );
+  if (!repositoryPath.startsWith(samplePrefix) && !isSampleLink && !(image && repositoryPath.startsWith(sharedImagePrefix))) {
     throw new Error(`Unsafe README target in ${category}/${slug}: ${target}`);
   }
 
@@ -98,7 +101,8 @@ function normalizeReadmeTarget(category: Category, slug: string, target: string,
   }
 
   if (!image) {
-    return `https://github.com/pnp/copilot-prompts/blob/main/${encodePath(repositoryPath)}`;
+    const sourceType = fs.statSync(absoluteTarget).isDirectory() ? "tree" : "blob";
+    return `https://github.com/pnp/copilot-prompts/${sourceType}/main/${encodePath(repositoryPath)}`;
   }
 
   const basePath = import.meta.env.BASE_URL.replace(/\/?$/, "/");

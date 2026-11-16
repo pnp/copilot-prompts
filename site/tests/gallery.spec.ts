@@ -1,5 +1,37 @@
 import AxeBuilder from "@axe-core/playwright";
 import { expect, test } from "@playwright/test";
+import type { CatalogSample } from "../src/lib/catalog";
+
+test("shows every catalog sample in the unfiltered gallery", async ({ page }) => {
+  const response = await page.request.get("catalog.json");
+  expect(response.ok()).toBe(true);
+  const catalog: Pick<CatalogSample, "route">[] = await response.json();
+
+  await page.goto("./");
+  await expect(page.locator(".component-card:visible")).toHaveCount(catalog.length);
+  const routes = await page.locator(".component-card__footer a").evaluateAll((links) =>
+    links.map((link) => link.getAttribute("href")),
+  );
+  expect(routes.sort()).toEqual(catalog.map((sample) => `/copilot-prompts/${sample.route}/`).sort());
+});
+
+test("finds Dataverse Schema Architect and renders its cross-sample link", async ({ page }) => {
+  await page.goto("./");
+  await page.locator("#search").fill("Dataverse Schema Architect");
+  await page.locator("#type").selectOption("skills");
+  await expect(page.locator(".component-card:visible")).toHaveCount(1);
+  await page.getByRole("link", { name: "View details for Dataverse Schema Architect", exact: true }).click();
+
+  await expect(page.getByRole("heading", { level: 1 })).toHaveText("Dataverse Schema Architect");
+  await expect(page.locator(".readme-content").getByRole("link", { name: "Power Apps Canvas YAML Generator" })).toHaveAttribute(
+    "href",
+    "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/powerapps-canvas-yaml-generator/",
+  );
+  await expect(page.locator(".readme-content").getByRole("link", { name: "SKILL.md", exact: true }).first()).toHaveAttribute(
+    "href",
+    "https://github.com/pnp/copilot-prompts/blob/main/samples/skills/dataverse-schema-architect/SKILL.md",
+  );
+});
 
 test("puts the Community link first in the navigation", async ({ page }) => {
   await page.goto("./");
