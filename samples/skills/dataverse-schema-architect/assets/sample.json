@@ -1,0 +1,53 @@
+[
+  {
+    "name": "copilotprompts-skill-dataverse-schema-architect",
+    "source": "pnp",
+    "title": "Dataverse Schema Architect",
+    "shortDescription": "A GitHub Copilot skill that turns a business process described in plain language into a production-ready Microsoft Dataverse data model — tables, columns, choices, relationships, alternate keys, security roles and ALM — with a Mermaid ER diagram and security matrix.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/dataverse-schema-architect",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/dataverse-schema-architect",
+    "longDescription": [
+      "This skill teaches GitHub Copilot to act as a senior Power Platform architect. Given a process description, publisher prefix, personas, volumes, integrations and consumers, it designs the Dataverse model end to end: reuses standard tables, decides table type and ownership, chooses the right column types (Choice vs lookup, Date Only vs User Local, Formula, Currency, File, Autonumber), flags PII for column security, defines relationship behavior and cascade rules, adds alternate keys for upsert integrations, builds a least-privilege security role matrix with privilege depth, and packages everything as a solution with a dependency-ordered build checklist. Every assumption is tagged so the design can be reviewed before anything is built. Works in English and Spanish."
+    ],
+    "creationDateTime": "2026-10-10",
+    "updateDateTime": "2026-10-10",
+    "products": [
+      "Dataverse",
+      "Power Apps",
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/dataverse-schema-architect/assets/screenshot.png",
+        "alt": "Dataverse Schema Architect skill generating a data model in GitHub Copilot Chat"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rogerscarias",
+        "pictureUrl": "https://github.com/rogerscarias.png",
+        "name": "Roger Carias"
+      }
+    ],
+    "references": [
+      {
+        "name": "Types of columns in Dataverse",
+        "description": "Official reference of Dataverse column data types and formats",
+        "url": "https://learn.microsoft.com/power-apps/maker/data-platform/types-of-fields"
+      },
+      {
+        "name": "Table relationships and behavior",
+        "description": "How to configure 1:N relationships and cascade behavior in Dataverse",
+        "url": "https://learn.microsoft.com/power-apps/maker/data-platform/create-edit-1n-relationships-portal"
+      },
+      {
+        "name": "Security concepts in Microsoft Dataverse",
+        "description": "Security roles, privilege depth, business units, teams and column security",
+        "url": "https://learn.microsoft.com/power-platform/admin/wp-security-cds"
+      }
+    ]
+  }
+]
