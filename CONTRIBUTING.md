@@ -136,8 +136,28 @@ npm run test:e2e
 ```
 
 The build validates metadata ingestion, safe README rendering, local images,
-generated routes, and internal links. Browser tests cover catalog behavior,
-responsive layouts, themes, tracking images, and accessibility.
+generated routes, and internal links. It also checks every sample folder against
+the generated catalog, home page links, and detail pages, so samples cannot be
+silently omitted. Browser tests cover catalog behavior, responsive layouts,
+themes, tracking images, and accessibility.
+
+Relative README links can point to files or folders in any sample category,
+including sibling samples. They must resolve to existing content within
+`samples/`; README images must stay within the current sample or shared `images/`
+folder.
+
+### Automatic gallery publishing
+
+The **Validate gallery** workflow runs these checks for pull requests that
+change samples or the site. Every push to `main`, including a merged sample,
+automatically runs **Deploy gallery** to rebuild and publish GitHub Pages.
+No manual catalog registration or separate publishing commit is needed.
+
+Deployment only proceeds after the build and browser tests pass. It then
+verifies the live home page, deployed commit, and an exact fingerprint of the
+complete built catalog. A failed deployment leaves the previous site online;
+check the workflow logs, fix the failure, and merge the correction. Maintainers
+can also rerun **Deploy gallery** using its **Run workflow** action.
 
 ## Submit a pull request
 

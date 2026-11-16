@@ -1,7 +1,9 @@
 import { access, readFile, readdir } from "node:fs/promises";
+import assert from "node:assert/strict";
 import path from "node:path";
 
 const siteRoot = path.resolve(import.meta.dirname, "..");
+const repositoryRoot = path.resolve(siteRoot, "..");
 const distRoot = path.join(siteRoot, "dist");
 const basePath = "/copilot-prompts/";
 const htmlFiles = [];
@@ -34,6 +36,32 @@ async function targetExists(url) {
 }
 
 await collectHtml(distRoot);
+const catalog = JSON.parse(await readFile(path.join(distRoot, "catalog.json"), "utf8"));
+assert(Array.isArray(catalog), "Built catalog must be an array");
+const catalogByRoute = new Map(catalog.map((sample) => [sample.route, sample]));
+assert.equal(catalogByRoute.size, catalog.length, "Built catalog contains duplicate routes");
+const home = await readFile(path.join(distRoot, "index.html"), "utf8");
+const homeLinks = new Set([...home.matchAll(/\shref=["']([^"']+)["']/g)].map((match) => match[1]));
+const builtPages = new Set(htmlFiles);
+let sampleCount = 0;
+for (const category of ["prompts", "agent-instructions", "skills"]) {
+  const categoryRoot = path.join(repositoryRoot, "samples", category);
+  const entries = await readdir(categoryRoot, { withFileTypes: true });
+  for (const entry of entries.filter((candidate) => candidate.isDirectory())) {
+    const route = `samples/${category}/${entry.name}`;
+    const metadata = JSON.parse(await readFile(path.join(categoryRoot, entry.name, "assets", "sample.json"), "utf8"));
+    const sample = catalogByRoute.get(route);
+    assert(sample, `Sample missing from built catalog: ${route}`);
+    assert.equal(sample.name, metadata[0].name, `Catalog identity mismatch: ${route}`);
+    assert(builtPages.has(path.join(distRoot, ...route.split("/"), "index.html")), `Sample detail page missing: ${route}`);
+    assert(homeLinks.has(`${basePath}${route}/`), `Sample missing from gallery home page: ${route}`);
+    catalogByRoute.delete(route);
+    sampleCount += 1;
+  }
+}
+assert.equal(catalogByRoute.size, 0, `Unexpected catalog routes: ${[...catalogByRoute.keys()].join(", ")}`);
+console.log(`[gallery] verified all ${sampleCount} repository samples in the catalog, home page, and detail pages`);
+
 const broken = [];
 const checked = new Set();
 for (const htmlPath of htmlFiles) {

@@ -18,6 +18,8 @@ jobs:
       contents: read
       pages: read
     runs-on: ubuntu-latest
+    outputs:
+      catalog-sha256: ${{ steps.catalog.outputs.sha256 }}
     steps:
       - name: Checkout
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
@@ -38,6 +40,9 @@ jobs:
         run: npm run build
         env:
           PUBLIC_COMMIT_SHA: ${{ github.sha }}
+      - name: Record complete catalog fingerprint
+        id: catalog
+        run: echo "sha256=$(sha256sum site/dist/catalog.json | cut -d ' ' -f 1)" >> "$GITHUB_OUTPUT"
       - name: Install Chromium
         working-directory: site
         run: npx playwright install --with-deps chromium
@@ -62,25 +67,32 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128 # v5.0.0
-      - name: Verify deployed commit and home page
+      - name: Verify deployed commit, home page, and complete catalog
         shell: pwsh
         env:
           SITE_URL: ${{ steps.deployment.outputs.page_url }}
           EXPECTED_COMMIT: ${{ github.sha }}
+          EXPECTED_CATALOG_SHA256: ${{ needs.build.outputs.catalog-sha256 }}
         run: |
           $baseUrl = $env:SITE_URL.TrimEnd("/")
           $attempts = 12
           for ($attempt = 1; $attempt -le $attempts; $attempt++) {
             try {
-              $homeResponse = Invoke-WebRequest -Uri "$baseUrl/" -UseBasicParsing
-              $marker = Invoke-RestMethod -Uri "$baseUrl/deployment.json"
+              $homeResponse = Invoke-WebRequest -Uri "$baseUrl/?commit=$env:EXPECTED_COMMIT" -UseBasicParsing
+              $marker = Invoke-RestMethod -Uri "$baseUrl/deployment.json?commit=$env:EXPECTED_COMMIT"
+              $catalogResponse = Invoke-WebRequest -Uri "$baseUrl/catalog.json?commit=$env:EXPECTED_COMMIT" -UseBasicParsing
               if ($homeResponse.Content -notmatch "<title>Copilot Prompt Gallery</title>") {
                 throw "The deployed root is not the gallery home page."
               }
               if ($marker.commit -ne $env:EXPECTED_COMMIT) {
                 throw "Expected commit $env:EXPECTED_COMMIT but found $($marker.commit)."
               }
-              Write-Host "Verified $baseUrl at commit $env:EXPECTED_COMMIT"
+              $catalogBytes = [System.Text.Encoding]::UTF8.GetBytes($catalogResponse.Content)
+              $catalogHash = [Convert]::ToHexString([System.Security.Cryptography.SHA256]::HashData($catalogBytes)).ToLowerInvariant()
+              if ($catalogHash -ne $env:EXPECTED_CATALOG_SHA256) {
+                throw "The deployed catalog does not match the complete catalog built from $env:EXPECTED_COMMIT."
+              }
+              Write-Host "Verified $baseUrl at commit $env:EXPECTED_COMMIT with the complete sample catalog"
               exit 0
             } catch {
               if ($attempt -eq $attempts) { throw }

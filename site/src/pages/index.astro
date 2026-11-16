@@ -180,7 +180,9 @@ const sitePath = (path: string) => `${basePath}${path.replace(/^\/+/, "")}`;
   }
 
   form.addEventListener("input", applyFilters);
-  form.addEventListener("change", applyFilters);
+  form.addEventListener("change", (event) => {
+    if (event.target instanceof HTMLSelectElement) applyFilters();
+  });
   clearSearch.addEventListener("click", () => {
     search.value = "";
     search.focus();
