@@ -1,0 +1,43 @@
+[
+  {
+    "name": "copilotprompts-prompt-cowork-plugin-session-feedback",
+    "source": "pnp",
+    "title": "Cowork Plugin Session Feedback",
+    "shortDescription": "Ask Copilot to review a Cowork plugin test session and provide grounded, actionable feedback for the developer.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/cowork-plugin-session-feedback",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/cowork-plugin-session-feedback",
+    "longDescription": [
+      "Use this prompt after testing a plugin in Copilot Cowork to ask for a second perspective on what went well, what failed or was confusing, and what could be improved or optimized.",
+      "The prompt instructs Copilot to ground feedback in observable session evidence, distinguish observations from inferences, and disclose when session context is insufficient. Verify its feedback before relaying it to the developer."
+    ],
+    "creationDateTime": "2026-11-09",
+    "updateDateTime": "2026-11-09",
+    "products": [
+      "Microsoft 365 Copilot",
+      "Copilot Cowork"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/cowork-plugin-session-feedback/assets/plugin-feedback.png",
+        "alt": "Copilot's feedback on a plugin test session"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sparkitect",
+        "pictureUrl": "https://github.com/sparkitect.png",
+        "name": "sparkitect"
+      }
+    ],
+    "references": [
+      {
+        "name": "Copilot Cowork",
+        "description": "Overview of Copilot Cowork",
+        "url": "https://learn.microsoft.com/en-us/copilot/cowork-overview"
+      }
+    ]
+  }
+]
