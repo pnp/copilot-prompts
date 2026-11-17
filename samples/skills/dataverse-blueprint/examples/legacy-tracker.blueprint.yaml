@@ -1,0 +1,42 @@
+# The "before" picture: a model built click-by-click from an Excel tracker.
+# Run: python scripts/dvbp.py validate examples/legacy-tracker.blueprint.yaml
+blueprint: 1
+solution: { name: SafetyTracker, display_name: Safety Tracker (legacy) }
+publisher: { name: default, prefix: cr8a1 }
+personas:
+  - { id: inspector, name: Inspector }
+  - { id: auditor, name: External Auditor }
+choices:
+  - name: cr8a1_isclosed
+    options: [Yes, No]
+tables:
+  - schema: cr8a1_Users
+    display: Users
+    primary: { schema: cr8a1_Name }
+    columns:
+      - { schema: cr8a1_Email, type: email }
+  - schema: cr8a1_Inspections
+    display: Inspections
+    ownership: organization
+    integrated: true
+    columns:
+      - { schema: cr8a1_InspectionDate, type: datetime }
+      - { schema: cr8a1_Total Cost, type: decimal }
+      - { schema: cr8a1_Status, type: choice, choice: cr8a1_status }
+      - { schema: cr8a1_Notes, type: text, max_length: 10000 }
+      - { schema: cr8a1_DueDate, type: date, behavior: dateonly }
+      - { schema: cr8a1_DaysLate, type: formula, formula: "DateDiff(cr8a1_DueDate, UTCNow(), TimeUnit.Days)" }
+      - { schema: cr8a1_InspectorCedula, type: text, pii: true }
+  - schema: cr8a1_Finding
+    ownership: user
+    primary: { schema: cr8a1_Title }
+relationships:
+  - { schema: cr8a1_Inspections_Finding, parent: cr8a1_Inspections, child: cr8a1_Finding, lookup: cr8a1_Inspection, behavior: parental }
+  - { schema: cr8a1_Users_Finding, parent: cr8a1_Users, child: cr8a1_Finding, lookup: cr8a1_OwnerUser, behavior: parental }
+security:
+  roles:
+    - name: Inspector
+      persona: inspector
+      privileges:
+        cr8a1_Inspections: { create: U, read: O, write: U, delete: O }
+        cr8a1_Finding: { create: U, write: U }

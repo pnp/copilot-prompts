@@ -1,0 +1,83 @@
+Dataverse Blueprint · Safety Tracker (legacy)
+Tables 3 · Relationships 2 · Roles 1
+------------------------------------------------------------------------------
+✖ DV001 error   publisher.prefix
+    Prefix 'cr8a1' is a default/placeholder prefix; create a custom publisher.
+✖ DV003 error   tables.cr8a1_Inspections.cr8a1_Total Cost
+    'cr8a1_Total Cost' should look like cr8a1_PascalCase (ASCII, no spaces/accents).
+✖ DV005 error   tables.cr8a1_Users
+    'cr8a1_Users' duplicates standard table 'systemuser'.
+✖ DV006 error   tables.cr8a1_Users
+    Table ownership must be explicit (user or organization) - it cannot be changed after creation
+✖ DV007 error   tables.cr8a1_Inspections
+    Table needs a meaningful primary name column (text or autonumber)
+✖ DV008 error   tables.cr8a1_Inspections.cr8a1_InspectionDate
+    Date column needs an explicit behavior (dateonly, userlocal, tzi)
+✖ DV010 error   tables.cr8a1_Inspections.cr8a1_Status
+    Choice 'cr8a1_status' is not defined in choices[] and no local options given.
+✖ DV011 error   tables.cr8a1_finding
+    cr8a1_finding is child in 2 parental relationships: cr8a1_Inspections_Finding, cr8a1_Users_Finding.
+✖ DV013 error   tables.cr8a1_Inspections
+    Integrated table has no alternate key for upsert
+✖ DV014 error   tables.cr8a1_Inspections.cr8a1_InspectorCedula
+    PII column is not secured by a column security profile
+✖ DV016 error   tables.cr8a1_Inspections.cr8a1_Notes
+    Text column max length must be 1..4000 (use memo for longer content)
+✖ DV018 error   personas.auditor
+    Persona has no security role
+✖ DV023 error   security.roles.Inspector.cr8a1_inspections.create
+    Organization-owned table only supports None or Organization privilege depth
+✖ DV023 error   security.roles.Inspector.cr8a1_inspections.write
+    Organization-owned table only supports None or Organization privilege depth
+▲ DV004 warning tables.cr8a1_Inspections
+    'cr8a1_Inspections' looks plural; use the singular noun.
+▲ DV004 warning tables.cr8a1_Users
+    'cr8a1_Users' looks plural; use the singular noun.
+▲ DV009 warning choices.cr8a1_isclosed
+    Two-option yes/no choice should be a Yes/No (bool) column
+▲ DV017 warning security.roles.Inspector
+    Inspector: can write cr8a1_finding but needs Append on cr8a1_finding and AppendTo on cr8a1_inspections.
+▲ DV017 warning security.roles.Inspector
+    Inspector: can write cr8a1_finding but needs Append on cr8a1_finding and AppendTo on cr8a1_users.
+▲ DV019 warning choices.cr8a1_isclosed
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning relationships.cr8a1_Inspections_Finding
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning relationships.cr8a1_Users_Finding
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Finding
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Inspections
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Inspections.cr8a1_DaysLate
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Inspections.cr8a1_DueDate
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Inspections.cr8a1_InspectionDate
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Inspections.cr8a1_InspectorCedula
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Inspections.cr8a1_Notes
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Inspections.cr8a1_Status
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Inspections.cr8a1_Total Cost
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Users
+    Element has no traceability (source: process | assumed)
+▲ DV019 warning tables.cr8a1_Users.cr8a1_Email
+    Element has no traceability (source: process | assumed)
+▲ DV021 warning tables.cr8a1_Inspections.cr8a1_Total Cost
+    'cr8a1_Total Cost' looks monetary; use currency (adds base-currency column).
+▲ DV022 warning security.roles.Inspector.cr8a1_inspections
+    Organization-wide Delete granted to a non-admin role
+▲ DV026 warning relationships.cr8a1_Inspections_Finding.lookup
+    Lookup column schema name should end with 'Id'
+▲ DV026 warning relationships.cr8a1_Users_Finding.lookup
+    Lookup column schema name should end with 'Id'
+▲ DV030 warning tables.cr8a1_Finding
+    Table with approvals/compliance data should have auditing enabled
+▲ DV030 warning tables.cr8a1_Inspections
+    Table with approvals/compliance data should have auditing enabled
+------------------------------------------------------------------------------
+Score 0/100 · Grade F · 14 errors · 25 warnings · 0 assumptions to confirm
