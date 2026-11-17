@@ -1,0 +1,172 @@
+# Dataverse Blueprint — single source of truth for the data model.
+# Validate:  python scripts/dvbp.py validate examples/ehs-inspections.blueprint.yaml
+# Document:  python scripts/dvbp.py render   examples/ehs-inspections.blueprint.yaml -o design.md
+# Compile:   python scripts/dvbp.py compile  examples/ehs-inspections.blueprint.yaml -o plan.json
+# Deploy:    python scripts/dvbp.py deploy plan.json --env https://contoso-dev.crm.dynamics.com --apply
+blueprint: 1
+language: 1033
+
+solution:
+  name: EhsInspections
+  display_name: EHS Inspections
+  version: 1.0.0.0
+
+publisher:
+  name: contosoehs
+  display_name: Contoso EHS
+  prefix: cnt
+  option_value_prefix: 10000
+
+summary: >
+  Monthly safety inspections per plant. Inspectors record findings with a risk level and photo
+  evidence; each finding gets corrective actions assigned to an employee or an external contractor.
+  Plant managers see only their plant (business unit per plant); the safety director sees everything.
+  Plants come from the ERP and are upserted nightly through an alternate key.
+
+assumptions:
+  - One business unit per plant, created and maintained by IT (not by this solution).
+  - Contractors are stored as standard Contact rows linked to their company (Account).
+open_questions:
+  - Should closed inspections become read-only for inspectors (business rule vs. status-based security)?
+  - Retention period for evidence photos (affects File/Image storage capacity).
+
+personas:
+  - { id: inspector, name: Safety Inspector }
+  - { id: manager,   name: Plant Manager }
+  - { id: director,  name: Safety Director }
+
+choices:
+  - name: cnt_risklevel
+    display_name: Risk level
+    source: process
+    options: [Low, Medium, High, Critical]
+  - name: cnt_actionstatus
+    display_name: Action status
+    source: process
+    options: [Open, In progress, Done, Verified]
+
+tables:
+  - schema: cnt_Site
+    display: Site
+    plural: Sites
+    purpose: Plant master data synced from the ERP
+    ownership: user
+    audit: true
+    volume: "< 100"
+    integrated: true
+    source: process
+    primary: { schema: cnt_Name, display: Name, max_length: 100 }
+    columns:
+      - { schema: cnt_ErpCode, display: ERP code, type: text, max_length: 20, required: true, searchable: true, source: process }
+      - { schema: cnt_City, display: City, type: text, max_length: 80, source: assumed }
+    keys:
+      - { schema: cnt_ErpCodeKey, columns: [cnt_ErpCode], why: nightly upsert from ERP }
+
+  - schema: cnt_Inspection
+    display: Inspection
+    plural: Inspections
+    purpose: Monthly inspection header (one per plant per month)
+    ownership: user
+    audit: true
+    volume: "~1,200"
+    source: process
+    status_reasons: [Planned, In progress, Submitted, Closed]
+    primary: { schema: cnt_Code, display: Code, autonumber: "INS-{SEQNUM:6}" }
+    columns:
+      - { schema: cnt_InspectionDate, display: Inspection date, type: date, behavior: dateonly, required: true, source: process }
+      - { schema: cnt_Score, display: Score, type: whole, min: 0, max: 100, source: assumed, notes: "0-100 checklist compliance" }
+      - { schema: cnt_Checklist, display: Signed checklist, type: file, max_kb: 10240, source: process }
+
+  - schema: cnt_Finding
+    display: Finding
+    plural: Findings
+    purpose: Each non-conformity found during an inspection
+    ownership: user
+    audit: true
+    volume: "~6,000"
+    source: process
+    primary: { schema: cnt_Title, display: Title, max_length: 200 }
+    columns:
+      - { schema: cnt_RiskLevel, display: Risk level, type: choice, choice: cnt_risklevel, required: true, searchable: true, source: process }
+      - { schema: cnt_EvidencePhoto, display: Evidence photo, type: image, source: process }
+      - { schema: cnt_ClosedOn, display: Closed on, type: datetime, behavior: userlocal, source: process }
+      - schema: cnt_DaysOpen
+        display: Days open
+        type: formula
+        returns: Whole number
+        source: process
+        formula: "DateDiff(createdon, If(IsBlank('Closed on'), Now(), 'Closed on'), TimeUnit.Days)"
+        notes: createdon and Closed on are User Local, so Now() (not UTCNow())
+
+  - schema: cnt_CorrectiveAction
+    display: Corrective Action
+    plural: Corrective Actions
+    purpose: Action that closes a finding, assigned to an employee or a contractor
+    ownership: user
+    audit: true
+    volume: "~8,000"
+    source: process
+    primary: { schema: cnt_Title, display: Title, max_length: 200 }
+    columns:
+      - { schema: cnt_DueDate, display: Due date, type: date, behavior: dateonly, required: true, source: process }
+      - { schema: cnt_ActionStatus, display: Action status, type: choice, choice: cnt_actionstatus, required: true, source: process }
+      - { schema: cnt_EstimatedCost, display: Estimated cost, type: currency, source: assumed }
+      - { schema: cnt_ContractorNationalId, display: Contractor national ID, type: text, max_length: 30, pii: true, source: process, notes: "Required by labor-safety regulation for external workers" }
+
+relationships:
+  - { schema: cnt_Site_Inspection, parent: cnt_Site, child: cnt_Inspection, lookup: cnt_SiteId, lookup_display: Site, behavior: restrict, required: true, source: process }
+  - { schema: cnt_Inspection_Finding, parent: cnt_Inspection, child: cnt_Finding, lookup: cnt_InspectionId, lookup_display: Inspection, behavior: parental, required: true, source: process }
+  - { schema: cnt_Finding_CorrectiveAction, parent: cnt_Finding, child: cnt_CorrectiveAction, lookup: cnt_FindingId, lookup_display: Finding, behavior: parental, required: true, source: process }
+  - { schema: cnt_systemuser_Inspection_Inspector, parent: systemuser, child: cnt_Inspection, lookup: cnt_InspectorId, lookup_display: Inspector, behavior: referential, required: true, source: process }
+  - { schema: cnt_contact_CorrectiveAction_Contractor, parent: contact, child: cnt_CorrectiveAction, lookup: cnt_ContractorId, lookup_display: Contractor, behavior: referential, source: process }
+
+security:
+  roles:
+    - name: Safety Inspector
+      persona: inspector
+      privileges:
+        cnt_Site:             { read: B, appendto: B }
+        cnt_Inspection:       { create: U, read: B, write: U, append: B, appendto: B }
+        cnt_Finding:          { create: U, read: B, write: U, append: B, appendto: B }
+        cnt_CorrectiveAction: { create: U, read: B, write: U, append: B }
+        contact:              { read: O, appendto: O }
+    - name: Plant Manager
+      persona: manager
+      privileges:
+        cnt_Site:             { read: B }
+        cnt_Inspection:       { read: B }
+        cnt_Finding:          { read: B, appendto: B }
+        cnt_CorrectiveAction: { create: B, read: B, write: B, append: B, assign: B }
+        contact:              { read: O, appendto: O }
+    - name: Safety Director
+      persona: director
+      privileges:
+        cnt_Site:             { read: O, write: O, appendto: O }
+        cnt_Inspection:       { read: O, write: O, append: O, appendto: O, assign: O }
+        cnt_Finding:          { read: O, write: O, append: O, appendto: O }
+        cnt_CorrectiveAction: { create: O, read: O, write: O, delete: O, append: O, assign: O, share: O }
+        contact:              { read: O, appendto: O }
+  column_profiles:
+    - name: Contractor PII
+      columns: [cnt_CorrectiveAction.cnt_ContractorNationalId]
+      read: true
+      create: true
+      update: false
+      granted_to: [Safety Director (Entra ID group team)]
+  notes:
+    - Roles are assigned to Microsoft Entra ID group teams per plant, never user by user.
+
+alm:
+  environment_variables: [cnt_ErpBaseUrl]
+  connection_references: [cnt_ErpConnection]
+  notes:
+    - Export with `pac solution export` + `pac solution unpack` and commit next to this blueprint.
+  manual_steps:
+    - Create the main form and active views for each table (or ask the skill for form/view XML).
+
+anti_patterns_avoided:
+  - Risk level is a global choice, not free text — reporting by risk works from day one.
+  - No custom "Users" or "Contractors" table — systemuser and contact are reused.
+  - Findings are rows, not a multiline field in the inspection — each one is assignable and reportable.
+  - Days open is a Formula column, not a nightly flow writing a number.
+  - The national ID lives behind a column security profile, not in a hidden form field.
