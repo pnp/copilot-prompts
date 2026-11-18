@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-meeting-conflict-analysis",
+    "source": "pnp",
+    "title": "Meeting conflict analysis in your calendar",
+    "shortDescription": "Prompt to analyze meetings in your calendar for a specified date to identify overlapping or conflicting meetings, and present a clear conflict report.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-conflict-analysis",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-meeting-conflict-analysis",
+    "longDescription": [
+      "This prompt reviews all meetings for a specified day, detects scheduling conflics, and presents an easy to interpret report with clear visual indicators highlighting any overlapping or conflicts."
+    ],
+    "creationDateTime": "2026-10-18",
+    "updateDateTime": "2026-10-18",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-meeting-conflict-analysis/assets/demo.png",
+        "alt": "Meeting conflict analysis complete with indicators of conflicting meetings"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "sohna-sh",
+        "pictureUrl": "https://avatars.githubusercontent.com/sohna-sh",
+        "name": "Sohna Sukumaran Hemalatha"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
