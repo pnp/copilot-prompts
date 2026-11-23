@@ -1,0 +1,47 @@
+[
+  {
+    "name": "copilotprompts-skill-declarative-agent-manifest-review",
+    "source": "pnp",
+    "title": "Declarative Agent Manifest Review Skill",
+    "shortDescription": "A GitHub Copilot skill that reviews a Microsoft 365 Copilot declarative agent manifest against its schema version and separates what blocks the agent from what changes what it can read.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/declarative-agent-manifest-review",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/declarative-agent-manifest-review",
+    "longDescription": [
+      "A reusable GitHub Copilot skill that reviews declarativeAgent.json against the reference and JSON schema for the manifest's own version. It reports blocking findings, such as unrecognized properties, character limits, capability limits and missing package files, separately from behaviour findings, such as knowledge capabilities with no scope, conversation starters that depend on missing capabilities and instructions that name functions the manifest does not configure. It lists what it could not check without the tenant or the built package. Install it by copying the SKILL.md file into your repository's .github/skills/declarative-agent-manifest-review/ folder."
+    ],
+    "creationDateTime": "2026-11-23",
+    "updateDateTime": "2026-11-23",
+    "products": [
+      "Microsoft 365 Copilot",
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/declarative-agent-manifest-review/assets/example-report.png",
+        "alt": "Example review report for a sample declarative agent manifest, with blocking and behaviour findings in separate tables"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "OwnOptic",
+        "pictureUrl": "https://github.com/OwnOptic.png",
+        "name": "Elliot Margot"
+      }
+    ],
+    "references": [
+      {
+        "name": "Declarative agent schema 1.9 for Microsoft 365 Copilot",
+        "description": "The manifest reference the skill checks against",
+        "url": "https://learn.microsoft.com/microsoft-365/copilot/extensibility/declarative-agent-manifest-1.9"
+      },
+      {
+        "name": "Write effective instructions for declarative agents",
+        "description": "How instructions and grounding settings shape a declarative agent",
+        "url": "https://learn.microsoft.com/microsoft-365-copilot/extensibility/declarative-agent-instructions"
+      }
+    ]
+  }
+]
