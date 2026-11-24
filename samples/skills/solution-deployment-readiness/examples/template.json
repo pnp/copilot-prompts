@@ -1,0 +1,19 @@
+{
+  "EnvironmentVariables": [
+    {
+      "SchemaName": "demo_SiteUrl",
+      "Value": ""
+    },
+    {
+      "SchemaName": "demo_NotificationAddress",
+      "Value": ""
+    }
+  ],
+  "ConnectionReferences": [
+    {
+      "LogicalName": "demo_SharePoint",
+      "ConnectionId": "",
+      "ConnectorId": "/providers/Microsoft.PowerApps/apis/shared_sharepointonline"
+    }
+  ]
+}
