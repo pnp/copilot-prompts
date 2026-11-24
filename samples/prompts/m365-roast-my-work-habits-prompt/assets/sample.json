@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-roast-my-work-habits-prompt",
+    "source": "pnp",
+    "title": "Roast My Work Habits",
+    "shortDescription": "Get a funny, kind, work-appropriate roast of your work habits using Microsoft 365 Copilot and available Work IQ context.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-roast-my-work-habits-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-roast-my-work-habits-prompt",
+    "longDescription": [
+      "Ask Microsoft 365 Copilot for a lighthearted roast of your work habits. With work grounding, available Work IQ context can personalize the response within your access permissions. The prompt keeps the humor funny, kind, and work-appropriate; review the result before sharing."
+    ],
+    "creationDateTime": "2026-11-24",
+    "updateDateTime": "2026-11-24",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-roast-my-work-habits-prompt/assets/demo.png",
+        "alt": "Screenshot of Copilot responding to the work habits roast prompt"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "RicksterCDN",
+        "pictureUrl": "https://github.com/RicksterCDN.png",
+        "name": "RicksterCDN"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
