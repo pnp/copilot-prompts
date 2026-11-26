@@ -1,6 +1,6 @@
 # Agent Instructions From How I Already Work
 
-![Preview card showing the Agent Instructions From How I Already Work prompt text](./assets/demo.png)
+![Redacted screenshot of Microsoft 365 Copilot answering the Agent Instructions From How I Already Work prompt with three candidate processes and rule choices](./assets/demo.png)
 
 ## Summary
 

@@ -21,7 +21,7 @@
         "type": "image",
         "order": 100,
         "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-agent-instructions-from-how-i-already-work-prompt/assets/demo.png",
-        "alt": "Preview card showing the Agent Instructions From How I Already Work prompt text"
+        "alt": "Redacted screenshot of Microsoft 365 Copilot answering the Agent Instructions From How I Already Work prompt with three candidate processes and rule choices"
       }
     ],
     "authors": [
