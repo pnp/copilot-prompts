@@ -1,6 +1,6 @@
 # Agent or Not?
 
-![Preview card showing the Agent or Not prompt text for Microsoft 365 Copilot](./assets/demo.png)
+![Redacted screenshot of Microsoft 365 Copilot answering the Agent or Not prompt with recommended Copilot Studio agents, agent instructions, and a suggested trigger](./assets/demo.png)
 
 ## Summary
 

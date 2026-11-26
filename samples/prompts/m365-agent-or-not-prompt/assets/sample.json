@@ -22,7 +22,7 @@
         "type": "image",
         "order": 100,
         "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-agent-or-not-prompt/assets/demo.png",
-        "alt": "Preview card showing the Agent or Not prompt text for Microsoft 365 Copilot"
+        "alt": "Redacted screenshot of Microsoft 365 Copilot answering the Agent or Not prompt with recommended Copilot Studio agents, agent instructions, and a suggested trigger"
       }
     ],
     "authors": [
