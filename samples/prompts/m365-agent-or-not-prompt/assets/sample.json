@@ -1,0 +1,43 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-agent-or-not-prompt",
+    "source": "pnp",
+    "title": "Agent or Not?",
+    "shortDescription": "Use Microsoft 365 Copilot and available Work IQ context to decide which recurring tasks should become a Copilot Studio agent, stay a prompt, or become a Power Automate flow.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-agent-or-not-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-agent-or-not-prompt",
+    "longDescription": [
+      "Ask Microsoft 365 Copilot to review your recurring work from the last 30 days in email, Teams, meetings, and your calendar. It recommends which tasks should become a Copilot Studio agent, which should stay a simple prompt, and which need a Power Automate flow, then drafts agent instructions and a suggested trigger for each agent recommendation. With work grounding, available Work IQ context can personalize the result within your access permissions. Review every recommendation before you build anything."
+    ],
+    "creationDateTime": "2026-11-25",
+    "updateDateTime": "2026-11-25",
+    "products": [
+      "Microsoft 365 Copilot",
+      "Copilot Studio",
+      "Power Automate"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-agent-or-not-prompt/assets/demo.png",
+        "alt": "Preview card showing the Agent or Not prompt text for Microsoft 365 Copilot"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "renatoromao",
+        "pictureUrl": "https://github.com/renatoromao.png",
+        "name": "Renato Romão"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
