@@ -1,6 +1,6 @@
 # Prompt, Cowork, or Autopilot?
 
-![Preview card showing the Prompt, Cowork, or Autopilot prompt text](./assets/demo.png)
+![Redacted screenshot of Microsoft 365 Copilot answering the Prompt, Cowork, or Autopilot prompt with simple prompt and Cowork task recommendations](./assets/demo.png)
 
 ## Summary
 
