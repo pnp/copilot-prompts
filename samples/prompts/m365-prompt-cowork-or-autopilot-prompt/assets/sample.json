@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-prompt-cowork-or-autopilot-prompt",
+    "source": "pnp",
+    "title": "Prompt, Cowork, or Autopilot?",
+    "shortDescription": "Use Microsoft 365 Copilot and available Work IQ context to sort recurring work into a simple prompt, a Cowork task, or an Autopilot, with fallbacks if Autopilot is not available.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-prompt-cowork-or-autopilot-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-prompt-cowork-or-autopilot-prompt",
+    "longDescription": [
+      "Ask Microsoft 365 Copilot to review how you actually worked this month and recommend recurring workloads that belong in a simple prompt, in Copilot Cowork, or with an Autopilot. Autopilot is not available in every tenant, so the prompt only includes Autopilot recommendations when that experience appears to be available; otherwise it says Autopilot may not be enabled and offers Cowork or prompt alternatives. For each item, Copilot explains the recommendation in one sentence and drafts the first instruction. Review every recommendation before you automate or schedule anything."
+    ],
+    "creationDateTime": "2026-11-25",
+    "updateDateTime": "2026-11-25",
+    "products": [
+      "Microsoft 365 Copilot",
+      "Copilot Cowork"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-prompt-cowork-or-autopilot-prompt/assets/demo.png",
+        "alt": "Preview card showing the Prompt, Cowork, or Autopilot prompt text"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "renatoromao",
+        "pictureUrl": "https://github.com/renatoromao.png",
+        "name": "Renato Romão"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
