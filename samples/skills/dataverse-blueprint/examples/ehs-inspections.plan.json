@@ -1,0 +1,1710 @@
+{
+  "blueprint": "EhsInspections",
+  "generated_by": "dvbp 1.0.0",
+  "language": 1033,
+  "steps": [
+    {
+      "id": "S001",
+      "kind": "publisher",
+      "title": "Create publisher 'contosoehs' (prefix cnt)",
+      "request": {
+        "method": "POST",
+        "path": "publishers",
+        "body": {
+          "uniquename": "contosoehs",
+          "friendlyname": "Contoso EHS",
+          "customizationprefix": "cnt",
+          "customizationoptionvalueprefix": 10000
+        },
+        "headers": {}
+      },
+      "exists_if": "publishers?$select=publisherid&$filter=uniquename eq 'contosoehs'"
+    },
+    {
+      "id": "S002",
+      "kind": "solution",
+      "title": "Create unmanaged solution 'EhsInspections'",
+      "request": {
+        "method": "POST",
+        "path": "solutions",
+        "body": {
+          "uniquename": "EhsInspections",
+          "friendlyname": "EHS Inspections",
+          "version": "1.0.0.0",
+          "publisherid@odata.bind": "{{publisher}}"
+        },
+        "headers": {}
+      },
+      "exists_if": "solutions?$select=solutionid&$filter=uniquename eq 'EhsInspections'"
+    },
+    {
+      "id": "S003",
+      "kind": "choice",
+      "title": "Create global choice cnt_risklevel",
+      "request": {
+        "method": "POST",
+        "path": "GlobalOptionSetDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.OptionSetMetadata",
+          "Name": "cnt_risklevel",
+          "IsGlobal": true,
+          "OptionSetType": "Picklist",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Risk level",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Options": [
+            {
+              "Value": 100000000,
+              "Label": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Low",
+                    "LanguageCode": 1033
+                  }
+                ]
+              }
+            },
+            {
+              "Value": 100000001,
+              "Label": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Medium",
+                    "LanguageCode": 1033
+                  }
+                ]
+              }
+            },
+            {
+              "Value": 100000002,
+              "Label": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "High",
+                    "LanguageCode": 1033
+                  }
+                ]
+              }
+            },
+            {
+              "Value": 100000003,
+              "Label": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Critical",
+                    "LanguageCode": 1033
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "GlobalOptionSetDefinitions(Name='cnt_risklevel')"
+    },
+    {
+      "id": "S004",
+      "kind": "choice",
+      "title": "Create global choice cnt_actionstatus",
+      "request": {
+        "method": "POST",
+        "path": "GlobalOptionSetDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.OptionSetMetadata",
+          "Name": "cnt_actionstatus",
+          "IsGlobal": true,
+          "OptionSetType": "Picklist",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Action status",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Options": [
+            {
+              "Value": 100000000,
+              "Label": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Open",
+                    "LanguageCode": 1033
+                  }
+                ]
+              }
+            },
+            {
+              "Value": 100000001,
+              "Label": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "In progress",
+                    "LanguageCode": 1033
+                  }
+                ]
+              }
+            },
+            {
+              "Value": 100000002,
+              "Label": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Done",
+                    "LanguageCode": 1033
+                  }
+                ]
+              }
+            },
+            {
+              "Value": 100000003,
+              "Label": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Verified",
+                    "LanguageCode": 1033
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "GlobalOptionSetDefinitions(Name='cnt_actionstatus')"
+    },
+    {
+      "id": "S005",
+      "kind": "table",
+      "title": "Create table cnt_Site (user-owned)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.EntityMetadata",
+          "SchemaName": "cnt_Site",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Site",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "DisplayCollectionName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Sites",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Plant master data synced from the ERP",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "OwnershipType": "UserOwned",
+          "IsActivity": false,
+          "HasActivities": false,
+          "HasNotes": false,
+          "IsAuditEnabled": {
+            "Value": true,
+            "CanBeChanged": true
+          },
+          "Attributes": [
+            {
+              "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+              "SchemaName": "cnt_Name",
+              "IsPrimaryName": true,
+              "MaxLength": 100,
+              "FormatName": {
+                "Value": "Text"
+              },
+              "DisplayName": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Name",
+                    "LanguageCode": 1033
+                  }
+                ]
+              },
+              "RequiredLevel": {
+                "Value": "ApplicationRequired"
+              }
+            }
+          ]
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_site')?$select=LogicalName"
+    },
+    {
+      "id": "S006",
+      "kind": "table",
+      "title": "Create table cnt_Inspection (user-owned)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.EntityMetadata",
+          "SchemaName": "cnt_Inspection",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Inspection",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "DisplayCollectionName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Inspections",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Monthly inspection header (one per plant per month)",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "OwnershipType": "UserOwned",
+          "IsActivity": false,
+          "HasActivities": false,
+          "HasNotes": false,
+          "IsAuditEnabled": {
+            "Value": true,
+            "CanBeChanged": true
+          },
+          "Attributes": [
+            {
+              "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+              "SchemaName": "cnt_Code",
+              "IsPrimaryName": true,
+              "MaxLength": 100,
+              "FormatName": {
+                "Value": "Text"
+              },
+              "DisplayName": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Code",
+                    "LanguageCode": 1033
+                  }
+                ]
+              },
+              "RequiredLevel": {
+                "Value": "None"
+              },
+              "AutoNumberFormat": "INS-{SEQNUM:6}"
+            }
+          ]
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_inspection')?$select=LogicalName"
+    },
+    {
+      "id": "S007",
+      "kind": "table",
+      "title": "Create table cnt_Finding (user-owned)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.EntityMetadata",
+          "SchemaName": "cnt_Finding",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Finding",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "DisplayCollectionName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Findings",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Each non-conformity found during an inspection",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "OwnershipType": "UserOwned",
+          "IsActivity": false,
+          "HasActivities": false,
+          "HasNotes": false,
+          "IsAuditEnabled": {
+            "Value": true,
+            "CanBeChanged": true
+          },
+          "Attributes": [
+            {
+              "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+              "SchemaName": "cnt_Title",
+              "IsPrimaryName": true,
+              "MaxLength": 200,
+              "FormatName": {
+                "Value": "Text"
+              },
+              "DisplayName": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Title",
+                    "LanguageCode": 1033
+                  }
+                ]
+              },
+              "RequiredLevel": {
+                "Value": "ApplicationRequired"
+              }
+            }
+          ]
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_finding')?$select=LogicalName"
+    },
+    {
+      "id": "S008",
+      "kind": "table",
+      "title": "Create table cnt_CorrectiveAction (user-owned)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.EntityMetadata",
+          "SchemaName": "cnt_CorrectiveAction",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Corrective Action",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "DisplayCollectionName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Corrective Actions",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Action that closes a finding, assigned to an employee or a contractor",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "OwnershipType": "UserOwned",
+          "IsActivity": false,
+          "HasActivities": false,
+          "HasNotes": false,
+          "IsAuditEnabled": {
+            "Value": true,
+            "CanBeChanged": true
+          },
+          "Attributes": [
+            {
+              "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+              "SchemaName": "cnt_Title",
+              "IsPrimaryName": true,
+              "MaxLength": 200,
+              "FormatName": {
+                "Value": "Text"
+              },
+              "DisplayName": {
+                "@odata.type": "Microsoft.Dynamics.CRM.Label",
+                "LocalizedLabels": [
+                  {
+                    "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                    "Label": "Title",
+                    "LanguageCode": 1033
+                  }
+                ]
+              },
+              "RequiredLevel": {
+                "Value": "ApplicationRequired"
+              }
+            }
+          ]
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_correctiveaction')?$select=LogicalName"
+    },
+    {
+      "id": "S009",
+      "kind": "column",
+      "title": "Add column cnt_Site.cnt_ErpCode (Text (20))",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_site')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+          "MaxLength": 20,
+          "FormatName": {
+            "Value": "Text"
+          },
+          "SchemaName": "cnt_ErpCode",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "ERP code",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "ERP code",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "ApplicationRequired",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_site')/Attributes(LogicalName='cnt_erpcode')?$select=LogicalName"
+    },
+    {
+      "id": "S010",
+      "kind": "column",
+      "title": "Add column cnt_Site.cnt_City (Text (80))",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_site')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+          "MaxLength": 80,
+          "FormatName": {
+            "Value": "Text"
+          },
+          "SchemaName": "cnt_City",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "City",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "City",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "None",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_site')/Attributes(LogicalName='cnt_city')?$select=LogicalName"
+    },
+    {
+      "id": "S011",
+      "kind": "column",
+      "title": "Add column cnt_Inspection.cnt_InspectionDate (Date only · Date Only)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_inspection')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.DateTimeAttributeMetadata",
+          "Format": "DateOnly",
+          "DateTimeBehavior": {
+            "Value": "DateOnly"
+          },
+          "SchemaName": "cnt_InspectionDate",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Inspection date",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Inspection date",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "ApplicationRequired",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_inspection')/Attributes(LogicalName='cnt_inspectiondate')?$select=LogicalName"
+    },
+    {
+      "id": "S012",
+      "kind": "column",
+      "title": "Add column cnt_Inspection.cnt_Score (Whole number)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_inspection')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.IntegerAttributeMetadata",
+          "Format": "None",
+          "MinValue": 0,
+          "MaxValue": 100,
+          "SchemaName": "cnt_Score",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Score",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "0-100 checklist compliance",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "None",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_inspection')/Attributes(LogicalName='cnt_score')?$select=LogicalName"
+    },
+    {
+      "id": "S013",
+      "kind": "column",
+      "title": "Add column cnt_Inspection.cnt_Checklist (File (max 10240 KB))",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_inspection')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.FileAttributeMetadata",
+          "MaxSizeInKB": 10240,
+          "SchemaName": "cnt_Checklist",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Signed checklist",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Signed checklist",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "None",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_inspection')/Attributes(LogicalName='cnt_checklist')?$select=LogicalName"
+    },
+    {
+      "id": "S014",
+      "kind": "column",
+      "title": "Add column cnt_Finding.cnt_RiskLevel (Choice → `cnt_risklevel`)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_finding')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.PicklistAttributeMetadata",
+          "SchemaName": "cnt_RiskLevel",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Risk level",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Risk level",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "ApplicationRequired",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          },
+          "GlobalOptionSet@odata.bind": "/GlobalOptionSetDefinitions(Name='cnt_risklevel')"
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_finding')/Attributes(LogicalName='cnt_risklevel')?$select=LogicalName"
+    },
+    {
+      "id": "S015",
+      "kind": "column",
+      "title": "Add column cnt_Finding.cnt_EvidencePhoto (Image)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_finding')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.ImageAttributeMetadata",
+          "CanStoreFullImage": true,
+          "IsPrimaryImage": false,
+          "SchemaName": "cnt_EvidencePhoto",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Evidence photo",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Evidence photo",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "None",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_finding')/Attributes(LogicalName='cnt_evidencephoto')?$select=LogicalName"
+    },
+    {
+      "id": "S016",
+      "kind": "column",
+      "title": "Add column cnt_Finding.cnt_ClosedOn (Date and time · User Local)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_finding')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.DateTimeAttributeMetadata",
+          "Format": "DateAndTime",
+          "DateTimeBehavior": {
+            "Value": "UserLocal"
+          },
+          "SchemaName": "cnt_ClosedOn",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Closed on",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Closed on",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "None",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_finding')/Attributes(LogicalName='cnt_closedon')?$select=LogicalName"
+    },
+    {
+      "id": "S017",
+      "kind": "manual",
+      "title": "Create formula column cnt_Finding.cnt_DaysOpen in the maker portal: DateDiff(createdon, If(IsBlank('Closed on'), Now(), 'Closed on'), TimeUnit.Days)"
+    },
+    {
+      "id": "S018",
+      "kind": "column",
+      "title": "Add column cnt_CorrectiveAction.cnt_DueDate (Date only · Date Only)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_correctiveaction')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.DateTimeAttributeMetadata",
+          "Format": "DateOnly",
+          "DateTimeBehavior": {
+            "Value": "DateOnly"
+          },
+          "SchemaName": "cnt_DueDate",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Due date",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Due date",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "ApplicationRequired",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_correctiveaction')/Attributes(LogicalName='cnt_duedate')?$select=LogicalName"
+    },
+    {
+      "id": "S019",
+      "kind": "column",
+      "title": "Add column cnt_CorrectiveAction.cnt_ActionStatus (Choice → `cnt_actionstatus`)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_correctiveaction')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.PicklistAttributeMetadata",
+          "SchemaName": "cnt_ActionStatus",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Action status",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Action status",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "ApplicationRequired",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          },
+          "GlobalOptionSet@odata.bind": "/GlobalOptionSetDefinitions(Name='cnt_actionstatus')"
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_correctiveaction')/Attributes(LogicalName='cnt_actionstatus')?$select=LogicalName"
+    },
+    {
+      "id": "S020",
+      "kind": "column",
+      "title": "Add column cnt_CorrectiveAction.cnt_EstimatedCost (Currency)",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_correctiveaction')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.MoneyAttributeMetadata",
+          "PrecisionSource": 2,
+          "MinValue": -922337203685477,
+          "MaxValue": 922337203685477,
+          "SchemaName": "cnt_EstimatedCost",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Estimated cost",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Estimated cost",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "None",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_correctiveaction')/Attributes(LogicalName='cnt_estimatedcost')?$select=LogicalName"
+    },
+    {
+      "id": "S021",
+      "kind": "column",
+      "title": "Add column cnt_CorrectiveAction.cnt_ContractorNationalId (Text (30))",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_correctiveaction')/Attributes",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.StringAttributeMetadata",
+          "MaxLength": 30,
+          "FormatName": {
+            "Value": "Text"
+          },
+          "SchemaName": "cnt_ContractorNationalId",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Contractor national ID",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "Description": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "Required by labor-safety regulation for external workers",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "RequiredLevel": {
+            "Value": "None",
+            "CanBeChanged": true,
+            "ManagedPropertyLogicalName": "canmodifyrequirementlevelsettings"
+          },
+          "IsSecured": true
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_correctiveaction')/Attributes(LogicalName='cnt_contractornationalid')?$select=LogicalName"
+    },
+    {
+      "id": "S022",
+      "kind": "relationship",
+      "title": "Create restrict 1:N cnt_Site_Inspection (cnt_Site → cnt_Inspection)",
+      "request": {
+        "method": "POST",
+        "path": "RelationshipDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata",
+          "SchemaName": "cnt_Site_Inspection",
+          "ReferencedEntity": "cnt_site",
+          "ReferencingEntity": "cnt_inspection",
+          "CascadeConfiguration": {
+            "Assign": "NoCascade",
+            "Delete": "Restrict",
+            "Merge": "NoCascade",
+            "Reparent": "NoCascade",
+            "Share": "NoCascade",
+            "Unshare": "NoCascade",
+            "RollupView": "NoCascade"
+          },
+          "Lookup": {
+            "@odata.type": "Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+            "SchemaName": "cnt_SiteId",
+            "DisplayName": {
+              "@odata.type": "Microsoft.Dynamics.CRM.Label",
+              "LocalizedLabels": [
+                {
+                  "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                  "Label": "Site",
+                  "LanguageCode": 1033
+                }
+              ]
+            },
+            "RequiredLevel": {
+              "Value": "ApplicationRequired"
+            }
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "RelationshipDefinitions(SchemaName='cnt_Site_Inspection')"
+    },
+    {
+      "id": "S023",
+      "kind": "relationship",
+      "title": "Create parental 1:N cnt_Inspection_Finding (cnt_Inspection → cnt_Finding)",
+      "request": {
+        "method": "POST",
+        "path": "RelationshipDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata",
+          "SchemaName": "cnt_Inspection_Finding",
+          "ReferencedEntity": "cnt_inspection",
+          "ReferencingEntity": "cnt_finding",
+          "CascadeConfiguration": {
+            "Assign": "Cascade",
+            "Delete": "Cascade",
+            "Merge": "Cascade",
+            "Reparent": "Cascade",
+            "Share": "Cascade",
+            "Unshare": "Cascade",
+            "RollupView": "NoCascade"
+          },
+          "Lookup": {
+            "@odata.type": "Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+            "SchemaName": "cnt_InspectionId",
+            "DisplayName": {
+              "@odata.type": "Microsoft.Dynamics.CRM.Label",
+              "LocalizedLabels": [
+                {
+                  "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                  "Label": "Inspection",
+                  "LanguageCode": 1033
+                }
+              ]
+            },
+            "RequiredLevel": {
+              "Value": "ApplicationRequired"
+            }
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "RelationshipDefinitions(SchemaName='cnt_Inspection_Finding')"
+    },
+    {
+      "id": "S024",
+      "kind": "relationship",
+      "title": "Create parental 1:N cnt_Finding_CorrectiveAction (cnt_Finding → cnt_CorrectiveAction)",
+      "request": {
+        "method": "POST",
+        "path": "RelationshipDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata",
+          "SchemaName": "cnt_Finding_CorrectiveAction",
+          "ReferencedEntity": "cnt_finding",
+          "ReferencingEntity": "cnt_correctiveaction",
+          "CascadeConfiguration": {
+            "Assign": "Cascade",
+            "Delete": "Cascade",
+            "Merge": "Cascade",
+            "Reparent": "Cascade",
+            "Share": "Cascade",
+            "Unshare": "Cascade",
+            "RollupView": "NoCascade"
+          },
+          "Lookup": {
+            "@odata.type": "Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+            "SchemaName": "cnt_FindingId",
+            "DisplayName": {
+              "@odata.type": "Microsoft.Dynamics.CRM.Label",
+              "LocalizedLabels": [
+                {
+                  "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                  "Label": "Finding",
+                  "LanguageCode": 1033
+                }
+              ]
+            },
+            "RequiredLevel": {
+              "Value": "ApplicationRequired"
+            }
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "RelationshipDefinitions(SchemaName='cnt_Finding_CorrectiveAction')"
+    },
+    {
+      "id": "S025",
+      "kind": "relationship",
+      "title": "Create referential 1:N cnt_systemuser_Inspection_Inspector (systemuser → cnt_Inspection)",
+      "request": {
+        "method": "POST",
+        "path": "RelationshipDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata",
+          "SchemaName": "cnt_systemuser_Inspection_Inspector",
+          "ReferencedEntity": "systemuser",
+          "ReferencingEntity": "cnt_inspection",
+          "CascadeConfiguration": {
+            "Assign": "NoCascade",
+            "Delete": "RemoveLink",
+            "Merge": "NoCascade",
+            "Reparent": "NoCascade",
+            "Share": "NoCascade",
+            "Unshare": "NoCascade",
+            "RollupView": "NoCascade"
+          },
+          "Lookup": {
+            "@odata.type": "Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+            "SchemaName": "cnt_InspectorId",
+            "DisplayName": {
+              "@odata.type": "Microsoft.Dynamics.CRM.Label",
+              "LocalizedLabels": [
+                {
+                  "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                  "Label": "Inspector",
+                  "LanguageCode": 1033
+                }
+              ]
+            },
+            "RequiredLevel": {
+              "Value": "ApplicationRequired"
+            }
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "RelationshipDefinitions(SchemaName='cnt_systemuser_Inspection_Inspector')"
+    },
+    {
+      "id": "S026",
+      "kind": "relationship",
+      "title": "Create referential 1:N cnt_contact_CorrectiveAction_Contractor (contact → cnt_CorrectiveAction)",
+      "request": {
+        "method": "POST",
+        "path": "RelationshipDefinitions",
+        "body": {
+          "@odata.type": "Microsoft.Dynamics.CRM.OneToManyRelationshipMetadata",
+          "SchemaName": "cnt_contact_CorrectiveAction_Contractor",
+          "ReferencedEntity": "contact",
+          "ReferencingEntity": "cnt_correctiveaction",
+          "CascadeConfiguration": {
+            "Assign": "NoCascade",
+            "Delete": "RemoveLink",
+            "Merge": "NoCascade",
+            "Reparent": "NoCascade",
+            "Share": "NoCascade",
+            "Unshare": "NoCascade",
+            "RollupView": "NoCascade"
+          },
+          "Lookup": {
+            "@odata.type": "Microsoft.Dynamics.CRM.LookupAttributeMetadata",
+            "SchemaName": "cnt_ContractorId",
+            "DisplayName": {
+              "@odata.type": "Microsoft.Dynamics.CRM.Label",
+              "LocalizedLabels": [
+                {
+                  "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                  "Label": "Contractor",
+                  "LanguageCode": 1033
+                }
+              ]
+            },
+            "RequiredLevel": {
+              "Value": "None"
+            }
+          }
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "RelationshipDefinitions(SchemaName='cnt_contact_CorrectiveAction_Contractor')"
+    },
+    {
+      "id": "S027",
+      "kind": "key",
+      "title": "Create alternate key cnt_Site.cnt_ErpCodeKey",
+      "request": {
+        "method": "POST",
+        "path": "EntityDefinitions(LogicalName='cnt_site')/Keys",
+        "body": {
+          "SchemaName": "cnt_ErpCodeKey",
+          "DisplayName": {
+            "@odata.type": "Microsoft.Dynamics.CRM.Label",
+            "LocalizedLabels": [
+              {
+                "@odata.type": "Microsoft.Dynamics.CRM.LocalizedLabel",
+                "Label": "cnt_ErpCodeKey",
+                "LanguageCode": 1033
+              }
+            ]
+          },
+          "KeyAttributes": [
+            "cnt_erpcode"
+          ]
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "EntityDefinitions(LogicalName='cnt_site')/Keys?$select=SchemaName&$filter=SchemaName eq 'cnt_ErpCodeKey'",
+      "wait_for_index": "EntityDefinitions(LogicalName='cnt_site')/Keys?$select=EntityKeyIndexStatus&$filter=SchemaName eq 'cnt_ErpCodeKey'"
+    },
+    {
+      "id": "S028",
+      "kind": "column_security",
+      "title": "Create column security profile 'Contractor PII'",
+      "request": {
+        "method": "POST",
+        "path": "fieldsecurityprofiles",
+        "body": {
+          "name": "Contractor PII",
+          "description": ""
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "fieldsecurityprofiles?$select=fieldsecurityprofileid&$filter=name eq 'Contractor PII'"
+    },
+    {
+      "id": "S029",
+      "kind": "column_permission",
+      "title": "Grant Contractor PII on cnt_CorrectiveAction.cnt_ContractorNationalId",
+      "request": {
+        "method": "POST",
+        "path": "fieldpermissions",
+        "body": {
+          "entityname": "cnt_correctiveaction",
+          "attributelogicalname": "cnt_contractornationalid",
+          "canread": 4,
+          "cancreate": 4,
+          "canupdate": 0,
+          "fieldsecurityprofileid@odata.bind": "{{profile:Contractor PII}}"
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "fieldpermissions?$select=fieldpermissionid&$filter=entityname eq 'cnt_correctiveaction' and attributelogicalname eq 'cnt_contractornationalid' and _fieldsecurityprofileid_value eq {{profile:Contractor PII}}"
+    },
+    {
+      "id": "S030",
+      "kind": "role",
+      "title": "Create security role 'Safety Inspector'",
+      "request": {
+        "method": "POST",
+        "path": "roles",
+        "body": {
+          "name": "Safety Inspector",
+          "businessunitid@odata.bind": "/businessunits({{rootbu}})"
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "roles?$select=roleid&$filter=name eq 'Safety Inspector' and _businessunitid_value eq {{rootbu}}"
+    },
+    {
+      "id": "S031",
+      "kind": "role_privileges",
+      "title": "Grant 18 privileges to 'Safety Inspector'",
+      "role": "Safety Inspector",
+      "grants": [
+        {
+          "table": "cnt_site",
+          "privilege": "Read",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_site",
+          "privilege": "AppendTo",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "Create",
+          "depth": "Basic"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "Read",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "Write",
+          "depth": "Basic"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "Append",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "AppendTo",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "Create",
+          "depth": "Basic"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "Read",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "Write",
+          "depth": "Basic"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "Append",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "AppendTo",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Create",
+          "depth": "Basic"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Read",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Write",
+          "depth": "Basic"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Append",
+          "depth": "Local"
+        },
+        {
+          "table": "contact",
+          "privilege": "Read",
+          "depth": "Global"
+        },
+        {
+          "table": "contact",
+          "privilege": "AppendTo",
+          "depth": "Global"
+        }
+      ]
+    },
+    {
+      "id": "S032",
+      "kind": "role",
+      "title": "Create security role 'Plant Manager'",
+      "request": {
+        "method": "POST",
+        "path": "roles",
+        "body": {
+          "name": "Plant Manager",
+          "businessunitid@odata.bind": "/businessunits({{rootbu}})"
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "roles?$select=roleid&$filter=name eq 'Plant Manager' and _businessunitid_value eq {{rootbu}}"
+    },
+    {
+      "id": "S033",
+      "kind": "role_privileges",
+      "title": "Grant 11 privileges to 'Plant Manager'",
+      "role": "Plant Manager",
+      "grants": [
+        {
+          "table": "cnt_site",
+          "privilege": "Read",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "Read",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "Read",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "AppendTo",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Create",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Read",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Write",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Append",
+          "depth": "Local"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Assign",
+          "depth": "Local"
+        },
+        {
+          "table": "contact",
+          "privilege": "Read",
+          "depth": "Global"
+        },
+        {
+          "table": "contact",
+          "privilege": "AppendTo",
+          "depth": "Global"
+        }
+      ]
+    },
+    {
+      "id": "S034",
+      "kind": "role",
+      "title": "Create security role 'Safety Director'",
+      "request": {
+        "method": "POST",
+        "path": "roles",
+        "body": {
+          "name": "Safety Director",
+          "businessunitid@odata.bind": "/businessunits({{rootbu}})"
+        },
+        "headers": {
+          "MSCRM.SolutionUniqueName": "EhsInspections"
+        }
+      },
+      "exists_if": "roles?$select=roleid&$filter=name eq 'Safety Director' and _businessunitid_value eq {{rootbu}}"
+    },
+    {
+      "id": "S035",
+      "kind": "role_privileges",
+      "title": "Grant 21 privileges to 'Safety Director'",
+      "role": "Safety Director",
+      "grants": [
+        {
+          "table": "cnt_site",
+          "privilege": "Read",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_site",
+          "privilege": "Write",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_site",
+          "privilege": "AppendTo",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "Read",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "Write",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "Append",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "AppendTo",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_inspection",
+          "privilege": "Assign",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "Read",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "Write",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "Append",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_finding",
+          "privilege": "AppendTo",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Create",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Read",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Write",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Delete",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Append",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Assign",
+          "depth": "Global"
+        },
+        {
+          "table": "cnt_correctiveaction",
+          "privilege": "Share",
+          "depth": "Global"
+        },
+        {
+          "table": "contact",
+          "privilege": "Read",
+          "depth": "Global"
+        },
+        {
+          "table": "contact",
+          "privilege": "AppendTo",
+          "depth": "Global"
+        }
+      ]
+    },
+    {
+      "id": "S036",
+      "kind": "publish",
+      "title": "Publish customizations",
+      "request": {
+        "method": "POST",
+        "path": "PublishXml",
+        "body": {
+          "ParameterXml": "<importexportxml><entities><entity>cnt_site</entity><entity>cnt_inspection</entity><entity>cnt_finding</entity><entity>cnt_correctiveaction</entity></entities><optionsets><optionset>cnt_risklevel</optionset><optionset>cnt_actionstatus</optionset></optionsets></importexportxml>"
+        },
+        "headers": {}
+      }
+    },
+    {
+      "id": "S037",
+      "kind": "manual",
+      "title": "Configure Status Reason values for cnt_Inspection: Planned, In progress, Submitted, Closed"
+    },
+    {
+      "id": "S038",
+      "kind": "manual",
+      "title": "Create the main form and active views for each table (or ask the skill for form/view XML)."
+    }
+  ]
+}

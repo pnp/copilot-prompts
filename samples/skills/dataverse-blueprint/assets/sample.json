@@ -1,0 +1,53 @@
+[
+  {
+    "name": "copilotprompts-skill-dataverse-blueprint",
+    "source": "pnp",
+    "title": "Dataverse Blueprint — Data Model as Code",
+    "shortDescription": "A GitHub Copilot skill with a bundled CLI that designs, validates (30 rules + score), documents, deploys, audits and drift-checks Microsoft Dataverse data models as code, with pull-request reviews via SARIF.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/skills/dataverse-blueprint",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/skills/dataverse-blueprint",
+    "longDescription": [
+      "Dataverse Blueprint treats a Microsoft Dataverse data model as code. GitHub Copilot turns a business process into a reviewable blueprint.yaml; a bundled zero-dependency Python CLI validates it against 30 architecture rules (ownership, date behavior, cascade, alternate keys, PII column security, Append/AppendTo, least-privilege depth) with a score, renders the design document with a Mermaid ER diagram and security matrix, compiles an ordered and idempotent Dataverse Web API deployment plan that lands every component inside a solution, deploys it to a development environment, exports existing environments back to blueprints for audits, and diffs repository vs. environment to detect drift. Includes a GitHub Actions workflow that reviews model changes in pull requests with SARIF annotations. Works in English and Spanish."
+    ],
+    "creationDateTime": "2026-11-17",
+    "updateDateTime": "2026-11-17",
+    "products": [
+      "Dataverse",
+      "Power Apps",
+      "GitHub Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/skills/dataverse-blueprint/assets/screenshot.png",
+        "alt": "Dataverse Blueprint validating a legacy Dataverse model (score 0) and a clean model (score 100)"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rogerscarias",
+        "pictureUrl": "https://github.com/rogerscarias.png",
+        "name": "Roger Carias"
+      }
+    ],
+    "references": [
+      {
+        "name": "Create and update table definitions using the Web API",
+        "description": "How Dataverse tables, columns and relationships are created through the Web API",
+        "url": "https://learn.microsoft.com/power-apps/developer/data-platform/webapi/create-update-entity-definitions-using-web-api"
+      },
+      {
+        "name": "Agent skills for GitHub Copilot",
+        "description": "How skills with scripts and resources are loaded by GitHub Copilot",
+        "url": "https://docs.github.com/copilot/concepts/agents/about-agent-skills"
+      },
+      {
+        "name": "Security concepts in Microsoft Dataverse",
+        "description": "Security roles, privilege depth, business units, teams and column security",
+        "url": "https://learn.microsoft.com/power-platform/admin/wp-security-cds"
+      }
+    ]
+  }
+]

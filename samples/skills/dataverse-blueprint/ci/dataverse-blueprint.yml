@@ -1,0 +1,53 @@
+# Copy to .github/workflows/dataverse-blueprint.yml
+# Validates every *.blueprint.yaml on pull requests and shows findings as inline annotations
+# (GitHub code scanning / SARIF). Optional: nightly drift check against the dev environment.
+name: Dataverse blueprint review
+
+on:
+  pull_request:
+    paths: ["**/*.blueprint.yaml", "**/*.blueprint.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write   # upload SARIF
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install pyyaml
+      - name: Validate blueprints
+        id: lint
+        shell: bash
+        run: |
+          status=0
+          mkdir -p sarif
+          for f in $(git ls-files '*.blueprint.yaml' '*.blueprint.json'); do
+            echo "::group::$f"
+            python .github/skills/dataverse-blueprint/scripts/dvbp.py validate "$f" || status=1
+            python .github/skills/dataverse-blueprint/scripts/dvbp.py validate "$f" --format sarif -o "sarif/$(basename "$f").sarif" || true
+            python .github/skills/dataverse-blueprint/scripts/dvbp.py render "$f" -o "${f%.blueprint.*}.design.md"
+            echo "::endgroup::"
+          done
+          exit $status
+      - name: Upload findings as PR annotations
+        if: always()
+        uses: github/codeql-action/upload-sarif@v3
+        with: { sarif_file: sarif, category: dataverse-blueprint }
+      - name: Fail if the generated design document is out of date
+        run: git diff --exit-code -- '*.design.md' || (echo "Run dvbp render and commit the design document." && exit 1)
+
+  # drift:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - uses: azure/login@v2
+  #       with: { client-id: ${{ vars.AZURE_CLIENT_ID }}, tenant-id: ${{ vars.AZURE_TENANT_ID }}, allow-no-subscriptions: true }
+  #     - run: pip install pyyaml
+  #     - run: |
+  #         python .github/skills/dataverse-blueprint/scripts/dvbp.py export --env ${{ vars.DATAVERSE_DEV_URL }} --prefix cnt -o live.yaml
+  #         python .github/skills/dataverse-blueprint/scripts/dvbp.py diff dataverse/EhsInspections.blueprint.yaml live.yaml --fail-on-drift
