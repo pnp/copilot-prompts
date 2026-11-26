@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-agent-instructions-from-how-i-already-work-prompt",
+    "source": "pnp",
+    "title": "Agent Instructions From How I Already Work",
+    "shortDescription": "Ask Microsoft 365 Copilot to draft Copilot Studio agent instructions from how you already handle a process in email and Teams.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-agent-instructions-from-how-i-already-work-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-agent-instructions-from-how-i-already-work-prompt",
+    "longDescription": [
+      "Ask Microsoft 365 Copilot to study how you actually handled a named process in email and Teams this month, then draft Copilot Studio agent instructions that match your real decisions, tone, and exceptions. If you have not named a process, it can suggest the most repeated ones and ask which to use. With work grounding, available Work IQ context can personalize the result within your access permissions. Review the draft, resolve any inconsistent rules, and redact confidential details before you paste the instructions into Copilot Studio."
+    ],
+    "creationDateTime": "2026-11-25",
+    "updateDateTime": "2026-11-25",
+    "products": [
+      "Microsoft 365 Copilot",
+      "Copilot Studio"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-agent-instructions-from-how-i-already-work-prompt/assets/demo.png",
+        "alt": "Redacted screenshot of Microsoft 365 Copilot answering the Agent Instructions From How I Already Work prompt with three candidate processes and rule choices"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "renatoromao",
+        "pictureUrl": "https://github.com/renatoromao.png",
+        "name": "Renato Romão"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
