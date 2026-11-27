@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-year-as-blockbuster-movie-poster-prompt",
+    "source": "pnp",
+    "title": "Turn your year into a blockbuster movie poster",
+    "shortDescription": "Create a dramatic, funny movie poster inspired by your year, with a personalized title, tagline, genre, and visual highlights.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-year-as-blockbuster-movie-poster-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-year-as-blockbuster-movie-poster-prompt",
+    "longDescription": [
+      "Use Microsoft 365 Copilot to imagine your 2026 as a blockbuster movie. This prompt turns available context about your challenges, accomplishments, and personality into a cinematic poster with a hilarious title, a year-defining tagline, and an over-the-top genre. Adapt the year and provide non-sensitive context to personalize your own result."
+    ],
+    "creationDateTime": "2026-11-27",
+    "updateDateTime": "2026-11-27",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-year-as-blockbuster-movie-poster-prompt/assets/demo.png",
+        "alt": "Example AI action-comedy poster titled Mission: Demo Possible, featuring April Dunnam with a microphone, a demo laptop, learning robots, and a Seattle skyline."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "aprildunnam",
+        "pictureUrl": "https://github.com/aprildunnam.png",
+        "name": "April Dunnam"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot documentation, capabilities, and requirements",
+        "url": "https://learn.microsoft.com/copilot/microsoft-365/"
+      }
+    ]
+  }
+]
