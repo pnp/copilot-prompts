@@ -1,0 +1,65 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-personalized-tarot-card-prompt",
+    "source": "pnp",
+    "title": "My Personal Tarot Card",
+    "shortDescription": "Create a photo-inspired vintage tarot-style card and a separate symbolic reading reflecting your year, strengths, and personal themes.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-personalized-tarot-card-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-personalized-tarot-card-prompt",
+    "longDescription": [
+      "Use Microsoft 365 Copilot to create a personalized 2026 tarot-style card from a reference photo and available context. The prompt invents an archetype, requests a vintage illustrated card with meaningful personal symbols, and provides a separate reading covering strengths, a blind spot, a symbolic new-year prophecy, hidden meanings, and a closing message. Intended for creative reflection and entertainment, not factual assessment or prediction."
+    ],
+    "creationDateTime": "2026-11-27",
+    "updateDateTime": "2026-11-27",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-personalized-tarot-card-prompt/assets/demo.png",
+        "alt": "The Maker of Makers, a vintage-style tarot card numbered XXVI, showing the contributor's illustrated likeness holding a lantern beside a branching book, keys, botanical borders, and a crescent moon."
+      },
+      {
+        "type": "image",
+        "order": 200,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-personalized-tarot-card-prompt/assets/reading-archetype.png",
+        "alt": "Partial reading showing The Maker of Makers archetype and a personalized creative interpretation."
+      },
+      {
+        "type": "image",
+        "order": 300,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-personalized-tarot-card-prompt/assets/reading-special-powers.png",
+        "alt": "Partial reading showing three playfully named strengths and their personalized explanations."
+      },
+      {
+        "type": "image",
+        "order": 400,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-personalized-tarot-card-prompt/assets/reading-hidden-meaning.png",
+        "alt": "Partial reading explaining ten symbols in the illustrated tarot card."
+      },
+      {
+        "type": "image",
+        "order": 500,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-personalized-tarot-card-prompt/assets/reading-card-message.png",
+        "alt": "Partial reading showing the closing card message about teaching others to carry their own light."
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "aprildunnam",
+        "pictureUrl": "https://github.com/aprildunnam.png",
+        "name": "April Dunnam"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot documentation, capabilities, and requirements",
+        "url": "https://learn.microsoft.com/copilot/microsoft-365/"
+      }
+    ]
+  }
+]
