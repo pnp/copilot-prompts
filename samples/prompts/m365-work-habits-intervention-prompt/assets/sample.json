@@ -1,0 +1,41 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-work-habits-intervention-prompt",
+    "source": "pnp",
+    "title": "My Work Apps Stage an Intervention",
+    "shortDescription": "Have Microsoft 365 Copilot write a funny Teams group chat in which your calendar, inbox, OneDrive, and Teams chat stage an intervention about your work habits.",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-work-habits-intervention-prompt",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-work-habits-intervention-prompt",
+    "longDescription": [
+      "Ask Microsoft 365 Copilot to turn your own apps into characters: your calendar, inbox, OneDrive, and busiest Teams chat confront you in a short group chat about your work habits, each with a personality drawn from how you use it. With work grounding, available Work IQ context can personalize the response within your access permissions. The chat ends with one kind, practical suggestion; review the result before sharing."
+    ],
+    "creationDateTime": "2026-11-28",
+    "updateDateTime": "2026-11-28",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-work-habits-intervention-prompt/assets/demo.png",
+        "alt": "Screenshot of Copilot writing a Teams group chat in which the user's calendar, inbox, OneDrive, and Teams chat stage an intervention"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "OwnOptic",
+        "pictureUrl": "https://github.com/OwnOptic.png",
+        "name": "Elliot Margot"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft 365 Copilot",
+        "description": "Microsoft 365 Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
