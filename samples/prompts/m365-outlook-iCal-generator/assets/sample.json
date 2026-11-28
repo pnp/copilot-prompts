@@ -1,0 +1,42 @@
+[
+  {
+    "name": "copilotprompts-prompt-m365-outlook-ical-generator",
+    "source": "pnp",
+    "title": "Generate an iCalendar (.ics) file from a list of events using Copilot",
+    "shortDescription": "Ask copilot to create generate an iCalendar file from a list of events",
+    "url": "https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-outlook-iCal-generator",
+    "downloadUrl": "https://pnp.github.io/download-partial/?url=https://github.com/pnp/copilot-prompts/tree/main/samples/prompts/m365-outlook-iCal-generator",
+    "longDescription": [
+      "Quickly block multiple dates in your Outlook calendar without creating each event manually. The iCal File Generator helps you turn a simple list of event into a ready-to-import .ics file."
+    ],
+    "creationDateTime": "2024-04-29",
+    "updateDateTime": "2024-04-29",
+    "products": [
+      "Microsoft 365 Copilot"
+    ],
+    "metadata": [],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/copilot-prompts/raw/main/samples/prompts/m365-outlook-iCal-generator/assets/demo.png",
+        "alt": "Prompt for Copilot to generate an iCalendar .ics file from a list of events"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "rabwill",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/20379311?v=4",
+        "name": "Rabia Williams"
+      }
+    ],
+    "references": [
+      {
+        "name": "Microsoft Copilot",
+        "description": "Microsoft Copilot",
+        "url": "https://copilot.microsoft.com/"
+      }
+    ]
+  }
+]
+ 
